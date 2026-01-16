@@ -646,10 +646,13 @@
 			return;
 		}
 
-		const offset = 20; // Offset in image coordinates
 		const boxData = clipboardBox;
 
-		// Calculate offset position (account for current scale)
+		// Calculate offset - use the copied box's scaleFactor for consistency
+		const boxScaleFactor = boxData.scaleFactor || 1;
+		const offset = 20 / boxScaleFactor; // Offset in box's internal coordinate space
+
+		// Calculate offset position
 		let newXmin = boxData.xmin + offset;
 		let newYmin = boxData.ymin + offset;
 		let newXmax = boxData.xmax + offset;
@@ -670,7 +673,7 @@
 			newYmax = newYmin + height;
 		}
 
-		// Create new box
+		// Create new box with the copied box's scaleFactor for consistency
 		const newBox = new Box(
 			draw,
 			onBoxFinishCreation,
@@ -691,7 +694,7 @@
 			handleSize,
 			boxThickness,
 			boxSelectedThickness,
-			scaleFactor,
+			boxScaleFactor,
 			showBoxLabels
 		);
 
