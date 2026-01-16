@@ -701,6 +701,9 @@
 			value.boxes = [newBox, ...value.boxes];
 		}
 
+		// Update clipboard with the new box position for cascading pastes
+		clipboardBox = newBox.toJSON();
+
 		selectBox(0);
 		draw();
 		dispatch("change");
