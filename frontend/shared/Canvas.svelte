@@ -42,6 +42,7 @@
 	let mode: Mode = Mode.drag;
 	let pointersCache: Map<number, PointerEvent> = new Map();
 	let canvasWindow: WindowViewer = new WindowViewer(draw, pointersCache);
+	let clipboardBox: ReturnType<Box['toJSON']> | null = null;
 
 	if (value !== null && value.boxes.length == 0) {
 		mode = Mode.creation;
@@ -399,15 +400,28 @@
 		if (!enableKeyboardShortcuts || event.target !== annotatorContainerDiv || !interactive) {
 			return;
 		}
-		
-		const key = event.key.toLowerCase();
-		const blockedKeys = new Set(['delete', 'c', 'd', 'e', ' ']);
 
-		if (blockedKeys.has(key)) {
+		const key = event.key.toLowerCase();
+		const ctrlOrCmd = event.ctrlKey || event.metaKey;
+		const blockedKeys = new Set(['delete', 'c', 'd', 'e', ' ', 'v']);
+
+		if (blockedKeys.has(key) || (ctrlOrCmd && (key === 'c' || key === 'v'))) {
 			event.preventDefault();
 			event.stopPropagation();
 		}
-		
+
+		// Handle Ctrl+C / Cmd+C (Copy)
+		if (ctrlOrCmd && key === 'c') {
+			onCopyBox();
+			return;
+		}
+
+		// Handle Ctrl+V / Cmd+V (Paste)
+		if (ctrlOrCmd && key === 'v') {
+			onPasteBox();
+			return;
+		}
+
 		switch (key) {
 			case 'delete': onDeleteBox(); break;
 			case 'c': setCreateMode(); break;
@@ -620,7 +634,78 @@
 			dispatch("change");
 		}
 	}
-	
+
+	function onCopyBox() {
+		if (selectedBox >= 0 && selectedBox < value.boxes.length) {
+			clipboardBox = value.boxes[selectedBox].toJSON();
+		}
+	}
+
+	function onPasteBox() {
+		if (clipboardBox === null) {
+			return;
+		}
+
+		const offset = 20; // Offset in image coordinates
+		const boxData = clipboardBox;
+
+		// Calculate offset position (account for current scale)
+		let newXmin = boxData.xmin + offset;
+		let newYmin = boxData.ymin + offset;
+		let newXmax = boxData.xmax + offset;
+		let newYmax = boxData.ymax + offset;
+
+		// Clamp to image bounds
+		const canvasW = (canvasXmax - canvasXmin) / canvasWindow.scale;
+		const canvasH = (canvasYmax - canvasYmin) / canvasWindow.scale;
+		const width = newXmax - newXmin;
+		const height = newYmax - newYmin;
+
+		if (newXmax > canvasW) {
+			newXmin = Math.max(0, canvasW - width);
+			newXmax = newXmin + width;
+		}
+		if (newYmax > canvasH) {
+			newYmin = Math.max(0, canvasH - height);
+			newYmax = newYmin + height;
+		}
+
+		// Create new box
+		const newBox = new Box(
+			draw,
+			onBoxFinishCreation,
+			canvasWindow,
+			pointersCache,
+			canvasXmin,
+			canvasYmin,
+			canvasXmax,
+			canvasYmax,
+			boxData.label,
+			newXmin,
+			newYmin,
+			newXmax,
+			newYmax,
+			boxData.color,
+			boxAlpha,
+			boxMinSize,
+			handleSize,
+			boxThickness,
+			boxSelectedThickness,
+			scaleFactor,
+			showBoxLabels
+		);
+
+		if (singleBox) {
+			value.boxes = [newBox];
+		} else {
+			value.boxes = [newBox, ...value.boxes];
+		}
+
+		selectBox(0);
+		draw();
+		dispatch("change");
+	}
+
 	/**
 	 * Rotate the image and all the boxes
 	 * @param op 1: rotate clockwise, -1: rotate counterclockwise
