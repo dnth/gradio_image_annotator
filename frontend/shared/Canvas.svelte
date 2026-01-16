@@ -403,7 +403,7 @@
 
 		const key = event.key.toLowerCase();
 		const ctrlOrCmd = event.ctrlKey || event.metaKey;
-		const blockedKeys = new Set(['delete', 'c', 'd', 'e', ' ', 'v']);
+		const blockedKeys = new Set(['delete', 'c', 'd', 'e', ' ', 'v', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright']);
 
 		if (blockedKeys.has(key) || (ctrlOrCmd && (key === 'c' || key === 'v'))) {
 			event.preventDefault();
@@ -428,6 +428,10 @@
 			case 'd': setDragMode(); break;
 			case 'e': onEditBox(); break;
 			case ' ': resetView(); break;
+			case 'arrowup': moveSelectedBox(0, -3); break;
+			case 'arrowdown': moveSelectedBox(0, 3); break;
+			case 'arrowleft': moveSelectedBox(-3, 0); break;
+			case 'arrowright': moveSelectedBox(3, 0); break;
 		}
 	}
 
@@ -633,6 +637,36 @@
 			}
 			dispatch("change");
 		}
+	}
+
+	function moveSelectedBox(deltaX: number, deltaY: number): void {
+		if (selectedBox < 0 || selectedBox >= value.boxes.length) {
+			return;
+		}
+
+		const box = value.boxes[selectedBox];
+		const scale = box.canvasWindow.scale;
+
+		// Convert pixel movement to image coordinate space
+		const imageDeltaX = deltaX / scale;
+		const imageDeltaY = deltaY / scale;
+
+		// Clamp movement to keep box within image bounds
+		const canvasW = box.canvasWindow.imageWidth;
+		const canvasH = box.canvasWindow.imageHeight;
+
+		const clampedDeltaX = Math.max(-box._xmin, Math.min(imageDeltaX, canvasW - box._xmax));
+		const clampedDeltaY = Math.max(-box._ymin, Math.min(imageDeltaY, canvasH - box._ymax));
+
+		// Update all four coordinates
+		box._xmin += clampedDeltaX;
+		box._ymin += clampedDeltaY;
+		box._xmax += clampedDeltaX;
+		box._ymax += clampedDeltaY;
+
+		box.applyUserScale();
+		draw();
+		dispatch("change");
 	}
 
 	function onCopyBox() {
