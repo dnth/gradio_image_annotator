@@ -5,3 +5,6 @@ export { default as Trash } from "./Trash.svelte";
 export { default as Label } from "./Label.svelte";
 export { default as Lock } from "./Lock.svelte";
 export { default as Unlock } from "./Unlock.svelte";
+export { default as ZoomIn } from "./ZoomIn.svelte";
+export { default as ZoomOut } from "./ZoomOut.svelte";
+export { default as ResetZoom } from "./ResetZoom.svelte";

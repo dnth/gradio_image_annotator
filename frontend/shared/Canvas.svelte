@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, createEventDispatcher } from "svelte";
-	import { BoundingBox, Hand, Trash, Label } from "./icons/index";
+	import { BoundingBox, Hand, Trash, Label, ZoomIn, ZoomOut, ResetZoom } from "./icons/index";
 	import ModalBox from "./ModalBox.svelte";
 	import Box from "./Box";
 	import { Colors } from './Colors.js';
@@ -72,6 +72,9 @@
 		distance: 0,
 	}
 	const touchScaleDeadzone = 100;
+
+	// Reactive zoom level percentage
+	$: zoomLevel = Math.round(canvasWindow.scale * 100);
 
 	const dispatch = createEventDispatcher<{
 		change: undefined;
@@ -314,12 +317,81 @@
 		const scaleX = canvas.width / imageWidth;
 		const scaleY = canvas.height / imageHeight;
 		const minScale = Math.min(scaleX, scaleY);
-				
+
 		// Set scale and center
 		canvasWindow.scale = minScale;
 		canvasWindow.offsetX = (canvas.width - imageWidth * minScale) / 2;
 		canvasWindow.offsetY = (canvas.height - imageHeight * minScale) / 2;
-		
+
+		draw();
+	}
+
+	function zoomToBox(boxIndex: number) {
+		if (boxIndex < 0 || boxIndex >= value.boxes.length) {
+			return;
+		}
+
+		const box = value.boxes[boxIndex];
+
+		// Box dimensions in image space (after scaleFactor)
+		const boxWidth = (box._xmax - box._xmin) * scaleFactor;
+		const boxHeight = (box._ymax - box._ymin) * scaleFactor;
+
+		// Target scale: fit box with 20% padding (1.2x)
+		const targetScale = Math.min(
+			canvas.width / (boxWidth * 1.2),
+			canvas.height / (boxHeight * 1.2)
+		);
+
+		// Box center in image space
+		const boxCenterX = (box._xmin + box._xmax) / 2 * scaleFactor;
+		const boxCenterY = (box._ymin + box._ymax) / 2 * scaleFactor;
+
+		// Calculate offset to center the box in the canvas
+		const canvasCenterX = canvas.width / 2;
+		const canvasCenterY = canvas.height / 2;
+
+		canvasWindow.scale = targetScale;
+		canvasWindow.offsetX = canvasCenterX - boxCenterX * targetScale;
+		canvasWindow.offsetY = canvasCenterY - boxCenterY * targetScale;
+
+		draw();
+	}
+
+	function zoomIn() {
+		// Increase scale by 25%
+		const newScale = parseFloat((canvasWindow.scale * 1.25).toFixed(2));
+
+		// Zoom toward canvas center
+		const canvasCenterX = canvas.width / 2;
+		const canvasCenterY = canvas.height / 2;
+
+		const worldX = (canvasCenterX - canvasWindow.offsetX) / canvasWindow.scale;
+		const worldY = (canvasCenterY - canvasWindow.offsetY) / canvasWindow.scale;
+
+		canvasWindow.offsetX = canvasCenterX - worldX * newScale;
+		canvasWindow.offsetY = canvasCenterY - worldY * newScale;
+		canvasWindow.scale = newScale;
+
+		draw();
+	}
+
+	function zoomOut() {
+		// Decrease scale by 20%, minimum scale is 1.0
+		const newScale = parseFloat((canvasWindow.scale * 0.8).toFixed(2));
+		const clampedScale = newScale < 1 ? 1 : newScale;
+
+		// Zoom toward canvas center
+		const canvasCenterX = canvas.width / 2;
+		const canvasCenterY = canvas.height / 2;
+
+		const worldX = (canvasCenterX - canvasWindow.offsetX) / canvasWindow.scale;
+		const worldY = (canvasCenterY - canvasWindow.offsetY) / canvasWindow.scale;
+
+		canvasWindow.offsetX = canvasCenterX - worldX * clampedScale;
+		canvasWindow.offsetY = canvasCenterY - worldY * clampedScale;
+		canvasWindow.scale = clampedScale;
+
 		draw();
 	}
 
@@ -463,7 +535,7 @@
 		if (!interactive) {
 			return;
 		}
-		
+
 		onEditBox();
 	}
 
@@ -780,6 +852,25 @@
 				title="Rotate clockwise"
 				on:click={() => onRotateImage(1)}><Redo/></button
 			>
+			<button
+				class="icon"
+				aria-label="Reset zoom"
+				title="Reset zoom (Space)"
+				on:click={resetView}><ResetZoom/></button
+			>
+			<button
+				class="icon"
+				aria-label="Zoom out"
+				title="Zoom out"
+				on:click={zoomOut}><ZoomOut/></button
+			>
+			<span class="zoom-level">{zoomLevel}%</span>
+			<button
+				class="icon"
+				aria-label="Zoom in"
+				title="Zoom in"
+				on:click={zoomIn}><ZoomIn/></button
+			>
 		</span>
 	{/if}
 </div>
@@ -860,6 +951,15 @@
 	
 	.selected {
 		color: var(--color-accent);
+	}
+
+	.zoom-level {
+		min-width: 45px;
+		text-align: center;
+		font-size: 12px;
+		color: var(--neutral-400);
+		padding: 0 var(--spacing-xs);
+		user-select: none;
 	}
 
 	.canvas-container {
