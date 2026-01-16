@@ -51,6 +51,7 @@
 	export let handles_cursor: boolean;
 	export let use_default_label: boolean;
 	export let enable_keyboard_shortcuts: boolean;
+	export let show_box_labels: boolean;
 
 	export let gradio: Gradio<{
 		change: never;
@@ -131,6 +132,7 @@
 		handlesCursor={handles_cursor}
 		useDefaultLabel={use_default_label}
 		enableKeyboardShortcuts={enable_keyboard_shortcuts}
+		showBoxLabels={show_box_labels}
 	>
 		{#if active_source === "upload"}
 			<UploadText i18n={gradio.i18n} type="image" />

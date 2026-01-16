@@ -27,6 +27,7 @@
 	export let handlesCursor: boolean;
 	export let useDefaultLabel: boolean;
 	export let enableKeyboardShortcuts: boolean;
+	export let showBoxLabels: boolean;
 
 	let resolved_src: typeof src;
 
@@ -76,5 +77,6 @@
 	{handlesCursor}
 	{useDefaultLabel}
 	{enableKeyboardShortcuts}
+	{showBoxLabels}
 	imageUrl={resolved_src}
 />

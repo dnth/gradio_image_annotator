@@ -56,6 +56,7 @@ export default class Box {
     }[];
     canvasWindow: WindowViewer;
     pointersCache: Map<number, PointerEvent>;
+    showLabel: boolean;
 
     constructor(
         renderCallBack: () => void,
@@ -78,6 +79,7 @@ export default class Box {
         thickness: number = 2,
         selectedThickness: number = 4,
         scaleFactor: number = 1,
+        showBoxLabels: boolean = true,
     ) {
         this.renderCallBack = renderCallBack;
         this.onFinishCreation = onFinishCreation;
@@ -111,6 +113,7 @@ export default class Box {
         this.minSize = minSize;
         this.color = color;
         this.alpha = alpha;
+        this.showLabel = showBoxLabels;
         this.creatingAnchorX = "xmin";
         this.creatingAnchorY = "ymin";
     }
@@ -274,7 +277,7 @@ export default class Box {
         ctx.closePath();
 
         // Render the label and background
-        if (this.label !== null && this.label.trim() !== ""){
+        if (this.showLabel && this.label !== null && this.label.trim() !== ""){
             if (this.isSelected) {
                 ctx.font = "bold 14px Arial";
             } else {

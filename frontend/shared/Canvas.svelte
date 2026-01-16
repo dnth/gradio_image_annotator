@@ -28,6 +28,7 @@
 	export let handlesCursor: boolean = true;
 	export let useDefaultLabel: boolean = false;
 	export let enableKeyboardShortcuts: boolean = true;
+	export let showBoxLabels: boolean = true;
 
 	if (showRemoveButton === null) {
 		showRemoveButton = (disableEditBoxes);
@@ -408,7 +409,9 @@
 			boxMinSize,
 			handleSize,
 			boxThickness,
-			boxSelectedThickness
+			boxSelectedThickness,
+			scaleFactor,
+			showBoxLabels
 		);
 		box.startCreating(event, rect.left, rect.top);
 		if (singleBox) {
@@ -653,7 +656,9 @@
 					boxMinSize,
 					handleSize,
 					boxThickness,
-					boxSelectedThickness
+					boxSelectedThickness,
+					box["scaleFactor"] || 1,
+					showBoxLabels
 				);
 				value.boxes[i] = box;
 			}

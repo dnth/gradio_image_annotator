@@ -16,7 +16,10 @@ requires-python = ">=3.8"
 authors = [{ name = "Edgar Gracia" }]
 keywords = ["gradio-custom-component", "gradio-template-Image", "bounding box", "annotator", "annotate", "boxes"]
 # Add dependencies here
-dependencies = ["gradio>=4.29,<6.0"]
+dependencies = [
+    "build>=1.2.2.post1",
+    "gradio>=4.29,<6.0",
+]
 classifiers = [
   'Development Status :: 3 - Alpha',
   'License :: OSI Approved :: Apache Software License',

@@ -12,11 +12,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Installation and Setup
 ```bash
-# Install in development mode (recommended)
+# Using uv (recommended)
+uv pip install -e .
+
+# Using pip
 pip install -e .
 
 # Or install from built package
-pip install .
+uv pip install .  # or pip install .
 ```
 
 ### Running the Demo
@@ -136,7 +139,7 @@ Boxes use **absolute image coordinates** (xmin, ymin, xmax, ymax). The frontend 
 ### Frontend Changes (Svelte/TypeScript)
 1. Edit files in `frontend/shared/`
 2. Rebuild frontend using Gradio SDK (placed in `backend/gradio_image_annotation/templates/`)
-3. Reinstall Python package: `pip install -e .`
+3. Reinstall Python package: `uv pip install -e .` (or `pip install -e .`)
 
 ## Component Configuration
 
@@ -166,7 +169,303 @@ Key parameters (from `__init__`):
 
 **Frontend:** `@gradio/*` components, `cropperjs`, `svelte`
 
-## Type Definitions
+## Building Custom Components Guide
+
+This section covers the key concepts and workflow for building Gradio custom components, adapted for the `uv` stack.
+
+### Prerequisites
+
+- Python 3.10+
+- uv (recommended) or pip 21.3+
+- Node.js 20+
+- npm 9+
+- Gradio 5+
+
+### The 4-Step Workflow
+
+```
+create → dev → build → publish
+```
+
+#### 1. Create - Bootstrap a Template
+
+```bash
+gradio cc create MyComponent --template SimpleTextbox
+```
+
+This creates a directory structure:
+```
+- backend/     # Python code for your custom component
+- frontend/    # JavaScript/Svelte code
+- demo/        # Sample app for development
+- pyproject.toml  # Package metadata and build config
+```
+
+Available templates include:
+- `SimpleTextbox` - Stripped-down Textbox (best for beginners)
+- `SimpleDropdown`
+- `SimpleImage`
+- `File`
+
+To list all templates: `gradio cc show`
+
+#### 2. Dev - Development Server with Hot Reloading
+
+```bash
+# From your component directory
+gradio cc dev
+```
+
+Launches a demo app at http://localhost:7861/ (port may vary) with hot reloading. Changes to backend and frontend are reflected live.
+
+#### 3. Build - Create Python Package
+
+```bash
+# From your component directory
+gradio cc build
+```
+
+Creates `tar.gz` and `.whl` files in `dist/`. These can be installed with:
+```bash
+uv pip install dist/your_component-0.0.1-py3-none-any.whl
+```
+
+The build command also generates documentation (interactive space + README.md). Disable with `--no-generate-docs`.
+
+#### 4. Publish - Share with the World
+
+```bash
+gradio cc publish
+```
+
+Guides you through:
+1. Uploading to PyPI (requires PyPI account)
+2. Publishing a demo to Hugging Face Spaces (optional)
+
+### Key Component Concepts
+
+#### Interactive vs Static
+
+Every Gradio component has two modes:
+- **Interactive**: User can change the value (used as input to events)
+- **Static**: Display-only mode (used as output or standalone)
+
+**Requirements:**
+- Backend: Must accept `interactive` boolean in `__init__()`
+- Frontend: May accept `interactive` prop to toggle behavior
+
+#### Preprocess and Postprocess
+
+Every component must implement these methods:
+
+```python
+def preprocess(self, x: Any) -> Any:
+    """
+    Convert from web-friendly (JSON) frontend value
+    to format expected by Python function.
+    """
+    return x
+
+def postprocess(self, y: Any) -> Any:
+    """
+    Convert from Python function return value
+    to web-friendly (JSON) frontend value.
+    """
+    return y
+```
+
+**Examples:**
+- `Image` component: Frontend sends filepath → `preprocess()` converts to numpy array
+- `Audio` component: Frontend sends file data → `preprocess()` loads as audio array
+
+#### The `data_model` Pattern
+
+Defining a `data_model` (pydantic model) simplifies component development by automatically implementing:
+- API usage methods (`api_info`)
+- Flagging methods (`flag`, `read_from_flag`)
+- Example caching methods
+
+```python
+from gradio.data_classes import FileData, GradioModel
+
+class VideoData(GradioModel):
+    video: FileData
+    subtitles: Optional[FileData] = None
+
+class Video(Component):
+    data_model = VideoData
+```
+
+**Key Points:**
+- Use `FileData` for any file uploads/returns (required for proper file handling)
+- `GradioModel` wraps data in a dictionary: `{'video': ..., 'subtitles': ...}`
+- `GradioRootModel` serializes directly to the inner value (no wrapper)
+
+### Backend Implementation
+
+#### Which Class to Inherit From
+
+- `FormComponent`: Groups in Form layouts (Slider, Textbox, Number)
+- `BlockContext`: Can contain other components (`with block:` syntax)
+- `Component`: All other cases (default)
+- `StreamingOutput`: For components with streaming output
+
+#### Required Methods
+
+| Method | Purpose |
+|--------|---------|
+| `preprocess(x)` | Frontend → Python conversion |
+| `postprocess(y)` | Python → Frontend conversion |
+| `process_example(x)` | Convert value for examples preview (optional) |
+| `api_info()` | JSON schema for API clients (auto from `data_model`) |
+| `example_payload()` | Example input for View API page |
+| `flag(x, flag_dir)` | Format value for flagging CSV/JSON (auto from `data_model`) |
+| `read_from_flag(x)` | Convert flagged data to component value (auto from `data_model`) |
+
+#### Event Triggers
+
+Define custom events in the `EVENTS` class attribute:
+
+```python
+from gradio.events import Events
+from gradio.components import FormComponent
+
+class MyComponent(FormComponent):
+    EVENTS = [
+        "text_submit",
+        "file_upload",
+        Events.change
+    ]
+```
+
+This automatically adds `text_submit()`, `file_upload()`, and `change()` methods to your component.
+
+### Frontend Implementation
+
+#### Directory Structure
+
+Minimum required files:
+- `Index.svelte` - Main component (layout and logic)
+- `Example.svelte` - Example view for Gradio Examples
+
+#### Index.svelte Props
+
+```typescript
+import type { LoadingStatus } from "@gradio/statustracker";
+import type { Gradio } from "@gradio/utils";
+
+export let gradio: Gradio<{
+    event_1: never;
+    event_2: never;
+}>;
+
+export let elem_id = "";
+export let elem_classes: string[] = [];
+export let scale: number | null = null;
+export let min_width: number | undefined = undefined;
+export let loading_status: LoadingStatus | undefined = undefined;
+export let mode: "static" | "interactive";
+```
+
+- `elem_id`/`elem_classes`: For custom CSS/JS targeting
+- `scale`/`min_width`: UI sizing
+- `loading_status`: Display loading during processing
+- `mode`: Toggle between static/interactive
+- `gradio`: App-level config, use for dispatching events
+
+#### Example.svelte Props
+
+```typescript
+export let value: string;
+export let type: "gallery" | "table";
+export let selected = false;
+export let index: number;
+```
+
+#### Handling Files
+
+Use `@gradio/client` utilities for file uploads:
+
+```typescript
+import { upload, prepare_files, type FileData } from "@gradio/client";
+
+export let root;  // Base URL for uploads
+
+async function handle_upload(file_data: FileData[]): Promise<void> {
+    await tick();
+    uploaded_files = await upload(file_data, root);
+}
+
+async function loadFiles(files: FileList): Promise<void> {
+    let _files: File[] = Array.from(files);
+    if (!files.length) return;
+    let file_data = await prepare_files(_files);
+    await handle_upload(file_data);
+}
+```
+
+For WASM support, get the upload function from Context:
+```typescript
+const upload_fn = getContext<typeof upload_files>("upload_files");
+await upload(file_data, root, upload_fn);
+```
+
+#### Leveraging Existing Gradio Components
+
+Most Gradio frontend components are published on npm. Use them to save time:
+
+```typescript
+import { type FileData, Upload, ModifyUpload } from "@gradio/upload";
+import { Empty, UploadText, BlockLabel } from "@gradio/atoms";
+```
+
+Explore available components via [Storybook](https://gradio-shimley.vercel.app/).
+
+#### Custom Configuration (gradio.config.js)
+
+Place in `frontend/` root to customize build:
+
+```javascript
+import tailwindcss from "@tailwindcss/vite";
+
+export default {
+    // Vite plugins
+    plugins: [tailwindcss()],
+
+    // Svelte options
+    svelte: {
+        preprocess: [mdsvex()],
+        extensions: [".svelte", ".svx"],
+        build: {
+            target: "esnext"  // For newer JS features
+        }
+    }
+};
+```
+
+### Installation (uv-based)
+
+```bash
+# Development installation
+uv pip install -e .
+
+# Install from built package
+uv pip install .
+
+# With specific Python version
+uv pip install -e . --python 3.12
+```
+
+### Useful Commands
+
+```bash
+gradio cc --help                    # Show all commands
+gradio cc create --help             # Help for specific command
+gradio cc show                      # List available templates
+gradio cc docs                      # Generate documentation
+```
+
+### Type Definitions
 
 Box dict format (Python):
 ```python
