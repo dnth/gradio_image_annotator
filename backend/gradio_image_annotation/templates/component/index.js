@@ -1,140 +1,140 @@
 const {
-  SvelteComponent: _c,
-  assign: cc,
-  create_slot: fc,
-  detach: uc,
-  element: dc,
-  get_all_dirty_from_scope: hc,
-  get_slot_changes: mc,
-  get_spread_update: gc,
-  init: bc,
-  insert: pc,
-  safe_not_equal: wc,
-  set_dynamic_element_data: Ds,
+  SvelteComponent: kc,
+  assign: yc,
+  create_slot: Cc,
+  detach: Sc,
+  element: qc,
+  get_all_dirty_from_scope: zc,
+  get_slot_changes: Bc,
+  get_spread_update: Dc,
+  init: Mc,
+  insert: Lc,
+  safe_not_equal: Ec,
+  set_dynamic_element_data: js,
   set_style: Ge,
-  toggle_class: yt,
-  transition_in: Rr,
-  transition_out: Wr,
-  update_slot_base: vc
+  toggle_class: St,
+  transition_in: Ur,
+  transition_out: Pr,
+  update_slot_base: Rc
 } = window.__gradio__svelte__internal;
-function kc(i) {
+function Wc(l) {
   let e, t, n;
-  const l = (
+  const i = (
     /*#slots*/
-    i[18].default
-  ), o = fc(
-    l,
+    l[18].default
+  ), o = Cc(
     i,
+    l,
     /*$$scope*/
-    i[17],
+    l[17],
     null
   );
   let s = [
     { "data-testid": (
       /*test_id*/
-      i[7]
+      l[7]
     ) },
     { id: (
       /*elem_id*/
-      i[2]
+      l[2]
     ) },
     {
       class: t = "block " + /*elem_classes*/
-      i[3].join(" ") + " svelte-nl1om8"
+      l[3].join(" ") + " svelte-nl1om8"
     }
   ], r = {};
   for (let a = 0; a < s.length; a += 1)
-    r = cc(r, s[a]);
+    r = yc(r, s[a]);
   return {
     c() {
-      e = dc(
+      e = qc(
         /*tag*/
-        i[14]
-      ), o && o.c(), Ds(
+        l[14]
+      ), o && o.c(), js(
         /*tag*/
-        i[14]
-      )(e, r), yt(
+        l[14]
+      )(e, r), St(
         e,
         "hidden",
         /*visible*/
-        i[10] === !1
-      ), yt(
+        l[10] === !1
+      ), St(
         e,
         "padded",
         /*padding*/
-        i[6]
-      ), yt(
+        l[6]
+      ), St(
         e,
         "border_focus",
         /*border_mode*/
-        i[5] === "focus"
-      ), yt(
+        l[5] === "focus"
+      ), St(
         e,
         "border_contrast",
         /*border_mode*/
-        i[5] === "contrast"
-      ), yt(e, "hide-container", !/*explicit_call*/
-      i[8] && !/*container*/
-      i[9]), Ge(
+        l[5] === "contrast"
+      ), St(e, "hide-container", !/*explicit_call*/
+      l[8] && !/*container*/
+      l[9]), Ge(
         e,
         "height",
         /*get_dimension*/
-        i[15](
+        l[15](
           /*height*/
-          i[0]
+          l[0]
         )
       ), Ge(e, "width", typeof /*width*/
-      i[1] == "number" ? `calc(min(${/*width*/
-      i[1]}px, 100%))` : (
+      l[1] == "number" ? `calc(min(${/*width*/
+      l[1]}px, 100%))` : (
         /*get_dimension*/
-        i[15](
+        l[15](
           /*width*/
-          i[1]
+          l[1]
         )
       )), Ge(
         e,
         "border-style",
         /*variant*/
-        i[4]
+        l[4]
       ), Ge(
         e,
         "overflow",
         /*allow_overflow*/
-        i[11] ? "visible" : "hidden"
+        l[11] ? "visible" : "hidden"
       ), Ge(
         e,
         "flex-grow",
         /*scale*/
-        i[12]
+        l[12]
       ), Ge(e, "min-width", `calc(min(${/*min_width*/
-      i[13]}px, 100%))`), Ge(e, "border-width", "var(--block-border-width)");
+      l[13]}px, 100%))`), Ge(e, "border-width", "var(--block-border-width)");
     },
     m(a, _) {
-      pc(a, e, _), o && o.m(e, null), n = !0;
+      Lc(a, e, _), o && o.m(e, null), n = !0;
     },
     p(a, _) {
       o && o.p && (!n || _ & /*$$scope*/
-      131072) && vc(
+      131072) && Rc(
         o,
-        l,
+        i,
         a,
         /*$$scope*/
         a[17],
-        n ? mc(
-          l,
+        n ? Bc(
+          i,
           /*$$scope*/
           a[17],
           _,
           null
-        ) : hc(
+        ) : zc(
           /*$$scope*/
           a[17]
         ),
         null
-      ), Ds(
+      ), js(
         /*tag*/
         a[14]
-      )(e, r = gc(s, [
+      )(e, r = Dc(s, [
         (!n || _ & /*test_id*/
         128) && { "data-testid": (
           /*test_id*/
@@ -148,27 +148,27 @@ function kc(i) {
         (!n || _ & /*elem_classes*/
         8 && t !== (t = "block " + /*elem_classes*/
         a[3].join(" ") + " svelte-nl1om8")) && { class: t }
-      ])), yt(
+      ])), St(
         e,
         "hidden",
         /*visible*/
         a[10] === !1
-      ), yt(
+      ), St(
         e,
         "padded",
         /*padding*/
         a[6]
-      ), yt(
+      ), St(
         e,
         "border_focus",
         /*border_mode*/
         a[5] === "focus"
-      ), yt(
+      ), St(
         e,
         "border_contrast",
         /*border_mode*/
         a[5] === "contrast"
-      ), yt(e, "hide-container", !/*explicit_call*/
+      ), St(e, "hide-container", !/*explicit_call*/
       a[8] && !/*container*/
       a[9]), _ & /*height*/
       1 && Ge(
@@ -211,46 +211,46 @@ function kc(i) {
       a[13]}px, 100%))`);
     },
     i(a) {
-      n || (Rr(o, a), n = !0);
+      n || (Ur(o, a), n = !0);
     },
     o(a) {
-      Wr(o, a), n = !1;
+      Pr(o, a), n = !1;
     },
     d(a) {
-      a && uc(e), o && o.d(a);
+      a && Sc(e), o && o.d(a);
     }
   };
 }
-function yc(i) {
+function Ac(l) {
   let e, t = (
     /*tag*/
-    i[14] && kc(i)
+    l[14] && Wc(l)
   );
   return {
     c() {
       t && t.c();
     },
-    m(n, l) {
-      t && t.m(n, l), e = !0;
+    m(n, i) {
+      t && t.m(n, i), e = !0;
     },
-    p(n, [l]) {
+    p(n, [i]) {
       /*tag*/
-      n[14] && t.p(n, l);
+      n[14] && t.p(n, i);
     },
     i(n) {
-      e || (Rr(t, n), e = !0);
+      e || (Ur(t, n), e = !0);
     },
     o(n) {
-      Wr(t, n), e = !1;
+      Pr(t, n), e = !1;
     },
     d(n) {
       t && t.d(n);
     }
   };
 }
-function Cc(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e, { height: o = void 0 } = e, { width: s = void 0 } = e, { elem_id: r = "" } = e, { elem_classes: a = [] } = e, { variant: _ = "solid" } = e, { border_mode: c = "base" } = e, { padding: u = !0 } = e, { type: f = "normal" } = e, { test_id: d = void 0 } = e, { explicit_call: h = !1 } = e, { container: m = !0 } = e, { visible: g = !0 } = e, { allow_overflow: b = !0 } = e, { scale: w = null } = e, { min_width: p = 0 } = e, q = f === "fieldset" ? "fieldset" : "div";
-  const M = (D) => {
+function Xc(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e, { height: o = void 0 } = e, { width: s = void 0 } = e, { elem_id: r = "" } = e, { elem_classes: a = [] } = e, { variant: _ = "solid" } = e, { border_mode: c = "base" } = e, { padding: f = !0 } = e, { type: u = "normal" } = e, { test_id: d = void 0 } = e, { explicit_call: h = !1 } = e, { container: m = !0 } = e, { visible: g = !0 } = e, { allow_overflow: b = !0 } = e, { scale: v = null } = e, { min_width: p = 0 } = e, y = u === "fieldset" ? "fieldset" : "div";
+  const q = (D) => {
     if (D !== void 0) {
       if (typeof D == "number")
         return D + "px";
@@ -258,8 +258,8 @@ function Cc(i, e, t) {
         return D;
     }
   };
-  return i.$$set = (D) => {
-    "height" in D && t(0, o = D.height), "width" in D && t(1, s = D.width), "elem_id" in D && t(2, r = D.elem_id), "elem_classes" in D && t(3, a = D.elem_classes), "variant" in D && t(4, _ = D.variant), "border_mode" in D && t(5, c = D.border_mode), "padding" in D && t(6, u = D.padding), "type" in D && t(16, f = D.type), "test_id" in D && t(7, d = D.test_id), "explicit_call" in D && t(8, h = D.explicit_call), "container" in D && t(9, m = D.container), "visible" in D && t(10, g = D.visible), "allow_overflow" in D && t(11, b = D.allow_overflow), "scale" in D && t(12, w = D.scale), "min_width" in D && t(13, p = D.min_width), "$$scope" in D && t(17, l = D.$$scope);
+  return l.$$set = (D) => {
+    "height" in D && t(0, o = D.height), "width" in D && t(1, s = D.width), "elem_id" in D && t(2, r = D.elem_id), "elem_classes" in D && t(3, a = D.elem_classes), "variant" in D && t(4, _ = D.variant), "border_mode" in D && t(5, c = D.border_mode), "padding" in D && t(6, f = D.padding), "type" in D && t(16, u = D.type), "test_id" in D && t(7, d = D.test_id), "explicit_call" in D && t(8, h = D.explicit_call), "container" in D && t(9, m = D.container), "visible" in D && t(10, g = D.visible), "allow_overflow" in D && t(11, b = D.allow_overflow), "scale" in D && t(12, v = D.scale), "min_width" in D && t(13, p = D.min_width), "$$scope" in D && t(17, i = D.$$scope);
   }, [
     o,
     s,
@@ -267,24 +267,24 @@ function Cc(i, e, t) {
     a,
     _,
     c,
-    u,
+    f,
     d,
     h,
     m,
     g,
     b,
-    w,
+    v,
     p,
+    y,
     q,
-    M,
-    f,
-    l,
+    u,
+    i,
     n
   ];
 }
-class Sc extends _c {
+class Yc extends kc {
   constructor(e) {
-    super(), bc(this, e, Cc, yc, wc, {
+    super(), Mc(this, e, Xc, Ac, Ec, {
       height: 0,
       width: 1,
       elem_id: 2,
@@ -304,54 +304,54 @@ class Sc extends _c {
   }
 }
 const {
-  SvelteComponent: qc,
-  attr: zc,
-  create_slot: Bc,
-  detach: Dc,
-  element: Lc,
-  get_all_dirty_from_scope: Mc,
-  get_slot_changes: Ec,
-  init: Rc,
-  insert: Wc,
-  safe_not_equal: Ac,
-  transition_in: Xc,
-  transition_out: Yc,
-  update_slot_base: Ic
+  SvelteComponent: Hc,
+  attr: Ic,
+  create_slot: jc,
+  detach: Tc,
+  element: $c,
+  get_all_dirty_from_scope: Fc,
+  get_slot_changes: Oc,
+  init: xc,
+  insert: Vc,
+  safe_not_equal: Nc,
+  transition_in: Uc,
+  transition_out: Pc,
+  update_slot_base: Kc
 } = window.__gradio__svelte__internal;
-function Hc(i) {
+function Zc(l) {
   let e, t;
   const n = (
     /*#slots*/
-    i[1].default
-  ), l = Bc(
+    l[1].default
+  ), i = jc(
     n,
-    i,
+    l,
     /*$$scope*/
-    i[0],
+    l[0],
     null
   );
   return {
     c() {
-      e = Lc("div"), l && l.c(), zc(e, "class", "svelte-1hnfib2");
+      e = $c("div"), i && i.c(), Ic(e, "class", "svelte-1hnfib2");
     },
     m(o, s) {
-      Wc(o, e, s), l && l.m(e, null), t = !0;
+      Vc(o, e, s), i && i.m(e, null), t = !0;
     },
     p(o, [s]) {
-      l && l.p && (!t || s & /*$$scope*/
-      1) && Ic(
-        l,
+      i && i.p && (!t || s & /*$$scope*/
+      1) && Kc(
+        i,
         n,
         o,
         /*$$scope*/
         o[0],
-        t ? Ec(
+        t ? Oc(
           n,
           /*$$scope*/
           o[0],
           s,
           null
-        ) : Mc(
+        ) : Fc(
           /*$$scope*/
           o[0]
         ),
@@ -359,256 +359,256 @@ function Hc(i) {
       );
     },
     i(o) {
-      t || (Xc(l, o), t = !0);
+      t || (Uc(i, o), t = !0);
     },
     o(o) {
-      Yc(l, o), t = !1;
+      Pc(i, o), t = !1;
     },
     d(o) {
-      o && Dc(e), l && l.d(o);
+      o && Tc(e), i && i.d(o);
     }
   };
 }
-function jc(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e;
-  return i.$$set = (o) => {
-    "$$scope" in o && t(0, l = o.$$scope);
-  }, [l, n];
+function Gc(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e;
+  return l.$$set = (o) => {
+    "$$scope" in o && t(0, i = o.$$scope);
+  }, [i, n];
 }
-class Tc extends qc {
+class Jc extends Hc {
   constructor(e) {
-    super(), Rc(this, e, jc, Hc, Ac, {});
+    super(), xc(this, e, Gc, Zc, Nc, {});
   }
 }
 const {
-  SvelteComponent: Fc,
-  attr: Ls,
-  check_outros: Oc,
-  create_component: $c,
-  create_slot: xc,
-  destroy_component: Nc,
-  detach: fl,
-  element: Uc,
-  empty: Vc,
-  get_all_dirty_from_scope: Pc,
-  get_slot_changes: Kc,
-  group_outros: Zc,
-  init: Gc,
-  insert: ul,
-  mount_component: Jc,
-  safe_not_equal: Qc,
-  set_data: ef,
-  space: tf,
-  text: nf,
-  toggle_class: In,
-  transition_in: yi,
-  transition_out: dl,
-  update_slot_base: lf
+  SvelteComponent: Qc,
+  attr: Ts,
+  check_outros: eu,
+  create_component: tu,
+  create_slot: nu,
+  destroy_component: lu,
+  detach: pi,
+  element: iu,
+  empty: ou,
+  get_all_dirty_from_scope: su,
+  get_slot_changes: au,
+  group_outros: ru,
+  init: _u,
+  insert: wi,
+  mount_component: cu,
+  safe_not_equal: uu,
+  set_data: fu,
+  space: du,
+  text: hu,
+  toggle_class: On,
+  transition_in: Ll,
+  transition_out: vi,
+  update_slot_base: mu
 } = window.__gradio__svelte__internal;
-function Ms(i) {
+function $s(l) {
   let e, t;
-  return e = new Tc({
+  return e = new Jc({
     props: {
-      $$slots: { default: [of] },
-      $$scope: { ctx: i }
+      $$slots: { default: [gu] },
+      $$scope: { ctx: l }
     }
   }), {
     c() {
-      $c(e.$$.fragment);
+      tu(e.$$.fragment);
     },
-    m(n, l) {
-      Jc(e, n, l), t = !0;
+    m(n, i) {
+      cu(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l & /*$$scope, info*/
-      10 && (o.$$scope = { dirty: l, ctx: n }), e.$set(o);
+      i & /*$$scope, info*/
+      10 && (o.$$scope = { dirty: i, ctx: n }), e.$set(o);
     },
     i(n) {
-      t || (yi(e.$$.fragment, n), t = !0);
+      t || (Ll(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      dl(e.$$.fragment, n), t = !1;
+      vi(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Nc(e, n);
+      lu(e, n);
     }
   };
 }
-function of(i) {
+function gu(l) {
   let e;
   return {
     c() {
-      e = nf(
+      e = hu(
         /*info*/
-        i[1]
+        l[1]
       );
     },
     m(t, n) {
-      ul(t, e, n);
+      wi(t, e, n);
     },
     p(t, n) {
       n & /*info*/
-      2 && ef(
+      2 && fu(
         e,
         /*info*/
         t[1]
       );
     },
     d(t) {
-      t && fl(e);
+      t && pi(e);
     }
   };
 }
-function sf(i) {
-  let e, t, n, l;
+function bu(l) {
+  let e, t, n, i;
   const o = (
     /*#slots*/
-    i[2].default
-  ), s = xc(
+    l[2].default
+  ), s = nu(
     o,
-    i,
+    l,
     /*$$scope*/
-    i[3],
+    l[3],
     null
   );
   let r = (
     /*info*/
-    i[1] && Ms(i)
+    l[1] && $s(l)
   );
   return {
     c() {
-      e = Uc("span"), s && s.c(), t = tf(), r && r.c(), n = Vc(), Ls(e, "data-testid", "block-info"), Ls(e, "class", "svelte-22c38v"), In(e, "sr-only", !/*show_label*/
-      i[0]), In(e, "hide", !/*show_label*/
-      i[0]), In(
+      e = iu("span"), s && s.c(), t = du(), r && r.c(), n = ou(), Ts(e, "data-testid", "block-info"), Ts(e, "class", "svelte-22c38v"), On(e, "sr-only", !/*show_label*/
+      l[0]), On(e, "hide", !/*show_label*/
+      l[0]), On(
         e,
         "has-info",
         /*info*/
-        i[1] != null
+        l[1] != null
       );
     },
     m(a, _) {
-      ul(a, e, _), s && s.m(e, null), ul(a, t, _), r && r.m(a, _), ul(a, n, _), l = !0;
+      wi(a, e, _), s && s.m(e, null), wi(a, t, _), r && r.m(a, _), wi(a, n, _), i = !0;
     },
     p(a, [_]) {
-      s && s.p && (!l || _ & /*$$scope*/
-      8) && lf(
+      s && s.p && (!i || _ & /*$$scope*/
+      8) && mu(
         s,
         o,
         a,
         /*$$scope*/
         a[3],
-        l ? Kc(
+        i ? au(
           o,
           /*$$scope*/
           a[3],
           _,
           null
-        ) : Pc(
+        ) : su(
           /*$$scope*/
           a[3]
         ),
         null
-      ), (!l || _ & /*show_label*/
-      1) && In(e, "sr-only", !/*show_label*/
-      a[0]), (!l || _ & /*show_label*/
-      1) && In(e, "hide", !/*show_label*/
-      a[0]), (!l || _ & /*info*/
-      2) && In(
+      ), (!i || _ & /*show_label*/
+      1) && On(e, "sr-only", !/*show_label*/
+      a[0]), (!i || _ & /*show_label*/
+      1) && On(e, "hide", !/*show_label*/
+      a[0]), (!i || _ & /*info*/
+      2) && On(
         e,
         "has-info",
         /*info*/
         a[1] != null
       ), /*info*/
       a[1] ? r ? (r.p(a, _), _ & /*info*/
-      2 && yi(r, 1)) : (r = Ms(a), r.c(), yi(r, 1), r.m(n.parentNode, n)) : r && (Zc(), dl(r, 1, 1, () => {
+      2 && Ll(r, 1)) : (r = $s(a), r.c(), Ll(r, 1), r.m(n.parentNode, n)) : r && (ru(), vi(r, 1, 1, () => {
         r = null;
-      }), Oc());
+      }), eu());
     },
     i(a) {
-      l || (yi(s, a), yi(r), l = !0);
+      i || (Ll(s, a), Ll(r), i = !0);
     },
     o(a) {
-      dl(s, a), dl(r), l = !1;
+      vi(s, a), vi(r), i = !1;
     },
     d(a) {
-      a && (fl(e), fl(t), fl(n)), s && s.d(a), r && r.d(a);
+      a && (pi(e), pi(t), pi(n)), s && s.d(a), r && r.d(a);
     }
   };
 }
-function af(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e, { show_label: o = !0 } = e, { info: s = void 0 } = e;
-  return i.$$set = (r) => {
-    "show_label" in r && t(0, o = r.show_label), "info" in r && t(1, s = r.info), "$$scope" in r && t(3, l = r.$$scope);
-  }, [o, s, n, l];
+function pu(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e, { show_label: o = !0 } = e, { info: s = void 0 } = e;
+  return l.$$set = (r) => {
+    "show_label" in r && t(0, o = r.show_label), "info" in r && t(1, s = r.info), "$$scope" in r && t(3, i = r.$$scope);
+  }, [o, s, n, i];
 }
-class Ar extends Fc {
+class Kr extends Qc {
   constructor(e) {
-    super(), Gc(this, e, af, sf, Qc, { show_label: 0, info: 1 });
+    super(), _u(this, e, pu, bu, uu, { show_label: 0, info: 1 });
   }
 }
 const {
-  SvelteComponent: rf,
-  append: Zl,
-  attr: Ti,
-  create_component: _f,
-  destroy_component: cf,
-  detach: ff,
-  element: Es,
-  init: uf,
-  insert: df,
-  mount_component: hf,
-  safe_not_equal: mf,
-  set_data: gf,
-  space: bf,
-  text: pf,
-  toggle_class: Kt,
-  transition_in: wf,
-  transition_out: vf
+  SvelteComponent: wu,
+  append: oo,
+  attr: Nl,
+  create_component: vu,
+  destroy_component: ku,
+  detach: yu,
+  element: Fs,
+  init: Cu,
+  insert: Su,
+  mount_component: qu,
+  safe_not_equal: zu,
+  set_data: Bu,
+  space: Du,
+  text: Mu,
+  toggle_class: Jt,
+  transition_in: Lu,
+  transition_out: Eu
 } = window.__gradio__svelte__internal;
-function kf(i) {
-  let e, t, n, l, o, s;
+function Ru(l) {
+  let e, t, n, i, o, s;
   return n = new /*Icon*/
-  i[1]({}), {
+  l[1]({}), {
     c() {
-      e = Es("label"), t = Es("span"), _f(n.$$.fragment), l = bf(), o = pf(
+      e = Fs("label"), t = Fs("span"), vu(n.$$.fragment), i = Du(), o = Mu(
         /*label*/
-        i[0]
-      ), Ti(t, "class", "svelte-9gxdi0"), Ti(e, "for", ""), Ti(e, "data-testid", "block-label"), Ti(e, "class", "svelte-9gxdi0"), Kt(e, "hide", !/*show_label*/
-      i[2]), Kt(e, "sr-only", !/*show_label*/
-      i[2]), Kt(
+        l[0]
+      ), Nl(t, "class", "svelte-9gxdi0"), Nl(e, "for", ""), Nl(e, "data-testid", "block-label"), Nl(e, "class", "svelte-9gxdi0"), Jt(e, "hide", !/*show_label*/
+      l[2]), Jt(e, "sr-only", !/*show_label*/
+      l[2]), Jt(
         e,
         "float",
         /*float*/
-        i[4]
-      ), Kt(
+        l[4]
+      ), Jt(
         e,
         "hide-label",
         /*disable*/
-        i[3]
+        l[3]
       );
     },
     m(r, a) {
-      df(r, e, a), Zl(e, t), hf(n, t, null), Zl(e, l), Zl(e, o), s = !0;
+      Su(r, e, a), oo(e, t), qu(n, t, null), oo(e, i), oo(e, o), s = !0;
     },
     p(r, [a]) {
       (!s || a & /*label*/
-      1) && gf(
+      1) && Bu(
         o,
         /*label*/
         r[0]
       ), (!s || a & /*show_label*/
-      4) && Kt(e, "hide", !/*show_label*/
+      4) && Jt(e, "hide", !/*show_label*/
       r[2]), (!s || a & /*show_label*/
-      4) && Kt(e, "sr-only", !/*show_label*/
+      4) && Jt(e, "sr-only", !/*show_label*/
       r[2]), (!s || a & /*float*/
-      16) && Kt(
+      16) && Jt(
         e,
         "float",
         /*float*/
         r[4]
       ), (!s || a & /*disable*/
-      8) && Kt(
+      8) && Jt(
         e,
         "hide-label",
         /*disable*/
@@ -616,25 +616,25 @@ function kf(i) {
       );
     },
     i(r) {
-      s || (wf(n.$$.fragment, r), s = !0);
+      s || (Lu(n.$$.fragment, r), s = !0);
     },
     o(r) {
-      vf(n.$$.fragment, r), s = !1;
+      Eu(n.$$.fragment, r), s = !1;
     },
     d(r) {
-      r && ff(e), cf(n);
+      r && yu(e), ku(n);
     }
   };
 }
-function yf(i, e, t) {
-  let { label: n = null } = e, { Icon: l } = e, { show_label: o = !0 } = e, { disable: s = !1 } = e, { float: r = !0 } = e;
-  return i.$$set = (a) => {
-    "label" in a && t(0, n = a.label), "Icon" in a && t(1, l = a.Icon), "show_label" in a && t(2, o = a.show_label), "disable" in a && t(3, s = a.disable), "float" in a && t(4, r = a.float);
-  }, [n, l, o, s, r];
+function Wu(l, e, t) {
+  let { label: n = null } = e, { Icon: i } = e, { show_label: o = !0 } = e, { disable: s = !1 } = e, { float: r = !0 } = e;
+  return l.$$set = (a) => {
+    "label" in a && t(0, n = a.label), "Icon" in a && t(1, i = a.Icon), "show_label" in a && t(2, o = a.show_label), "disable" in a && t(3, s = a.disable), "float" in a && t(4, r = a.float);
+  }, [n, i, o, s, r];
 }
-class Cf extends rf {
+class Au extends wu {
   constructor(e) {
-    super(), uf(this, e, yf, kf, mf, {
+    super(), Cu(this, e, Wu, Ru, zu, {
       label: 0,
       Icon: 1,
       show_label: 2,
@@ -644,151 +644,151 @@ class Cf extends rf {
   }
 }
 const {
-  SvelteComponent: Sf,
-  append: Vo,
-  attr: It,
-  bubble: qf,
-  create_component: zf,
-  destroy_component: Bf,
-  detach: Xr,
-  element: Po,
-  init: Df,
-  insert: Yr,
-  listen: Lf,
-  mount_component: Mf,
-  safe_not_equal: Ef,
-  set_data: Rf,
-  set_style: Hn,
-  space: Wf,
-  text: Af,
-  toggle_class: Fe,
-  transition_in: Xf,
-  transition_out: Yf
+  SvelteComponent: Xu,
+  append: is,
+  attr: Ft,
+  bubble: Yu,
+  create_component: Hu,
+  destroy_component: Iu,
+  detach: Zr,
+  element: os,
+  init: ju,
+  insert: Gr,
+  listen: Tu,
+  mount_component: $u,
+  safe_not_equal: Fu,
+  set_data: Ou,
+  set_style: xn,
+  space: xu,
+  text: Vu,
+  toggle_class: Te,
+  transition_in: Nu,
+  transition_out: Uu
 } = window.__gradio__svelte__internal;
-function Rs(i) {
+function Os(l) {
   let e, t;
   return {
     c() {
-      e = Po("span"), t = Af(
+      e = os("span"), t = Vu(
         /*label*/
-        i[1]
-      ), It(e, "class", "svelte-1lrphxw");
+        l[1]
+      ), Ft(e, "class", "svelte-1lrphxw");
     },
-    m(n, l) {
-      Yr(n, e, l), Vo(e, t);
+    m(n, i) {
+      Gr(n, e, i), is(e, t);
     },
-    p(n, l) {
-      l & /*label*/
-      2 && Rf(
+    p(n, i) {
+      i & /*label*/
+      2 && Ou(
         t,
         /*label*/
         n[1]
       );
     },
     d(n) {
-      n && Xr(e);
+      n && Zr(e);
     }
   };
 }
-function If(i) {
-  let e, t, n, l, o, s, r, a = (
+function Pu(l) {
+  let e, t, n, i, o, s, r, a = (
     /*show_label*/
-    i[2] && Rs(i)
+    l[2] && Os(l)
   );
-  return l = new /*Icon*/
-  i[0]({}), {
+  return i = new /*Icon*/
+  l[0]({}), {
     c() {
-      e = Po("button"), a && a.c(), t = Wf(), n = Po("div"), zf(l.$$.fragment), It(n, "class", "svelte-1lrphxw"), Fe(
+      e = os("button"), a && a.c(), t = xu(), n = os("div"), Hu(i.$$.fragment), Ft(n, "class", "svelte-1lrphxw"), Te(
         n,
         "small",
         /*size*/
-        i[4] === "small"
-      ), Fe(
+        l[4] === "small"
+      ), Te(
         n,
         "large",
         /*size*/
-        i[4] === "large"
-      ), Fe(
+        l[4] === "large"
+      ), Te(
         n,
         "medium",
         /*size*/
-        i[4] === "medium"
+        l[4] === "medium"
       ), e.disabled = /*disabled*/
-      i[7], It(
+      l[7], Ft(
         e,
         "aria-label",
         /*label*/
-        i[1]
-      ), It(
+        l[1]
+      ), Ft(
         e,
         "aria-haspopup",
         /*hasPopup*/
-        i[8]
-      ), It(
+        l[8]
+      ), Ft(
         e,
         "title",
         /*label*/
-        i[1]
-      ), It(e, "class", "svelte-1lrphxw"), Fe(
+        l[1]
+      ), Ft(e, "class", "svelte-1lrphxw"), Te(
         e,
         "pending",
         /*pending*/
-        i[3]
-      ), Fe(
+        l[3]
+      ), Te(
         e,
         "padded",
         /*padded*/
-        i[5]
-      ), Fe(
+        l[5]
+      ), Te(
         e,
         "highlight",
         /*highlight*/
-        i[6]
-      ), Fe(
+        l[6]
+      ), Te(
         e,
         "transparent",
         /*transparent*/
-        i[9]
-      ), Hn(e, "color", !/*disabled*/
-      i[7] && /*_color*/
-      i[12] ? (
+        l[9]
+      ), xn(e, "color", !/*disabled*/
+      l[7] && /*_color*/
+      l[12] ? (
         /*_color*/
-        i[12]
-      ) : "var(--block-label-text-color)"), Hn(e, "--bg-color", /*disabled*/
-      i[7] ? "auto" : (
+        l[12]
+      ) : "var(--block-label-text-color)"), xn(e, "--bg-color", /*disabled*/
+      l[7] ? "auto" : (
         /*background*/
-        i[10]
-      )), Hn(
+        l[10]
+      )), xn(
         e,
         "margin-left",
         /*offset*/
-        i[11] + "px"
+        l[11] + "px"
       );
     },
     m(_, c) {
-      Yr(_, e, c), a && a.m(e, null), Vo(e, t), Vo(e, n), Mf(l, n, null), o = !0, s || (r = Lf(
+      Gr(_, e, c), a && a.m(e, null), is(e, t), is(e, n), $u(i, n, null), o = !0, s || (r = Tu(
         e,
         "click",
         /*click_handler*/
-        i[14]
+        l[14]
       ), s = !0);
     },
     p(_, [c]) {
       /*show_label*/
-      _[2] ? a ? a.p(_, c) : (a = Rs(_), a.c(), a.m(e, t)) : a && (a.d(1), a = null), (!o || c & /*size*/
-      16) && Fe(
+      _[2] ? a ? a.p(_, c) : (a = Os(_), a.c(), a.m(e, t)) : a && (a.d(1), a = null), (!o || c & /*size*/
+      16) && Te(
         n,
         "small",
         /*size*/
         _[4] === "small"
       ), (!o || c & /*size*/
-      16) && Fe(
+      16) && Te(
         n,
         "large",
         /*size*/
         _[4] === "large"
       ), (!o || c & /*size*/
-      16) && Fe(
+      16) && Te(
         n,
         "medium",
         /*size*/
@@ -796,60 +796,60 @@ function If(i) {
       ), (!o || c & /*disabled*/
       128) && (e.disabled = /*disabled*/
       _[7]), (!o || c & /*label*/
-      2) && It(
+      2) && Ft(
         e,
         "aria-label",
         /*label*/
         _[1]
       ), (!o || c & /*hasPopup*/
-      256) && It(
+      256) && Ft(
         e,
         "aria-haspopup",
         /*hasPopup*/
         _[8]
       ), (!o || c & /*label*/
-      2) && It(
+      2) && Ft(
         e,
         "title",
         /*label*/
         _[1]
       ), (!o || c & /*pending*/
-      8) && Fe(
+      8) && Te(
         e,
         "pending",
         /*pending*/
         _[3]
       ), (!o || c & /*padded*/
-      32) && Fe(
+      32) && Te(
         e,
         "padded",
         /*padded*/
         _[5]
       ), (!o || c & /*highlight*/
-      64) && Fe(
+      64) && Te(
         e,
         "highlight",
         /*highlight*/
         _[6]
       ), (!o || c & /*transparent*/
-      512) && Fe(
+      512) && Te(
         e,
         "transparent",
         /*transparent*/
         _[9]
       ), c & /*disabled, _color*/
-      4224 && Hn(e, "color", !/*disabled*/
+      4224 && xn(e, "color", !/*disabled*/
       _[7] && /*_color*/
       _[12] ? (
         /*_color*/
         _[12]
       ) : "var(--block-label-text-color)"), c & /*disabled, background*/
-      1152 && Hn(e, "--bg-color", /*disabled*/
+      1152 && xn(e, "--bg-color", /*disabled*/
       _[7] ? "auto" : (
         /*background*/
         _[10]
       )), c & /*offset*/
-      2048 && Hn(
+      2048 && xn(
         e,
         "margin-left",
         /*offset*/
@@ -857,36 +857,36 @@ function If(i) {
       );
     },
     i(_) {
-      o || (Xf(l.$$.fragment, _), o = !0);
+      o || (Nu(i.$$.fragment, _), o = !0);
     },
     o(_) {
-      Yf(l.$$.fragment, _), o = !1;
+      Uu(i.$$.fragment, _), o = !1;
     },
     d(_) {
-      _ && Xr(e), a && a.d(), Bf(l), s = !1, r();
+      _ && Zr(e), a && a.d(), Iu(i), s = !1, r();
     }
   };
 }
-function Hf(i, e, t) {
-  let n, { Icon: l } = e, { label: o = "" } = e, { show_label: s = !1 } = e, { pending: r = !1 } = e, { size: a = "small" } = e, { padded: _ = !0 } = e, { highlight: c = !1 } = e, { disabled: u = !1 } = e, { hasPopup: f = !1 } = e, { color: d = "var(--block-label-text-color)" } = e, { transparent: h = !1 } = e, { background: m = "var(--background-fill-primary)" } = e, { offset: g = 0 } = e;
-  function b(w) {
-    qf.call(this, i, w);
+function Ku(l, e, t) {
+  let n, { Icon: i } = e, { label: o = "" } = e, { show_label: s = !1 } = e, { pending: r = !1 } = e, { size: a = "small" } = e, { padded: _ = !0 } = e, { highlight: c = !1 } = e, { disabled: f = !1 } = e, { hasPopup: u = !1 } = e, { color: d = "var(--block-label-text-color)" } = e, { transparent: h = !1 } = e, { background: m = "var(--background-fill-primary)" } = e, { offset: g = 0 } = e;
+  function b(v) {
+    Yu.call(this, l, v);
   }
-  return i.$$set = (w) => {
-    "Icon" in w && t(0, l = w.Icon), "label" in w && t(1, o = w.label), "show_label" in w && t(2, s = w.show_label), "pending" in w && t(3, r = w.pending), "size" in w && t(4, a = w.size), "padded" in w && t(5, _ = w.padded), "highlight" in w && t(6, c = w.highlight), "disabled" in w && t(7, u = w.disabled), "hasPopup" in w && t(8, f = w.hasPopup), "color" in w && t(13, d = w.color), "transparent" in w && t(9, h = w.transparent), "background" in w && t(10, m = w.background), "offset" in w && t(11, g = w.offset);
-  }, i.$$.update = () => {
-    i.$$.dirty & /*highlight, color*/
+  return l.$$set = (v) => {
+    "Icon" in v && t(0, i = v.Icon), "label" in v && t(1, o = v.label), "show_label" in v && t(2, s = v.show_label), "pending" in v && t(3, r = v.pending), "size" in v && t(4, a = v.size), "padded" in v && t(5, _ = v.padded), "highlight" in v && t(6, c = v.highlight), "disabled" in v && t(7, f = v.disabled), "hasPopup" in v && t(8, u = v.hasPopup), "color" in v && t(13, d = v.color), "transparent" in v && t(9, h = v.transparent), "background" in v && t(10, m = v.background), "offset" in v && t(11, g = v.offset);
+  }, l.$$.update = () => {
+    l.$$.dirty & /*highlight, color*/
     8256 && t(12, n = c ? "var(--color-accent)" : d);
   }, [
-    l,
+    i,
     o,
     s,
     r,
     a,
     _,
     c,
-    u,
     f,
+    u,
     h,
     m,
     g,
@@ -895,9 +895,9 @@ function Hf(i, e, t) {
     b
   ];
 }
-class Rl extends Sf {
+class Fl extends Xu {
   constructor(e) {
-    super(), Df(this, e, Hf, If, Ef, {
+    super(), ju(this, e, Ku, Pu, Fu, {
       Icon: 0,
       label: 1,
       show_label: 2,
@@ -915,101 +915,101 @@ class Rl extends Sf {
   }
 }
 const {
-  SvelteComponent: jf,
-  append: Tf,
-  attr: Gl,
-  binding_callbacks: Ff,
-  create_slot: Of,
-  detach: $f,
-  element: Ws,
-  get_all_dirty_from_scope: xf,
-  get_slot_changes: Nf,
-  init: Uf,
-  insert: Vf,
-  safe_not_equal: Pf,
-  toggle_class: Zt,
-  transition_in: Kf,
-  transition_out: Zf,
-  update_slot_base: Gf
+  SvelteComponent: Zu,
+  append: Gu,
+  attr: so,
+  binding_callbacks: Ju,
+  create_slot: Qu,
+  detach: ef,
+  element: xs,
+  get_all_dirty_from_scope: tf,
+  get_slot_changes: nf,
+  init: lf,
+  insert: of,
+  safe_not_equal: sf,
+  toggle_class: Qt,
+  transition_in: af,
+  transition_out: rf,
+  update_slot_base: _f
 } = window.__gradio__svelte__internal;
-function Jf(i) {
+function cf(l) {
   let e, t, n;
-  const l = (
+  const i = (
     /*#slots*/
-    i[5].default
-  ), o = Of(
-    l,
+    l[5].default
+  ), o = Qu(
     i,
+    l,
     /*$$scope*/
-    i[4],
+    l[4],
     null
   );
   return {
     c() {
-      e = Ws("div"), t = Ws("div"), o && o.c(), Gl(t, "class", "icon svelte-3w3rth"), Gl(e, "class", "empty svelte-3w3rth"), Gl(e, "aria-label", "Empty value"), Zt(
+      e = xs("div"), t = xs("div"), o && o.c(), so(t, "class", "icon svelte-3w3rth"), so(e, "class", "empty svelte-3w3rth"), so(e, "aria-label", "Empty value"), Qt(
         e,
         "small",
         /*size*/
-        i[0] === "small"
-      ), Zt(
+        l[0] === "small"
+      ), Qt(
         e,
         "large",
         /*size*/
-        i[0] === "large"
-      ), Zt(
+        l[0] === "large"
+      ), Qt(
         e,
         "unpadded_box",
         /*unpadded_box*/
-        i[1]
-      ), Zt(
+        l[1]
+      ), Qt(
         e,
         "small_parent",
         /*parent_height*/
-        i[3]
+        l[3]
       );
     },
     m(s, r) {
-      Vf(s, e, r), Tf(e, t), o && o.m(t, null), i[6](e), n = !0;
+      of(s, e, r), Gu(e, t), o && o.m(t, null), l[6](e), n = !0;
     },
     p(s, [r]) {
       o && o.p && (!n || r & /*$$scope*/
-      16) && Gf(
+      16) && _f(
         o,
-        l,
+        i,
         s,
         /*$$scope*/
         s[4],
-        n ? Nf(
-          l,
+        n ? nf(
+          i,
           /*$$scope*/
           s[4],
           r,
           null
-        ) : xf(
+        ) : tf(
           /*$$scope*/
           s[4]
         ),
         null
       ), (!n || r & /*size*/
-      1) && Zt(
+      1) && Qt(
         e,
         "small",
         /*size*/
         s[0] === "small"
       ), (!n || r & /*size*/
-      1) && Zt(
+      1) && Qt(
         e,
         "large",
         /*size*/
         s[0] === "large"
       ), (!n || r & /*unpadded_box*/
-      2) && Zt(
+      2) && Qt(
         e,
         "unpadded_box",
         /*unpadded_box*/
         s[1]
       ), (!n || r & /*parent_height*/
-      8) && Zt(
+      8) && Qt(
         e,
         "small_parent",
         /*parent_height*/
@@ -1017,950 +1017,950 @@ function Jf(i) {
       );
     },
     i(s) {
-      n || (Kf(o, s), n = !0);
+      n || (af(o, s), n = !0);
     },
     o(s) {
-      Zf(o, s), n = !1;
+      rf(o, s), n = !1;
     },
     d(s) {
-      s && $f(e), o && o.d(s), i[6](null);
+      s && ef(e), o && o.d(s), l[6](null);
     }
   };
 }
-function Qf(i, e, t) {
-  let n, { $$slots: l = {}, $$scope: o } = e, { size: s = "small" } = e, { unpadded_box: r = !1 } = e, a;
-  function _(u) {
-    var f;
-    if (!u) return !1;
-    const { height: d } = u.getBoundingClientRect(), { height: h } = ((f = u.parentElement) === null || f === void 0 ? void 0 : f.getBoundingClientRect()) || { height: d };
+function uf(l, e, t) {
+  let n, { $$slots: i = {}, $$scope: o } = e, { size: s = "small" } = e, { unpadded_box: r = !1 } = e, a;
+  function _(f) {
+    var u;
+    if (!f) return !1;
+    const { height: d } = f.getBoundingClientRect(), { height: h } = ((u = f.parentElement) === null || u === void 0 ? void 0 : u.getBoundingClientRect()) || { height: d };
     return d > h + 2;
   }
-  function c(u) {
-    Ff[u ? "unshift" : "push"](() => {
-      a = u, t(2, a);
+  function c(f) {
+    Ju[f ? "unshift" : "push"](() => {
+      a = f, t(2, a);
     });
   }
-  return i.$$set = (u) => {
-    "size" in u && t(0, s = u.size), "unpadded_box" in u && t(1, r = u.unpadded_box), "$$scope" in u && t(4, o = u.$$scope);
-  }, i.$$.update = () => {
-    i.$$.dirty & /*el*/
+  return l.$$set = (f) => {
+    "size" in f && t(0, s = f.size), "unpadded_box" in f && t(1, r = f.unpadded_box), "$$scope" in f && t(4, o = f.$$scope);
+  }, l.$$.update = () => {
+    l.$$.dirty & /*el*/
     4 && t(3, n = _(a));
-  }, [s, r, a, n, o, l, c];
+  }, [s, r, a, n, o, i, c];
 }
-class eu extends jf {
+class ff extends Zu {
   constructor(e) {
-    super(), Uf(this, e, Qf, Jf, Pf, { size: 0, unpadded_box: 1 });
+    super(), lf(this, e, uf, cf, sf, { size: 0, unpadded_box: 1 });
   }
 }
 const {
-  SvelteComponent: lp,
-  append: op,
-  attr: sp,
-  detach: ap,
-  init: rp,
-  insert: _p,
-  noop: cp,
-  safe_not_equal: fp,
-  svg_element: up
+  SvelteComponent: Lp,
+  append: Ep,
+  attr: Rp,
+  detach: Wp,
+  init: Ap,
+  insert: Xp,
+  noop: Yp,
+  safe_not_equal: Hp,
+  svg_element: Ip
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: dp,
-  append: hp,
-  attr: mp,
-  detach: gp,
-  init: bp,
-  insert: pp,
-  noop: wp,
-  safe_not_equal: vp,
-  svg_element: kp
+  SvelteComponent: jp,
+  append: Tp,
+  attr: $p,
+  detach: Fp,
+  init: Op,
+  insert: xp,
+  noop: Vp,
+  safe_not_equal: Np,
+  svg_element: Up
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: yp,
-  append: Cp,
-  attr: Sp,
-  detach: qp,
-  init: zp,
-  insert: Bp,
-  noop: Dp,
-  safe_not_equal: Lp,
-  svg_element: Mp
+  SvelteComponent: Pp,
+  append: Kp,
+  attr: Zp,
+  detach: Gp,
+  init: Jp,
+  insert: Qp,
+  noop: ew,
+  safe_not_equal: tw,
+  svg_element: nw
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: tu,
-  append: As,
-  attr: Oe,
-  detach: nu,
-  init: iu,
-  insert: lu,
-  noop: Jl,
-  safe_not_equal: ou,
-  svg_element: Ql
+  SvelteComponent: df,
+  append: Vs,
+  attr: $e,
+  detach: hf,
+  init: mf,
+  insert: gf,
+  noop: ao,
+  safe_not_equal: bf,
+  svg_element: ro
 } = window.__gradio__svelte__internal;
-function su(i) {
+function pf(l) {
   let e, t, n;
   return {
     c() {
-      e = Ql("svg"), t = Ql("path"), n = Ql("circle"), Oe(t, "d", "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"), Oe(n, "cx", "12"), Oe(n, "cy", "13"), Oe(n, "r", "4"), Oe(e, "xmlns", "http://www.w3.org/2000/svg"), Oe(e, "width", "100%"), Oe(e, "height", "100%"), Oe(e, "viewBox", "0 0 24 24"), Oe(e, "fill", "none"), Oe(e, "stroke", "currentColor"), Oe(e, "stroke-width", "1.5"), Oe(e, "stroke-linecap", "round"), Oe(e, "stroke-linejoin", "round"), Oe(e, "class", "feather feather-camera");
+      e = ro("svg"), t = ro("path"), n = ro("circle"), $e(t, "d", "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"), $e(n, "cx", "12"), $e(n, "cy", "13"), $e(n, "r", "4"), $e(e, "xmlns", "http://www.w3.org/2000/svg"), $e(e, "width", "100%"), $e(e, "height", "100%"), $e(e, "viewBox", "0 0 24 24"), $e(e, "fill", "none"), $e(e, "stroke", "currentColor"), $e(e, "stroke-width", "1.5"), $e(e, "stroke-linecap", "round"), $e(e, "stroke-linejoin", "round"), $e(e, "class", "feather feather-camera");
     },
-    m(l, o) {
-      lu(l, e, o), As(e, t), As(e, n);
-    },
-    p: Jl,
-    i: Jl,
-    o: Jl,
-    d(l) {
-      l && nu(e);
-    }
-  };
-}
-class au extends tu {
-  constructor(e) {
-    super(), iu(this, e, null, su, ou, {});
-  }
-}
-const {
-  SvelteComponent: Ep,
-  append: Rp,
-  attr: Wp,
-  detach: Ap,
-  init: Xp,
-  insert: Yp,
-  noop: Ip,
-  safe_not_equal: Hp,
-  svg_element: jp
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Tp,
-  append: Fp,
-  attr: Op,
-  detach: $p,
-  init: xp,
-  insert: Np,
-  noop: Up,
-  safe_not_equal: Vp,
-  svg_element: Pp
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Kp,
-  append: Zp,
-  attr: Gp,
-  detach: Jp,
-  init: Qp,
-  insert: ew,
-  noop: tw,
-  safe_not_equal: nw,
-  svg_element: iw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: ru,
-  append: _u,
-  attr: dt,
-  detach: cu,
-  init: fu,
-  insert: uu,
-  noop: eo,
-  safe_not_equal: du,
-  svg_element: Xs
-} = window.__gradio__svelte__internal;
-function hu(i) {
-  let e, t;
-  return {
-    c() {
-      e = Xs("svg"), t = Xs("circle"), dt(t, "cx", "12"), dt(t, "cy", "12"), dt(t, "r", "10"), dt(e, "xmlns", "http://www.w3.org/2000/svg"), dt(e, "width", "100%"), dt(e, "height", "100%"), dt(e, "viewBox", "0 0 24 24"), dt(e, "stroke-width", "1.5"), dt(e, "stroke-linecap", "round"), dt(e, "stroke-linejoin", "round"), dt(e, "class", "feather feather-circle");
-    },
-    m(n, l) {
-      uu(n, e, l), _u(e, t);
-    },
-    p: eo,
-    i: eo,
-    o: eo,
-    d(n) {
-      n && cu(e);
-    }
-  };
-}
-class mu extends ru {
-  constructor(e) {
-    super(), fu(this, e, null, hu, du, {});
-  }
-}
-const {
-  SvelteComponent: gu,
-  append: to,
-  attr: ht,
-  detach: bu,
-  init: pu,
-  insert: wu,
-  noop: no,
-  safe_not_equal: vu,
-  set_style: Ct,
-  svg_element: Fi
-} = window.__gradio__svelte__internal;
-function ku(i) {
-  let e, t, n, l;
-  return {
-    c() {
-      e = Fi("svg"), t = Fi("g"), n = Fi("path"), l = Fi("path"), ht(n, "d", "M18,6L6.087,17.913"), Ct(n, "fill", "none"), Ct(n, "fill-rule", "nonzero"), Ct(n, "stroke-width", "2px"), ht(t, "transform", "matrix(1.14096,-0.140958,-0.140958,1.14096,-0.0559523,0.0559523)"), ht(l, "d", "M4.364,4.364L19.636,19.636"), Ct(l, "fill", "none"), Ct(l, "fill-rule", "nonzero"), Ct(l, "stroke-width", "2px"), ht(e, "width", "100%"), ht(e, "height", "100%"), ht(e, "viewBox", "0 0 24 24"), ht(e, "version", "1.1"), ht(e, "xmlns", "http://www.w3.org/2000/svg"), ht(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), ht(e, "xml:space", "preserve"), ht(e, "stroke", "currentColor"), Ct(e, "fill-rule", "evenodd"), Ct(e, "clip-rule", "evenodd"), Ct(e, "stroke-linecap", "round"), Ct(e, "stroke-linejoin", "round");
-    },
-    m(o, s) {
-      wu(o, e, s), to(e, t), to(t, n), to(e, l);
-    },
-    p: no,
-    i: no,
-    o: no,
-    d(o) {
-      o && bu(e);
-    }
-  };
-}
-class Ir extends gu {
-  constructor(e) {
-    super(), pu(this, e, null, ku, vu, {});
-  }
-}
-const {
-  SvelteComponent: lw,
-  append: ow,
-  attr: sw,
-  detach: aw,
-  init: rw,
-  insert: _w,
-  noop: cw,
-  safe_not_equal: fw,
-  svg_element: uw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: dw,
-  append: hw,
-  attr: mw,
-  detach: gw,
-  init: bw,
-  insert: pw,
-  noop: ww,
-  safe_not_equal: vw,
-  svg_element: kw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: yu,
-  append: Cu,
-  attr: hi,
-  detach: Su,
-  init: qu,
-  insert: zu,
-  noop: io,
-  safe_not_equal: Bu,
-  svg_element: Ys
-} = window.__gradio__svelte__internal;
-function Du(i) {
-  let e, t;
-  return {
-    c() {
-      e = Ys("svg"), t = Ys("path"), hi(t, "d", "M23,20a5,5,0,0,0-3.89,1.89L11.8,17.32a4.46,4.46,0,0,0,0-2.64l7.31-4.57A5,5,0,1,0,18,7a4.79,4.79,0,0,0,.2,1.32l-7.31,4.57a5,5,0,1,0,0,6.22l7.31,4.57A4.79,4.79,0,0,0,18,25a5,5,0,1,0,5-5ZM23,4a3,3,0,1,1-3,3A3,3,0,0,1,23,4ZM7,19a3,3,0,1,1,3-3A3,3,0,0,1,7,19Zm16,9a3,3,0,1,1,3-3A3,3,0,0,1,23,28Z"), hi(t, "fill", "currentColor"), hi(e, "id", "icon"), hi(e, "xmlns", "http://www.w3.org/2000/svg"), hi(e, "viewBox", "0 0 32 32");
-    },
-    m(n, l) {
-      zu(n, e, l), Cu(e, t);
-    },
-    p: io,
-    i: io,
-    o: io,
-    d(n) {
-      n && Su(e);
-    }
-  };
-}
-class Lu extends yu {
-  constructor(e) {
-    super(), qu(this, e, null, Du, Bu, {});
-  }
-}
-const {
-  SvelteComponent: yw,
-  append: Cw,
-  attr: Sw,
-  detach: qw,
-  init: zw,
-  insert: Bw,
-  noop: Dw,
-  safe_not_equal: Lw,
-  svg_element: Mw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Ew,
-  append: Rw,
-  attr: Ww,
-  detach: Aw,
-  init: Xw,
-  insert: Yw,
-  noop: Iw,
-  safe_not_equal: Hw,
-  svg_element: jw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Tw,
-  append: Fw,
-  attr: Ow,
-  detach: $w,
-  init: xw,
-  insert: Nw,
-  noop: Uw,
-  safe_not_equal: Vw,
-  svg_element: Pw
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Mu,
-  append: Eu,
-  attr: jn,
-  detach: Ru,
-  init: Wu,
-  insert: Au,
-  noop: lo,
-  safe_not_equal: Xu,
-  svg_element: Is
-} = window.__gradio__svelte__internal;
-function Yu(i) {
-  let e, t;
-  return {
-    c() {
-      e = Is("svg"), t = Is("path"), jn(t, "fill", "currentColor"), jn(t, "d", "M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z"), jn(e, "xmlns", "http://www.w3.org/2000/svg"), jn(e, "width", "100%"), jn(e, "height", "100%"), jn(e, "viewBox", "0 0 32 32");
-    },
-    m(n, l) {
-      Au(n, e, l), Eu(e, t);
-    },
-    p: lo,
-    i: lo,
-    o: lo,
-    d(n) {
-      n && Ru(e);
-    }
-  };
-}
-class Iu extends Mu {
-  constructor(e) {
-    super(), Wu(this, e, null, Yu, Xu, {});
-  }
-}
-const {
-  SvelteComponent: Hu,
-  append: ju,
-  attr: Tn,
-  detach: Tu,
-  init: Fu,
-  insert: Ou,
-  noop: oo,
-  safe_not_equal: $u,
-  svg_element: Hs
-} = window.__gradio__svelte__internal;
-function xu(i) {
-  let e, t;
-  return {
-    c() {
-      e = Hs("svg"), t = Hs("path"), Tn(t, "d", "M5 8l4 4 4-4z"), Tn(e, "class", "dropdown-arrow svelte-145leq6"), Tn(e, "xmlns", "http://www.w3.org/2000/svg"), Tn(e, "width", "100%"), Tn(e, "height", "100%"), Tn(e, "viewBox", "0 0 18 18");
-    },
-    m(n, l) {
-      Ou(n, e, l), ju(e, t);
-    },
-    p: oo,
-    i: oo,
-    o: oo,
-    d(n) {
-      n && Tu(e);
-    }
-  };
-}
-class hs extends Hu {
-  constructor(e) {
-    super(), Fu(this, e, null, xu, $u, {});
-  }
-}
-const {
-  SvelteComponent: Kw,
-  append: Zw,
-  attr: Gw,
-  detach: Jw,
-  init: Qw,
-  insert: ev,
-  noop: tv,
-  safe_not_equal: nv,
-  svg_element: iv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: lv,
-  append: ov,
-  attr: sv,
-  detach: av,
-  init: rv,
-  insert: _v,
-  noop: cv,
-  safe_not_equal: fv,
-  svg_element: uv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: dv,
-  append: hv,
-  attr: mv,
-  detach: gv,
-  init: bv,
-  insert: pv,
-  noop: wv,
-  safe_not_equal: vv,
-  svg_element: kv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: yv,
-  append: Cv,
-  attr: Sv,
-  detach: qv,
-  init: zv,
-  insert: Bv,
-  noop: Dv,
-  safe_not_equal: Lv,
-  svg_element: Mv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Ev,
-  append: Rv,
-  attr: Wv,
-  detach: Av,
-  init: Xv,
-  insert: Yv,
-  noop: Iv,
-  safe_not_equal: Hv,
-  svg_element: jv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Tv,
-  append: Fv,
-  attr: Ov,
-  detach: $v,
-  init: xv,
-  insert: Nv,
-  noop: Uv,
-  safe_not_equal: Vv,
-  svg_element: Pv
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Kv,
-  append: Zv,
-  attr: Gv,
-  detach: Jv,
-  init: Qv,
-  insert: e4,
-  noop: t4,
-  safe_not_equal: n4,
-  svg_element: i4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Nu,
-  append: so,
-  attr: be,
-  detach: Uu,
-  init: Vu,
-  insert: Pu,
-  noop: ao,
-  safe_not_equal: Ku,
-  svg_element: Oi
-} = window.__gradio__svelte__internal;
-function Zu(i) {
-  let e, t, n, l;
-  return {
-    c() {
-      e = Oi("svg"), t = Oi("rect"), n = Oi("circle"), l = Oi("polyline"), be(t, "x", "3"), be(t, "y", "3"), be(t, "width", "18"), be(t, "height", "18"), be(t, "rx", "2"), be(t, "ry", "2"), be(n, "cx", "8.5"), be(n, "cy", "8.5"), be(n, "r", "1.5"), be(l, "points", "21 15 16 10 5 21"), be(e, "xmlns", "http://www.w3.org/2000/svg"), be(e, "width", "100%"), be(e, "height", "100%"), be(e, "viewBox", "0 0 24 24"), be(e, "fill", "none"), be(e, "stroke", "currentColor"), be(e, "stroke-width", "1.5"), be(e, "stroke-linecap", "round"), be(e, "stroke-linejoin", "round"), be(e, "class", "feather feather-image");
-    },
-    m(o, s) {
-      Pu(o, e, s), so(e, t), so(e, n), so(e, l);
+    m(i, o) {
+      gf(i, e, o), Vs(e, t), Vs(e, n);
     },
     p: ao,
     i: ao,
     o: ao,
-    d(o) {
-      o && Uu(e);
+    d(i) {
+      i && hf(e);
     }
   };
 }
-let Hr = class extends Nu {
+class wf extends df {
   constructor(e) {
-    super(), Vu(this, e, null, Zu, Ku, {});
+    super(), mf(this, e, null, pf, bf, {});
   }
-};
+}
 const {
-  SvelteComponent: Gu,
-  append: Ju,
-  attr: $i,
-  detach: Qu,
-  init: ed,
-  insert: td,
-  noop: ro,
-  safe_not_equal: nd,
-  svg_element: js
+  SvelteComponent: lw,
+  append: iw,
+  attr: ow,
+  detach: sw,
+  init: aw,
+  insert: rw,
+  noop: _w,
+  safe_not_equal: cw,
+  svg_element: uw
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: fw,
+  append: dw,
+  attr: hw,
+  detach: mw,
+  init: gw,
+  insert: bw,
+  noop: pw,
+  safe_not_equal: ww,
+  svg_element: vw
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: kw,
+  append: yw,
+  attr: Cw,
+  detach: Sw,
+  init: qw,
+  insert: zw,
+  noop: Bw,
+  safe_not_equal: Dw,
+  svg_element: Mw
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: vf,
+  append: kf,
+  attr: mt,
+  detach: yf,
+  init: Cf,
+  insert: Sf,
+  noop: _o,
+  safe_not_equal: qf,
+  svg_element: Ns
 } = window.__gradio__svelte__internal;
-function id(i) {
+function zf(l) {
   let e, t;
   return {
     c() {
-      e = js("svg"), t = js("path"), $i(t, "fill", "currentColor"), $i(t, "d", "M13.75 2a2.25 2.25 0 0 1 2.236 2.002V4h1.764A2.25 2.25 0 0 1 20 6.25V11h-1.5V6.25a.75.75 0 0 0-.75-.75h-2.129c-.404.603-1.091 1-1.871 1h-3.5c-.78 0-1.467-.397-1.871-1H6.25a.75.75 0 0 0-.75.75v13.5c0 .414.336.75.75.75h4.78a4 4 0 0 0 .505 1.5H6.25A2.25 2.25 0 0 1 4 19.75V6.25A2.25 2.25 0 0 1 6.25 4h1.764a2.25 2.25 0 0 1 2.236-2zm2.245 2.096L16 4.25q0-.078-.005-.154M13.75 3.5h-3.5a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5M15 12a3 3 0 0 0-3 3v5c0 .556.151 1.077.415 1.524l3.494-3.494a2.25 2.25 0 0 1 3.182 0l3.494 3.494c.264-.447.415-.968.415-1.524v-5a3 3 0 0 0-3-3zm0 11a3 3 0 0 1-1.524-.415l3.494-3.494a.75.75 0 0 1 1.06 0l3.494 3.494A3 3 0 0 1 20 23zm5-7a1 1 0 1 1 0-2 1 1 0 0 1 0 2"), $i(e, "xmlns", "http://www.w3.org/2000/svg"), $i(e, "viewBox", "0 0 24 24");
+      e = Ns("svg"), t = Ns("circle"), mt(t, "cx", "12"), mt(t, "cy", "12"), mt(t, "r", "10"), mt(e, "xmlns", "http://www.w3.org/2000/svg"), mt(e, "width", "100%"), mt(e, "height", "100%"), mt(e, "viewBox", "0 0 24 24"), mt(e, "stroke-width", "1.5"), mt(e, "stroke-linecap", "round"), mt(e, "stroke-linejoin", "round"), mt(e, "class", "feather feather-circle");
     },
-    m(n, l) {
-      td(n, e, l), Ju(e, t);
-    },
-    p: ro,
-    i: ro,
-    o: ro,
-    d(n) {
-      n && Qu(e);
-    }
-  };
-}
-class jr extends Gu {
-  constructor(e) {
-    super(), ed(this, e, null, id, nd, {});
-  }
-}
-const {
-  SvelteComponent: o4,
-  append: s4,
-  attr: a4,
-  detach: r4,
-  init: _4,
-  insert: c4,
-  noop: f4,
-  safe_not_equal: u4,
-  svg_element: d4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: h4,
-  append: m4,
-  attr: g4,
-  detach: b4,
-  init: p4,
-  insert: w4,
-  noop: v4,
-  safe_not_equal: k4,
-  svg_element: y4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: C4,
-  append: S4,
-  attr: q4,
-  detach: z4,
-  init: B4,
-  insert: D4,
-  noop: L4,
-  safe_not_equal: M4,
-  svg_element: E4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: R4,
-  append: W4,
-  attr: A4,
-  detach: X4,
-  init: Y4,
-  insert: I4,
-  noop: H4,
-  safe_not_equal: j4,
-  svg_element: T4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: F4,
-  append: O4,
-  attr: $4,
-  detach: x4,
-  init: N4,
-  insert: U4,
-  noop: V4,
-  safe_not_equal: P4,
-  svg_element: K4
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: ld,
-  append: xi,
-  attr: pe,
-  detach: od,
-  init: sd,
-  insert: ad,
-  noop: _o,
-  safe_not_equal: rd,
-  svg_element: mi
-} = window.__gradio__svelte__internal;
-function _d(i) {
-  let e, t, n, l, o;
-  return {
-    c() {
-      e = mi("svg"), t = mi("path"), n = mi("path"), l = mi("line"), o = mi("line"), pe(t, "d", "M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"), pe(n, "d", "M19 10v2a7 7 0 0 1-14 0v-2"), pe(l, "x1", "12"), pe(l, "y1", "19"), pe(l, "x2", "12"), pe(l, "y2", "23"), pe(o, "x1", "8"), pe(o, "y1", "23"), pe(o, "x2", "16"), pe(o, "y2", "23"), pe(e, "xmlns", "http://www.w3.org/2000/svg"), pe(e, "width", "100%"), pe(e, "height", "100%"), pe(e, "viewBox", "0 0 24 24"), pe(e, "fill", "none"), pe(e, "stroke", "currentColor"), pe(e, "stroke-width", "2"), pe(e, "stroke-linecap", "round"), pe(e, "stroke-linejoin", "round"), pe(e, "class", "feather feather-mic");
-    },
-    m(s, r) {
-      ad(s, e, r), xi(e, t), xi(e, n), xi(e, l), xi(e, o);
+    m(n, i) {
+      Sf(n, e, i), kf(e, t);
     },
     p: _o,
     i: _o,
     o: _o,
-    d(s) {
-      s && od(e);
+    d(n) {
+      n && yf(e);
     }
   };
 }
-class cd extends ld {
+class Bf extends vf {
   constructor(e) {
-    super(), sd(this, e, null, _d, rd, {});
+    super(), Cf(this, e, null, zf, qf, {});
   }
 }
 const {
-  SvelteComponent: Z4,
-  append: G4,
-  attr: J4,
-  detach: Q4,
-  init: e3,
-  insert: t3,
-  noop: n3,
-  safe_not_equal: i3,
-  svg_element: l3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: o3,
-  append: s3,
-  attr: a3,
-  detach: r3,
-  init: _3,
-  insert: c3,
-  noop: f3,
-  safe_not_equal: u3,
-  svg_element: d3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: h3,
-  append: m3,
-  attr: g3,
-  detach: b3,
-  init: p3,
-  insert: w3,
-  noop: v3,
-  safe_not_equal: k3,
-  svg_element: y3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: C3,
-  append: S3,
-  attr: q3,
-  detach: z3,
-  init: B3,
-  insert: D3,
-  noop: L3,
-  safe_not_equal: M3,
-  svg_element: E3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: R3,
-  append: W3,
-  attr: A3,
-  detach: X3,
-  init: Y3,
-  insert: I3,
-  noop: H3,
-  safe_not_equal: j3,
-  svg_element: T3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: F3,
-  append: O3,
-  attr: $3,
-  detach: x3,
-  init: N3,
-  insert: U3,
-  noop: V3,
-  safe_not_equal: P3,
-  svg_element: K3
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: fd,
-  append: Ts,
-  attr: lt,
-  detach: ud,
-  init: dd,
-  insert: hd,
-  noop: co,
-  safe_not_equal: md,
-  set_style: gd,
-  svg_element: fo
-} = window.__gradio__svelte__internal;
-function bd(i) {
-  let e, t, n;
-  return {
-    c() {
-      e = fo("svg"), t = fo("polyline"), n = fo("path"), lt(t, "points", "1 4 1 10 7 10"), lt(n, "d", "M3.51 15a9 9 0 1 0 2.13-9.36L1 10"), lt(e, "xmlns", "http://www.w3.org/2000/svg"), lt(e, "width", "100%"), lt(e, "height", "100%"), lt(e, "viewBox", "0 0 24 24"), lt(e, "fill", "none"), lt(e, "stroke", "currentColor"), lt(e, "stroke-width", "2"), lt(e, "stroke-linecap", "round"), lt(e, "stroke-linejoin", "round"), lt(e, "class", "feather feather-rotate-ccw"), gd(e, "transform", "rotateY(180deg)");
-    },
-    m(l, o) {
-      hd(l, e, o), Ts(e, t), Ts(e, n);
-    },
-    p: co,
-    i: co,
-    o: co,
-    d(l) {
-      l && ud(e);
-    }
-  };
-}
-class pd extends fd {
-  constructor(e) {
-    super(), dd(this, e, null, bd, md, {});
-  }
-}
-const {
-  SvelteComponent: Z3,
-  append: G3,
-  attr: J3,
-  detach: Q3,
-  init: e5,
-  insert: t5,
-  noop: n5,
-  safe_not_equal: i5,
-  svg_element: l5
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: o5,
-  append: s5,
-  attr: a5,
-  detach: r5,
-  init: _5,
-  insert: c5,
-  noop: f5,
-  safe_not_equal: u5,
-  svg_element: d5
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: h5,
-  append: m5,
-  attr: g5,
-  detach: b5,
-  init: p5,
-  insert: w5,
-  noop: v5,
-  safe_not_equal: k5,
-  svg_element: y5
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: C5,
-  append: S5,
-  attr: q5,
-  detach: z5,
-  init: B5,
-  insert: D5,
-  noop: L5,
-  safe_not_equal: M5,
-  svg_element: E5
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: R5,
-  append: W5,
-  attr: A5,
-  detach: X5,
-  init: Y5,
-  insert: I5,
-  noop: H5,
-  safe_not_equal: j5,
-  svg_element: T5
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: wd,
-  append: vd,
-  attr: $e,
-  detach: kd,
-  init: yd,
-  insert: Cd,
+  SvelteComponent: Df,
+  append: co,
+  attr: gt,
+  detach: Mf,
+  init: Lf,
+  insert: Ef,
   noop: uo,
-  safe_not_equal: Sd,
-  svg_element: Fs
+  safe_not_equal: Rf,
+  set_style: qt,
+  svg_element: Ul
 } = window.__gradio__svelte__internal;
-function qd(i) {
-  let e, t;
+function Wf(l) {
+  let e, t, n, i;
   return {
     c() {
-      e = Fs("svg"), t = Fs("rect"), $e(t, "x", "3"), $e(t, "y", "3"), $e(t, "width", "18"), $e(t, "height", "18"), $e(t, "rx", "2"), $e(t, "ry", "2"), $e(e, "xmlns", "http://www.w3.org/2000/svg"), $e(e, "width", "100%"), $e(e, "height", "100%"), $e(e, "viewBox", "0 0 24 24"), $e(e, "stroke-width", "1.5"), $e(e, "stroke-linecap", "round"), $e(e, "stroke-linejoin", "round"), $e(e, "class", "feather feather-square");
+      e = Ul("svg"), t = Ul("g"), n = Ul("path"), i = Ul("path"), gt(n, "d", "M18,6L6.087,17.913"), qt(n, "fill", "none"), qt(n, "fill-rule", "nonzero"), qt(n, "stroke-width", "2px"), gt(t, "transform", "matrix(1.14096,-0.140958,-0.140958,1.14096,-0.0559523,0.0559523)"), gt(i, "d", "M4.364,4.364L19.636,19.636"), qt(i, "fill", "none"), qt(i, "fill-rule", "nonzero"), qt(i, "stroke-width", "2px"), gt(e, "width", "100%"), gt(e, "height", "100%"), gt(e, "viewBox", "0 0 24 24"), gt(e, "version", "1.1"), gt(e, "xmlns", "http://www.w3.org/2000/svg"), gt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), gt(e, "xml:space", "preserve"), gt(e, "stroke", "currentColor"), qt(e, "fill-rule", "evenodd"), qt(e, "clip-rule", "evenodd"), qt(e, "stroke-linecap", "round"), qt(e, "stroke-linejoin", "round");
     },
-    m(n, l) {
-      Cd(n, e, l), vd(e, t);
+    m(o, s) {
+      Ef(o, e, s), co(e, t), co(t, n), co(e, i);
     },
     p: uo,
     i: uo,
     o: uo,
-    d(n) {
-      n && kd(e);
+    d(o) {
+      o && Mf(e);
     }
   };
 }
-class zd extends wd {
+class Jr extends Df {
   constructor(e) {
-    super(), yd(this, e, null, qd, Sd, {});
+    super(), Lf(this, e, null, Wf, Rf, {});
   }
 }
 const {
-  SvelteComponent: F5,
-  append: O5,
-  attr: $5,
-  detach: x5,
-  init: N5,
-  insert: U5,
-  noop: V5,
-  safe_not_equal: P5,
-  svg_element: K5
+  SvelteComponent: Lw,
+  append: Ew,
+  attr: Rw,
+  detach: Ww,
+  init: Aw,
+  insert: Xw,
+  noop: Yw,
+  safe_not_equal: Hw,
+  svg_element: Iw
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: Z5,
-  append: G5,
-  attr: J5,
-  detach: Q5,
-  init: ek,
-  insert: tk,
-  noop: nk,
-  safe_not_equal: ik,
-  svg_element: lk
+  SvelteComponent: jw,
+  append: Tw,
+  attr: $w,
+  detach: Fw,
+  init: Ow,
+  insert: xw,
+  noop: Vw,
+  safe_not_equal: Nw,
+  svg_element: Uw
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: ok,
-  append: sk,
-  attr: ak,
-  detach: rk,
-  init: _k,
-  insert: ck,
-  noop: fk,
-  safe_not_equal: uk,
-  svg_element: dk,
-  text: hk
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: mk,
-  append: gk,
-  attr: bk,
-  detach: pk,
-  init: wk,
-  insert: vk,
-  noop: kk,
-  safe_not_equal: yk,
-  svg_element: Ck
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Sk,
-  append: qk,
-  attr: zk,
-  detach: Bk,
-  init: Dk,
-  insert: Lk,
-  noop: Mk,
-  safe_not_equal: Ek,
-  svg_element: Rk
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Bd,
-  append: Os,
-  attr: ot,
-  detach: Dd,
-  init: Ld,
-  insert: Md,
-  noop: ho,
-  safe_not_equal: Ed,
-  svg_element: mo
+  SvelteComponent: Af,
+  append: Xf,
+  attr: kl,
+  detach: Yf,
+  init: Hf,
+  insert: If,
+  noop: fo,
+  safe_not_equal: jf,
+  svg_element: Us
 } = window.__gradio__svelte__internal;
-function Rd(i) {
-  let e, t, n;
+function Tf(l) {
+  let e, t;
   return {
     c() {
-      e = mo("svg"), t = mo("polyline"), n = mo("path"), ot(t, "points", "1 4 1 10 7 10"), ot(n, "d", "M3.51 15a9 9 0 1 0 2.13-9.36L1 10"), ot(e, "xmlns", "http://www.w3.org/2000/svg"), ot(e, "width", "100%"), ot(e, "height", "100%"), ot(e, "viewBox", "0 0 24 24"), ot(e, "fill", "none"), ot(e, "stroke", "currentColor"), ot(e, "stroke-width", "2"), ot(e, "stroke-linecap", "round"), ot(e, "stroke-linejoin", "round"), ot(e, "class", "feather feather-rotate-ccw");
+      e = Us("svg"), t = Us("path"), kl(t, "d", "M23,20a5,5,0,0,0-3.89,1.89L11.8,17.32a4.46,4.46,0,0,0,0-2.64l7.31-4.57A5,5,0,1,0,18,7a4.79,4.79,0,0,0,.2,1.32l-7.31,4.57a5,5,0,1,0,0,6.22l7.31,4.57A4.79,4.79,0,0,0,18,25a5,5,0,1,0,5-5ZM23,4a3,3,0,1,1-3,3A3,3,0,0,1,23,4ZM7,19a3,3,0,1,1,3-3A3,3,0,0,1,7,19Zm16,9a3,3,0,1,1,3-3A3,3,0,0,1,23,28Z"), kl(t, "fill", "currentColor"), kl(e, "id", "icon"), kl(e, "xmlns", "http://www.w3.org/2000/svg"), kl(e, "viewBox", "0 0 32 32");
     },
-    m(l, o) {
-      Md(l, e, o), Os(e, t), Os(e, n);
+    m(n, i) {
+      If(n, e, i), Xf(e, t);
+    },
+    p: fo,
+    i: fo,
+    o: fo,
+    d(n) {
+      n && Yf(e);
+    }
+  };
+}
+class $f extends Af {
+  constructor(e) {
+    super(), Hf(this, e, null, Tf, jf, {});
+  }
+}
+const {
+  SvelteComponent: Pw,
+  append: Kw,
+  attr: Zw,
+  detach: Gw,
+  init: Jw,
+  insert: Qw,
+  noop: ev,
+  safe_not_equal: tv,
+  svg_element: nv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: lv,
+  append: iv,
+  attr: ov,
+  detach: sv,
+  init: av,
+  insert: rv,
+  noop: _v,
+  safe_not_equal: cv,
+  svg_element: uv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: fv,
+  append: dv,
+  attr: hv,
+  detach: mv,
+  init: gv,
+  insert: bv,
+  noop: pv,
+  safe_not_equal: wv,
+  svg_element: vv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Ff,
+  append: Of,
+  attr: Vn,
+  detach: xf,
+  init: Vf,
+  insert: Nf,
+  noop: ho,
+  safe_not_equal: Uf,
+  svg_element: Ps
+} = window.__gradio__svelte__internal;
+function Pf(l) {
+  let e, t;
+  return {
+    c() {
+      e = Ps("svg"), t = Ps("path"), Vn(t, "fill", "currentColor"), Vn(t, "d", "M26 24v4H6v-4H4v4a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2v-4zm0-10l-1.41-1.41L17 20.17V2h-2v18.17l-7.59-7.58L6 14l10 10l10-10z"), Vn(e, "xmlns", "http://www.w3.org/2000/svg"), Vn(e, "width", "100%"), Vn(e, "height", "100%"), Vn(e, "viewBox", "0 0 32 32");
+    },
+    m(n, i) {
+      Nf(n, e, i), Of(e, t);
     },
     p: ho,
     i: ho,
     o: ho,
-    d(l) {
-      l && Dd(e);
+    d(n) {
+      n && xf(e);
     }
   };
 }
-class Wd extends Bd {
+class Kf extends Ff {
   constructor(e) {
-    super(), Ld(this, e, null, Rd, Ed, {});
+    super(), Vf(this, e, null, Pf, Uf, {});
   }
 }
 const {
-  SvelteComponent: Ad,
-  append: go,
-  attr: De,
-  detach: Xd,
-  init: Yd,
-  insert: Id,
-  noop: bo,
-  safe_not_equal: Hd,
-  svg_element: Ni
+  SvelteComponent: Zf,
+  append: Gf,
+  attr: Nn,
+  detach: Jf,
+  init: Qf,
+  insert: ed,
+  noop: mo,
+  safe_not_equal: td,
+  svg_element: Ks
 } = window.__gradio__svelte__internal;
-function jd(i) {
-  let e, t, n, l;
+function nd(l) {
+  let e, t;
   return {
     c() {
-      e = Ni("svg"), t = Ni("path"), n = Ni("polyline"), l = Ni("line"), De(t, "d", "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"), De(n, "points", "17 8 12 3 7 8"), De(l, "x1", "12"), De(l, "y1", "3"), De(l, "x2", "12"), De(l, "y2", "15"), De(e, "xmlns", "http://www.w3.org/2000/svg"), De(e, "width", "90%"), De(e, "height", "90%"), De(e, "viewBox", "0 0 24 24"), De(e, "fill", "none"), De(e, "stroke", "currentColor"), De(e, "stroke-width", "2"), De(e, "stroke-linecap", "round"), De(e, "stroke-linejoin", "round"), De(e, "class", "feather feather-upload");
+      e = Ks("svg"), t = Ks("path"), Nn(t, "d", "M5 8l4 4 4-4z"), Nn(e, "class", "dropdown-arrow svelte-145leq6"), Nn(e, "xmlns", "http://www.w3.org/2000/svg"), Nn(e, "width", "100%"), Nn(e, "height", "100%"), Nn(e, "viewBox", "0 0 18 18");
+    },
+    m(n, i) {
+      ed(n, e, i), Gf(e, t);
+    },
+    p: mo,
+    i: mo,
+    o: mo,
+    d(n) {
+      n && Jf(e);
+    }
+  };
+}
+class qs extends Zf {
+  constructor(e) {
+    super(), Qf(this, e, null, nd, td, {});
+  }
+}
+const {
+  SvelteComponent: kv,
+  append: yv,
+  attr: Cv,
+  detach: Sv,
+  init: qv,
+  insert: zv,
+  noop: Bv,
+  safe_not_equal: Dv,
+  svg_element: Mv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Lv,
+  append: Ev,
+  attr: Rv,
+  detach: Wv,
+  init: Av,
+  insert: Xv,
+  noop: Yv,
+  safe_not_equal: Hv,
+  svg_element: Iv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: jv,
+  append: Tv,
+  attr: $v,
+  detach: Fv,
+  init: Ov,
+  insert: xv,
+  noop: Vv,
+  safe_not_equal: Nv,
+  svg_element: Uv
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Pv,
+  append: Kv,
+  attr: Zv,
+  detach: Gv,
+  init: Jv,
+  insert: Qv,
+  noop: e4,
+  safe_not_equal: t4,
+  svg_element: n4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: l4,
+  append: i4,
+  attr: o4,
+  detach: s4,
+  init: a4,
+  insert: r4,
+  noop: _4,
+  safe_not_equal: c4,
+  svg_element: u4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: f4,
+  append: d4,
+  attr: h4,
+  detach: m4,
+  init: g4,
+  insert: b4,
+  noop: p4,
+  safe_not_equal: w4,
+  svg_element: v4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: k4,
+  append: y4,
+  attr: C4,
+  detach: S4,
+  init: q4,
+  insert: z4,
+  noop: B4,
+  safe_not_equal: D4,
+  svg_element: M4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: ld,
+  append: go,
+  attr: be,
+  detach: id,
+  init: od,
+  insert: sd,
+  noop: bo,
+  safe_not_equal: ad,
+  svg_element: Pl
+} = window.__gradio__svelte__internal;
+function rd(l) {
+  let e, t, n, i;
+  return {
+    c() {
+      e = Pl("svg"), t = Pl("rect"), n = Pl("circle"), i = Pl("polyline"), be(t, "x", "3"), be(t, "y", "3"), be(t, "width", "18"), be(t, "height", "18"), be(t, "rx", "2"), be(t, "ry", "2"), be(n, "cx", "8.5"), be(n, "cy", "8.5"), be(n, "r", "1.5"), be(i, "points", "21 15 16 10 5 21"), be(e, "xmlns", "http://www.w3.org/2000/svg"), be(e, "width", "100%"), be(e, "height", "100%"), be(e, "viewBox", "0 0 24 24"), be(e, "fill", "none"), be(e, "stroke", "currentColor"), be(e, "stroke-width", "1.5"), be(e, "stroke-linecap", "round"), be(e, "stroke-linejoin", "round"), be(e, "class", "feather feather-image");
     },
     m(o, s) {
-      Id(o, e, s), go(e, t), go(e, n), go(e, l);
+      sd(o, e, s), go(e, t), go(e, n), go(e, i);
     },
     p: bo,
     i: bo,
     o: bo,
     d(o) {
-      o && Xd(e);
+      o && id(e);
     }
   };
 }
-let Tr = class extends Ad {
+let Qr = class extends ld {
   constructor(e) {
-    super(), Yd(this, e, null, jd, Hd, {});
+    super(), od(this, e, null, rd, ad, {});
   }
 };
 const {
-  SvelteComponent: Ak,
-  append: Xk,
-  attr: Yk,
-  detach: Ik,
-  init: Hk,
-  insert: jk,
-  noop: Tk,
-  safe_not_equal: Fk,
-  svg_element: Ok
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: $k,
-  append: xk,
-  attr: Nk,
-  detach: Uk,
-  init: Vk,
-  insert: Pk,
-  noop: Kk,
-  safe_not_equal: Zk,
-  svg_element: Gk,
-  text: Jk
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Qk,
-  append: e6,
-  attr: t6,
-  detach: n6,
-  init: i6,
-  insert: l6,
-  noop: o6,
-  safe_not_equal: s6,
-  svg_element: a6,
-  text: r6
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: _6,
-  append: c6,
-  attr: f6,
-  detach: u6,
-  init: d6,
-  insert: h6,
-  noop: m6,
-  safe_not_equal: g6,
-  svg_element: b6,
-  text: p6
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: w6,
-  append: v6,
-  attr: k6,
-  detach: y6,
-  init: C6,
-  insert: S6,
-  noop: q6,
-  safe_not_equal: z6,
-  svg_element: B6
-} = window.__gradio__svelte__internal, {
-  SvelteComponent: Td,
-  append: $s,
-  attr: Gt,
-  detach: Fd,
-  init: Od,
-  insert: $d,
+  SvelteComponent: _d,
+  append: cd,
+  attr: Kl,
+  detach: ud,
+  init: fd,
+  insert: dd,
   noop: po,
-  safe_not_equal: xd,
-  svg_element: wo
+  safe_not_equal: hd,
+  svg_element: Zs
 } = window.__gradio__svelte__internal;
-function Nd(i) {
-  let e, t, n;
+function md(l) {
+  let e, t;
   return {
     c() {
-      e = wo("svg"), t = wo("path"), n = wo("path"), Gt(t, "fill", "currentColor"), Gt(t, "d", "M12 2c-4.963 0-9 4.038-9 9c0 3.328 1.82 6.232 4.513 7.79l-2.067 1.378A1 1 0 0 0 6 22h12a1 1 0 0 0 .555-1.832l-2.067-1.378C19.18 17.232 21 14.328 21 11c0-4.962-4.037-9-9-9zm0 16c-3.859 0-7-3.141-7-7c0-3.86 3.141-7 7-7s7 3.14 7 7c0 3.859-3.141 7-7 7z"), Gt(n, "fill", "currentColor"), Gt(n, "d", "M12 6c-2.757 0-5 2.243-5 5s2.243 5 5 5s5-2.243 5-5s-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3s3 1.346 3 3s-1.346 3-3 3z"), Gt(e, "xmlns", "http://www.w3.org/2000/svg"), Gt(e, "width", "100%"), Gt(e, "height", "100%"), Gt(e, "viewBox", "0 0 24 24");
+      e = Zs("svg"), t = Zs("path"), Kl(t, "fill", "currentColor"), Kl(t, "d", "M13.75 2a2.25 2.25 0 0 1 2.236 2.002V4h1.764A2.25 2.25 0 0 1 20 6.25V11h-1.5V6.25a.75.75 0 0 0-.75-.75h-2.129c-.404.603-1.091 1-1.871 1h-3.5c-.78 0-1.467-.397-1.871-1H6.25a.75.75 0 0 0-.75.75v13.5c0 .414.336.75.75.75h4.78a4 4 0 0 0 .505 1.5H6.25A2.25 2.25 0 0 1 4 19.75V6.25A2.25 2.25 0 0 1 6.25 4h1.764a2.25 2.25 0 0 1 2.236-2zm2.245 2.096L16 4.25q0-.078-.005-.154M13.75 3.5h-3.5a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5M15 12a3 3 0 0 0-3 3v5c0 .556.151 1.077.415 1.524l3.494-3.494a2.25 2.25 0 0 1 3.182 0l3.494 3.494c.264-.447.415-.968.415-1.524v-5a3 3 0 0 0-3-3zm0 11a3 3 0 0 1-1.524-.415l3.494-3.494a.75.75 0 0 1 1.06 0l3.494 3.494A3 3 0 0 1 20 23zm5-7a1 1 0 1 1 0-2 1 1 0 0 1 0 2"), Kl(e, "xmlns", "http://www.w3.org/2000/svg"), Kl(e, "viewBox", "0 0 24 24");
     },
-    m(l, o) {
-      $d(l, e, o), $s(e, t), $s(e, n);
+    m(n, i) {
+      dd(n, e, i), cd(e, t);
     },
     p: po,
     i: po,
     o: po,
-    d(l) {
-      l && Fd(e);
+    d(n) {
+      n && ud(e);
     }
   };
 }
-let Fr = class extends Td {
+class e_ extends _d {
   constructor(e) {
-    super(), Od(this, e, null, Nd, xd, {});
+    super(), fd(this, e, null, md, hd, {});
+  }
+}
+const {
+  SvelteComponent: E4,
+  append: R4,
+  attr: W4,
+  detach: A4,
+  init: X4,
+  insert: Y4,
+  noop: H4,
+  safe_not_equal: I4,
+  svg_element: j4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: T4,
+  append: $4,
+  attr: F4,
+  detach: O4,
+  init: x4,
+  insert: V4,
+  noop: N4,
+  safe_not_equal: U4,
+  svg_element: P4
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: K4,
+  append: Z4,
+  attr: G4,
+  detach: J4,
+  init: Q4,
+  insert: e3,
+  noop: t3,
+  safe_not_equal: n3,
+  svg_element: l3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: i3,
+  append: o3,
+  attr: s3,
+  detach: a3,
+  init: r3,
+  insert: _3,
+  noop: c3,
+  safe_not_equal: u3,
+  svg_element: f3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: d3,
+  append: h3,
+  attr: m3,
+  detach: g3,
+  init: b3,
+  insert: p3,
+  noop: w3,
+  safe_not_equal: v3,
+  svg_element: k3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: gd,
+  append: Zl,
+  attr: pe,
+  detach: bd,
+  init: pd,
+  insert: wd,
+  noop: wo,
+  safe_not_equal: vd,
+  svg_element: yl
+} = window.__gradio__svelte__internal;
+function kd(l) {
+  let e, t, n, i, o;
+  return {
+    c() {
+      e = yl("svg"), t = yl("path"), n = yl("path"), i = yl("line"), o = yl("line"), pe(t, "d", "M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"), pe(n, "d", "M19 10v2a7 7 0 0 1-14 0v-2"), pe(i, "x1", "12"), pe(i, "y1", "19"), pe(i, "x2", "12"), pe(i, "y2", "23"), pe(o, "x1", "8"), pe(o, "y1", "23"), pe(o, "x2", "16"), pe(o, "y2", "23"), pe(e, "xmlns", "http://www.w3.org/2000/svg"), pe(e, "width", "100%"), pe(e, "height", "100%"), pe(e, "viewBox", "0 0 24 24"), pe(e, "fill", "none"), pe(e, "stroke", "currentColor"), pe(e, "stroke-width", "2"), pe(e, "stroke-linecap", "round"), pe(e, "stroke-linejoin", "round"), pe(e, "class", "feather feather-mic");
+    },
+    m(s, r) {
+      wd(s, e, r), Zl(e, t), Zl(e, n), Zl(e, i), Zl(e, o);
+    },
+    p: wo,
+    i: wo,
+    o: wo,
+    d(s) {
+      s && bd(e);
+    }
+  };
+}
+class yd extends gd {
+  constructor(e) {
+    super(), pd(this, e, null, kd, vd, {});
+  }
+}
+const {
+  SvelteComponent: y3,
+  append: C3,
+  attr: S3,
+  detach: q3,
+  init: z3,
+  insert: B3,
+  noop: D3,
+  safe_not_equal: M3,
+  svg_element: L3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: E3,
+  append: R3,
+  attr: W3,
+  detach: A3,
+  init: X3,
+  insert: Y3,
+  noop: H3,
+  safe_not_equal: I3,
+  svg_element: j3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: T3,
+  append: $3,
+  attr: F3,
+  detach: O3,
+  init: x3,
+  insert: V3,
+  noop: N3,
+  safe_not_equal: U3,
+  svg_element: P3
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: K3,
+  append: Z3,
+  attr: G3,
+  detach: J3,
+  init: Q3,
+  insert: e5,
+  noop: t5,
+  safe_not_equal: n5,
+  svg_element: l5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: i5,
+  append: o5,
+  attr: s5,
+  detach: a5,
+  init: r5,
+  insert: _5,
+  noop: c5,
+  safe_not_equal: u5,
+  svg_element: f5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: d5,
+  append: h5,
+  attr: m5,
+  detach: g5,
+  init: b5,
+  insert: p5,
+  noop: w5,
+  safe_not_equal: v5,
+  svg_element: k5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Cd,
+  append: Gs,
+  attr: it,
+  detach: Sd,
+  init: qd,
+  insert: zd,
+  noop: vo,
+  safe_not_equal: Bd,
+  set_style: Dd,
+  svg_element: ko
+} = window.__gradio__svelte__internal;
+function Md(l) {
+  let e, t, n;
+  return {
+    c() {
+      e = ko("svg"), t = ko("polyline"), n = ko("path"), it(t, "points", "1 4 1 10 7 10"), it(n, "d", "M3.51 15a9 9 0 1 0 2.13-9.36L1 10"), it(e, "xmlns", "http://www.w3.org/2000/svg"), it(e, "width", "100%"), it(e, "height", "100%"), it(e, "viewBox", "0 0 24 24"), it(e, "fill", "none"), it(e, "stroke", "currentColor"), it(e, "stroke-width", "2"), it(e, "stroke-linecap", "round"), it(e, "stroke-linejoin", "round"), it(e, "class", "feather feather-rotate-ccw"), Dd(e, "transform", "rotateY(180deg)");
+    },
+    m(i, o) {
+      zd(i, e, o), Gs(e, t), Gs(e, n);
+    },
+    p: vo,
+    i: vo,
+    o: vo,
+    d(i) {
+      i && Sd(e);
+    }
+  };
+}
+class Ld extends Cd {
+  constructor(e) {
+    super(), qd(this, e, null, Md, Bd, {});
+  }
+}
+const {
+  SvelteComponent: y5,
+  append: C5,
+  attr: S5,
+  detach: q5,
+  init: z5,
+  insert: B5,
+  noop: D5,
+  safe_not_equal: M5,
+  svg_element: L5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: E5,
+  append: R5,
+  attr: W5,
+  detach: A5,
+  init: X5,
+  insert: Y5,
+  noop: H5,
+  safe_not_equal: I5,
+  svg_element: j5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: T5,
+  append: $5,
+  attr: F5,
+  detach: O5,
+  init: x5,
+  insert: V5,
+  noop: N5,
+  safe_not_equal: U5,
+  svg_element: P5
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: K5,
+  append: Z5,
+  attr: G5,
+  detach: J5,
+  init: Q5,
+  insert: ek,
+  noop: tk,
+  safe_not_equal: nk,
+  svg_element: lk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: ik,
+  append: ok,
+  attr: sk,
+  detach: ak,
+  init: rk,
+  insert: _k,
+  noop: ck,
+  safe_not_equal: uk,
+  svg_element: fk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Ed,
+  append: Rd,
+  attr: Fe,
+  detach: Wd,
+  init: Ad,
+  insert: Xd,
+  noop: yo,
+  safe_not_equal: Yd,
+  svg_element: Js
+} = window.__gradio__svelte__internal;
+function Hd(l) {
+  let e, t;
+  return {
+    c() {
+      e = Js("svg"), t = Js("rect"), Fe(t, "x", "3"), Fe(t, "y", "3"), Fe(t, "width", "18"), Fe(t, "height", "18"), Fe(t, "rx", "2"), Fe(t, "ry", "2"), Fe(e, "xmlns", "http://www.w3.org/2000/svg"), Fe(e, "width", "100%"), Fe(e, "height", "100%"), Fe(e, "viewBox", "0 0 24 24"), Fe(e, "stroke-width", "1.5"), Fe(e, "stroke-linecap", "round"), Fe(e, "stroke-linejoin", "round"), Fe(e, "class", "feather feather-square");
+    },
+    m(n, i) {
+      Xd(n, e, i), Rd(e, t);
+    },
+    p: yo,
+    i: yo,
+    o: yo,
+    d(n) {
+      n && Wd(e);
+    }
+  };
+}
+class Id extends Ed {
+  constructor(e) {
+    super(), Ad(this, e, null, Hd, Yd, {});
+  }
+}
+const {
+  SvelteComponent: dk,
+  append: hk,
+  attr: mk,
+  detach: gk,
+  init: bk,
+  insert: pk,
+  noop: wk,
+  safe_not_equal: vk,
+  svg_element: kk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: yk,
+  append: Ck,
+  attr: Sk,
+  detach: qk,
+  init: zk,
+  insert: Bk,
+  noop: Dk,
+  safe_not_equal: Mk,
+  svg_element: Lk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Ek,
+  append: Rk,
+  attr: Wk,
+  detach: Ak,
+  init: Xk,
+  insert: Yk,
+  noop: Hk,
+  safe_not_equal: Ik,
+  svg_element: jk,
+  text: Tk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: $k,
+  append: Fk,
+  attr: Ok,
+  detach: xk,
+  init: Vk,
+  insert: Nk,
+  noop: Uk,
+  safe_not_equal: Pk,
+  svg_element: Kk
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Zk,
+  append: Gk,
+  attr: Jk,
+  detach: Qk,
+  init: e6,
+  insert: t6,
+  noop: n6,
+  safe_not_equal: l6,
+  svg_element: i6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: jd,
+  append: Qs,
+  attr: ot,
+  detach: Td,
+  init: $d,
+  insert: Fd,
+  noop: Co,
+  safe_not_equal: Od,
+  svg_element: So
+} = window.__gradio__svelte__internal;
+function xd(l) {
+  let e, t, n;
+  return {
+    c() {
+      e = So("svg"), t = So("polyline"), n = So("path"), ot(t, "points", "1 4 1 10 7 10"), ot(n, "d", "M3.51 15a9 9 0 1 0 2.13-9.36L1 10"), ot(e, "xmlns", "http://www.w3.org/2000/svg"), ot(e, "width", "100%"), ot(e, "height", "100%"), ot(e, "viewBox", "0 0 24 24"), ot(e, "fill", "none"), ot(e, "stroke", "currentColor"), ot(e, "stroke-width", "2"), ot(e, "stroke-linecap", "round"), ot(e, "stroke-linejoin", "round"), ot(e, "class", "feather feather-rotate-ccw");
+    },
+    m(i, o) {
+      Fd(i, e, o), Qs(e, t), Qs(e, n);
+    },
+    p: Co,
+    i: Co,
+    o: Co,
+    d(i) {
+      i && Td(e);
+    }
+  };
+}
+class Vd extends jd {
+  constructor(e) {
+    super(), $d(this, e, null, xd, Od, {});
+  }
+}
+const {
+  SvelteComponent: Nd,
+  append: qo,
+  attr: Be,
+  detach: Ud,
+  init: Pd,
+  insert: Kd,
+  noop: zo,
+  safe_not_equal: Zd,
+  svg_element: Gl
+} = window.__gradio__svelte__internal;
+function Gd(l) {
+  let e, t, n, i;
+  return {
+    c() {
+      e = Gl("svg"), t = Gl("path"), n = Gl("polyline"), i = Gl("line"), Be(t, "d", "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"), Be(n, "points", "17 8 12 3 7 8"), Be(i, "x1", "12"), Be(i, "y1", "3"), Be(i, "x2", "12"), Be(i, "y2", "15"), Be(e, "xmlns", "http://www.w3.org/2000/svg"), Be(e, "width", "90%"), Be(e, "height", "90%"), Be(e, "viewBox", "0 0 24 24"), Be(e, "fill", "none"), Be(e, "stroke", "currentColor"), Be(e, "stroke-width", "2"), Be(e, "stroke-linecap", "round"), Be(e, "stroke-linejoin", "round"), Be(e, "class", "feather feather-upload");
+    },
+    m(o, s) {
+      Kd(o, e, s), qo(e, t), qo(e, n), qo(e, i);
+    },
+    p: zo,
+    i: zo,
+    o: zo,
+    d(o) {
+      o && Ud(e);
+    }
+  };
+}
+let t_ = class extends Nd {
+  constructor(e) {
+    super(), Pd(this, e, null, Gd, Zd, {});
   }
 };
-const Ud = [
+const {
+  SvelteComponent: s6,
+  append: a6,
+  attr: r6,
+  detach: _6,
+  init: c6,
+  insert: u6,
+  noop: f6,
+  safe_not_equal: d6,
+  svg_element: h6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: m6,
+  append: g6,
+  attr: b6,
+  detach: p6,
+  init: w6,
+  insert: v6,
+  noop: k6,
+  safe_not_equal: y6,
+  svg_element: C6,
+  text: S6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: q6,
+  append: z6,
+  attr: B6,
+  detach: D6,
+  init: M6,
+  insert: L6,
+  noop: E6,
+  safe_not_equal: R6,
+  svg_element: W6,
+  text: A6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: X6,
+  append: Y6,
+  attr: H6,
+  detach: I6,
+  init: j6,
+  insert: T6,
+  noop: $6,
+  safe_not_equal: F6,
+  svg_element: O6,
+  text: x6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: V6,
+  append: N6,
+  attr: U6,
+  detach: P6,
+  init: K6,
+  insert: Z6,
+  noop: G6,
+  safe_not_equal: J6,
+  svg_element: Q6
+} = window.__gradio__svelte__internal, {
+  SvelteComponent: Jd,
+  append: ea,
+  attr: en,
+  detach: Qd,
+  init: e1,
+  insert: t1,
+  noop: Bo,
+  safe_not_equal: n1,
+  svg_element: Do
+} = window.__gradio__svelte__internal;
+function l1(l) {
+  let e, t, n;
+  return {
+    c() {
+      e = Do("svg"), t = Do("path"), n = Do("path"), en(t, "fill", "currentColor"), en(t, "d", "M12 2c-4.963 0-9 4.038-9 9c0 3.328 1.82 6.232 4.513 7.79l-2.067 1.378A1 1 0 0 0 6 22h12a1 1 0 0 0 .555-1.832l-2.067-1.378C19.18 17.232 21 14.328 21 11c0-4.962-4.037-9-9-9zm0 16c-3.859 0-7-3.141-7-7c0-3.86 3.141-7 7-7s7 3.14 7 7c0 3.859-3.141 7-7 7z"), en(n, "fill", "currentColor"), en(n, "d", "M12 6c-2.757 0-5 2.243-5 5s2.243 5 5 5s5-2.243 5-5s-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3s3 1.346 3 3s-1.346 3-3 3z"), en(e, "xmlns", "http://www.w3.org/2000/svg"), en(e, "width", "100%"), en(e, "height", "100%"), en(e, "viewBox", "0 0 24 24");
+    },
+    m(i, o) {
+      t1(i, e, o), ea(e, t), ea(e, n);
+    },
+    p: Bo,
+    i: Bo,
+    o: Bo,
+    d(i) {
+      i && Qd(e);
+    }
+  };
+}
+let n_ = class extends Jd {
+  constructor(e) {
+    super(), e1(this, e, null, l1, n1, {});
+  }
+};
+const i1 = [
   { color: "red", primary: 600, secondary: 100 },
   { color: "green", primary: 600, secondary: 100 },
   { color: "blue", primary: 600, secondary: 100 },
@@ -1971,7 +1971,7 @@ const Ud = [
   { color: "cyan", primary: 600, secondary: 100 },
   { color: "lime", primary: 500, secondary: 100 },
   { color: "pink", primary: 600, secondary: 100 }
-], xs = {
+], ta = {
   inherit: "inherit",
   current: "currentColor",
   transparent: "transparent",
@@ -2264,25 +2264,25 @@ const Ud = [
     950: "#4c0519"
   }
 };
-Ud.reduce((i, { color: e, primary: t, secondary: n }) => ({
-  ...i,
+i1.reduce((l, { color: e, primary: t, secondary: n }) => ({
+  ...l,
   [e]: {
-    primary: xs[e][t],
-    secondary: xs[e][n]
+    primary: ta[e][t],
+    secondary: ta[e][n]
   }
 }), {});
-class hl extends Error {
+class ki extends Error {
   constructor(e) {
     super(e), this.name = "ShareError";
   }
 }
-async function Vd(i, e) {
+async function o1(l, e) {
   var a;
   if (window.__gradio_space__ == null)
-    throw new hl("Must be on Spaces to share.");
-  let t, n, l;
-  t = Pd(i), n = i.split(";")[0].split(":")[1], l = "file" + n.split("/")[1];
-  const o = new File([t], l, { type: n }), s = await fetch("https://huggingface.co/uploads", {
+    throw new ki("Must be on Spaces to share.");
+  let t, n, i;
+  t = s1(l), n = l.split(";")[0].split(":")[1], i = "file" + n.split("/")[1];
+  const o = new File([t], i, { type: n }), s = await fetch("https://huggingface.co/uploads", {
     method: "POST",
     body: o,
     headers: {
@@ -2293,228 +2293,228 @@ async function Vd(i, e) {
   if (!s.ok) {
     if ((a = s.headers.get("content-type")) != null && a.includes("application/json")) {
       const _ = await s.json();
-      throw new hl(`Upload failed: ${_.error}`);
+      throw new ki(`Upload failed: ${_.error}`);
     }
-    throw new hl("Upload failed.");
+    throw new ki("Upload failed.");
   }
   return await s.text();
 }
-function Pd(i) {
-  for (var e = i.split(","), t = e[0].match(/:(.*?);/)[1], n = atob(e[1]), l = n.length, o = new Uint8Array(l); l--; )
-    o[l] = n.charCodeAt(l);
+function s1(l) {
+  for (var e = l.split(","), t = e[0].match(/:(.*?);/)[1], n = atob(e[1]), i = n.length, o = new Uint8Array(i); i--; )
+    o[i] = n.charCodeAt(i);
   return new Blob([o], { type: t });
 }
 const {
-  SvelteComponent: Kd,
-  create_component: Zd,
-  destroy_component: Gd,
-  init: Jd,
-  mount_component: Qd,
-  safe_not_equal: e1,
-  transition_in: t1,
-  transition_out: n1
-} = window.__gradio__svelte__internal, { createEventDispatcher: i1 } = window.__gradio__svelte__internal;
-function l1(i) {
+  SvelteComponent: a1,
+  create_component: r1,
+  destroy_component: _1,
+  init: c1,
+  mount_component: u1,
+  safe_not_equal: f1,
+  transition_in: d1,
+  transition_out: h1
+} = window.__gradio__svelte__internal, { createEventDispatcher: m1 } = window.__gradio__svelte__internal;
+function g1(l) {
   let e, t;
-  return e = new Rl({
+  return e = new Fl({
     props: {
-      Icon: Lu,
+      Icon: $f,
       label: (
         /*i18n*/
-        i[2]("common.share")
+        l[2]("common.share")
       ),
       pending: (
         /*pending*/
-        i[3]
+        l[3]
       )
     }
   }), e.$on(
     "click",
     /*click_handler*/
-    i[5]
+    l[5]
   ), {
     c() {
-      Zd(e.$$.fragment);
+      r1(e.$$.fragment);
     },
-    m(n, l) {
-      Qd(e, n, l), t = !0;
+    m(n, i) {
+      u1(e, n, i), t = !0;
     },
-    p(n, [l]) {
+    p(n, [i]) {
       const o = {};
-      l & /*i18n*/
+      i & /*i18n*/
       4 && (o.label = /*i18n*/
-      n[2]("common.share")), l & /*pending*/
+      n[2]("common.share")), i & /*pending*/
       8 && (o.pending = /*pending*/
       n[3]), e.$set(o);
     },
     i(n) {
-      t || (t1(e.$$.fragment, n), t = !0);
+      t || (d1(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      n1(e.$$.fragment, n), t = !1;
+      h1(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Gd(e, n);
+      _1(e, n);
     }
   };
 }
-function o1(i, e, t) {
-  const n = i1();
-  let { formatter: l } = e, { value: o } = e, { i18n: s } = e, r = !1;
+function b1(l, e, t) {
+  const n = m1();
+  let { formatter: i } = e, { value: o } = e, { i18n: s } = e, r = !1;
   const a = async () => {
     try {
       t(3, r = !0);
-      const _ = await l(o);
+      const _ = await i(o);
       n("share", { description: _ });
     } catch (_) {
       console.error(_);
-      let c = _ instanceof hl ? _.message : "Share failed.";
+      let c = _ instanceof ki ? _.message : "Share failed.";
       n("error", c);
     } finally {
       t(3, r = !1);
     }
   };
-  return i.$$set = (_) => {
-    "formatter" in _ && t(0, l = _.formatter), "value" in _ && t(1, o = _.value), "i18n" in _ && t(2, s = _.i18n);
-  }, [l, o, s, r, n, a];
+  return l.$$set = (_) => {
+    "formatter" in _ && t(0, i = _.formatter), "value" in _ && t(1, o = _.value), "i18n" in _ && t(2, s = _.i18n);
+  }, [i, o, s, r, n, a];
 }
-class s1 extends Kd {
+class p1 extends a1 {
   constructor(e) {
-    super(), Jd(this, e, o1, l1, e1, { formatter: 0, value: 1, i18n: 2 });
+    super(), c1(this, e, b1, g1, f1, { formatter: 0, value: 1, i18n: 2 });
   }
 }
 const {
-  SvelteComponent: a1,
-  append: kn,
-  attr: Ko,
-  check_outros: r1,
-  create_component: Or,
-  destroy_component: $r,
-  detach: ml,
-  element: Zo,
-  group_outros: _1,
-  init: c1,
-  insert: gl,
-  mount_component: xr,
-  safe_not_equal: f1,
-  set_data: Go,
-  space: Jo,
-  text: Ci,
-  toggle_class: Ns,
-  transition_in: wl,
-  transition_out: vl
+  SvelteComponent: w1,
+  append: Mn,
+  attr: ss,
+  check_outros: v1,
+  create_component: l_,
+  destroy_component: i_,
+  detach: yi,
+  element: as,
+  group_outros: k1,
+  init: y1,
+  insert: Ci,
+  mount_component: o_,
+  safe_not_equal: C1,
+  set_data: rs,
+  space: _s,
+  text: El,
+  toggle_class: na,
+  transition_in: zi,
+  transition_out: Bi
 } = window.__gradio__svelte__internal;
-function u1(i) {
+function S1(l) {
   let e, t;
-  return e = new Tr({}), {
+  return e = new t_({}), {
     c() {
-      Or(e.$$.fragment);
+      l_(e.$$.fragment);
     },
-    m(n, l) {
-      xr(e, n, l), t = !0;
+    m(n, i) {
+      o_(e, n, i), t = !0;
     },
     i(n) {
-      t || (wl(e.$$.fragment, n), t = !0);
+      t || (zi(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      vl(e.$$.fragment, n), t = !1;
+      Bi(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $r(e, n);
+      i_(e, n);
     }
   };
 }
-function d1(i) {
+function q1(l) {
   let e, t;
-  return e = new jr({}), {
+  return e = new e_({}), {
     c() {
-      Or(e.$$.fragment);
+      l_(e.$$.fragment);
     },
-    m(n, l) {
-      xr(e, n, l), t = !0;
+    m(n, i) {
+      o_(e, n, i), t = !0;
     },
     i(n) {
-      t || (wl(e.$$.fragment, n), t = !0);
+      t || (zi(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      vl(e.$$.fragment, n), t = !1;
+      Bi(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $r(e, n);
+      i_(e, n);
     }
   };
 }
-function Us(i) {
+function la(l) {
   let e, t, n = (
     /*i18n*/
-    i[1]("common.or") + ""
-  ), l, o, s, r = (
+    l[1]("common.or") + ""
+  ), i, o, s, r = (
     /*message*/
-    (i[2] || /*i18n*/
-    i[1]("upload_text.click_to_upload")) + ""
+    (l[2] || /*i18n*/
+    l[1]("upload_text.click_to_upload")) + ""
   ), a;
   return {
     c() {
-      e = Zo("span"), t = Ci("- "), l = Ci(n), o = Ci(" -"), s = Jo(), a = Ci(r), Ko(e, "class", "or svelte-kzcjhc");
+      e = as("span"), t = El("- "), i = El(n), o = El(" -"), s = _s(), a = El(r), ss(e, "class", "or svelte-kzcjhc");
     },
     m(_, c) {
-      gl(_, e, c), kn(e, t), kn(e, l), kn(e, o), gl(_, s, c), gl(_, a, c);
+      Ci(_, e, c), Mn(e, t), Mn(e, i), Mn(e, o), Ci(_, s, c), Ci(_, a, c);
     },
     p(_, c) {
       c & /*i18n*/
       2 && n !== (n = /*i18n*/
-      _[1]("common.or") + "") && Go(l, n), c & /*message, i18n*/
+      _[1]("common.or") + "") && rs(i, n), c & /*message, i18n*/
       6 && r !== (r = /*message*/
       (_[2] || /*i18n*/
-      _[1]("upload_text.click_to_upload")) + "") && Go(a, r);
+      _[1]("upload_text.click_to_upload")) + "") && rs(a, r);
     },
     d(_) {
-      _ && (ml(e), ml(s), ml(a));
+      _ && (yi(e), yi(s), yi(a));
     }
   };
 }
-function h1(i) {
-  let e, t, n, l, o, s = (
+function z1(l) {
+  let e, t, n, i, o, s = (
     /*i18n*/
-    i[1](
+    l[1](
       /*defs*/
-      i[5][
+      l[5][
         /*type*/
-        i[0]
+        l[0]
       ] || /*defs*/
-      i[5].file
+      l[5].file
     ) + ""
   ), r, a, _;
-  const c = [d1, u1], u = [];
-  function f(h, m) {
+  const c = [q1, S1], f = [];
+  function u(h, m) {
     return (
       /*type*/
       h[0] === "clipboard" ? 0 : 1
     );
   }
-  n = f(i), l = u[n] = c[n](i);
+  n = u(l), i = f[n] = c[n](l);
   let d = (
     /*mode*/
-    i[3] !== "short" && Us(i)
+    l[3] !== "short" && la(l)
   );
   return {
     c() {
-      e = Zo("div"), t = Zo("span"), l.c(), o = Jo(), r = Ci(s), a = Jo(), d && d.c(), Ko(t, "class", "icon-wrap svelte-kzcjhc"), Ns(
+      e = as("div"), t = as("span"), i.c(), o = _s(), r = El(s), a = _s(), d && d.c(), ss(t, "class", "icon-wrap svelte-kzcjhc"), na(
         t,
         "hovered",
         /*hovered*/
-        i[4]
-      ), Ko(e, "class", "wrap svelte-kzcjhc");
+        l[4]
+      ), ss(e, "class", "wrap svelte-kzcjhc");
     },
     m(h, m) {
-      gl(h, e, m), kn(e, t), u[n].m(t, null), kn(e, o), kn(e, r), kn(e, a), d && d.m(e, null), _ = !0;
+      Ci(h, e, m), Mn(e, t), f[n].m(t, null), Mn(e, o), Mn(e, r), Mn(e, a), d && d.m(e, null), _ = !0;
     },
     p(h, [m]) {
       let g = n;
-      n = f(h), n !== g && (_1(), vl(u[g], 1, 1, () => {
-        u[g] = null;
-      }), r1(), l = u[n], l || (l = u[n] = c[n](h), l.c()), wl(l, 1), l.m(t, null)), (!_ || m & /*hovered*/
-      16) && Ns(
+      n = u(h), n !== g && (k1(), Bi(f[g], 1, 1, () => {
+        f[g] = null;
+      }), v1(), i = f[n], i || (i = f[n] = c[n](h), i.c()), zi(i, 1), i.m(t, null)), (!_ || m & /*hovered*/
+      16) && na(
         t,
         "hovered",
         /*hovered*/
@@ -2528,22 +2528,22 @@ function h1(i) {
           h[0]
         ] || /*defs*/
         h[5].file
-      ) + "") && Go(r, s), /*mode*/
-      h[3] !== "short" ? d ? d.p(h, m) : (d = Us(h), d.c(), d.m(e, null)) : d && (d.d(1), d = null);
+      ) + "") && rs(r, s), /*mode*/
+      h[3] !== "short" ? d ? d.p(h, m) : (d = la(h), d.c(), d.m(e, null)) : d && (d.d(1), d = null);
     },
     i(h) {
-      _ || (wl(l), _ = !0);
+      _ || (zi(i), _ = !0);
     },
     o(h) {
-      vl(l), _ = !1;
+      Bi(i), _ = !1;
     },
     d(h) {
-      h && ml(e), u[n].d(), d && d.d();
+      h && yi(e), f[n].d(), d && d.d();
     }
   };
 }
-function m1(i, e, t) {
-  let { type: n = "file" } = e, { i18n: l } = e, { message: o = void 0 } = e, { mode: s = "full" } = e, { hovered: r = !1 } = e;
+function B1(l, e, t) {
+  let { type: n = "file" } = e, { i18n: i } = e, { message: o = void 0 } = e, { mode: s = "full" } = e, { hovered: r = !1 } = e;
   const a = {
     image: "upload_text.drop_image",
     video: "upload_text.drop_video",
@@ -2553,13 +2553,13 @@ function m1(i, e, t) {
     gallery: "upload_text.drop_gallery",
     clipboard: "upload_text.paste_clipboard"
   };
-  return i.$$set = (_) => {
-    "type" in _ && t(0, n = _.type), "i18n" in _ && t(1, l = _.i18n), "message" in _ && t(2, o = _.message), "mode" in _ && t(3, s = _.mode), "hovered" in _ && t(4, r = _.hovered);
-  }, [n, l, o, s, r, a];
+  return l.$$set = (_) => {
+    "type" in _ && t(0, n = _.type), "i18n" in _ && t(1, i = _.i18n), "message" in _ && t(2, o = _.message), "mode" in _ && t(3, s = _.mode), "hovered" in _ && t(4, r = _.hovered);
+  }, [n, i, o, s, r, a];
 }
-class Nr extends a1 {
+class s_ extends w1 {
   constructor(e) {
-    super(), c1(this, e, m1, h1, f1, {
+    super(), y1(this, e, B1, z1, C1, {
       type: 0,
       i18n: 1,
       message: 2,
@@ -2569,119 +2569,119 @@ class Nr extends a1 {
   }
 }
 const {
-  SvelteComponent: L6,
-  attr: M6,
-  create_slot: E6,
-  detach: R6,
-  element: W6,
-  get_all_dirty_from_scope: A6,
-  get_slot_changes: X6,
-  init: Y6,
-  insert: I6,
-  safe_not_equal: H6,
-  toggle_class: j6,
-  transition_in: T6,
-  transition_out: F6,
-  update_slot_base: O6
+  SvelteComponent: t8,
+  attr: n8,
+  create_slot: l8,
+  detach: i8,
+  element: o8,
+  get_all_dirty_from_scope: s8,
+  get_slot_changes: a8,
+  init: r8,
+  insert: _8,
+  safe_not_equal: c8,
+  toggle_class: u8,
+  transition_in: f8,
+  transition_out: d8,
+  update_slot_base: h8
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: g1,
-  append: vo,
-  attr: Mt,
-  check_outros: Si,
-  create_component: Wl,
-  destroy_component: Al,
-  detach: Qn,
-  element: Yi,
-  empty: b1,
-  group_outros: qi,
-  init: p1,
-  insert: ei,
-  listen: Xl,
-  mount_component: Yl,
-  safe_not_equal: w1,
-  space: ko,
-  toggle_class: _n,
-  transition_in: Ce,
-  transition_out: Ne
+  SvelteComponent: D1,
+  append: Mo,
+  attr: Rt,
+  check_outros: Rl,
+  create_component: ji,
+  destroy_component: Ti,
+  detach: sl,
+  element: Ol,
+  empty: M1,
+  group_outros: Wl,
+  init: L1,
+  insert: al,
+  listen: $i,
+  mount_component: Fi,
+  safe_not_equal: E1,
+  space: Lo,
+  toggle_class: pn,
+  transition_in: ye,
+  transition_out: xe
 } = window.__gradio__svelte__internal;
-function Vs(i) {
+function ia(l) {
   let e, t = (
     /*sources*/
-    i[1].includes("upload")
-  ), n, l = (
+    l[1].includes("upload")
+  ), n, i = (
     /*sources*/
-    i[1].includes("microphone")
+    l[1].includes("microphone")
   ), o, s = (
     /*sources*/
-    i[1].includes("webcam")
+    l[1].includes("webcam")
   ), r, a = (
     /*sources*/
-    i[1].includes("clipboard")
-  ), _, c = t && Ps(i), u = l && Ks(i), f = s && Zs(i), d = a && Gs(i);
+    l[1].includes("clipboard")
+  ), _, c = t && oa(l), f = i && sa(l), u = s && aa(l), d = a && ra(l);
   return {
     c() {
-      e = Yi("span"), c && c.c(), n = ko(), u && u.c(), o = ko(), f && f.c(), r = ko(), d && d.c(), Mt(e, "class", "source-selection svelte-1jp3vgd"), Mt(e, "data-testid", "source-select");
+      e = Ol("span"), c && c.c(), n = Lo(), f && f.c(), o = Lo(), u && u.c(), r = Lo(), d && d.c(), Rt(e, "class", "source-selection svelte-1jp3vgd"), Rt(e, "data-testid", "source-select");
     },
     m(h, m) {
-      ei(h, e, m), c && c.m(e, null), vo(e, n), u && u.m(e, null), vo(e, o), f && f.m(e, null), vo(e, r), d && d.m(e, null), _ = !0;
+      al(h, e, m), c && c.m(e, null), Mo(e, n), f && f.m(e, null), Mo(e, o), u && u.m(e, null), Mo(e, r), d && d.m(e, null), _ = !0;
     },
     p(h, m) {
       m & /*sources*/
       2 && (t = /*sources*/
       h[1].includes("upload")), t ? c ? (c.p(h, m), m & /*sources*/
-      2 && Ce(c, 1)) : (c = Ps(h), c.c(), Ce(c, 1), c.m(e, n)) : c && (qi(), Ne(c, 1, 1, () => {
+      2 && ye(c, 1)) : (c = oa(h), c.c(), ye(c, 1), c.m(e, n)) : c && (Wl(), xe(c, 1, 1, () => {
         c = null;
-      }), Si()), m & /*sources*/
-      2 && (l = /*sources*/
-      h[1].includes("microphone")), l ? u ? (u.p(h, m), m & /*sources*/
-      2 && Ce(u, 1)) : (u = Ks(h), u.c(), Ce(u, 1), u.m(e, o)) : u && (qi(), Ne(u, 1, 1, () => {
-        u = null;
-      }), Si()), m & /*sources*/
-      2 && (s = /*sources*/
-      h[1].includes("webcam")), s ? f ? (f.p(h, m), m & /*sources*/
-      2 && Ce(f, 1)) : (f = Zs(h), f.c(), Ce(f, 1), f.m(e, r)) : f && (qi(), Ne(f, 1, 1, () => {
+      }), Rl()), m & /*sources*/
+      2 && (i = /*sources*/
+      h[1].includes("microphone")), i ? f ? (f.p(h, m), m & /*sources*/
+      2 && ye(f, 1)) : (f = sa(h), f.c(), ye(f, 1), f.m(e, o)) : f && (Wl(), xe(f, 1, 1, () => {
         f = null;
-      }), Si()), m & /*sources*/
+      }), Rl()), m & /*sources*/
+      2 && (s = /*sources*/
+      h[1].includes("webcam")), s ? u ? (u.p(h, m), m & /*sources*/
+      2 && ye(u, 1)) : (u = aa(h), u.c(), ye(u, 1), u.m(e, r)) : u && (Wl(), xe(u, 1, 1, () => {
+        u = null;
+      }), Rl()), m & /*sources*/
       2 && (a = /*sources*/
       h[1].includes("clipboard")), a ? d ? (d.p(h, m), m & /*sources*/
-      2 && Ce(d, 1)) : (d = Gs(h), d.c(), Ce(d, 1), d.m(e, null)) : d && (qi(), Ne(d, 1, 1, () => {
+      2 && ye(d, 1)) : (d = ra(h), d.c(), ye(d, 1), d.m(e, null)) : d && (Wl(), xe(d, 1, 1, () => {
         d = null;
-      }), Si());
+      }), Rl());
     },
     i(h) {
-      _ || (Ce(c), Ce(u), Ce(f), Ce(d), _ = !0);
+      _ || (ye(c), ye(f), ye(u), ye(d), _ = !0);
     },
     o(h) {
-      Ne(c), Ne(u), Ne(f), Ne(d), _ = !1;
+      xe(c), xe(f), xe(u), xe(d), _ = !1;
     },
     d(h) {
-      h && Qn(e), c && c.d(), u && u.d(), f && f.d(), d && d.d();
+      h && sl(e), c && c.d(), f && f.d(), u && u.d(), d && d.d();
     }
   };
 }
-function Ps(i) {
-  let e, t, n, l, o;
-  return t = new Tr({}), {
+function oa(l) {
+  let e, t, n, i, o;
+  return t = new t_({}), {
     c() {
-      e = Yi("button"), Wl(t.$$.fragment), Mt(e, "class", "icon svelte-1jp3vgd"), Mt(e, "aria-label", "Upload file"), _n(
+      e = Ol("button"), ji(t.$$.fragment), Rt(e, "class", "icon svelte-1jp3vgd"), Rt(e, "aria-label", "Upload file"), pn(
         e,
         "selected",
         /*active_source*/
-        i[0] === "upload" || !/*active_source*/
-        i[0]
+        l[0] === "upload" || !/*active_source*/
+        l[0]
       );
     },
     m(s, r) {
-      ei(s, e, r), Yl(t, e, null), n = !0, l || (o = Xl(
+      al(s, e, r), Fi(t, e, null), n = !0, i || (o = $i(
         e,
         "click",
         /*click_handler*/
-        i[6]
-      ), l = !0);
+        l[6]
+      ), i = !0);
     },
     p(s, r) {
       (!n || r & /*active_source*/
-      1) && _n(
+      1) && pn(
         e,
         "selected",
         /*active_source*/
@@ -2690,38 +2690,38 @@ function Ps(i) {
       );
     },
     i(s) {
-      n || (Ce(t.$$.fragment, s), n = !0);
+      n || (ye(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      Ne(t.$$.fragment, s), n = !1;
+      xe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Qn(e), Al(t), l = !1, o();
+      s && sl(e), Ti(t), i = !1, o();
     }
   };
 }
-function Ks(i) {
-  let e, t, n, l, o;
-  return t = new cd({}), {
+function sa(l) {
+  let e, t, n, i, o;
+  return t = new yd({}), {
     c() {
-      e = Yi("button"), Wl(t.$$.fragment), Mt(e, "class", "icon svelte-1jp3vgd"), Mt(e, "aria-label", "Record audio"), _n(
+      e = Ol("button"), ji(t.$$.fragment), Rt(e, "class", "icon svelte-1jp3vgd"), Rt(e, "aria-label", "Record audio"), pn(
         e,
         "selected",
         /*active_source*/
-        i[0] === "microphone"
+        l[0] === "microphone"
       );
     },
     m(s, r) {
-      ei(s, e, r), Yl(t, e, null), n = !0, l || (o = Xl(
+      al(s, e, r), Fi(t, e, null), n = !0, i || (o = $i(
         e,
         "click",
         /*click_handler_1*/
-        i[7]
-      ), l = !0);
+        l[7]
+      ), i = !0);
     },
     p(s, r) {
       (!n || r & /*active_source*/
-      1) && _n(
+      1) && pn(
         e,
         "selected",
         /*active_source*/
@@ -2729,38 +2729,38 @@ function Ks(i) {
       );
     },
     i(s) {
-      n || (Ce(t.$$.fragment, s), n = !0);
+      n || (ye(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      Ne(t.$$.fragment, s), n = !1;
+      xe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Qn(e), Al(t), l = !1, o();
+      s && sl(e), Ti(t), i = !1, o();
     }
   };
 }
-function Zs(i) {
-  let e, t, n, l, o;
-  return t = new Fr({}), {
+function aa(l) {
+  let e, t, n, i, o;
+  return t = new n_({}), {
     c() {
-      e = Yi("button"), Wl(t.$$.fragment), Mt(e, "class", "icon svelte-1jp3vgd"), Mt(e, "aria-label", "Capture from camera"), _n(
+      e = Ol("button"), ji(t.$$.fragment), Rt(e, "class", "icon svelte-1jp3vgd"), Rt(e, "aria-label", "Capture from camera"), pn(
         e,
         "selected",
         /*active_source*/
-        i[0] === "webcam"
+        l[0] === "webcam"
       );
     },
     m(s, r) {
-      ei(s, e, r), Yl(t, e, null), n = !0, l || (o = Xl(
+      al(s, e, r), Fi(t, e, null), n = !0, i || (o = $i(
         e,
         "click",
         /*click_handler_2*/
-        i[8]
-      ), l = !0);
+        l[8]
+      ), i = !0);
     },
     p(s, r) {
       (!n || r & /*active_source*/
-      1) && _n(
+      1) && pn(
         e,
         "selected",
         /*active_source*/
@@ -2768,38 +2768,38 @@ function Zs(i) {
       );
     },
     i(s) {
-      n || (Ce(t.$$.fragment, s), n = !0);
+      n || (ye(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      Ne(t.$$.fragment, s), n = !1;
+      xe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Qn(e), Al(t), l = !1, o();
+      s && sl(e), Ti(t), i = !1, o();
     }
   };
 }
-function Gs(i) {
-  let e, t, n, l, o;
-  return t = new jr({}), {
+function ra(l) {
+  let e, t, n, i, o;
+  return t = new e_({}), {
     c() {
-      e = Yi("button"), Wl(t.$$.fragment), Mt(e, "class", "icon svelte-1jp3vgd"), Mt(e, "aria-label", "Paste from clipboard"), _n(
+      e = Ol("button"), ji(t.$$.fragment), Rt(e, "class", "icon svelte-1jp3vgd"), Rt(e, "aria-label", "Paste from clipboard"), pn(
         e,
         "selected",
         /*active_source*/
-        i[0] === "clipboard"
+        l[0] === "clipboard"
       );
     },
     m(s, r) {
-      ei(s, e, r), Yl(t, e, null), n = !0, l || (o = Xl(
+      al(s, e, r), Fi(t, e, null), n = !0, i || (o = $i(
         e,
         "click",
         /*click_handler_3*/
-        i[9]
-      ), l = !0);
+        l[9]
+      ), i = !0);
     },
     p(s, r) {
       (!n || r & /*active_source*/
-      1) && _n(
+      1) && pn(
         e,
         "selected",
         /*active_source*/
@@ -2807,88 +2807,88 @@ function Gs(i) {
       );
     },
     i(s) {
-      n || (Ce(t.$$.fragment, s), n = !0);
+      n || (ye(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      Ne(t.$$.fragment, s), n = !1;
+      xe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Qn(e), Al(t), l = !1, o();
+      s && sl(e), Ti(t), i = !1, o();
     }
   };
 }
-function v1(i) {
+function R1(l) {
   let e, t, n = (
     /*unique_sources*/
-    i[2].length > 1 && Vs(i)
+    l[2].length > 1 && ia(l)
   );
   return {
     c() {
-      n && n.c(), e = b1();
+      n && n.c(), e = M1();
     },
-    m(l, o) {
-      n && n.m(l, o), ei(l, e, o), t = !0;
+    m(i, o) {
+      n && n.m(i, o), al(i, e, o), t = !0;
     },
-    p(l, [o]) {
+    p(i, [o]) {
       /*unique_sources*/
-      l[2].length > 1 ? n ? (n.p(l, o), o & /*unique_sources*/
-      4 && Ce(n, 1)) : (n = Vs(l), n.c(), Ce(n, 1), n.m(e.parentNode, e)) : n && (qi(), Ne(n, 1, 1, () => {
+      i[2].length > 1 ? n ? (n.p(i, o), o & /*unique_sources*/
+      4 && ye(n, 1)) : (n = ia(i), n.c(), ye(n, 1), n.m(e.parentNode, e)) : n && (Wl(), xe(n, 1, 1, () => {
         n = null;
-      }), Si());
+      }), Rl());
     },
-    i(l) {
-      t || (Ce(n), t = !0);
+    i(i) {
+      t || (ye(n), t = !0);
     },
-    o(l) {
-      Ne(n), t = !1;
+    o(i) {
+      xe(n), t = !1;
     },
-    d(l) {
-      l && Qn(e), n && n.d(l);
+    d(i) {
+      i && sl(e), n && n.d(i);
     }
   };
 }
-function k1(i, e, t) {
+function W1(l, e, t) {
   let n;
-  var l = this && this.__awaiter || function(h, m, g, b) {
-    function w(p) {
-      return p instanceof g ? p : new g(function(q) {
-        q(p);
+  var i = this && this.__awaiter || function(h, m, g, b) {
+    function v(p) {
+      return p instanceof g ? p : new g(function(y) {
+        y(p);
       });
     }
-    return new (g || (g = Promise))(function(p, q) {
-      function M(k) {
+    return new (g || (g = Promise))(function(p, y) {
+      function q(S) {
         try {
-          C(b.next(k));
-        } catch (y) {
-          q(y);
+          M(b.next(S));
+        } catch (C) {
+          y(C);
         }
       }
-      function D(k) {
+      function D(S) {
         try {
-          C(b.throw(k));
-        } catch (y) {
-          q(y);
+          M(b.throw(S));
+        } catch (C) {
+          y(C);
         }
       }
-      function C(k) {
-        k.done ? p(k.value) : w(k.value).then(M, D);
+      function M(S) {
+        S.done ? p(S.value) : v(S.value).then(q, D);
       }
-      C((b = b.apply(h, m || [])).next());
+      M((b = b.apply(h, m || [])).next());
     });
   };
   let { sources: o } = e, { active_source: s } = e, { handle_clear: r = () => {
   } } = e, { handle_select: a = () => {
   } } = e;
   function _(h) {
-    return l(this, void 0, void 0, function* () {
+    return i(this, void 0, void 0, function* () {
       r(), t(0, s = h), a(h);
     });
   }
-  const c = () => _("upload"), u = () => _("microphone"), f = () => _("webcam"), d = () => _("clipboard");
-  return i.$$set = (h) => {
+  const c = () => _("upload"), f = () => _("microphone"), u = () => _("webcam"), d = () => _("clipboard");
+  return l.$$set = (h) => {
     "sources" in h && t(1, o = h.sources), "active_source" in h && t(0, s = h.active_source), "handle_clear" in h && t(4, r = h.handle_clear), "handle_select" in h && t(5, a = h.handle_select);
-  }, i.$$.update = () => {
-    i.$$.dirty & /*sources*/
+  }, l.$$.update = () => {
+    l.$$.dirty & /*sources*/
     2 && t(2, n = [...new Set(o)]);
   }, [
     s,
@@ -2898,14 +2898,14 @@ function k1(i, e, t) {
     r,
     a,
     c,
-    u,
     f,
+    u,
     d
   ];
 }
-class y1 extends g1 {
+class A1 extends D1 {
   constructor(e) {
-    super(), p1(this, e, k1, v1, w1, {
+    super(), L1(this, e, W1, R1, E1, {
       sources: 1,
       active_source: 0,
       handle_clear: 4,
@@ -2913,366 +2913,366 @@ class y1 extends g1 {
     });
   }
 }
-function Vn(i) {
+function Jn(l) {
   let e = ["", "k", "M", "G", "T", "P", "E", "Z"], t = 0;
-  for (; i > 1e3 && t < e.length - 1; )
-    i /= 1e3, t++;
+  for (; l > 1e3 && t < e.length - 1; )
+    l /= 1e3, t++;
   let n = e[t];
-  return (Number.isInteger(i) ? i : i.toFixed(1)) + n;
+  return (Number.isInteger(l) ? l : l.toFixed(1)) + n;
 }
-function bl() {
+function Si() {
 }
-const C1 = (i) => i;
-function Js(i) {
-  const e = typeof i == "string" && i.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return e ? [parseFloat(e[1]), e[2] || "px"] : [i, "px"];
+const X1 = (l) => l;
+function _a(l) {
+  const e = typeof l == "string" && l.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
+  return e ? [parseFloat(e[1]), e[2] || "px"] : [l, "px"];
 }
-const Ur = typeof window < "u";
-let Qs = Ur ? () => window.performance.now() : () => Date.now(), Vr = Ur ? (i) => requestAnimationFrame(i) : bl;
-const Jn = /* @__PURE__ */ new Set();
-function Pr(i) {
-  Jn.forEach((e) => {
-    e.c(i) || (Jn.delete(e), e.f());
-  }), Jn.size !== 0 && Vr(Pr);
+const a_ = typeof window < "u";
+let ca = a_ ? () => window.performance.now() : () => Date.now(), r_ = a_ ? (l) => requestAnimationFrame(l) : Si;
+const ll = /* @__PURE__ */ new Set();
+function __(l) {
+  ll.forEach((e) => {
+    e.c(l) || (ll.delete(e), e.f());
+  }), ll.size !== 0 && r_(__);
 }
-function S1(i) {
+function Y1(l) {
   let e;
-  return Jn.size === 0 && Vr(Pr), { promise: new Promise((t) => {
-    Jn.add(e = { c: i, f: t });
+  return ll.size === 0 && r_(__), { promise: new Promise((t) => {
+    ll.add(e = { c: l, f: t });
   }), abort() {
-    Jn.delete(e);
+    ll.delete(e);
   } };
 }
-function q1(i) {
-  const e = i - 1;
+function H1(l) {
+  const e = l - 1;
   return e * e * e + 1;
 }
-function z1(i, { delay: e = 0, duration: t = 400, easing: n = C1 } = {}) {
-  const l = +getComputedStyle(i).opacity;
-  return { delay: e, duration: t, easing: n, css: (o) => "opacity: " + o * l };
+function I1(l, { delay: e = 0, duration: t = 400, easing: n = X1 } = {}) {
+  const i = +getComputedStyle(l).opacity;
+  return { delay: e, duration: t, easing: n, css: (o) => "opacity: " + o * i };
 }
-function ea(i, { delay: e = 0, duration: t = 400, easing: n = q1, x: l = 0, y: o = 0, opacity: s = 0 } = {}) {
-  const r = getComputedStyle(i), a = +r.opacity, _ = r.transform === "none" ? "" : r.transform, c = a * (1 - s), [u, f] = Js(l), [d, h] = Js(o);
+function ua(l, { delay: e = 0, duration: t = 400, easing: n = H1, x: i = 0, y: o = 0, opacity: s = 0 } = {}) {
+  const r = getComputedStyle(l), a = +r.opacity, _ = r.transform === "none" ? "" : r.transform, c = a * (1 - s), [f, u] = _a(i), [d, h] = _a(o);
   return { delay: e, duration: t, easing: n, css: (m, g) => `
-			transform: ${_} translate(${(1 - m) * u}${f}, ${(1 - m) * d}${h});
+			transform: ${_} translate(${(1 - m) * f}${u}, ${(1 - m) * d}${h});
 			opacity: ${a - c * g}` };
 }
-const Fn = [];
-function B1(i, e = bl) {
+const Un = [];
+function j1(l, e = Si) {
   let t;
   const n = /* @__PURE__ */ new Set();
-  function l(s) {
-    if (a = s, ((r = i) != r ? a == a : r !== a || r && typeof r == "object" || typeof r == "function") && (i = s, t)) {
-      const _ = !Fn.length;
-      for (const c of n) c[1](), Fn.push(c, i);
+  function i(s) {
+    if (a = s, ((r = l) != r ? a == a : r !== a || r && typeof r == "object" || typeof r == "function") && (l = s, t)) {
+      const _ = !Un.length;
+      for (const c of n) c[1](), Un.push(c, l);
       if (_) {
-        for (let c = 0; c < Fn.length; c += 2) Fn[c][0](Fn[c + 1]);
-        Fn.length = 0;
+        for (let c = 0; c < Un.length; c += 2) Un[c][0](Un[c + 1]);
+        Un.length = 0;
       }
     }
     var r, a;
   }
   function o(s) {
-    l(s(i));
+    i(s(l));
   }
-  return { set: l, update: o, subscribe: function(s, r = bl) {
+  return { set: i, update: o, subscribe: function(s, r = Si) {
     const a = [s, r];
-    return n.add(a), n.size === 1 && (t = e(l, o) || bl), s(i), () => {
+    return n.add(a), n.size === 1 && (t = e(i, o) || Si), s(l), () => {
       n.delete(a), n.size === 0 && t && (t(), t = null);
     };
   } };
 }
-function ta(i) {
-  return Object.prototype.toString.call(i) === "[object Date]";
+function fa(l) {
+  return Object.prototype.toString.call(l) === "[object Date]";
 }
-function Qo(i, e, t, n) {
-  if (typeof t == "number" || ta(t)) {
-    const l = n - t, o = (t - e) / (i.dt || 1 / 60), s = (o + (i.opts.stiffness * l - i.opts.damping * o) * i.inv_mass) * i.dt;
-    return Math.abs(s) < i.opts.precision && Math.abs(l) < i.opts.precision ? n : (i.settled = !1, ta(t) ? new Date(t.getTime() + s) : t + s);
+function cs(l, e, t, n) {
+  if (typeof t == "number" || fa(t)) {
+    const i = n - t, o = (t - e) / (l.dt || 1 / 60), s = (o + (l.opts.stiffness * i - l.opts.damping * o) * l.inv_mass) * l.dt;
+    return Math.abs(s) < l.opts.precision && Math.abs(i) < l.opts.precision ? n : (l.settled = !1, fa(t) ? new Date(t.getTime() + s) : t + s);
   }
-  if (Array.isArray(t)) return t.map((l, o) => Qo(i, e[o], t[o], n[o]));
+  if (Array.isArray(t)) return t.map((i, o) => cs(l, e[o], t[o], n[o]));
   if (typeof t == "object") {
-    const l = {};
-    for (const o in t) l[o] = Qo(i, e[o], t[o], n[o]);
-    return l;
+    const i = {};
+    for (const o in t) i[o] = cs(l, e[o], t[o], n[o]);
+    return i;
   }
   throw new Error(`Cannot spring ${typeof t} values`);
 }
-function na(i, e = {}) {
-  const t = B1(i), { stiffness: n = 0.15, damping: l = 0.8, precision: o = 0.01 } = e;
-  let s, r, a, _ = i, c = i, u = 1, f = 0, d = !1;
+function da(l, e = {}) {
+  const t = j1(l), { stiffness: n = 0.15, damping: i = 0.8, precision: o = 0.01 } = e;
+  let s, r, a, _ = l, c = l, f = 1, u = 0, d = !1;
   function h(g, b = {}) {
     c = g;
-    const w = a = {};
-    return i == null || b.hard || m.stiffness >= 1 && m.damping >= 1 ? (d = !0, s = Qs(), _ = g, t.set(i = c), Promise.resolve()) : (b.soft && (f = 1 / (60 * (b.soft === !0 ? 0.5 : +b.soft)), u = 0), r || (s = Qs(), d = !1, r = S1((p) => {
+    const v = a = {};
+    return l == null || b.hard || m.stiffness >= 1 && m.damping >= 1 ? (d = !0, s = ca(), _ = g, t.set(l = c), Promise.resolve()) : (b.soft && (u = 1 / (60 * (b.soft === !0 ? 0.5 : +b.soft)), f = 0), r || (s = ca(), d = !1, r = Y1((p) => {
       if (d) return d = !1, r = null, !1;
-      u = Math.min(u + f, 1);
-      const q = { inv_mass: u, opts: m, settled: !0, dt: 60 * (p - s) / 1e3 }, M = Qo(q, _, i, c);
-      return s = p, _ = i, t.set(i = M), q.settled && (r = null), !q.settled;
+      f = Math.min(f + u, 1);
+      const y = { inv_mass: f, opts: m, settled: !0, dt: 60 * (p - s) / 1e3 }, q = cs(y, _, l, c);
+      return s = p, _ = l, t.set(l = q), y.settled && (r = null), !y.settled;
     })), new Promise((p) => {
       r.promise.then(() => {
-        w === a && p();
+        v === a && p();
       });
     }));
   }
-  const m = { set: h, update: (g, b) => h(g(c, i), b), subscribe: t.subscribe, stiffness: n, damping: l, precision: o };
+  const m = { set: h, update: (g, b) => h(g(c, l), b), subscribe: t.subscribe, stiffness: n, damping: i, precision: o };
   return m;
 }
 const {
-  SvelteComponent: D1,
-  append: mt,
-  attr: ne,
-  component_subscribe: ia,
-  detach: L1,
-  element: M1,
-  init: E1,
-  insert: R1,
-  noop: la,
-  safe_not_equal: W1,
-  set_style: Ui,
-  svg_element: gt,
-  toggle_class: oa
-} = window.__gradio__svelte__internal, { onMount: A1 } = window.__gradio__svelte__internal;
-function X1(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f;
+  SvelteComponent: T1,
+  append: bt,
+  attr: ie,
+  component_subscribe: ha,
+  detach: $1,
+  element: F1,
+  init: O1,
+  insert: x1,
+  noop: ma,
+  safe_not_equal: V1,
+  set_style: Jl,
+  svg_element: pt,
+  toggle_class: ga
+} = window.__gradio__svelte__internal, { onMount: N1 } = window.__gradio__svelte__internal;
+function U1(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u;
   return {
     c() {
-      e = M1("div"), t = gt("svg"), n = gt("g"), l = gt("path"), o = gt("path"), s = gt("path"), r = gt("path"), a = gt("g"), _ = gt("path"), c = gt("path"), u = gt("path"), f = gt("path"), ne(l, "d", "M255.926 0.754768L509.702 139.936V221.027L255.926 81.8465V0.754768Z"), ne(l, "fill", "#FF7C00"), ne(l, "fill-opacity", "0.4"), ne(l, "class", "svelte-43sxxs"), ne(o, "d", "M509.69 139.936L254.981 279.641V361.255L509.69 221.55V139.936Z"), ne(o, "fill", "#FF7C00"), ne(o, "class", "svelte-43sxxs"), ne(s, "d", "M0.250138 139.937L254.981 279.641V361.255L0.250138 221.55V139.937Z"), ne(s, "fill", "#FF7C00"), ne(s, "fill-opacity", "0.4"), ne(s, "class", "svelte-43sxxs"), ne(r, "d", "M255.923 0.232622L0.236328 139.936V221.55L255.923 81.8469V0.232622Z"), ne(r, "fill", "#FF7C00"), ne(r, "class", "svelte-43sxxs"), Ui(n, "transform", "translate(" + /*$top*/
-      i[1][0] + "px, " + /*$top*/
-      i[1][1] + "px)"), ne(_, "d", "M255.926 141.5L509.702 280.681V361.773L255.926 222.592V141.5Z"), ne(_, "fill", "#FF7C00"), ne(_, "fill-opacity", "0.4"), ne(_, "class", "svelte-43sxxs"), ne(c, "d", "M509.69 280.679L254.981 420.384V501.998L509.69 362.293V280.679Z"), ne(c, "fill", "#FF7C00"), ne(c, "class", "svelte-43sxxs"), ne(u, "d", "M0.250138 280.681L254.981 420.386V502L0.250138 362.295V280.681Z"), ne(u, "fill", "#FF7C00"), ne(u, "fill-opacity", "0.4"), ne(u, "class", "svelte-43sxxs"), ne(f, "d", "M255.923 140.977L0.236328 280.68V362.294L255.923 222.591V140.977Z"), ne(f, "fill", "#FF7C00"), ne(f, "class", "svelte-43sxxs"), Ui(a, "transform", "translate(" + /*$bottom*/
-      i[2][0] + "px, " + /*$bottom*/
-      i[2][1] + "px)"), ne(t, "viewBox", "-1200 -1200 3000 3000"), ne(t, "fill", "none"), ne(t, "xmlns", "http://www.w3.org/2000/svg"), ne(t, "class", "svelte-43sxxs"), ne(e, "class", "svelte-43sxxs"), oa(
+      e = F1("div"), t = pt("svg"), n = pt("g"), i = pt("path"), o = pt("path"), s = pt("path"), r = pt("path"), a = pt("g"), _ = pt("path"), c = pt("path"), f = pt("path"), u = pt("path"), ie(i, "d", "M255.926 0.754768L509.702 139.936V221.027L255.926 81.8465V0.754768Z"), ie(i, "fill", "#FF7C00"), ie(i, "fill-opacity", "0.4"), ie(i, "class", "svelte-43sxxs"), ie(o, "d", "M509.69 139.936L254.981 279.641V361.255L509.69 221.55V139.936Z"), ie(o, "fill", "#FF7C00"), ie(o, "class", "svelte-43sxxs"), ie(s, "d", "M0.250138 139.937L254.981 279.641V361.255L0.250138 221.55V139.937Z"), ie(s, "fill", "#FF7C00"), ie(s, "fill-opacity", "0.4"), ie(s, "class", "svelte-43sxxs"), ie(r, "d", "M255.923 0.232622L0.236328 139.936V221.55L255.923 81.8469V0.232622Z"), ie(r, "fill", "#FF7C00"), ie(r, "class", "svelte-43sxxs"), Jl(n, "transform", "translate(" + /*$top*/
+      l[1][0] + "px, " + /*$top*/
+      l[1][1] + "px)"), ie(_, "d", "M255.926 141.5L509.702 280.681V361.773L255.926 222.592V141.5Z"), ie(_, "fill", "#FF7C00"), ie(_, "fill-opacity", "0.4"), ie(_, "class", "svelte-43sxxs"), ie(c, "d", "M509.69 280.679L254.981 420.384V501.998L509.69 362.293V280.679Z"), ie(c, "fill", "#FF7C00"), ie(c, "class", "svelte-43sxxs"), ie(f, "d", "M0.250138 280.681L254.981 420.386V502L0.250138 362.295V280.681Z"), ie(f, "fill", "#FF7C00"), ie(f, "fill-opacity", "0.4"), ie(f, "class", "svelte-43sxxs"), ie(u, "d", "M255.923 140.977L0.236328 280.68V362.294L255.923 222.591V140.977Z"), ie(u, "fill", "#FF7C00"), ie(u, "class", "svelte-43sxxs"), Jl(a, "transform", "translate(" + /*$bottom*/
+      l[2][0] + "px, " + /*$bottom*/
+      l[2][1] + "px)"), ie(t, "viewBox", "-1200 -1200 3000 3000"), ie(t, "fill", "none"), ie(t, "xmlns", "http://www.w3.org/2000/svg"), ie(t, "class", "svelte-43sxxs"), ie(e, "class", "svelte-43sxxs"), ga(
         e,
         "margin",
         /*margin*/
-        i[0]
+        l[0]
       );
     },
     m(d, h) {
-      R1(d, e, h), mt(e, t), mt(t, n), mt(n, l), mt(n, o), mt(n, s), mt(n, r), mt(t, a), mt(a, _), mt(a, c), mt(a, u), mt(a, f);
+      x1(d, e, h), bt(e, t), bt(t, n), bt(n, i), bt(n, o), bt(n, s), bt(n, r), bt(t, a), bt(a, _), bt(a, c), bt(a, f), bt(a, u);
     },
     p(d, [h]) {
       h & /*$top*/
-      2 && Ui(n, "transform", "translate(" + /*$top*/
+      2 && Jl(n, "transform", "translate(" + /*$top*/
       d[1][0] + "px, " + /*$top*/
       d[1][1] + "px)"), h & /*$bottom*/
-      4 && Ui(a, "transform", "translate(" + /*$bottom*/
+      4 && Jl(a, "transform", "translate(" + /*$bottom*/
       d[2][0] + "px, " + /*$bottom*/
       d[2][1] + "px)"), h & /*margin*/
-      1 && oa(
+      1 && ga(
         e,
         "margin",
         /*margin*/
         d[0]
       );
     },
-    i: la,
-    o: la,
+    i: ma,
+    o: ma,
     d(d) {
-      d && L1(e);
+      d && $1(e);
     }
   };
 }
-function Y1(i, e, t) {
-  let n, l;
+function P1(l, e, t) {
+  let n, i;
   var o = this && this.__awaiter || function(d, h, m, g) {
-    function b(w) {
-      return w instanceof m ? w : new m(function(p) {
-        p(w);
+    function b(v) {
+      return v instanceof m ? v : new m(function(p) {
+        p(v);
       });
     }
-    return new (m || (m = Promise))(function(w, p) {
-      function q(C) {
+    return new (m || (m = Promise))(function(v, p) {
+      function y(M) {
         try {
-          D(g.next(C));
-        } catch (k) {
-          p(k);
+          D(g.next(M));
+        } catch (S) {
+          p(S);
         }
       }
-      function M(C) {
+      function q(M) {
         try {
-          D(g.throw(C));
-        } catch (k) {
-          p(k);
+          D(g.throw(M));
+        } catch (S) {
+          p(S);
         }
       }
-      function D(C) {
-        C.done ? w(C.value) : b(C.value).then(q, M);
+      function D(M) {
+        M.done ? v(M.value) : b(M.value).then(y, q);
       }
       D((g = g.apply(d, h || [])).next());
     });
   };
   let { margin: s = !0 } = e;
-  const r = na([0, 0]);
-  ia(i, r, (d) => t(1, n = d));
-  const a = na([0, 0]);
-  ia(i, a, (d) => t(2, l = d));
+  const r = da([0, 0]);
+  ha(l, r, (d) => t(1, n = d));
+  const a = da([0, 0]);
+  ha(l, a, (d) => t(2, i = d));
   let _;
   function c() {
     return o(this, void 0, void 0, function* () {
       yield Promise.all([r.set([125, 140]), a.set([-125, -140])]), yield Promise.all([r.set([-125, 140]), a.set([125, -140])]), yield Promise.all([r.set([-125, 0]), a.set([125, -0])]), yield Promise.all([r.set([125, 0]), a.set([-125, 0])]);
     });
   }
-  function u() {
-    return o(this, void 0, void 0, function* () {
-      yield c(), _ || u();
-    });
-  }
   function f() {
     return o(this, void 0, void 0, function* () {
-      yield Promise.all([r.set([125, 0]), a.set([-125, 0])]), u();
+      yield c(), _ || f();
     });
   }
-  return A1(() => (f(), () => _ = !0)), i.$$set = (d) => {
+  function u() {
+    return o(this, void 0, void 0, function* () {
+      yield Promise.all([r.set([125, 0]), a.set([-125, 0])]), f();
+    });
+  }
+  return N1(() => (u(), () => _ = !0)), l.$$set = (d) => {
     "margin" in d && t(0, s = d.margin);
-  }, [s, n, l, r, a];
+  }, [s, n, i, r, a];
 }
-class I1 extends D1 {
+class K1 extends T1 {
   constructor(e) {
-    super(), E1(this, e, Y1, X1, W1, { margin: 0 });
+    super(), O1(this, e, P1, U1, V1, { margin: 0 });
   }
 }
 const {
-  SvelteComponent: H1,
-  append: yn,
-  attr: vt,
-  binding_callbacks: sa,
-  check_outros: es,
-  create_component: Kr,
-  create_slot: Zr,
-  destroy_component: Gr,
-  destroy_each: Jr,
-  detach: N,
-  element: Dt,
-  empty: ti,
-  ensure_array_like: kl,
-  get_all_dirty_from_scope: Qr,
-  get_slot_changes: e_,
-  group_outros: ts,
-  init: j1,
-  insert: U,
-  mount_component: t_,
-  noop: ns,
-  safe_not_equal: T1,
-  set_data: ft,
-  set_style: an,
-  space: ct,
+  SvelteComponent: Z1,
+  append: Ln,
+  attr: yt,
+  binding_callbacks: ba,
+  check_outros: us,
+  create_component: c_,
+  create_slot: u_,
+  destroy_component: f_,
+  destroy_each: d_,
+  detach: U,
+  element: Lt,
+  empty: rl,
+  ensure_array_like: Di,
+  get_all_dirty_from_scope: h_,
+  get_slot_changes: m_,
+  group_outros: fs,
+  init: G1,
+  insert: P,
+  mount_component: g_,
+  noop: ds,
+  safe_not_equal: J1,
+  set_data: dt,
+  set_style: hn,
+  space: ft,
   text: he,
-  toggle_class: _t,
-  transition_in: wt,
-  transition_out: Lt,
-  update_slot_base: n_
-} = window.__gradio__svelte__internal, { tick: F1 } = window.__gradio__svelte__internal, { onDestroy: O1 } = window.__gradio__svelte__internal, { createEventDispatcher: $1 } = window.__gradio__svelte__internal, x1 = (i) => ({}), aa = (i) => ({}), N1 = (i) => ({}), ra = (i) => ({});
-function _a(i, e, t) {
-  const n = i.slice();
+  toggle_class: ut,
+  transition_in: kt,
+  transition_out: Et,
+  update_slot_base: b_
+} = window.__gradio__svelte__internal, { tick: Q1 } = window.__gradio__svelte__internal, { onDestroy: eh } = window.__gradio__svelte__internal, { createEventDispatcher: th } = window.__gradio__svelte__internal, nh = (l) => ({}), pa = (l) => ({}), lh = (l) => ({}), wa = (l) => ({});
+function va(l, e, t) {
+  const n = l.slice();
   return n[41] = e[t], n[43] = t, n;
 }
-function ca(i, e, t) {
-  const n = i.slice();
+function ka(l, e, t) {
+  const n = l.slice();
   return n[41] = e[t], n;
 }
-function U1(i) {
-  let e, t, n, l, o = (
+function ih(l) {
+  let e, t, n, i, o = (
     /*i18n*/
-    i[1]("common.error") + ""
+    l[1]("common.error") + ""
   ), s, r, a;
-  t = new Rl({
+  t = new Fl({
     props: {
-      Icon: Ir,
+      Icon: Jr,
       label: (
         /*i18n*/
-        i[1]("common.clear")
+        l[1]("common.clear")
       ),
       disabled: !1
     }
   }), t.$on(
     "click",
     /*click_handler*/
-    i[32]
+    l[32]
   );
   const _ = (
     /*#slots*/
-    i[30].error
-  ), c = Zr(
+    l[30].error
+  ), c = u_(
     _,
-    i,
+    l,
     /*$$scope*/
-    i[29],
-    aa
+    l[29],
+    pa
   );
   return {
     c() {
-      e = Dt("div"), Kr(t.$$.fragment), n = ct(), l = Dt("span"), s = he(o), r = ct(), c && c.c(), vt(e, "class", "clear-status svelte-16nch4a"), vt(l, "class", "error svelte-16nch4a");
+      e = Lt("div"), c_(t.$$.fragment), n = ft(), i = Lt("span"), s = he(o), r = ft(), c && c.c(), yt(e, "class", "clear-status svelte-16nch4a"), yt(i, "class", "error svelte-16nch4a");
     },
-    m(u, f) {
-      U(u, e, f), t_(t, e, null), U(u, n, f), U(u, l, f), yn(l, s), U(u, r, f), c && c.m(u, f), a = !0;
+    m(f, u) {
+      P(f, e, u), g_(t, e, null), P(f, n, u), P(f, i, u), Ln(i, s), P(f, r, u), c && c.m(f, u), a = !0;
     },
-    p(u, f) {
+    p(f, u) {
       const d = {};
-      f[0] & /*i18n*/
+      u[0] & /*i18n*/
       2 && (d.label = /*i18n*/
-      u[1]("common.clear")), t.$set(d), (!a || f[0] & /*i18n*/
+      f[1]("common.clear")), t.$set(d), (!a || u[0] & /*i18n*/
       2) && o !== (o = /*i18n*/
-      u[1]("common.error") + "") && ft(s, o), c && c.p && (!a || f[0] & /*$$scope*/
-      536870912) && n_(
+      f[1]("common.error") + "") && dt(s, o), c && c.p && (!a || u[0] & /*$$scope*/
+      536870912) && b_(
         c,
         _,
-        u,
+        f,
         /*$$scope*/
-        u[29],
-        a ? e_(
+        f[29],
+        a ? m_(
           _,
           /*$$scope*/
-          u[29],
-          f,
-          x1
-        ) : Qr(
+          f[29],
+          u,
+          nh
+        ) : h_(
           /*$$scope*/
-          u[29]
+          f[29]
         ),
-        aa
+        pa
       );
     },
-    i(u) {
-      a || (wt(t.$$.fragment, u), wt(c, u), a = !0);
+    i(f) {
+      a || (kt(t.$$.fragment, f), kt(c, f), a = !0);
     },
-    o(u) {
-      Lt(t.$$.fragment, u), Lt(c, u), a = !1;
+    o(f) {
+      Et(t.$$.fragment, f), Et(c, f), a = !1;
     },
-    d(u) {
-      u && (N(e), N(n), N(l), N(r)), Gr(t), c && c.d(u);
+    d(f) {
+      f && (U(e), U(n), U(i), U(r)), f_(t), c && c.d(f);
     }
   };
 }
-function V1(i) {
-  let e, t, n, l, o, s, r, a, _, c = (
+function oh(l) {
+  let e, t, n, i, o, s, r, a, _, c = (
     /*variant*/
-    i[8] === "default" && /*show_eta_bar*/
-    i[18] && /*show_progress*/
-    i[6] === "full" && fa(i)
+    l[8] === "default" && /*show_eta_bar*/
+    l[18] && /*show_progress*/
+    l[6] === "full" && ya(l)
   );
-  function u(p, q) {
+  function f(p, y) {
     if (
       /*progress*/
       p[7]
-    ) return Z1;
+    ) return rh;
     if (
       /*queue_position*/
       p[2] !== null && /*queue_size*/
       p[3] !== void 0 && /*queue_position*/
       p[2] >= 0
-    ) return K1;
+    ) return ah;
     if (
       /*queue_position*/
       p[2] === 0
-    ) return P1;
+    ) return sh;
   }
-  let f = u(i), d = f && f(i), h = (
+  let u = f(l), d = u && u(l), h = (
     /*timer*/
-    i[5] && ha(i)
+    l[5] && qa(l)
   );
-  const m = [eh, Q1], g = [];
-  function b(p, q) {
+  const m = [fh, uh], g = [];
+  function b(p, y) {
     return (
       /*last_progress_level*/
       p[15] != null ? 0 : (
@@ -3281,614 +3281,614 @@ function V1(i) {
       )
     );
   }
-  ~(o = b(i)) && (s = g[o] = m[o](i));
-  let w = !/*timer*/
-  i[5] && ka(i);
+  ~(o = b(l)) && (s = g[o] = m[o](l));
+  let v = !/*timer*/
+  l[5] && Ra(l);
   return {
     c() {
-      c && c.c(), e = ct(), t = Dt("div"), d && d.c(), n = ct(), h && h.c(), l = ct(), s && s.c(), r = ct(), w && w.c(), a = ti(), vt(t, "class", "progress-text svelte-16nch4a"), _t(
+      c && c.c(), e = ft(), t = Lt("div"), d && d.c(), n = ft(), h && h.c(), i = ft(), s && s.c(), r = ft(), v && v.c(), a = rl(), yt(t, "class", "progress-text svelte-16nch4a"), ut(
         t,
         "meta-text-center",
         /*variant*/
-        i[8] === "center"
-      ), _t(
+        l[8] === "center"
+      ), ut(
         t,
         "meta-text",
         /*variant*/
-        i[8] === "default"
+        l[8] === "default"
       );
     },
-    m(p, q) {
-      c && c.m(p, q), U(p, e, q), U(p, t, q), d && d.m(t, null), yn(t, n), h && h.m(t, null), U(p, l, q), ~o && g[o].m(p, q), U(p, r, q), w && w.m(p, q), U(p, a, q), _ = !0;
+    m(p, y) {
+      c && c.m(p, y), P(p, e, y), P(p, t, y), d && d.m(t, null), Ln(t, n), h && h.m(t, null), P(p, i, y), ~o && g[o].m(p, y), P(p, r, y), v && v.m(p, y), P(p, a, y), _ = !0;
     },
-    p(p, q) {
+    p(p, y) {
       /*variant*/
       p[8] === "default" && /*show_eta_bar*/
       p[18] && /*show_progress*/
-      p[6] === "full" ? c ? c.p(p, q) : (c = fa(p), c.c(), c.m(e.parentNode, e)) : c && (c.d(1), c = null), f === (f = u(p)) && d ? d.p(p, q) : (d && d.d(1), d = f && f(p), d && (d.c(), d.m(t, n))), /*timer*/
-      p[5] ? h ? h.p(p, q) : (h = ha(p), h.c(), h.m(t, null)) : h && (h.d(1), h = null), (!_ || q[0] & /*variant*/
-      256) && _t(
+      p[6] === "full" ? c ? c.p(p, y) : (c = ya(p), c.c(), c.m(e.parentNode, e)) : c && (c.d(1), c = null), u === (u = f(p)) && d ? d.p(p, y) : (d && d.d(1), d = u && u(p), d && (d.c(), d.m(t, n))), /*timer*/
+      p[5] ? h ? h.p(p, y) : (h = qa(p), h.c(), h.m(t, null)) : h && (h.d(1), h = null), (!_ || y[0] & /*variant*/
+      256) && ut(
         t,
         "meta-text-center",
         /*variant*/
         p[8] === "center"
-      ), (!_ || q[0] & /*variant*/
-      256) && _t(
+      ), (!_ || y[0] & /*variant*/
+      256) && ut(
         t,
         "meta-text",
         /*variant*/
         p[8] === "default"
       );
-      let M = o;
-      o = b(p), o === M ? ~o && g[o].p(p, q) : (s && (ts(), Lt(g[M], 1, 1, () => {
-        g[M] = null;
-      }), es()), ~o ? (s = g[o], s ? s.p(p, q) : (s = g[o] = m[o](p), s.c()), wt(s, 1), s.m(r.parentNode, r)) : s = null), /*timer*/
-      p[5] ? w && (ts(), Lt(w, 1, 1, () => {
-        w = null;
-      }), es()) : w ? (w.p(p, q), q[0] & /*timer*/
-      32 && wt(w, 1)) : (w = ka(p), w.c(), wt(w, 1), w.m(a.parentNode, a));
+      let q = o;
+      o = b(p), o === q ? ~o && g[o].p(p, y) : (s && (fs(), Et(g[q], 1, 1, () => {
+        g[q] = null;
+      }), us()), ~o ? (s = g[o], s ? s.p(p, y) : (s = g[o] = m[o](p), s.c()), kt(s, 1), s.m(r.parentNode, r)) : s = null), /*timer*/
+      p[5] ? v && (fs(), Et(v, 1, 1, () => {
+        v = null;
+      }), us()) : v ? (v.p(p, y), y[0] & /*timer*/
+      32 && kt(v, 1)) : (v = Ra(p), v.c(), kt(v, 1), v.m(a.parentNode, a));
     },
     i(p) {
-      _ || (wt(s), wt(w), _ = !0);
+      _ || (kt(s), kt(v), _ = !0);
     },
     o(p) {
-      Lt(s), Lt(w), _ = !1;
+      Et(s), Et(v), _ = !1;
     },
     d(p) {
-      p && (N(e), N(t), N(l), N(r), N(a)), c && c.d(p), d && d.d(), h && h.d(), ~o && g[o].d(p), w && w.d(p);
+      p && (U(e), U(t), U(i), U(r), U(a)), c && c.d(p), d && d.d(), h && h.d(), ~o && g[o].d(p), v && v.d(p);
     }
   };
 }
-function fa(i) {
+function ya(l) {
   let e, t = `translateX(${/*eta_level*/
-  (i[17] || 0) * 100 - 100}%)`;
+  (l[17] || 0) * 100 - 100}%)`;
   return {
     c() {
-      e = Dt("div"), vt(e, "class", "eta-bar svelte-16nch4a"), an(e, "transform", t);
+      e = Lt("div"), yt(e, "class", "eta-bar svelte-16nch4a"), hn(e, "transform", t);
     },
-    m(n, l) {
-      U(n, e, l);
+    m(n, i) {
+      P(n, e, i);
     },
-    p(n, l) {
-      l[0] & /*eta_level*/
+    p(n, i) {
+      i[0] & /*eta_level*/
       131072 && t !== (t = `translateX(${/*eta_level*/
-      (n[17] || 0) * 100 - 100}%)`) && an(e, "transform", t);
+      (n[17] || 0) * 100 - 100}%)`) && hn(e, "transform", t);
     },
     d(n) {
-      n && N(e);
+      n && U(e);
     }
   };
 }
-function P1(i) {
+function sh(l) {
   let e;
   return {
     c() {
       e = he("processing |");
     },
     m(t, n) {
-      U(t, e, n);
+      P(t, e, n);
     },
-    p: ns,
+    p: ds,
     d(t) {
-      t && N(e);
+      t && U(e);
     }
   };
 }
-function K1(i) {
+function ah(l) {
   let e, t = (
     /*queue_position*/
-    i[2] + 1 + ""
-  ), n, l, o, s;
+    l[2] + 1 + ""
+  ), n, i, o, s;
   return {
     c() {
-      e = he("queue: "), n = he(t), l = he("/"), o = he(
+      e = he("queue: "), n = he(t), i = he("/"), o = he(
         /*queue_size*/
-        i[3]
+        l[3]
       ), s = he(" |");
     },
     m(r, a) {
-      U(r, e, a), U(r, n, a), U(r, l, a), U(r, o, a), U(r, s, a);
+      P(r, e, a), P(r, n, a), P(r, i, a), P(r, o, a), P(r, s, a);
     },
     p(r, a) {
       a[0] & /*queue_position*/
       4 && t !== (t = /*queue_position*/
-      r[2] + 1 + "") && ft(n, t), a[0] & /*queue_size*/
-      8 && ft(
+      r[2] + 1 + "") && dt(n, t), a[0] & /*queue_size*/
+      8 && dt(
         o,
         /*queue_size*/
         r[3]
       );
     },
     d(r) {
-      r && (N(e), N(n), N(l), N(o), N(s));
+      r && (U(e), U(n), U(i), U(o), U(s));
     }
   };
 }
-function Z1(i) {
-  let e, t = kl(
+function rh(l) {
+  let e, t = Di(
     /*progress*/
-    i[7]
+    l[7]
   ), n = [];
-  for (let l = 0; l < t.length; l += 1)
-    n[l] = da(ca(i, t, l));
+  for (let i = 0; i < t.length; i += 1)
+    n[i] = Sa(ka(l, t, i));
   return {
     c() {
-      for (let l = 0; l < n.length; l += 1)
-        n[l].c();
-      e = ti();
+      for (let i = 0; i < n.length; i += 1)
+        n[i].c();
+      e = rl();
     },
-    m(l, o) {
+    m(i, o) {
       for (let s = 0; s < n.length; s += 1)
-        n[s] && n[s].m(l, o);
-      U(l, e, o);
+        n[s] && n[s].m(i, o);
+      P(i, e, o);
     },
-    p(l, o) {
+    p(i, o) {
       if (o[0] & /*progress*/
       128) {
-        t = kl(
+        t = Di(
           /*progress*/
-          l[7]
+          i[7]
         );
         let s;
         for (s = 0; s < t.length; s += 1) {
-          const r = ca(l, t, s);
-          n[s] ? n[s].p(r, o) : (n[s] = da(r), n[s].c(), n[s].m(e.parentNode, e));
+          const r = ka(i, t, s);
+          n[s] ? n[s].p(r, o) : (n[s] = Sa(r), n[s].c(), n[s].m(e.parentNode, e));
         }
         for (; s < n.length; s += 1)
           n[s].d(1);
         n.length = t.length;
       }
     },
-    d(l) {
-      l && N(e), Jr(n, l);
+    d(i) {
+      i && U(e), d_(n, i);
     }
   };
 }
-function ua(i) {
+function Ca(l) {
   let e, t = (
     /*p*/
-    i[41].unit + ""
-  ), n, l, o = " ", s;
-  function r(c, u) {
+    l[41].unit + ""
+  ), n, i, o = " ", s;
+  function r(c, f) {
     return (
       /*p*/
-      c[41].length != null ? J1 : G1
+      c[41].length != null ? ch : _h
     );
   }
-  let a = r(i), _ = a(i);
+  let a = r(l), _ = a(l);
   return {
     c() {
-      _.c(), e = ct(), n = he(t), l = he(" | "), s = he(o);
+      _.c(), e = ft(), n = he(t), i = he(" | "), s = he(o);
     },
-    m(c, u) {
-      _.m(c, u), U(c, e, u), U(c, n, u), U(c, l, u), U(c, s, u);
+    m(c, f) {
+      _.m(c, f), P(c, e, f), P(c, n, f), P(c, i, f), P(c, s, f);
     },
-    p(c, u) {
-      a === (a = r(c)) && _ ? _.p(c, u) : (_.d(1), _ = a(c), _ && (_.c(), _.m(e.parentNode, e))), u[0] & /*progress*/
+    p(c, f) {
+      a === (a = r(c)) && _ ? _.p(c, f) : (_.d(1), _ = a(c), _ && (_.c(), _.m(e.parentNode, e))), f[0] & /*progress*/
       128 && t !== (t = /*p*/
-      c[41].unit + "") && ft(n, t);
+      c[41].unit + "") && dt(n, t);
     },
     d(c) {
-      c && (N(e), N(n), N(l), N(s)), _.d(c);
+      c && (U(e), U(n), U(i), U(s)), _.d(c);
     }
   };
 }
-function G1(i) {
-  let e = Vn(
+function _h(l) {
+  let e = Jn(
     /*p*/
-    i[41].index || 0
+    l[41].index || 0
   ) + "", t;
   return {
     c() {
       t = he(e);
     },
-    m(n, l) {
-      U(n, t, l);
+    m(n, i) {
+      P(n, t, i);
     },
-    p(n, l) {
-      l[0] & /*progress*/
-      128 && e !== (e = Vn(
+    p(n, i) {
+      i[0] & /*progress*/
+      128 && e !== (e = Jn(
         /*p*/
         n[41].index || 0
-      ) + "") && ft(t, e);
+      ) + "") && dt(t, e);
     },
     d(n) {
-      n && N(t);
+      n && U(t);
     }
   };
 }
-function J1(i) {
-  let e = Vn(
+function ch(l) {
+  let e = Jn(
     /*p*/
-    i[41].index || 0
-  ) + "", t, n, l = Vn(
+    l[41].index || 0
+  ) + "", t, n, i = Jn(
     /*p*/
-    i[41].length
+    l[41].length
   ) + "", o;
   return {
     c() {
-      t = he(e), n = he("/"), o = he(l);
+      t = he(e), n = he("/"), o = he(i);
     },
     m(s, r) {
-      U(s, t, r), U(s, n, r), U(s, o, r);
+      P(s, t, r), P(s, n, r), P(s, o, r);
     },
     p(s, r) {
       r[0] & /*progress*/
-      128 && e !== (e = Vn(
+      128 && e !== (e = Jn(
         /*p*/
         s[41].index || 0
-      ) + "") && ft(t, e), r[0] & /*progress*/
-      128 && l !== (l = Vn(
+      ) + "") && dt(t, e), r[0] & /*progress*/
+      128 && i !== (i = Jn(
         /*p*/
         s[41].length
-      ) + "") && ft(o, l);
+      ) + "") && dt(o, i);
     },
     d(s) {
-      s && (N(t), N(n), N(o));
+      s && (U(t), U(n), U(o));
     }
   };
 }
-function da(i) {
+function Sa(l) {
   let e, t = (
     /*p*/
-    i[41].index != null && ua(i)
+    l[41].index != null && Ca(l)
   );
   return {
     c() {
-      t && t.c(), e = ti();
+      t && t.c(), e = rl();
     },
-    m(n, l) {
-      t && t.m(n, l), U(n, e, l);
+    m(n, i) {
+      t && t.m(n, i), P(n, e, i);
     },
-    p(n, l) {
+    p(n, i) {
       /*p*/
-      n[41].index != null ? t ? t.p(n, l) : (t = ua(n), t.c(), t.m(e.parentNode, e)) : t && (t.d(1), t = null);
+      n[41].index != null ? t ? t.p(n, i) : (t = Ca(n), t.c(), t.m(e.parentNode, e)) : t && (t.d(1), t = null);
     },
     d(n) {
-      n && N(e), t && t.d(n);
+      n && U(e), t && t.d(n);
     }
   };
 }
-function ha(i) {
+function qa(l) {
   let e, t = (
     /*eta*/
-    i[0] ? `/${/*formatted_eta*/
-    i[19]}` : ""
-  ), n, l;
+    l[0] ? `/${/*formatted_eta*/
+    l[19]}` : ""
+  ), n, i;
   return {
     c() {
       e = he(
         /*formatted_timer*/
-        i[20]
-      ), n = he(t), l = he("s");
+        l[20]
+      ), n = he(t), i = he("s");
     },
     m(o, s) {
-      U(o, e, s), U(o, n, s), U(o, l, s);
+      P(o, e, s), P(o, n, s), P(o, i, s);
     },
     p(o, s) {
       s[0] & /*formatted_timer*/
-      1048576 && ft(
+      1048576 && dt(
         e,
         /*formatted_timer*/
         o[20]
       ), s[0] & /*eta, formatted_eta*/
       524289 && t !== (t = /*eta*/
       o[0] ? `/${/*formatted_eta*/
-      o[19]}` : "") && ft(n, t);
+      o[19]}` : "") && dt(n, t);
     },
     d(o) {
-      o && (N(e), N(n), N(l));
+      o && (U(e), U(n), U(i));
     }
   };
 }
-function Q1(i) {
+function uh(l) {
   let e, t;
-  return e = new I1({
+  return e = new K1({
     props: { margin: (
       /*variant*/
-      i[8] === "default"
+      l[8] === "default"
     ) }
   }), {
     c() {
-      Kr(e.$$.fragment);
+      c_(e.$$.fragment);
     },
-    m(n, l) {
-      t_(e, n, l), t = !0;
+    m(n, i) {
+      g_(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*variant*/
+      i[0] & /*variant*/
       256 && (o.margin = /*variant*/
       n[8] === "default"), e.$set(o);
     },
     i(n) {
-      t || (wt(e.$$.fragment, n), t = !0);
+      t || (kt(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Lt(e.$$.fragment, n), t = !1;
+      Et(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Gr(e, n);
+      f_(e, n);
     }
   };
 }
-function eh(i) {
-  let e, t, n, l, o, s = `${/*last_progress_level*/
-  i[15] * 100}%`, r = (
+function fh(l) {
+  let e, t, n, i, o, s = `${/*last_progress_level*/
+  l[15] * 100}%`, r = (
     /*progress*/
-    i[7] != null && ma(i)
+    l[7] != null && za(l)
   );
   return {
     c() {
-      e = Dt("div"), t = Dt("div"), r && r.c(), n = ct(), l = Dt("div"), o = Dt("div"), vt(t, "class", "progress-level-inner svelte-16nch4a"), vt(o, "class", "progress-bar svelte-16nch4a"), an(o, "width", s), vt(l, "class", "progress-bar-wrap svelte-16nch4a"), vt(e, "class", "progress-level svelte-16nch4a");
+      e = Lt("div"), t = Lt("div"), r && r.c(), n = ft(), i = Lt("div"), o = Lt("div"), yt(t, "class", "progress-level-inner svelte-16nch4a"), yt(o, "class", "progress-bar svelte-16nch4a"), hn(o, "width", s), yt(i, "class", "progress-bar-wrap svelte-16nch4a"), yt(e, "class", "progress-level svelte-16nch4a");
     },
     m(a, _) {
-      U(a, e, _), yn(e, t), r && r.m(t, null), yn(e, n), yn(e, l), yn(l, o), i[31](o);
+      P(a, e, _), Ln(e, t), r && r.m(t, null), Ln(e, n), Ln(e, i), Ln(i, o), l[31](o);
     },
     p(a, _) {
       /*progress*/
-      a[7] != null ? r ? r.p(a, _) : (r = ma(a), r.c(), r.m(t, null)) : r && (r.d(1), r = null), _[0] & /*last_progress_level*/
+      a[7] != null ? r ? r.p(a, _) : (r = za(a), r.c(), r.m(t, null)) : r && (r.d(1), r = null), _[0] & /*last_progress_level*/
       32768 && s !== (s = `${/*last_progress_level*/
-      a[15] * 100}%`) && an(o, "width", s);
+      a[15] * 100}%`) && hn(o, "width", s);
     },
-    i: ns,
-    o: ns,
+    i: ds,
+    o: ds,
     d(a) {
-      a && N(e), r && r.d(), i[31](null);
+      a && U(e), r && r.d(), l[31](null);
     }
   };
 }
-function ma(i) {
-  let e, t = kl(
+function za(l) {
+  let e, t = Di(
     /*progress*/
-    i[7]
+    l[7]
   ), n = [];
-  for (let l = 0; l < t.length; l += 1)
-    n[l] = va(_a(i, t, l));
+  for (let i = 0; i < t.length; i += 1)
+    n[i] = Ea(va(l, t, i));
   return {
     c() {
-      for (let l = 0; l < n.length; l += 1)
-        n[l].c();
-      e = ti();
+      for (let i = 0; i < n.length; i += 1)
+        n[i].c();
+      e = rl();
     },
-    m(l, o) {
+    m(i, o) {
       for (let s = 0; s < n.length; s += 1)
-        n[s] && n[s].m(l, o);
-      U(l, e, o);
+        n[s] && n[s].m(i, o);
+      P(i, e, o);
     },
-    p(l, o) {
+    p(i, o) {
       if (o[0] & /*progress_level, progress*/
       16512) {
-        t = kl(
+        t = Di(
           /*progress*/
-          l[7]
+          i[7]
         );
         let s;
         for (s = 0; s < t.length; s += 1) {
-          const r = _a(l, t, s);
-          n[s] ? n[s].p(r, o) : (n[s] = va(r), n[s].c(), n[s].m(e.parentNode, e));
+          const r = va(i, t, s);
+          n[s] ? n[s].p(r, o) : (n[s] = Ea(r), n[s].c(), n[s].m(e.parentNode, e));
         }
         for (; s < n.length; s += 1)
           n[s].d(1);
         n.length = t.length;
       }
     },
-    d(l) {
-      l && N(e), Jr(n, l);
+    d(i) {
+      i && U(e), d_(n, i);
     }
   };
 }
-function ga(i) {
-  let e, t, n, l, o = (
+function Ba(l) {
+  let e, t, n, i, o = (
     /*i*/
-    i[43] !== 0 && th()
+    l[43] !== 0 && dh()
   ), s = (
     /*p*/
-    i[41].desc != null && ba(i)
+    l[41].desc != null && Da(l)
   ), r = (
     /*p*/
-    i[41].desc != null && /*progress_level*/
-    i[14] && /*progress_level*/
-    i[14][
+    l[41].desc != null && /*progress_level*/
+    l[14] && /*progress_level*/
+    l[14][
       /*i*/
-      i[43]
-    ] != null && pa()
+      l[43]
+    ] != null && Ma()
   ), a = (
     /*progress_level*/
-    i[14] != null && wa(i)
+    l[14] != null && La(l)
   );
   return {
     c() {
-      o && o.c(), e = ct(), s && s.c(), t = ct(), r && r.c(), n = ct(), a && a.c(), l = ti();
+      o && o.c(), e = ft(), s && s.c(), t = ft(), r && r.c(), n = ft(), a && a.c(), i = rl();
     },
     m(_, c) {
-      o && o.m(_, c), U(_, e, c), s && s.m(_, c), U(_, t, c), r && r.m(_, c), U(_, n, c), a && a.m(_, c), U(_, l, c);
+      o && o.m(_, c), P(_, e, c), s && s.m(_, c), P(_, t, c), r && r.m(_, c), P(_, n, c), a && a.m(_, c), P(_, i, c);
     },
     p(_, c) {
       /*p*/
-      _[41].desc != null ? s ? s.p(_, c) : (s = ba(_), s.c(), s.m(t.parentNode, t)) : s && (s.d(1), s = null), /*p*/
+      _[41].desc != null ? s ? s.p(_, c) : (s = Da(_), s.c(), s.m(t.parentNode, t)) : s && (s.d(1), s = null), /*p*/
       _[41].desc != null && /*progress_level*/
       _[14] && /*progress_level*/
       _[14][
         /*i*/
         _[43]
-      ] != null ? r || (r = pa(), r.c(), r.m(n.parentNode, n)) : r && (r.d(1), r = null), /*progress_level*/
-      _[14] != null ? a ? a.p(_, c) : (a = wa(_), a.c(), a.m(l.parentNode, l)) : a && (a.d(1), a = null);
+      ] != null ? r || (r = Ma(), r.c(), r.m(n.parentNode, n)) : r && (r.d(1), r = null), /*progress_level*/
+      _[14] != null ? a ? a.p(_, c) : (a = La(_), a.c(), a.m(i.parentNode, i)) : a && (a.d(1), a = null);
     },
     d(_) {
-      _ && (N(e), N(t), N(n), N(l)), o && o.d(_), s && s.d(_), r && r.d(_), a && a.d(_);
+      _ && (U(e), U(t), U(n), U(i)), o && o.d(_), s && s.d(_), r && r.d(_), a && a.d(_);
     }
   };
 }
-function th(i) {
+function dh(l) {
   let e;
   return {
     c() {
       e = he(" /");
     },
     m(t, n) {
-      U(t, e, n);
+      P(t, e, n);
     },
     d(t) {
-      t && N(e);
+      t && U(e);
     }
   };
 }
-function ba(i) {
+function Da(l) {
   let e = (
     /*p*/
-    i[41].desc + ""
+    l[41].desc + ""
   ), t;
   return {
     c() {
       t = he(e);
     },
-    m(n, l) {
-      U(n, t, l);
+    m(n, i) {
+      P(n, t, i);
     },
-    p(n, l) {
-      l[0] & /*progress*/
+    p(n, i) {
+      i[0] & /*progress*/
       128 && e !== (e = /*p*/
-      n[41].desc + "") && ft(t, e);
+      n[41].desc + "") && dt(t, e);
     },
     d(n) {
-      n && N(t);
+      n && U(t);
     }
   };
 }
-function pa(i) {
+function Ma(l) {
   let e;
   return {
     c() {
       e = he("-");
     },
     m(t, n) {
-      U(t, e, n);
+      P(t, e, n);
     },
     d(t) {
-      t && N(e);
+      t && U(e);
     }
   };
 }
-function wa(i) {
+function La(l) {
   let e = (100 * /*progress_level*/
-  (i[14][
+  (l[14][
     /*i*/
-    i[43]
+    l[43]
   ] || 0)).toFixed(1) + "", t, n;
   return {
     c() {
       t = he(e), n = he("%");
     },
-    m(l, o) {
-      U(l, t, o), U(l, n, o);
+    m(i, o) {
+      P(i, t, o), P(i, n, o);
     },
-    p(l, o) {
+    p(i, o) {
       o[0] & /*progress_level*/
       16384 && e !== (e = (100 * /*progress_level*/
-      (l[14][
+      (i[14][
         /*i*/
-        l[43]
-      ] || 0)).toFixed(1) + "") && ft(t, e);
+        i[43]
+      ] || 0)).toFixed(1) + "") && dt(t, e);
     },
-    d(l) {
-      l && (N(t), N(n));
+    d(i) {
+      i && (U(t), U(n));
     }
   };
 }
-function va(i) {
+function Ea(l) {
   let e, t = (
     /*p*/
-    (i[41].desc != null || /*progress_level*/
-    i[14] && /*progress_level*/
-    i[14][
+    (l[41].desc != null || /*progress_level*/
+    l[14] && /*progress_level*/
+    l[14][
       /*i*/
-      i[43]
-    ] != null) && ga(i)
+      l[43]
+    ] != null) && Ba(l)
   );
   return {
     c() {
-      t && t.c(), e = ti();
+      t && t.c(), e = rl();
     },
-    m(n, l) {
-      t && t.m(n, l), U(n, e, l);
+    m(n, i) {
+      t && t.m(n, i), P(n, e, i);
     },
-    p(n, l) {
+    p(n, i) {
       /*p*/
       n[41].desc != null || /*progress_level*/
       n[14] && /*progress_level*/
       n[14][
         /*i*/
         n[43]
-      ] != null ? t ? t.p(n, l) : (t = ga(n), t.c(), t.m(e.parentNode, e)) : t && (t.d(1), t = null);
+      ] != null ? t ? t.p(n, i) : (t = Ba(n), t.c(), t.m(e.parentNode, e)) : t && (t.d(1), t = null);
     },
     d(n) {
-      n && N(e), t && t.d(n);
+      n && U(e), t && t.d(n);
     }
   };
 }
-function ka(i) {
-  let e, t, n, l;
+function Ra(l) {
+  let e, t, n, i;
   const o = (
     /*#slots*/
-    i[30]["additional-loading-text"]
-  ), s = Zr(
+    l[30]["additional-loading-text"]
+  ), s = u_(
     o,
-    i,
+    l,
     /*$$scope*/
-    i[29],
-    ra
+    l[29],
+    wa
   );
   return {
     c() {
-      e = Dt("p"), t = he(
+      e = Lt("p"), t = he(
         /*loading_text*/
-        i[9]
-      ), n = ct(), s && s.c(), vt(e, "class", "loading svelte-16nch4a");
+        l[9]
+      ), n = ft(), s && s.c(), yt(e, "class", "loading svelte-16nch4a");
     },
     m(r, a) {
-      U(r, e, a), yn(e, t), U(r, n, a), s && s.m(r, a), l = !0;
+      P(r, e, a), Ln(e, t), P(r, n, a), s && s.m(r, a), i = !0;
     },
     p(r, a) {
-      (!l || a[0] & /*loading_text*/
-      512) && ft(
+      (!i || a[0] & /*loading_text*/
+      512) && dt(
         t,
         /*loading_text*/
         r[9]
-      ), s && s.p && (!l || a[0] & /*$$scope*/
-      536870912) && n_(
+      ), s && s.p && (!i || a[0] & /*$$scope*/
+      536870912) && b_(
         s,
         o,
         r,
         /*$$scope*/
         r[29],
-        l ? e_(
+        i ? m_(
           o,
           /*$$scope*/
           r[29],
           a,
-          N1
-        ) : Qr(
+          lh
+        ) : h_(
           /*$$scope*/
           r[29]
         ),
-        ra
+        wa
       );
     },
     i(r) {
-      l || (wt(s, r), l = !0);
+      i || (kt(s, r), i = !0);
     },
     o(r) {
-      Lt(s, r), l = !1;
+      Et(s, r), i = !1;
     },
     d(r) {
-      r && (N(e), N(n)), s && s.d(r);
+      r && (U(e), U(n)), s && s.d(r);
     }
   };
 }
-function nh(i) {
-  let e, t, n, l, o;
-  const s = [V1, U1], r = [];
+function hh(l) {
+  let e, t, n, i, o;
+  const s = [oh, ih], r = [];
   function a(_, c) {
     return (
       /*status*/
@@ -3898,60 +3898,60 @@ function nh(i) {
       )
     );
   }
-  return ~(t = a(i)) && (n = r[t] = s[t](i)), {
+  return ~(t = a(l)) && (n = r[t] = s[t](l)), {
     c() {
-      e = Dt("div"), n && n.c(), vt(e, "class", l = "wrap " + /*variant*/
-      i[8] + " " + /*show_progress*/
-      i[6] + " svelte-16nch4a"), _t(e, "hide", !/*status*/
-      i[4] || /*status*/
-      i[4] === "complete" || /*show_progress*/
-      i[6] === "hidden"), _t(
+      e = Lt("div"), n && n.c(), yt(e, "class", i = "wrap " + /*variant*/
+      l[8] + " " + /*show_progress*/
+      l[6] + " svelte-16nch4a"), ut(e, "hide", !/*status*/
+      l[4] || /*status*/
+      l[4] === "complete" || /*show_progress*/
+      l[6] === "hidden"), ut(
         e,
         "translucent",
         /*variant*/
-        i[8] === "center" && /*status*/
-        (i[4] === "pending" || /*status*/
-        i[4] === "error") || /*translucent*/
-        i[11] || /*show_progress*/
-        i[6] === "minimal"
-      ), _t(
+        l[8] === "center" && /*status*/
+        (l[4] === "pending" || /*status*/
+        l[4] === "error") || /*translucent*/
+        l[11] || /*show_progress*/
+        l[6] === "minimal"
+      ), ut(
         e,
         "generating",
         /*status*/
-        i[4] === "generating"
-      ), _t(
+        l[4] === "generating"
+      ), ut(
         e,
         "border",
         /*border*/
-        i[12]
-      ), an(
+        l[12]
+      ), hn(
         e,
         "position",
         /*absolute*/
-        i[10] ? "absolute" : "static"
-      ), an(
+        l[10] ? "absolute" : "static"
+      ), hn(
         e,
         "padding",
         /*absolute*/
-        i[10] ? "0" : "var(--size-8) 0"
+        l[10] ? "0" : "var(--size-8) 0"
       );
     },
     m(_, c) {
-      U(_, e, c), ~t && r[t].m(e, null), i[33](e), o = !0;
+      P(_, e, c), ~t && r[t].m(e, null), l[33](e), o = !0;
     },
     p(_, c) {
-      let u = t;
-      t = a(_), t === u ? ~t && r[t].p(_, c) : (n && (ts(), Lt(r[u], 1, 1, () => {
-        r[u] = null;
-      }), es()), ~t ? (n = r[t], n ? n.p(_, c) : (n = r[t] = s[t](_), n.c()), wt(n, 1), n.m(e, null)) : n = null), (!o || c[0] & /*variant, show_progress*/
-      320 && l !== (l = "wrap " + /*variant*/
+      let f = t;
+      t = a(_), t === f ? ~t && r[t].p(_, c) : (n && (fs(), Et(r[f], 1, 1, () => {
+        r[f] = null;
+      }), us()), ~t ? (n = r[t], n ? n.p(_, c) : (n = r[t] = s[t](_), n.c()), kt(n, 1), n.m(e, null)) : n = null), (!o || c[0] & /*variant, show_progress*/
+      320 && i !== (i = "wrap " + /*variant*/
       _[8] + " " + /*show_progress*/
-      _[6] + " svelte-16nch4a")) && vt(e, "class", l), (!o || c[0] & /*variant, show_progress, status, show_progress*/
-      336) && _t(e, "hide", !/*status*/
+      _[6] + " svelte-16nch4a")) && yt(e, "class", i), (!o || c[0] & /*variant, show_progress, status, show_progress*/
+      336) && ut(e, "hide", !/*status*/
       _[4] || /*status*/
       _[4] === "complete" || /*show_progress*/
       _[6] === "hidden"), (!o || c[0] & /*variant, show_progress, variant, status, translucent, show_progress*/
-      2384) && _t(
+      2384) && ut(
         e,
         "translucent",
         /*variant*/
@@ -3961,25 +3961,25 @@ function nh(i) {
         _[11] || /*show_progress*/
         _[6] === "minimal"
       ), (!o || c[0] & /*variant, show_progress, status*/
-      336) && _t(
+      336) && ut(
         e,
         "generating",
         /*status*/
         _[4] === "generating"
       ), (!o || c[0] & /*variant, show_progress, border*/
-      4416) && _t(
+      4416) && ut(
         e,
         "border",
         /*border*/
         _[12]
       ), c[0] & /*absolute*/
-      1024 && an(
+      1024 && hn(
         e,
         "position",
         /*absolute*/
         _[10] ? "absolute" : "static"
       ), c[0] & /*absolute*/
-      1024 && an(
+      1024 && hn(
         e,
         "padding",
         /*absolute*/
@@ -3987,18 +3987,18 @@ function nh(i) {
       );
     },
     i(_) {
-      o || (wt(n), o = !0);
+      o || (kt(n), o = !0);
     },
     o(_) {
-      Lt(n), o = !1;
+      Et(n), o = !1;
     },
     d(_) {
-      _ && N(e), ~t && r[t].d(), i[33](null);
+      _ && U(e), ~t && r[t].d(), l[33](null);
     }
   };
 }
-var ih = function(i, e, t, n) {
-  function l(o) {
+var mh = function(l, e, t, n) {
+  function i(o) {
     return o instanceof t ? o : new t(function(s) {
       s(o);
     });
@@ -4007,135 +4007,135 @@ var ih = function(i, e, t, n) {
     function r(c) {
       try {
         _(n.next(c));
-      } catch (u) {
-        s(u);
+      } catch (f) {
+        s(f);
       }
     }
     function a(c) {
       try {
         _(n.throw(c));
-      } catch (u) {
-        s(u);
+      } catch (f) {
+        s(f);
       }
     }
     function _(c) {
-      c.done ? o(c.value) : l(c.value).then(r, a);
+      c.done ? o(c.value) : i(c.value).then(r, a);
     }
-    _((n = n.apply(i, e || [])).next());
+    _((n = n.apply(l, e || [])).next());
   });
 };
-let Vi = [], yo = !1;
-function lh(i) {
-  return ih(this, arguments, void 0, function* (e, t = !0) {
+let Ql = [], Eo = !1;
+function gh(l) {
+  return mh(this, arguments, void 0, function* (e, t = !0) {
     if (!(window.__gradio_mode__ === "website" || window.__gradio_mode__ !== "app" && t !== !0)) {
-      if (Vi.push(e), !yo) yo = !0;
+      if (Ql.push(e), !Eo) Eo = !0;
       else return;
-      yield F1(), requestAnimationFrame(() => {
+      yield Q1(), requestAnimationFrame(() => {
         let n = [0, 0];
-        for (let l = 0; l < Vi.length; l++) {
-          const s = Vi[l].getBoundingClientRect();
-          (l === 0 || s.top + window.scrollY <= n[0]) && (n[0] = s.top + window.scrollY, n[1] = l);
+        for (let i = 0; i < Ql.length; i++) {
+          const s = Ql[i].getBoundingClientRect();
+          (i === 0 || s.top + window.scrollY <= n[0]) && (n[0] = s.top + window.scrollY, n[1] = i);
         }
-        window.scrollTo({ top: n[0] - 20, behavior: "smooth" }), yo = !1, Vi = [];
+        window.scrollTo({ top: n[0] - 20, behavior: "smooth" }), Eo = !1, Ql = [];
       });
     }
   });
 }
-function oh(i, e, t) {
-  let n, { $$slots: l = {}, $$scope: o } = e;
+function bh(l, e, t) {
+  let n, { $$slots: i = {}, $$scope: o } = e;
   this && this.__awaiter;
-  const s = $1();
-  let { i18n: r } = e, { eta: a = null } = e, { queue_position: _ } = e, { queue_size: c } = e, { status: u } = e, { scroll_to_output: f = !1 } = e, { timer: d = !0 } = e, { show_progress: h = "full" } = e, { message: m = null } = e, { progress: g = null } = e, { variant: b = "default" } = e, { loading_text: w = "Loading..." } = e, { absolute: p = !0 } = e, { translucent: q = !1 } = e, { border: M = !1 } = e, { autoscroll: D } = e, C, k = !1, y = 0, B = 0, A = null, S = null, Y = 0, F = null, J, z = null, me = !0;
+  const s = th();
+  let { i18n: r } = e, { eta: a = null } = e, { queue_position: _ } = e, { queue_size: c } = e, { status: f } = e, { scroll_to_output: u = !1 } = e, { timer: d = !0 } = e, { show_progress: h = "full" } = e, { message: m = null } = e, { progress: g = null } = e, { variant: b = "default" } = e, { loading_text: v = "Loading..." } = e, { absolute: p = !0 } = e, { translucent: y = !1 } = e, { border: q = !1 } = e, { autoscroll: D } = e, M, S = !1, C = 0, X = 0, I = null, w = null, L = 0, F = null, O, z = null, me = !0;
   const R = () => {
-    t(0, a = t(27, A = t(19, O = null))), t(25, y = performance.now()), t(26, B = 0), k = !0, $();
+    t(0, a = t(27, I = t(19, x = null))), t(25, C = performance.now()), t(26, X = 0), S = !0, V();
   };
-  function $() {
+  function V() {
     requestAnimationFrame(() => {
-      t(26, B = (performance.now() - y) / 1e3), k && $();
+      t(26, X = (performance.now() - C) / 1e3), S && V();
     });
   }
-  function I() {
-    t(26, B = 0), t(0, a = t(27, A = t(19, O = null))), k && (k = !1);
+  function H() {
+    t(26, X = 0), t(0, a = t(27, I = t(19, x = null))), S && (S = !1);
   }
-  O1(() => {
-    k && I();
+  eh(() => {
+    S && H();
   });
-  let O = null;
+  let x = null;
   function _e(j) {
-    sa[j ? "unshift" : "push"](() => {
-      z = j, t(16, z), t(7, g), t(14, F), t(15, J);
+    ba[j ? "unshift" : "push"](() => {
+      z = j, t(16, z), t(7, g), t(14, F), t(15, O);
     });
   }
-  const Z = () => {
+  const se = () => {
     s("clear_status");
   };
-  function re(j) {
-    sa[j ? "unshift" : "push"](() => {
-      C = j, t(13, C);
+  function ae(j) {
+    ba[j ? "unshift" : "push"](() => {
+      M = j, t(13, M);
     });
   }
-  return i.$$set = (j) => {
-    "i18n" in j && t(1, r = j.i18n), "eta" in j && t(0, a = j.eta), "queue_position" in j && t(2, _ = j.queue_position), "queue_size" in j && t(3, c = j.queue_size), "status" in j && t(4, u = j.status), "scroll_to_output" in j && t(22, f = j.scroll_to_output), "timer" in j && t(5, d = j.timer), "show_progress" in j && t(6, h = j.show_progress), "message" in j && t(23, m = j.message), "progress" in j && t(7, g = j.progress), "variant" in j && t(8, b = j.variant), "loading_text" in j && t(9, w = j.loading_text), "absolute" in j && t(10, p = j.absolute), "translucent" in j && t(11, q = j.translucent), "border" in j && t(12, M = j.border), "autoscroll" in j && t(24, D = j.autoscroll), "$$scope" in j && t(29, o = j.$$scope);
-  }, i.$$.update = () => {
-    i.$$.dirty[0] & /*eta, old_eta, timer_start, eta_from_start*/
-    436207617 && (a === null && t(0, a = A), a != null && A !== a && (t(28, S = (performance.now() - y) / 1e3 + a), t(19, O = S.toFixed(1)), t(27, A = a))), i.$$.dirty[0] & /*eta_from_start, timer_diff*/
-    335544320 && t(17, Y = S === null || S <= 0 || !B ? null : Math.min(B / S, 1)), i.$$.dirty[0] & /*progress*/
-    128 && g != null && t(18, me = !1), i.$$.dirty[0] & /*progress, progress_level, progress_bar, last_progress_level*/
+  return l.$$set = (j) => {
+    "i18n" in j && t(1, r = j.i18n), "eta" in j && t(0, a = j.eta), "queue_position" in j && t(2, _ = j.queue_position), "queue_size" in j && t(3, c = j.queue_size), "status" in j && t(4, f = j.status), "scroll_to_output" in j && t(22, u = j.scroll_to_output), "timer" in j && t(5, d = j.timer), "show_progress" in j && t(6, h = j.show_progress), "message" in j && t(23, m = j.message), "progress" in j && t(7, g = j.progress), "variant" in j && t(8, b = j.variant), "loading_text" in j && t(9, v = j.loading_text), "absolute" in j && t(10, p = j.absolute), "translucent" in j && t(11, y = j.translucent), "border" in j && t(12, q = j.border), "autoscroll" in j && t(24, D = j.autoscroll), "$$scope" in j && t(29, o = j.$$scope);
+  }, l.$$.update = () => {
+    l.$$.dirty[0] & /*eta, old_eta, timer_start, eta_from_start*/
+    436207617 && (a === null && t(0, a = I), a != null && I !== a && (t(28, w = (performance.now() - C) / 1e3 + a), t(19, x = w.toFixed(1)), t(27, I = a))), l.$$.dirty[0] & /*eta_from_start, timer_diff*/
+    335544320 && t(17, L = w === null || w <= 0 || !X ? null : Math.min(X / w, 1)), l.$$.dirty[0] & /*progress*/
+    128 && g != null && t(18, me = !1), l.$$.dirty[0] & /*progress, progress_level, progress_bar, last_progress_level*/
     114816 && (g != null ? t(14, F = g.map((j) => {
       if (j.index != null && j.length != null)
         return j.index / j.length;
       if (j.progress != null)
         return j.progress;
-    })) : t(14, F = null), F ? (t(15, J = F[F.length - 1]), z && (J === 0 ? t(16, z.style.transition = "0", z) : t(16, z.style.transition = "150ms", z))) : t(15, J = void 0)), i.$$.dirty[0] & /*status*/
-    16 && (u === "pending" ? R() : I()), i.$$.dirty[0] & /*el, scroll_to_output, status, autoscroll*/
-    20979728 && C && f && (u === "pending" || u === "complete") && lh(C, D), i.$$.dirty[0] & /*status, message*/
-    8388624, i.$$.dirty[0] & /*timer_diff*/
-    67108864 && t(20, n = B.toFixed(1));
+    })) : t(14, F = null), F ? (t(15, O = F[F.length - 1]), z && (O === 0 ? t(16, z.style.transition = "0", z) : t(16, z.style.transition = "150ms", z))) : t(15, O = void 0)), l.$$.dirty[0] & /*status*/
+    16 && (f === "pending" ? R() : H()), l.$$.dirty[0] & /*el, scroll_to_output, status, autoscroll*/
+    20979728 && M && u && (f === "pending" || f === "complete") && gh(M, D), l.$$.dirty[0] & /*status, message*/
+    8388624, l.$$.dirty[0] & /*timer_diff*/
+    67108864 && t(20, n = X.toFixed(1));
   }, [
     a,
     r,
     _,
     c,
-    u,
+    f,
     d,
     h,
     g,
     b,
-    w,
+    v,
     p,
+    y,
     q,
     M,
-    C,
     F,
-    J,
-    z,
-    Y,
-    me,
     O,
+    z,
+    L,
+    me,
+    x,
     n,
     s,
-    f,
+    u,
     m,
     D,
-    y,
-    B,
-    A,
-    S,
+    C,
+    X,
+    I,
+    w,
     o,
-    l,
+    i,
     _e,
-    Z,
-    re
+    se,
+    ae
   ];
 }
-class sh extends H1 {
+class ph extends Z1 {
   constructor(e) {
-    super(), j1(
+    super(), G1(
       this,
       e,
-      oh,
-      nh,
-      T1,
+      bh,
+      hh,
+      J1,
       {
         i18n: 1,
         eta: 0,
@@ -4160,137 +4160,137 @@ class sh extends H1 {
   }
 }
 const {
-  SvelteComponent: $6,
-  add_render_callback: x6,
-  append: N6,
-  attr: U6,
-  bubble: V6,
-  check_outros: P6,
-  create_component: K6,
-  create_in_transition: Z6,
-  create_out_transition: G6,
-  destroy_component: J6,
-  detach: Q6,
-  element: e8,
-  group_outros: t8,
-  init: n8,
-  insert: i8,
-  listen: l8,
-  mount_component: o8,
-  run_all: s8,
-  safe_not_equal: a8,
-  set_data: r8,
-  space: _8,
-  stop_propagation: c8,
-  text: f8,
-  transition_in: u8,
-  transition_out: d8
-} = window.__gradio__svelte__internal, { createEventDispatcher: h8, onMount: m8 } = window.__gradio__svelte__internal, {
-  SvelteComponent: g8,
+  SvelteComponent: m8,
+  add_render_callback: g8,
   append: b8,
   attr: p8,
   bubble: w8,
   check_outros: v8,
-  create_animation: k8,
-  create_component: y8,
-  destroy_component: C8,
-  detach: S8,
-  element: q8,
-  ensure_array_like: z8,
-  fix_and_outro_and_destroy_block: B8,
-  fix_position: D8,
-  group_outros: L8,
-  init: M8,
-  insert: E8,
-  mount_component: R8,
-  noop: W8,
-  safe_not_equal: A8,
-  set_style: X8,
-  space: Y8,
+  create_component: k8,
+  create_in_transition: y8,
+  create_out_transition: C8,
+  destroy_component: S8,
+  detach: q8,
+  element: z8,
+  group_outros: B8,
+  init: D8,
+  insert: M8,
+  listen: L8,
+  mount_component: E8,
+  run_all: R8,
+  safe_not_equal: W8,
+  set_data: A8,
+  space: X8,
+  stop_propagation: Y8,
+  text: H8,
   transition_in: I8,
-  transition_out: H8,
-  update_keyed_each: j8
-} = window.__gradio__svelte__internal, { setContext: T8, getContext: ah } = window.__gradio__svelte__internal, rh = "WORKER_PROXY_CONTEXT_KEY";
-function i_() {
-  return ah(rh);
+  transition_out: j8
+} = window.__gradio__svelte__internal, { createEventDispatcher: T8, onMount: $8 } = window.__gradio__svelte__internal, {
+  SvelteComponent: F8,
+  append: O8,
+  attr: x8,
+  bubble: V8,
+  check_outros: N8,
+  create_animation: U8,
+  create_component: P8,
+  destroy_component: K8,
+  detach: Z8,
+  element: G8,
+  ensure_array_like: J8,
+  fix_and_outro_and_destroy_block: Q8,
+  fix_position: e7,
+  group_outros: t7,
+  init: n7,
+  insert: l7,
+  mount_component: i7,
+  noop: o7,
+  safe_not_equal: s7,
+  set_style: a7,
+  space: r7,
+  transition_in: _7,
+  transition_out: c7,
+  update_keyed_each: u7
+} = window.__gradio__svelte__internal, { setContext: f7, getContext: wh } = window.__gradio__svelte__internal, vh = "WORKER_PROXY_CONTEXT_KEY";
+function p_() {
+  return wh(vh);
 }
-function _h(i) {
-  return i.host === window.location.host || i.host === "localhost:7860" || i.host === "127.0.0.1:7860" || // Ref: https://github.com/gradio-app/gradio/blob/v3.32.0/js/app/src/Index.svelte#L194
-  i.host === "lite.local";
+function kh(l) {
+  return l.host === window.location.host || l.host === "localhost:7860" || l.host === "127.0.0.1:7860" || // Ref: https://github.com/gradio-app/gradio/blob/v3.32.0/js/app/src/Index.svelte#L194
+  l.host === "lite.local";
 }
-function l_(i, e) {
+function w_(l, e) {
   const t = e.toLowerCase();
-  for (const [n, l] of Object.entries(i))
+  for (const [n, i] of Object.entries(l))
     if (n.toLowerCase() === t)
-      return l;
+      return i;
 }
-function o_(i) {
-  if (i == null)
+function v_(l) {
+  if (l == null)
     return !1;
-  const e = new URL(i, window.location.href);
-  return !(!_h(e) || e.protocol !== "http:" && e.protocol !== "https:");
+  const e = new URL(l, window.location.href);
+  return !(!kh(e) || e.protocol !== "http:" && e.protocol !== "https:");
 }
-async function ch(i) {
-  if (i == null || !o_(i))
-    return i;
-  const e = i_();
+async function yh(l) {
+  if (l == null || !v_(l))
+    return l;
+  const e = p_();
   if (e == null)
-    return i;
-  const n = new URL(i, window.location.href).pathname;
+    return l;
+  const n = new URL(l, window.location.href).pathname;
   return e.httpRequest({
     method: "GET",
     path: n,
     headers: {},
     query_string: ""
-  }).then((l) => {
-    if (l.status !== 200)
+  }).then((i) => {
+    if (i.status !== 200)
       throw new Error(`Failed to get file ${n} from the Wasm worker.`);
-    const o = new Blob([l.body], {
-      type: l_(l.headers, "content-type")
+    const o = new Blob([i.body], {
+      type: w_(i.headers, "content-type")
     });
     return URL.createObjectURL(o);
   });
 }
 const {
-  SvelteComponent: fh,
-  assign: yl,
-  check_outros: s_,
-  compute_rest_props: ya,
-  create_slot: ms,
-  detach: Il,
-  element: a_,
-  empty: r_,
-  exclude_internal_props: uh,
-  get_all_dirty_from_scope: gs,
-  get_slot_changes: bs,
-  get_spread_update: __,
-  group_outros: c_,
-  init: dh,
-  insert: Hl,
-  listen: f_,
-  prevent_default: hh,
-  safe_not_equal: mh,
-  set_attributes: Cl,
-  transition_in: Dn,
-  transition_out: Ln,
-  update_slot_base: ps
-} = window.__gradio__svelte__internal, { createEventDispatcher: gh } = window.__gradio__svelte__internal;
-function bh(i) {
-  let e, t, n, l, o;
+  SvelteComponent: Ch,
+  assign: Mi,
+  check_outros: k_,
+  compute_rest_props: Wa,
+  create_slot: zs,
+  detach: Oi,
+  element: y_,
+  empty: C_,
+  exclude_internal_props: Sh,
+  get_all_dirty_from_scope: Bs,
+  get_slot_changes: Ds,
+  get_spread_update: S_,
+  group_outros: q_,
+  init: qh,
+  insert: xi,
+  listen: z_,
+  prevent_default: zh,
+  safe_not_equal: Bh,
+  set_attributes: Li,
+  transition_in: An,
+  transition_out: Xn,
+  update_slot_base: Ms
+} = window.__gradio__svelte__internal, { createEventDispatcher: Dh } = window.__gradio__svelte__internal;
+function Mh(l) {
+  let e, t, n, i, o;
   const s = (
     /*#slots*/
-    i[8].default
-  ), r = ms(
+    l[8].default
+  ), r = zs(
     s,
-    i,
+    l,
     /*$$scope*/
-    i[7],
+    l[7],
     null
   );
   let a = [
     { href: (
       /*href*/
-      i[0]
+      l[0]
     ) },
     {
       target: t = typeof window < "u" && window.__is_colab__ ? "_blank" : null
@@ -4298,158 +4298,158 @@ function bh(i) {
     { rel: "noopener noreferrer" },
     { download: (
       /*download*/
-      i[1]
+      l[1]
     ) },
     /*$$restProps*/
-    i[6]
+    l[6]
   ], _ = {};
   for (let c = 0; c < a.length; c += 1)
-    _ = yl(_, a[c]);
+    _ = Mi(_, a[c]);
   return {
     c() {
-      e = a_("a"), r && r.c(), Cl(e, _);
+      e = y_("a"), r && r.c(), Li(e, _);
     },
-    m(c, u) {
-      Hl(c, e, u), r && r.m(e, null), n = !0, l || (o = f_(
+    m(c, f) {
+      xi(c, e, f), r && r.m(e, null), n = !0, i || (o = z_(
         e,
         "click",
         /*dispatch*/
-        i[3].bind(null, "click")
-      ), l = !0);
+        l[3].bind(null, "click")
+      ), i = !0);
     },
-    p(c, u) {
-      r && r.p && (!n || u & /*$$scope*/
-      128) && ps(
+    p(c, f) {
+      r && r.p && (!n || f & /*$$scope*/
+      128) && Ms(
         r,
         s,
         c,
         /*$$scope*/
         c[7],
-        n ? bs(
+        n ? Ds(
           s,
           /*$$scope*/
           c[7],
-          u,
+          f,
           null
-        ) : gs(
+        ) : Bs(
           /*$$scope*/
           c[7]
         ),
         null
-      ), Cl(e, _ = __(a, [
-        (!n || u & /*href*/
+      ), Li(e, _ = S_(a, [
+        (!n || f & /*href*/
         1) && { href: (
           /*href*/
           c[0]
         ) },
         { target: t },
         { rel: "noopener noreferrer" },
-        (!n || u & /*download*/
+        (!n || f & /*download*/
         2) && { download: (
           /*download*/
           c[1]
         ) },
-        u & /*$$restProps*/
+        f & /*$$restProps*/
         64 && /*$$restProps*/
         c[6]
       ]));
     },
     i(c) {
-      n || (Dn(r, c), n = !0);
+      n || (An(r, c), n = !0);
     },
     o(c) {
-      Ln(r, c), n = !1;
+      Xn(r, c), n = !1;
     },
     d(c) {
-      c && Il(e), r && r.d(c), l = !1, o();
+      c && Oi(e), r && r.d(c), i = !1, o();
     }
   };
 }
-function ph(i) {
-  let e, t, n, l;
-  const o = [vh, wh], s = [];
+function Lh(l) {
+  let e, t, n, i;
+  const o = [Rh, Eh], s = [];
   function r(a, _) {
     return (
       /*is_downloading*/
       a[2] ? 0 : 1
     );
   }
-  return e = r(i), t = s[e] = o[e](i), {
+  return e = r(l), t = s[e] = o[e](l), {
     c() {
-      t.c(), n = r_();
+      t.c(), n = C_();
     },
     m(a, _) {
-      s[e].m(a, _), Hl(a, n, _), l = !0;
+      s[e].m(a, _), xi(a, n, _), i = !0;
     },
     p(a, _) {
       let c = e;
-      e = r(a), e === c ? s[e].p(a, _) : (c_(), Ln(s[c], 1, 1, () => {
+      e = r(a), e === c ? s[e].p(a, _) : (q_(), Xn(s[c], 1, 1, () => {
         s[c] = null;
-      }), s_(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), Dn(t, 1), t.m(n.parentNode, n));
+      }), k_(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), An(t, 1), t.m(n.parentNode, n));
     },
     i(a) {
-      l || (Dn(t), l = !0);
+      i || (An(t), i = !0);
     },
     o(a) {
-      Ln(t), l = !1;
+      Xn(t), i = !1;
     },
     d(a) {
-      a && Il(n), s[e].d(a);
+      a && Oi(n), s[e].d(a);
     }
   };
 }
-function wh(i) {
-  let e, t, n, l;
+function Eh(l) {
+  let e, t, n, i;
   const o = (
     /*#slots*/
-    i[8].default
-  ), s = ms(
+    l[8].default
+  ), s = zs(
     o,
-    i,
+    l,
     /*$$scope*/
-    i[7],
+    l[7],
     null
   );
   let r = [
     /*$$restProps*/
-    i[6],
+    l[6],
     { href: (
       /*href*/
-      i[0]
+      l[0]
     ) }
   ], a = {};
   for (let _ = 0; _ < r.length; _ += 1)
-    a = yl(a, r[_]);
+    a = Mi(a, r[_]);
   return {
     c() {
-      e = a_("a"), s && s.c(), Cl(e, a);
+      e = y_("a"), s && s.c(), Li(e, a);
     },
     m(_, c) {
-      Hl(_, e, c), s && s.m(e, null), t = !0, n || (l = f_(e, "click", hh(
+      xi(_, e, c), s && s.m(e, null), t = !0, n || (i = z_(e, "click", zh(
         /*wasm_click_handler*/
-        i[5]
+        l[5]
       )), n = !0);
     },
     p(_, c) {
       s && s.p && (!t || c & /*$$scope*/
-      128) && ps(
+      128) && Ms(
         s,
         o,
         _,
         /*$$scope*/
         _[7],
-        t ? bs(
+        t ? Ds(
           o,
           /*$$scope*/
           _[7],
           c,
           null
-        ) : gs(
+        ) : Bs(
           /*$$scope*/
           _[7]
         ),
         null
-      ), Cl(e, a = __(r, [
+      ), Li(e, a = S_(r, [
         c & /*$$restProps*/
         64 && /*$$restProps*/
         _[6],
@@ -4461,146 +4461,146 @@ function wh(i) {
       ]));
     },
     i(_) {
-      t || (Dn(s, _), t = !0);
+      t || (An(s, _), t = !0);
     },
     o(_) {
-      Ln(s, _), t = !1;
+      Xn(s, _), t = !1;
     },
     d(_) {
-      _ && Il(e), s && s.d(_), n = !1, l();
+      _ && Oi(e), s && s.d(_), n = !1, i();
     }
   };
 }
-function vh(i) {
+function Rh(l) {
   let e;
   const t = (
     /*#slots*/
-    i[8].default
-  ), n = ms(
+    l[8].default
+  ), n = zs(
     t,
-    i,
+    l,
     /*$$scope*/
-    i[7],
+    l[7],
     null
   );
   return {
     c() {
       n && n.c();
     },
-    m(l, o) {
-      n && n.m(l, o), e = !0;
+    m(i, o) {
+      n && n.m(i, o), e = !0;
     },
-    p(l, o) {
+    p(i, o) {
       n && n.p && (!e || o & /*$$scope*/
-      128) && ps(
+      128) && Ms(
         n,
         t,
-        l,
+        i,
         /*$$scope*/
-        l[7],
-        e ? bs(
+        i[7],
+        e ? Ds(
           t,
           /*$$scope*/
-          l[7],
+          i[7],
           o,
           null
-        ) : gs(
+        ) : Bs(
           /*$$scope*/
-          l[7]
+          i[7]
         ),
         null
       );
     },
-    i(l) {
-      e || (Dn(n, l), e = !0);
+    i(i) {
+      e || (An(n, i), e = !0);
     },
-    o(l) {
-      Ln(n, l), e = !1;
+    o(i) {
+      Xn(n, i), e = !1;
     },
-    d(l) {
-      n && n.d(l);
+    d(i) {
+      n && n.d(i);
     }
   };
 }
-function kh(i) {
-  let e, t, n, l, o;
-  const s = [ph, bh], r = [];
+function Wh(l) {
+  let e, t, n, i, o;
+  const s = [Lh, Mh], r = [];
   function a(_, c) {
     return c & /*href*/
     1 && (e = null), e == null && (e = !!/*worker_proxy*/
-    (_[4] && o_(
+    (_[4] && v_(
       /*href*/
       _[0]
     ))), e ? 0 : 1;
   }
-  return t = a(i, -1), n = r[t] = s[t](i), {
+  return t = a(l, -1), n = r[t] = s[t](l), {
     c() {
-      n.c(), l = r_();
+      n.c(), i = C_();
     },
     m(_, c) {
-      r[t].m(_, c), Hl(_, l, c), o = !0;
+      r[t].m(_, c), xi(_, i, c), o = !0;
     },
     p(_, [c]) {
-      let u = t;
-      t = a(_, c), t === u ? r[t].p(_, c) : (c_(), Ln(r[u], 1, 1, () => {
-        r[u] = null;
-      }), s_(), n = r[t], n ? n.p(_, c) : (n = r[t] = s[t](_), n.c()), Dn(n, 1), n.m(l.parentNode, l));
+      let f = t;
+      t = a(_, c), t === f ? r[t].p(_, c) : (q_(), Xn(r[f], 1, 1, () => {
+        r[f] = null;
+      }), k_(), n = r[t], n ? n.p(_, c) : (n = r[t] = s[t](_), n.c()), An(n, 1), n.m(i.parentNode, i));
     },
     i(_) {
-      o || (Dn(n), o = !0);
+      o || (An(n), o = !0);
     },
     o(_) {
-      Ln(n), o = !1;
+      Xn(n), o = !1;
     },
     d(_) {
-      _ && Il(l), r[t].d(_);
+      _ && Oi(i), r[t].d(_);
     }
   };
 }
-function yh(i, e, t) {
+function Ah(l, e, t) {
   const n = ["href", "download"];
-  let l = ya(e, n), { $$slots: o = {}, $$scope: s } = e;
+  let i = Wa(e, n), { $$slots: o = {}, $$scope: s } = e;
   var r = this && this.__awaiter || function(h, m, g, b) {
-    function w(p) {
-      return p instanceof g ? p : new g(function(q) {
-        q(p);
+    function v(p) {
+      return p instanceof g ? p : new g(function(y) {
+        y(p);
       });
     }
-    return new (g || (g = Promise))(function(p, q) {
-      function M(k) {
+    return new (g || (g = Promise))(function(p, y) {
+      function q(S) {
         try {
-          C(b.next(k));
-        } catch (y) {
-          q(y);
+          M(b.next(S));
+        } catch (C) {
+          y(C);
         }
       }
-      function D(k) {
+      function D(S) {
         try {
-          C(b.throw(k));
-        } catch (y) {
-          q(y);
+          M(b.throw(S));
+        } catch (C) {
+          y(C);
         }
       }
-      function C(k) {
-        k.done ? p(k.value) : w(k.value).then(M, D);
+      function M(S) {
+        S.done ? p(S.value) : v(S.value).then(q, D);
       }
-      C((b = b.apply(h, m || [])).next());
+      M((b = b.apply(h, m || [])).next());
     });
   };
   let { href: a = void 0 } = e, { download: _ } = e;
-  const c = gh();
-  let u = !1;
-  const f = i_();
+  const c = Dh();
+  let f = !1;
+  const u = p_();
   function d() {
     return r(this, void 0, void 0, function* () {
-      if (u)
+      if (f)
         return;
       if (c("click"), a == null)
         throw new Error("href is not defined.");
-      if (f == null)
+      if (u == null)
         throw new Error("Wasm worker proxy is not available.");
       const m = new URL(a, window.location.href).pathname;
-      t(2, u = !0), f.httpRequest({
+      t(2, f = !0), u.httpRequest({
         method: "GET",
         path: m,
         headers: {},
@@ -4611,46 +4611,46 @@ function yh(i, e, t) {
         const b = new Blob(
           [g.body],
           {
-            type: l_(g.headers, "content-type")
+            type: w_(g.headers, "content-type")
           }
-        ), w = URL.createObjectURL(b), p = document.createElement("a");
-        p.href = w, p.download = _, p.click(), URL.revokeObjectURL(w);
+        ), v = URL.createObjectURL(b), p = document.createElement("a");
+        p.href = v, p.download = _, p.click(), URL.revokeObjectURL(v);
       }).finally(() => {
-        t(2, u = !1);
+        t(2, f = !1);
       });
     });
   }
-  return i.$$set = (h) => {
-    e = yl(yl({}, e), uh(h)), t(6, l = ya(e, n)), "href" in h && t(0, a = h.href), "download" in h && t(1, _ = h.download), "$$scope" in h && t(7, s = h.$$scope);
+  return l.$$set = (h) => {
+    e = Mi(Mi({}, e), Sh(h)), t(6, i = Wa(e, n)), "href" in h && t(0, a = h.href), "download" in h && t(1, _ = h.download), "$$scope" in h && t(7, s = h.$$scope);
   }, [
     a,
     _,
-    u,
-    c,
     f,
+    c,
+    u,
     d,
-    l,
+    i,
     s,
     o
   ];
 }
-class Ch extends fh {
+class Xh extends Ch {
   constructor(e) {
-    super(), dh(this, e, yh, kh, mh, { href: 0, download: 1 });
+    super(), qh(this, e, Ah, Wh, Bh, { href: 0, download: 1 });
   }
 }
-var Sh = Object.defineProperty, qh = (i, e, t) => e in i ? Sh(i, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : i[e] = t, At = (i, e, t) => (qh(i, typeof e != "symbol" ? e + "" : e, t), t), u_ = (i, e, t) => {
-  if (!e.has(i))
+var Yh = Object.defineProperty, Hh = (l, e, t) => e in l ? Yh(l, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : l[e] = t, It = (l, e, t) => (Hh(l, typeof e != "symbol" ? e + "" : e, t), t), B_ = (l, e, t) => {
+  if (!e.has(l))
     throw TypeError("Cannot " + t);
-}, gi = (i, e, t) => (u_(i, e, "read from private field"), e.get(i)), zh = (i, e, t) => {
-  if (e.has(i))
+}, Cl = (l, e, t) => (B_(l, e, "read from private field"), e.get(l)), Ih = (l, e, t) => {
+  if (e.has(l))
     throw TypeError("Cannot add the same private member more than once");
-  e instanceof WeakSet ? e.add(i) : e.set(i, t);
-}, Bh = (i, e, t, n) => (u_(i, e, "write to private field"), e.set(i, t), t), on;
+  e instanceof WeakSet ? e.add(l) : e.set(l, t);
+}, jh = (l, e, t, n) => (B_(l, e, "write to private field"), e.set(l, t), t), cn;
 new Intl.Collator(0, { numeric: 1 }).compare;
-async function d_(i, e) {
-  return i.map(
-    (t) => new Dh({
+async function D_(l, e) {
+  return l.map(
+    (t) => new Th({
       path: t.name,
       orig_name: t.name,
       blob: t,
@@ -4660,190 +4660,190 @@ async function d_(i, e) {
     })
   );
 }
-class Dh {
+class Th {
   constructor({
     path: e,
     url: t,
     orig_name: n,
-    size: l,
+    size: i,
     blob: o,
     is_stream: s,
     mime_type: r,
     alt_text: a
   }) {
-    At(this, "path"), At(this, "url"), At(this, "orig_name"), At(this, "size"), At(this, "blob"), At(this, "is_stream"), At(this, "mime_type"), At(this, "alt_text"), At(this, "meta", { _type: "gradio.FileData" }), this.path = e, this.url = t, this.orig_name = n, this.size = l, this.blob = t ? void 0 : o, this.is_stream = s, this.mime_type = r, this.alt_text = a;
+    It(this, "path"), It(this, "url"), It(this, "orig_name"), It(this, "size"), It(this, "blob"), It(this, "is_stream"), It(this, "mime_type"), It(this, "alt_text"), It(this, "meta", { _type: "gradio.FileData" }), this.path = e, this.url = t, this.orig_name = n, this.size = i, this.blob = t ? void 0 : o, this.is_stream = s, this.mime_type = r, this.alt_text = a;
   }
 }
 typeof process < "u" && process.versions && process.versions.node;
-class F8 extends TransformStream {
+class d7 extends TransformStream {
   /** Constructs a new instance. */
   constructor(e = { allowCR: !1 }) {
     super({
       transform: (t, n) => {
-        for (t = gi(this, on) + t; ; ) {
-          const l = t.indexOf(`
+        for (t = Cl(this, cn) + t; ; ) {
+          const i = t.indexOf(`
 `), o = e.allowCR ? t.indexOf("\r") : -1;
-          if (o !== -1 && o !== t.length - 1 && (l === -1 || l - 1 > o)) {
+          if (o !== -1 && o !== t.length - 1 && (i === -1 || i - 1 > o)) {
             n.enqueue(t.slice(0, o)), t = t.slice(o + 1);
             continue;
           }
-          if (l === -1)
+          if (i === -1)
             break;
-          const s = t[l - 1] === "\r" ? l - 1 : l;
-          n.enqueue(t.slice(0, s)), t = t.slice(l + 1);
+          const s = t[i - 1] === "\r" ? i - 1 : i;
+          n.enqueue(t.slice(0, s)), t = t.slice(i + 1);
         }
-        Bh(this, on, t);
+        jh(this, cn, t);
       },
       flush: (t) => {
-        if (gi(this, on) === "")
+        if (Cl(this, cn) === "")
           return;
-        const n = e.allowCR && gi(this, on).endsWith("\r") ? gi(this, on).slice(0, -1) : gi(this, on);
+        const n = e.allowCR && Cl(this, cn).endsWith("\r") ? Cl(this, cn).slice(0, -1) : Cl(this, cn);
         t.enqueue(n);
       }
-    }), zh(this, on, "");
+    }), Ih(this, cn, "");
   }
 }
-on = /* @__PURE__ */ new WeakMap();
+cn = /* @__PURE__ */ new WeakMap();
 const {
-  SvelteComponent: Lh,
-  append: Ve,
-  attr: wn,
-  detach: h_,
-  element: vn,
-  init: Mh,
-  insert: m_,
-  noop: Ca,
-  safe_not_equal: Eh,
-  set_data: Sl,
-  set_style: Co,
-  space: is,
-  text: Pn,
-  toggle_class: Sa
-} = window.__gradio__svelte__internal, { onMount: Rh, createEventDispatcher: Wh, onDestroy: Ah } = window.__gradio__svelte__internal;
-function qa(i) {
-  let e, t, n, l, o = zi(
+  SvelteComponent: $h,
+  append: Ne,
+  attr: Bn,
+  detach: M_,
+  element: Dn,
+  init: Fh,
+  insert: L_,
+  noop: Aa,
+  safe_not_equal: Oh,
+  set_data: Ei,
+  set_style: Ro,
+  space: hs,
+  text: Qn,
+  toggle_class: Xa
+} = window.__gradio__svelte__internal, { onMount: xh, createEventDispatcher: Vh, onDestroy: Nh } = window.__gradio__svelte__internal;
+function Ya(l) {
+  let e, t, n, i, o = Al(
     /*file_to_display*/
-    i[2]
+    l[2]
   ) + "", s, r, a, _, c = (
     /*file_to_display*/
-    i[2].orig_name + ""
-  ), u;
+    l[2].orig_name + ""
+  ), f;
   return {
     c() {
-      e = vn("div"), t = vn("span"), n = vn("div"), l = vn("progress"), s = Pn(o), a = is(), _ = vn("span"), u = Pn(c), Co(l, "visibility", "hidden"), Co(l, "height", "0"), Co(l, "width", "0"), l.value = r = zi(
+      e = Dn("div"), t = Dn("span"), n = Dn("div"), i = Dn("progress"), s = Qn(o), a = hs(), _ = Dn("span"), f = Qn(c), Ro(i, "visibility", "hidden"), Ro(i, "height", "0"), Ro(i, "width", "0"), i.value = r = Al(
         /*file_to_display*/
-        i[2]
-      ), wn(l, "max", "100"), wn(l, "class", "svelte-cr2edf"), wn(n, "class", "progress-bar svelte-cr2edf"), wn(_, "class", "file-name svelte-cr2edf"), wn(e, "class", "file svelte-cr2edf");
+        l[2]
+      ), Bn(i, "max", "100"), Bn(i, "class", "svelte-cr2edf"), Bn(n, "class", "progress-bar svelte-cr2edf"), Bn(_, "class", "file-name svelte-cr2edf"), Bn(e, "class", "file svelte-cr2edf");
     },
-    m(f, d) {
-      m_(f, e, d), Ve(e, t), Ve(t, n), Ve(n, l), Ve(l, s), Ve(e, a), Ve(e, _), Ve(_, u);
+    m(u, d) {
+      L_(u, e, d), Ne(e, t), Ne(t, n), Ne(n, i), Ne(i, s), Ne(e, a), Ne(e, _), Ne(_, f);
     },
-    p(f, d) {
+    p(u, d) {
       d & /*file_to_display*/
-      4 && o !== (o = zi(
+      4 && o !== (o = Al(
         /*file_to_display*/
-        f[2]
-      ) + "") && Sl(s, o), d & /*file_to_display*/
-      4 && r !== (r = zi(
+        u[2]
+      ) + "") && Ei(s, o), d & /*file_to_display*/
+      4 && r !== (r = Al(
         /*file_to_display*/
-        f[2]
-      )) && (l.value = r), d & /*file_to_display*/
+        u[2]
+      )) && (i.value = r), d & /*file_to_display*/
       4 && c !== (c = /*file_to_display*/
-      f[2].orig_name + "") && Sl(u, c);
+      u[2].orig_name + "") && Ei(f, c);
     },
-    d(f) {
-      f && h_(e);
+    d(u) {
+      u && M_(e);
     }
   };
 }
-function Xh(i) {
-  let e, t, n, l = (
+function Uh(l) {
+  let e, t, n, i = (
     /*files_with_progress*/
-    i[0].length + ""
+    l[0].length + ""
   ), o, s, r = (
     /*files_with_progress*/
-    i[0].length > 1 ? "files" : "file"
-  ), a, _, c, u = (
+    l[0].length > 1 ? "files" : "file"
+  ), a, _, c, f = (
     /*file_to_display*/
-    i[2] && qa(i)
+    l[2] && Ya(l)
   );
   return {
     c() {
-      e = vn("div"), t = vn("span"), n = Pn("Uploading "), o = Pn(l), s = is(), a = Pn(r), _ = Pn("..."), c = is(), u && u.c(), wn(t, "class", "uploading svelte-cr2edf"), wn(e, "class", "wrap svelte-cr2edf"), Sa(
+      e = Dn("div"), t = Dn("span"), n = Qn("Uploading "), o = Qn(i), s = hs(), a = Qn(r), _ = Qn("..."), c = hs(), f && f.c(), Bn(t, "class", "uploading svelte-cr2edf"), Bn(e, "class", "wrap svelte-cr2edf"), Xa(
         e,
         "progress",
         /*progress*/
-        i[1]
+        l[1]
       );
     },
-    m(f, d) {
-      m_(f, e, d), Ve(e, t), Ve(t, n), Ve(t, o), Ve(t, s), Ve(t, a), Ve(t, _), Ve(e, c), u && u.m(e, null);
+    m(u, d) {
+      L_(u, e, d), Ne(e, t), Ne(t, n), Ne(t, o), Ne(t, s), Ne(t, a), Ne(t, _), Ne(e, c), f && f.m(e, null);
     },
-    p(f, [d]) {
+    p(u, [d]) {
       d & /*files_with_progress*/
-      1 && l !== (l = /*files_with_progress*/
-      f[0].length + "") && Sl(o, l), d & /*files_with_progress*/
+      1 && i !== (i = /*files_with_progress*/
+      u[0].length + "") && Ei(o, i), d & /*files_with_progress*/
       1 && r !== (r = /*files_with_progress*/
-      f[0].length > 1 ? "files" : "file") && Sl(a, r), /*file_to_display*/
-      f[2] ? u ? u.p(f, d) : (u = qa(f), u.c(), u.m(e, null)) : u && (u.d(1), u = null), d & /*progress*/
-      2 && Sa(
+      u[0].length > 1 ? "files" : "file") && Ei(a, r), /*file_to_display*/
+      u[2] ? f ? f.p(u, d) : (f = Ya(u), f.c(), f.m(e, null)) : f && (f.d(1), f = null), d & /*progress*/
+      2 && Xa(
         e,
         "progress",
         /*progress*/
-        f[1]
+        u[1]
       );
     },
-    i: Ca,
-    o: Ca,
-    d(f) {
-      f && h_(e), u && u.d();
+    i: Aa,
+    o: Aa,
+    d(u) {
+      u && M_(e), f && f.d();
     }
   };
 }
-function zi(i) {
-  return i.progress * 100 / (i.size || 0) || 0;
+function Al(l) {
+  return l.progress * 100 / (l.size || 0) || 0;
 }
-function Yh(i) {
+function Ph(l) {
   let e = 0;
-  return i.forEach((t) => {
-    e += zi(t);
-  }), document.documentElement.style.setProperty("--upload-progress-width", (e / i.length).toFixed(2) + "%"), e / i.length;
+  return l.forEach((t) => {
+    e += Al(t);
+  }), document.documentElement.style.setProperty("--upload-progress-width", (e / l.length).toFixed(2) + "%"), e / l.length;
 }
-function Ih(i, e, t) {
-  var n = this && this.__awaiter || function(m, g, b, w) {
-    function p(q) {
-      return q instanceof b ? q : new b(function(M) {
-        M(q);
+function Kh(l, e, t) {
+  var n = this && this.__awaiter || function(m, g, b, v) {
+    function p(y) {
+      return y instanceof b ? y : new b(function(q) {
+        q(y);
       });
     }
-    return new (b || (b = Promise))(function(q, M) {
-      function D(y) {
+    return new (b || (b = Promise))(function(y, q) {
+      function D(C) {
         try {
-          k(w.next(y));
-        } catch (B) {
-          M(B);
+          S(v.next(C));
+        } catch (X) {
+          q(X);
         }
       }
-      function C(y) {
+      function M(C) {
         try {
-          k(w.throw(y));
-        } catch (B) {
-          M(B);
+          S(v.throw(C));
+        } catch (X) {
+          q(X);
         }
       }
-      function k(y) {
-        y.done ? q(y.value) : p(y.value).then(D, C);
+      function S(C) {
+        C.done ? y(C.value) : p(C.value).then(D, M);
       }
-      k((w = w.apply(m, g || [])).next());
+      S((v = v.apply(m, g || [])).next());
     });
   };
-  let { upload_id: l } = e, { root: o } = e, { files: s } = e, { stream_handler: r } = e, a, _ = !1, c, u, f = s.map((m) => Object.assign(Object.assign({}, m), { progress: 0 }));
-  const d = Wh();
+  let { upload_id: i } = e, { root: o } = e, { files: s } = e, { stream_handler: r } = e, a, _ = !1, c, f, u = s.map((m) => Object.assign(Object.assign({}, m), { progress: 0 }));
+  const d = Vh();
   function h(m, g) {
-    t(0, f = f.map((b) => (b.orig_name === m && (b.progress += g), b)));
+    t(0, u = u.map((b) => (b.orig_name === m && (b.progress += g), b)));
   }
-  return Rh(() => n(void 0, void 0, void 0, function* () {
-    if (a = yield r(new URL(`${o}/upload_progress?upload_id=${l}`)), a == null)
+  return xh(() => n(void 0, void 0, void 0, function* () {
+    if (a = yield r(new URL(`${o}/upload_progress?upload_id=${i}`)), a == null)
       throw new Error("Event source is not defined");
     a.onmessage = function(m) {
       return n(this, void 0, void 0, function* () {
@@ -4851,28 +4851,28 @@ function Ih(i, e, t) {
         _ || t(1, _ = !0), g.msg === "done" ? (a == null || a.close(), d("done")) : (t(7, c = g), h(g.orig_name, g.chunk_size));
       });
     };
-  })), Ah(() => {
+  })), Nh(() => {
     (a != null || a != null) && a.close();
-  }), i.$$set = (m) => {
-    "upload_id" in m && t(3, l = m.upload_id), "root" in m && t(4, o = m.root), "files" in m && t(5, s = m.files), "stream_handler" in m && t(6, r = m.stream_handler);
-  }, i.$$.update = () => {
-    i.$$.dirty & /*files_with_progress*/
-    1 && Yh(f), i.$$.dirty & /*current_file_upload, files_with_progress*/
-    129 && t(2, u = c || f[0]);
+  }), l.$$set = (m) => {
+    "upload_id" in m && t(3, i = m.upload_id), "root" in m && t(4, o = m.root), "files" in m && t(5, s = m.files), "stream_handler" in m && t(6, r = m.stream_handler);
+  }, l.$$.update = () => {
+    l.$$.dirty & /*files_with_progress*/
+    1 && Ph(u), l.$$.dirty & /*current_file_upload, files_with_progress*/
+    129 && t(2, f = c || u[0]);
   }, [
-    f,
-    _,
     u,
-    l,
+    _,
+    f,
+    i,
     o,
     s,
     r,
     c
   ];
 }
-class Hh extends Lh {
+class Zh extends $h {
   constructor(e) {
-    super(), Mh(this, e, Ih, Xh, Eh, {
+    super(), Fh(this, e, Kh, Uh, Oh, {
       upload_id: 3,
       root: 4,
       files: 5,
@@ -4881,199 +4881,199 @@ class Hh extends Lh {
   }
 }
 const {
-  SvelteComponent: jh,
-  append: za,
-  attr: Le,
-  binding_callbacks: Th,
-  bubble: fn,
-  check_outros: g_,
-  create_component: Fh,
-  create_slot: b_,
-  destroy_component: Oh,
-  detach: jl,
-  element: ls,
-  empty: p_,
-  get_all_dirty_from_scope: w_,
-  get_slot_changes: v_,
-  group_outros: k_,
-  init: $h,
-  insert: Tl,
+  SvelteComponent: Gh,
+  append: Ha,
+  attr: De,
+  binding_callbacks: Jh,
+  bubble: kn,
+  check_outros: E_,
+  create_component: Qh,
+  create_slot: R_,
+  destroy_component: em,
+  detach: Vi,
+  element: ms,
+  empty: W_,
+  get_all_dirty_from_scope: A_,
+  get_slot_changes: X_,
+  group_outros: Y_,
+  init: tm,
+  insert: Ni,
   listen: Je,
-  mount_component: xh,
-  prevent_default: un,
-  run_all: Nh,
-  safe_not_equal: Uh,
-  set_style: y_,
-  space: Vh,
-  stop_propagation: dn,
-  toggle_class: qe,
-  transition_in: rn,
-  transition_out: Mn,
-  update_slot_base: C_
-} = window.__gradio__svelte__internal, { createEventDispatcher: Ph, tick: Kh } = window.__gradio__svelte__internal;
-function Zh(i) {
-  let e, t, n, l, o, s, r, a, _, c, u;
-  const f = (
+  mount_component: nm,
+  prevent_default: yn,
+  run_all: lm,
+  safe_not_equal: im,
+  set_style: H_,
+  space: om,
+  stop_propagation: Cn,
+  toggle_class: Se,
+  transition_in: bn,
+  transition_out: Yn,
+  update_slot_base: I_
+} = window.__gradio__svelte__internal, { createEventDispatcher: sm, tick: am } = window.__gradio__svelte__internal;
+function rm(l) {
+  let e, t, n, i, o, s, r, a, _, c, f;
+  const u = (
     /*#slots*/
-    i[26].default
-  ), d = b_(
-    f,
-    i,
+    l[26].default
+  ), d = R_(
+    u,
+    l,
     /*$$scope*/
-    i[25],
+    l[25],
     null
   );
   return {
     c() {
-      e = ls("button"), d && d.c(), t = Vh(), n = ls("input"), Le(n, "aria-label", "file upload"), Le(n, "data-testid", "file-upload"), Le(n, "type", "file"), Le(n, "accept", l = /*accept_file_types*/
-      i[16] || void 0), n.multiple = o = /*file_count*/
-      i[6] === "multiple" || void 0, Le(n, "webkitdirectory", s = /*file_count*/
-      i[6] === "directory" || void 0), Le(n, "mozdirectory", r = /*file_count*/
-      i[6] === "directory" || void 0), Le(n, "class", "svelte-1s26xmt"), Le(e, "tabindex", a = /*hidden*/
-      i[9] ? -1 : 0), Le(e, "class", "svelte-1s26xmt"), qe(
+      e = ms("button"), d && d.c(), t = om(), n = ms("input"), De(n, "aria-label", "file upload"), De(n, "data-testid", "file-upload"), De(n, "type", "file"), De(n, "accept", i = /*accept_file_types*/
+      l[16] || void 0), n.multiple = o = /*file_count*/
+      l[6] === "multiple" || void 0, De(n, "webkitdirectory", s = /*file_count*/
+      l[6] === "directory" || void 0), De(n, "mozdirectory", r = /*file_count*/
+      l[6] === "directory" || void 0), De(n, "class", "svelte-1s26xmt"), De(e, "tabindex", a = /*hidden*/
+      l[9] ? -1 : 0), De(e, "class", "svelte-1s26xmt"), Se(
         e,
         "hidden",
         /*hidden*/
-        i[9]
-      ), qe(
+        l[9]
+      ), Se(
         e,
         "center",
         /*center*/
-        i[4]
-      ), qe(
+        l[4]
+      ), Se(
         e,
         "boundedheight",
         /*boundedheight*/
-        i[3]
-      ), qe(
+        l[3]
+      ), Se(
         e,
         "flex",
         /*flex*/
-        i[5]
-      ), qe(
+        l[5]
+      ), Se(
         e,
         "disable_click",
         /*disable_click*/
-        i[7]
-      ), y_(e, "height", "100%");
+        l[7]
+      ), H_(e, "height", "100%");
     },
     m(h, m) {
-      Tl(h, e, m), d && d.m(e, null), za(e, t), za(e, n), i[34](n), _ = !0, c || (u = [
+      Ni(h, e, m), d && d.m(e, null), Ha(e, t), Ha(e, n), l[34](n), _ = !0, c || (f = [
         Je(
           n,
           "change",
           /*load_files_from_upload*/
-          i[18]
+          l[18]
         ),
-        Je(e, "drag", dn(un(
+        Je(e, "drag", Cn(yn(
           /*drag_handler*/
-          i[27]
+          l[27]
         ))),
-        Je(e, "dragstart", dn(un(
+        Je(e, "dragstart", Cn(yn(
           /*dragstart_handler*/
-          i[28]
+          l[28]
         ))),
-        Je(e, "dragend", dn(un(
+        Je(e, "dragend", Cn(yn(
           /*dragend_handler*/
-          i[29]
+          l[29]
         ))),
-        Je(e, "dragover", dn(un(
+        Je(e, "dragover", Cn(yn(
           /*dragover_handler*/
-          i[30]
+          l[30]
         ))),
-        Je(e, "dragenter", dn(un(
+        Je(e, "dragenter", Cn(yn(
           /*dragenter_handler*/
-          i[31]
+          l[31]
         ))),
-        Je(e, "dragleave", dn(un(
+        Je(e, "dragleave", Cn(yn(
           /*dragleave_handler*/
-          i[32]
+          l[32]
         ))),
-        Je(e, "drop", dn(un(
+        Je(e, "drop", Cn(yn(
           /*drop_handler*/
-          i[33]
+          l[33]
         ))),
         Je(
           e,
           "click",
           /*open_file_upload*/
-          i[13]
+          l[13]
         ),
         Je(
           e,
           "drop",
           /*loadFilesFromDrop*/
-          i[19]
+          l[19]
         ),
         Je(
           e,
           "dragenter",
           /*updateDragging*/
-          i[17]
+          l[17]
         ),
         Je(
           e,
           "dragleave",
           /*updateDragging*/
-          i[17]
+          l[17]
         )
       ], c = !0);
     },
     p(h, m) {
       d && d.p && (!_ || m[0] & /*$$scope*/
-      33554432) && C_(
+      33554432) && I_(
         d,
-        f,
+        u,
         h,
         /*$$scope*/
         h[25],
-        _ ? v_(
-          f,
+        _ ? X_(
+          u,
           /*$$scope*/
           h[25],
           m,
           null
-        ) : w_(
+        ) : A_(
           /*$$scope*/
           h[25]
         ),
         null
       ), (!_ || m[0] & /*accept_file_types*/
-      65536 && l !== (l = /*accept_file_types*/
-      h[16] || void 0)) && Le(n, "accept", l), (!_ || m[0] & /*file_count*/
+      65536 && i !== (i = /*accept_file_types*/
+      h[16] || void 0)) && De(n, "accept", i), (!_ || m[0] & /*file_count*/
       64 && o !== (o = /*file_count*/
       h[6] === "multiple" || void 0)) && (n.multiple = o), (!_ || m[0] & /*file_count*/
       64 && s !== (s = /*file_count*/
-      h[6] === "directory" || void 0)) && Le(n, "webkitdirectory", s), (!_ || m[0] & /*file_count*/
+      h[6] === "directory" || void 0)) && De(n, "webkitdirectory", s), (!_ || m[0] & /*file_count*/
       64 && r !== (r = /*file_count*/
-      h[6] === "directory" || void 0)) && Le(n, "mozdirectory", r), (!_ || m[0] & /*hidden*/
+      h[6] === "directory" || void 0)) && De(n, "mozdirectory", r), (!_ || m[0] & /*hidden*/
       512 && a !== (a = /*hidden*/
-      h[9] ? -1 : 0)) && Le(e, "tabindex", a), (!_ || m[0] & /*hidden*/
-      512) && qe(
+      h[9] ? -1 : 0)) && De(e, "tabindex", a), (!_ || m[0] & /*hidden*/
+      512) && Se(
         e,
         "hidden",
         /*hidden*/
         h[9]
       ), (!_ || m[0] & /*center*/
-      16) && qe(
+      16) && Se(
         e,
         "center",
         /*center*/
         h[4]
       ), (!_ || m[0] & /*boundedheight*/
-      8) && qe(
+      8) && Se(
         e,
         "boundedheight",
         /*boundedheight*/
         h[3]
       ), (!_ || m[0] & /*flex*/
-      32) && qe(
+      32) && Se(
         e,
         "flex",
         /*flex*/
         h[5]
       ), (!_ || m[0] & /*disable_click*/
-      128) && qe(
+      128) && Se(
         e,
         "disable_click",
         /*disable_click*/
@@ -5081,130 +5081,130 @@ function Zh(i) {
       );
     },
     i(h) {
-      _ || (rn(d, h), _ = !0);
+      _ || (bn(d, h), _ = !0);
     },
     o(h) {
-      Mn(d, h), _ = !1;
+      Yn(d, h), _ = !1;
     },
     d(h) {
-      h && jl(e), d && d.d(h), i[34](null), c = !1, Nh(u);
+      h && Vi(e), d && d.d(h), l[34](null), c = !1, lm(f);
     }
   };
 }
-function Gh(i) {
+function _m(l) {
   let e, t, n = !/*hidden*/
-  i[9] && Ba(i);
+  l[9] && Ia(l);
   return {
     c() {
-      n && n.c(), e = p_();
+      n && n.c(), e = W_();
     },
-    m(l, o) {
-      n && n.m(l, o), Tl(l, e, o), t = !0;
+    m(i, o) {
+      n && n.m(i, o), Ni(i, e, o), t = !0;
     },
-    p(l, o) {
+    p(i, o) {
       /*hidden*/
-      l[9] ? n && (k_(), Mn(n, 1, 1, () => {
+      i[9] ? n && (Y_(), Yn(n, 1, 1, () => {
         n = null;
-      }), g_()) : n ? (n.p(l, o), o[0] & /*hidden*/
-      512 && rn(n, 1)) : (n = Ba(l), n.c(), rn(n, 1), n.m(e.parentNode, e));
+      }), E_()) : n ? (n.p(i, o), o[0] & /*hidden*/
+      512 && bn(n, 1)) : (n = Ia(i), n.c(), bn(n, 1), n.m(e.parentNode, e));
     },
-    i(l) {
-      t || (rn(n), t = !0);
+    i(i) {
+      t || (bn(n), t = !0);
     },
-    o(l) {
-      Mn(n), t = !1;
+    o(i) {
+      Yn(n), t = !1;
     },
-    d(l) {
-      l && jl(e), n && n.d(l);
+    d(i) {
+      i && Vi(e), n && n.d(i);
     }
   };
 }
-function Jh(i) {
-  let e, t, n, l, o;
+function cm(l) {
+  let e, t, n, i, o;
   const s = (
     /*#slots*/
-    i[26].default
-  ), r = b_(
+    l[26].default
+  ), r = R_(
     s,
-    i,
+    l,
     /*$$scope*/
-    i[25],
+    l[25],
     null
   );
   return {
     c() {
-      e = ls("button"), r && r.c(), Le(e, "tabindex", t = /*hidden*/
-      i[9] ? -1 : 0), Le(e, "class", "svelte-1s26xmt"), qe(
+      e = ms("button"), r && r.c(), De(e, "tabindex", t = /*hidden*/
+      l[9] ? -1 : 0), De(e, "class", "svelte-1s26xmt"), Se(
         e,
         "hidden",
         /*hidden*/
-        i[9]
-      ), qe(
+        l[9]
+      ), Se(
         e,
         "center",
         /*center*/
-        i[4]
-      ), qe(
+        l[4]
+      ), Se(
         e,
         "boundedheight",
         /*boundedheight*/
-        i[3]
-      ), qe(
+        l[3]
+      ), Se(
         e,
         "flex",
         /*flex*/
-        i[5]
-      ), y_(e, "height", "100%");
+        l[5]
+      ), H_(e, "height", "100%");
     },
     m(a, _) {
-      Tl(a, e, _), r && r.m(e, null), n = !0, l || (o = Je(
+      Ni(a, e, _), r && r.m(e, null), n = !0, i || (o = Je(
         e,
         "click",
         /*paste_clipboard*/
-        i[12]
-      ), l = !0);
+        l[12]
+      ), i = !0);
     },
     p(a, _) {
       r && r.p && (!n || _[0] & /*$$scope*/
-      33554432) && C_(
+      33554432) && I_(
         r,
         s,
         a,
         /*$$scope*/
         a[25],
-        n ? v_(
+        n ? X_(
           s,
           /*$$scope*/
           a[25],
           _,
           null
-        ) : w_(
+        ) : A_(
           /*$$scope*/
           a[25]
         ),
         null
       ), (!n || _[0] & /*hidden*/
       512 && t !== (t = /*hidden*/
-      a[9] ? -1 : 0)) && Le(e, "tabindex", t), (!n || _[0] & /*hidden*/
-      512) && qe(
+      a[9] ? -1 : 0)) && De(e, "tabindex", t), (!n || _[0] & /*hidden*/
+      512) && Se(
         e,
         "hidden",
         /*hidden*/
         a[9]
       ), (!n || _[0] & /*center*/
-      16) && qe(
+      16) && Se(
         e,
         "center",
         /*center*/
         a[4]
       ), (!n || _[0] & /*boundedheight*/
-      8) && qe(
+      8) && Se(
         e,
         "boundedheight",
         /*boundedheight*/
         a[3]
       ), (!n || _[0] & /*flex*/
-      32) && qe(
+      32) && Se(
         e,
         "flex",
         /*flex*/
@@ -5212,70 +5212,70 @@ function Jh(i) {
       );
     },
     i(a) {
-      n || (rn(r, a), n = !0);
+      n || (bn(r, a), n = !0);
     },
     o(a) {
-      Mn(r, a), n = !1;
+      Yn(r, a), n = !1;
     },
     d(a) {
-      a && jl(e), r && r.d(a), l = !1, o();
+      a && Vi(e), r && r.d(a), i = !1, o();
     }
   };
 }
-function Ba(i) {
+function Ia(l) {
   let e, t;
-  return e = new Hh({
+  return e = new Zh({
     props: {
       root: (
         /*root*/
-        i[8]
+        l[8]
       ),
       upload_id: (
         /*upload_id*/
-        i[14]
+        l[14]
       ),
       files: (
         /*file_data*/
-        i[15]
+        l[15]
       ),
       stream_handler: (
         /*stream_handler*/
-        i[11]
+        l[11]
       )
     }
   }), {
     c() {
-      Fh(e.$$.fragment);
+      Qh(e.$$.fragment);
     },
-    m(n, l) {
-      xh(e, n, l), t = !0;
+    m(n, i) {
+      nm(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*root*/
+      i[0] & /*root*/
       256 && (o.root = /*root*/
-      n[8]), l[0] & /*upload_id*/
+      n[8]), i[0] & /*upload_id*/
       16384 && (o.upload_id = /*upload_id*/
-      n[14]), l[0] & /*file_data*/
+      n[14]), i[0] & /*file_data*/
       32768 && (o.files = /*file_data*/
-      n[15]), l[0] & /*stream_handler*/
+      n[15]), i[0] & /*stream_handler*/
       2048 && (o.stream_handler = /*stream_handler*/
       n[11]), e.$set(o);
     },
     i(n) {
-      t || (rn(e.$$.fragment, n), t = !0);
+      t || (bn(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Mn(e.$$.fragment, n), t = !1;
+      Yn(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Oh(e, n);
+      em(e, n);
     }
   };
 }
-function Qh(i) {
-  let e, t, n, l;
-  const o = [Jh, Gh, Zh], s = [];
+function um(l) {
+  let e, t, n, i;
+  const o = [cm, _m, rm], s = [];
   function r(a, _) {
     return (
       /*filetype*/
@@ -5286,86 +5286,86 @@ function Qh(i) {
       )
     );
   }
-  return e = r(i), t = s[e] = o[e](i), {
+  return e = r(l), t = s[e] = o[e](l), {
     c() {
-      t.c(), n = p_();
+      t.c(), n = W_();
     },
     m(a, _) {
-      s[e].m(a, _), Tl(a, n, _), l = !0;
+      s[e].m(a, _), Ni(a, n, _), i = !0;
     },
     p(a, _) {
       let c = e;
-      e = r(a), e === c ? s[e].p(a, _) : (k_(), Mn(s[c], 1, 1, () => {
+      e = r(a), e === c ? s[e].p(a, _) : (Y_(), Yn(s[c], 1, 1, () => {
         s[c] = null;
-      }), g_(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), rn(t, 1), t.m(n.parentNode, n));
+      }), E_(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), bn(t, 1), t.m(n.parentNode, n));
     },
     i(a) {
-      l || (rn(t), l = !0);
+      i || (bn(t), i = !0);
     },
     o(a) {
-      Mn(t), l = !1;
+      Yn(t), i = !1;
     },
     d(a) {
-      a && jl(n), s[e].d(a);
+      a && Vi(n), s[e].d(a);
     }
   };
 }
-function em(i, e, t) {
-  if (!i || i === "*" || i === "file/*" || Array.isArray(i) && i.some((l) => l === "*" || l === "file/*"))
+function fm(l, e, t) {
+  if (!l || l === "*" || l === "file/*" || Array.isArray(l) && l.some((i) => i === "*" || i === "file/*"))
     return !0;
   let n;
-  if (typeof i == "string")
-    n = i.split(",").map((l) => l.trim());
-  else if (Array.isArray(i))
-    n = i;
+  if (typeof l == "string")
+    n = l.split(",").map((i) => i.trim());
+  else if (Array.isArray(l))
+    n = l;
   else
     return !1;
-  return n.includes(e) || n.some((l) => {
-    const [o] = l.split("/").map((s) => s.trim());
-    return l.endsWith("/*") && t.startsWith(o + "/");
+  return n.includes(e) || n.some((i) => {
+    const [o] = i.split("/").map((s) => s.trim());
+    return i.endsWith("/*") && t.startsWith(o + "/");
   });
 }
-function tm(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e;
-  var o = this && this.__awaiter || function(W, x, oe, se) {
+function dm(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e;
+  var o = this && this.__awaiter || function(W, $, ne, re) {
     function le(ge) {
-      return ge instanceof oe ? ge : new oe(function(te) {
+      return ge instanceof ne ? ge : new ne(function(te) {
         te(ge);
       });
     }
-    return new (oe || (oe = Promise))(function(ge, te) {
-      function E(ut) {
+    return new (ne || (ne = Promise))(function(ge, te) {
+      function E(ht) {
         try {
-          it(se.next(ut));
-        } catch (cn) {
-          te(cn);
+          lt(re.next(ht));
+        } catch (wn) {
+          te(wn);
         }
       }
-      function Ze(ut) {
+      function Ze(ht) {
         try {
-          it(se.throw(ut));
-        } catch (cn) {
-          te(cn);
+          lt(re.throw(ht));
+        } catch (wn) {
+          te(wn);
         }
       }
-      function it(ut) {
-        ut.done ? ge(ut.value) : le(ut.value).then(E, Ze);
+      function lt(ht) {
+        ht.done ? ge(ht.value) : le(ht.value).then(E, Ze);
       }
-      it((se = se.apply(W, x || [])).next());
+      lt((re = re.apply(W, $ || [])).next());
     });
   };
-  let { filetype: s = null } = e, { dragging: r = !1 } = e, { boundedheight: a = !0 } = e, { center: _ = !0 } = e, { flex: c = !0 } = e, { file_count: u = "single" } = e, { disable_click: f = !1 } = e, { root: d } = e, { hidden: h = !1 } = e, { format: m = "file" } = e, { uploading: g = !1 } = e, { hidden_upload: b = null } = e, { show_progress: w = !0 } = e, { max_file_size: p = null } = e, { upload: q } = e, { stream_handler: M } = e, D, C, k;
-  const y = Ph(), B = ["image", "video", "audio", "text", "file"], A = (W) => W.startsWith(".") || W.endsWith("/*") ? W : B.includes(W) ? W + "/*" : "." + W;
-  function S() {
+  let { filetype: s = null } = e, { dragging: r = !1 } = e, { boundedheight: a = !0 } = e, { center: _ = !0 } = e, { flex: c = !0 } = e, { file_count: f = "single" } = e, { disable_click: u = !1 } = e, { root: d } = e, { hidden: h = !1 } = e, { format: m = "file" } = e, { uploading: g = !1 } = e, { hidden_upload: b = null } = e, { show_progress: v = !0 } = e, { max_file_size: p = null } = e, { upload: y } = e, { stream_handler: q } = e, D, M, S;
+  const C = sm(), X = ["image", "video", "audio", "text", "file"], I = (W) => W.startsWith(".") || W.endsWith("/*") ? W : X.includes(W) ? W + "/*" : "." + W;
+  function w() {
     t(20, r = !r);
   }
-  function Y() {
+  function L() {
     navigator.clipboard.read().then((W) => o(this, void 0, void 0, function* () {
-      for (let x = 0; x < W.length; x++) {
-        const oe = W[x].types.find((se) => se.startsWith("image/"));
-        if (oe) {
-          W[x].getType(oe).then((se) => o(this, void 0, void 0, function* () {
-            const le = new File([se], `clipboard.${oe.replace("image/", "")}`);
+      for (let $ = 0; $ < W.length; $++) {
+        const ne = W[$].types.find((re) => re.startsWith("image/"));
+        if (ne) {
+          W[$].getType(ne).then((re) => o(this, void 0, void 0, function* () {
+            const le = new File([re], `clipboard.${ne.replace("image/", "")}`);
             yield z([le]);
           }));
           break;
@@ -5374,16 +5374,16 @@ function tm(i, e, t) {
     }));
   }
   function F() {
-    f || b && (t(2, b.value = "", b), b.click());
+    u || b && (t(2, b.value = "", b), b.click());
   }
-  function J(W) {
+  function O(W) {
     return o(this, void 0, void 0, function* () {
-      yield Kh(), t(14, D = Math.random().toString(36).substring(2, 15)), t(1, g = !0);
+      yield am(), t(14, D = Math.random().toString(36).substring(2, 15)), t(1, g = !0);
       try {
-        const x = yield q(W, d, D, p ?? 1 / 0);
-        return y("load", u === "single" ? x == null ? void 0 : x[0] : x), t(1, g = !1), x || [];
-      } catch (x) {
-        return y("error", x.message), t(1, g = !1), [];
+        const $ = yield y(W, d, D, p ?? 1 / 0);
+        return C("load", f === "single" ? $ == null ? void 0 : $[0] : $), t(1, g = !1), $ || [];
+      } catch ($) {
+        return C("error", $.message), t(1, g = !1), [];
       }
     });
   }
@@ -5391,67 +5391,67 @@ function tm(i, e, t) {
     return o(this, void 0, void 0, function* () {
       if (!W.length)
         return;
-      let x = W.map((oe) => new File([oe], oe instanceof File ? oe.name : "file", { type: oe.type }));
-      return t(15, C = yield d_(x)), yield J(C);
+      let $ = W.map((ne) => new File([ne], ne instanceof File ? ne.name : "file", { type: ne.type }));
+      return t(15, M = yield D_($)), yield O(M);
     });
   }
   function me(W) {
     return o(this, void 0, void 0, function* () {
-      const x = W.target;
-      if (x.files)
+      const $ = W.target;
+      if ($.files)
         if (m != "blob")
-          yield z(Array.from(x.files));
+          yield z(Array.from($.files));
         else {
-          if (u === "single") {
-            y("load", x.files[0]);
+          if (f === "single") {
+            C("load", $.files[0]);
             return;
           }
-          y("load", x.files);
+          C("load", $.files);
         }
     });
   }
   function R(W) {
     return o(this, void 0, void 0, function* () {
-      var x;
-      if (t(20, r = !1), !(!((x = W.dataTransfer) === null || x === void 0) && x.files)) return;
-      const oe = Array.from(W.dataTransfer.files).filter((se) => {
-        const le = "." + se.name.split(".").pop();
-        return le && em(k, le, se.type) || (le && Array.isArray(s) ? s.includes(le) : le === s) ? !0 : (y("error", `Invalid file type only ${s} allowed.`), !1);
+      var $;
+      if (t(20, r = !1), !(!(($ = W.dataTransfer) === null || $ === void 0) && $.files)) return;
+      const ne = Array.from(W.dataTransfer.files).filter((re) => {
+        const le = "." + re.name.split(".").pop();
+        return le && fm(S, le, re.type) || (le && Array.isArray(s) ? s.includes(le) : le === s) ? !0 : (C("error", `Invalid file type only ${s} allowed.`), !1);
       });
-      yield z(oe);
+      yield z(ne);
     });
   }
-  function $(W) {
-    fn.call(this, i, W);
+  function V(W) {
+    kn.call(this, l, W);
   }
-  function I(W) {
-    fn.call(this, i, W);
+  function H(W) {
+    kn.call(this, l, W);
   }
-  function O(W) {
-    fn.call(this, i, W);
+  function x(W) {
+    kn.call(this, l, W);
   }
   function _e(W) {
-    fn.call(this, i, W);
+    kn.call(this, l, W);
   }
-  function Z(W) {
-    fn.call(this, i, W);
+  function se(W) {
+    kn.call(this, l, W);
   }
-  function re(W) {
-    fn.call(this, i, W);
+  function ae(W) {
+    kn.call(this, l, W);
   }
   function j(W) {
-    fn.call(this, i, W);
+    kn.call(this, l, W);
   }
-  function ke(W) {
-    Th[W ? "unshift" : "push"](() => {
+  function Ke(W) {
+    Jh[W ? "unshift" : "push"](() => {
       b = W, t(2, b);
     });
   }
-  return i.$$set = (W) => {
-    "filetype" in W && t(0, s = W.filetype), "dragging" in W && t(20, r = W.dragging), "boundedheight" in W && t(3, a = W.boundedheight), "center" in W && t(4, _ = W.center), "flex" in W && t(5, c = W.flex), "file_count" in W && t(6, u = W.file_count), "disable_click" in W && t(7, f = W.disable_click), "root" in W && t(8, d = W.root), "hidden" in W && t(9, h = W.hidden), "format" in W && t(21, m = W.format), "uploading" in W && t(1, g = W.uploading), "hidden_upload" in W && t(2, b = W.hidden_upload), "show_progress" in W && t(10, w = W.show_progress), "max_file_size" in W && t(22, p = W.max_file_size), "upload" in W && t(23, q = W.upload), "stream_handler" in W && t(11, M = W.stream_handler), "$$scope" in W && t(25, l = W.$$scope);
-  }, i.$$.update = () => {
-    i.$$.dirty[0] & /*filetype*/
-    1 && (s == null ? t(16, k = null) : typeof s == "string" ? t(16, k = A(s)) : (t(0, s = s.map(A)), t(16, k = s.join(", "))));
+  return l.$$set = (W) => {
+    "filetype" in W && t(0, s = W.filetype), "dragging" in W && t(20, r = W.dragging), "boundedheight" in W && t(3, a = W.boundedheight), "center" in W && t(4, _ = W.center), "flex" in W && t(5, c = W.flex), "file_count" in W && t(6, f = W.file_count), "disable_click" in W && t(7, u = W.disable_click), "root" in W && t(8, d = W.root), "hidden" in W && t(9, h = W.hidden), "format" in W && t(21, m = W.format), "uploading" in W && t(1, g = W.uploading), "hidden_upload" in W && t(2, b = W.hidden_upload), "show_progress" in W && t(10, v = W.show_progress), "max_file_size" in W && t(22, p = W.max_file_size), "upload" in W && t(23, y = W.upload), "stream_handler" in W && t(11, q = W.stream_handler), "$$scope" in W && t(25, i = W.$$scope);
+  }, l.$$.update = () => {
+    l.$$.dirty[0] & /*filetype*/
+    1 && (s == null ? t(16, S = null) : typeof s == "string" ? t(16, S = I(s)) : (t(0, s = s.map(I)), t(16, S = s.join(", "))));
   }, [
     s,
     g,
@@ -5459,45 +5459,45 @@ function tm(i, e, t) {
     a,
     _,
     c,
-    u,
     f,
+    u,
     d,
     h,
-    w,
-    M,
-    Y,
+    v,
+    q,
+    L,
     F,
     D,
-    C,
-    k,
+    M,
     S,
+    w,
     me,
     R,
     r,
     m,
     p,
-    q,
+    y,
     z,
-    l,
+    i,
     n,
-    $,
-    I,
-    O,
+    V,
+    H,
+    x,
     _e,
-    Z,
-    re,
+    se,
+    ae,
     j,
-    ke
+    Ke
   ];
 }
-class nm extends jh {
+class hm extends Gh {
   constructor(e) {
-    super(), $h(
+    super(), tm(
       this,
       e,
-      tm,
-      Qh,
-      Uh,
+      dm,
+      um,
+      im,
       {
         filetype: 0,
         dragging: 20,
@@ -5534,569 +5534,569 @@ class nm extends jh {
   }
 }
 const {
-  SvelteComponent: O8,
-  append: $8,
-  attr: x8,
-  check_outros: N8,
-  create_component: U8,
-  destroy_component: V8,
-  detach: P8,
-  element: K8,
-  group_outros: Z8,
-  init: G8,
-  insert: J8,
-  mount_component: Q8,
-  safe_not_equal: e7,
-  set_style: t7,
-  space: n7,
-  toggle_class: i7,
-  transition_in: l7,
-  transition_out: o7
-} = window.__gradio__svelte__internal, { createEventDispatcher: s7 } = window.__gradio__svelte__internal, {
-  SvelteComponent: a7,
-  assign: r7,
-  compute_rest_props: _7,
-  detach: c7,
-  element: f7,
-  exclude_internal_props: u7,
-  get_spread_update: d7,
-  init: h7,
-  insert: m7,
-  noop: g7,
-  safe_not_equal: b7,
-  set_attributes: p7,
-  src_url_equal: w7,
-  toggle_class: v7
+  SvelteComponent: h7,
+  append: m7,
+  attr: g7,
+  check_outros: b7,
+  create_component: p7,
+  destroy_component: w7,
+  detach: v7,
+  element: k7,
+  group_outros: y7,
+  init: C7,
+  insert: S7,
+  mount_component: q7,
+  safe_not_equal: z7,
+  set_style: B7,
+  space: D7,
+  toggle_class: M7,
+  transition_in: L7,
+  transition_out: E7
+} = window.__gradio__svelte__internal, { createEventDispatcher: R7 } = window.__gradio__svelte__internal, {
+  SvelteComponent: W7,
+  assign: A7,
+  compute_rest_props: X7,
+  detach: Y7,
+  element: H7,
+  exclude_internal_props: I7,
+  get_spread_update: j7,
+  init: T7,
+  insert: $7,
+  noop: F7,
+  safe_not_equal: O7,
+  set_attributes: x7,
+  src_url_equal: V7,
+  toggle_class: N7
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: k7,
-  append: y7,
-  attr: C7,
-  bubble: S7,
-  check_outros: q7,
-  create_component: z7,
-  destroy_component: B7,
-  detach: D7,
-  element: L7,
-  empty: M7,
-  group_outros: E7,
-  init: R7,
-  insert: W7,
-  listen: A7,
-  mount_component: X7,
-  safe_not_equal: Y7,
-  space: I7,
-  toggle_class: H7,
-  transition_in: j7,
-  transition_out: T7
-} = window.__gradio__svelte__internal, { createEventDispatcher: F7 } = window.__gradio__svelte__internal, {
-  SvelteComponent: im,
-  append: Pi,
-  attr: So,
-  create_component: lm,
-  destroy_component: om,
-  detach: sm,
-  element: qo,
-  init: am,
-  insert: rm,
-  listen: _m,
-  mount_component: cm,
-  noop: fm,
-  safe_not_equal: um,
-  set_style: dm,
-  space: hm,
-  text: mm,
-  transition_in: gm,
-  transition_out: bm
-} = window.__gradio__svelte__internal, { createEventDispatcher: pm } = window.__gradio__svelte__internal;
-function wm(i) {
-  let e, t, n, l, o, s = "Click to Access Webcam", r, a, _, c;
-  return l = new Fr({}), {
+  SvelteComponent: U7,
+  append: P7,
+  attr: K7,
+  bubble: Z7,
+  check_outros: G7,
+  create_component: J7,
+  destroy_component: Q7,
+  detach: e9,
+  element: t9,
+  empty: n9,
+  group_outros: l9,
+  init: i9,
+  insert: o9,
+  listen: s9,
+  mount_component: a9,
+  safe_not_equal: r9,
+  space: _9,
+  toggle_class: c9,
+  transition_in: u9,
+  transition_out: f9
+} = window.__gradio__svelte__internal, { createEventDispatcher: d9 } = window.__gradio__svelte__internal, {
+  SvelteComponent: mm,
+  append: ei,
+  attr: Wo,
+  create_component: gm,
+  destroy_component: bm,
+  detach: pm,
+  element: Ao,
+  init: wm,
+  insert: vm,
+  listen: km,
+  mount_component: ym,
+  noop: Cm,
+  safe_not_equal: Sm,
+  set_style: qm,
+  space: zm,
+  text: Bm,
+  transition_in: Dm,
+  transition_out: Mm
+} = window.__gradio__svelte__internal, { createEventDispatcher: Lm } = window.__gradio__svelte__internal;
+function Em(l) {
+  let e, t, n, i, o, s = "Click to Access Webcam", r, a, _, c;
+  return i = new n_({}), {
     c() {
-      e = qo("button"), t = qo("div"), n = qo("span"), lm(l.$$.fragment), o = hm(), r = mm(s), So(n, "class", "icon-wrap svelte-fjcd9c"), So(t, "class", "wrap svelte-fjcd9c"), So(e, "class", "svelte-fjcd9c"), dm(e, "height", "100%");
+      e = Ao("button"), t = Ao("div"), n = Ao("span"), gm(i.$$.fragment), o = zm(), r = Bm(s), Wo(n, "class", "icon-wrap svelte-fjcd9c"), Wo(t, "class", "wrap svelte-fjcd9c"), Wo(e, "class", "svelte-fjcd9c"), qm(e, "height", "100%");
     },
-    m(u, f) {
-      rm(u, e, f), Pi(e, t), Pi(t, n), cm(l, n, null), Pi(t, o), Pi(t, r), a = !0, _ || (c = _m(
+    m(f, u) {
+      vm(f, e, u), ei(e, t), ei(t, n), ym(i, n, null), ei(t, o), ei(t, r), a = !0, _ || (c = km(
         e,
         "click",
         /*click_handler*/
-        i[1]
+        l[1]
       ), _ = !0);
     },
-    p: fm,
-    i(u) {
-      a || (gm(l.$$.fragment, u), a = !0);
+    p: Cm,
+    i(f) {
+      a || (Dm(i.$$.fragment, f), a = !0);
     },
-    o(u) {
-      bm(l.$$.fragment, u), a = !1;
+    o(f) {
+      Mm(i.$$.fragment, f), a = !1;
     },
-    d(u) {
-      u && sm(e), om(l), _ = !1, c();
+    d(f) {
+      f && pm(e), bm(i), _ = !1, c();
     }
   };
 }
-function vm(i) {
-  const e = pm();
+function Rm(l) {
+  const e = Lm();
   return [e, () => e("click")];
 }
-class km extends im {
+class Wm extends mm {
   constructor(e) {
-    super(), am(this, e, vm, wm, um, {});
+    super(), wm(this, e, Rm, Em, Sm, {});
   }
 }
-function ym() {
+function Am() {
   return navigator.mediaDevices.enumerateDevices();
 }
-function Cm(i, e) {
-  e.srcObject = i, e.muted = !0, e.play();
+function Xm(l, e) {
+  e.srcObject = l, e.muted = !0, e.play();
 }
-async function Da(i, e, t) {
+async function ja(l, e, t) {
   const n = {
     width: { ideal: 1920 },
     height: { ideal: 1440 }
-  }, l = {
+  }, i = {
     video: t ? { deviceId: { exact: t }, ...n } : n,
-    audio: i
+    audio: l
   };
-  return navigator.mediaDevices.getUserMedia(l).then((o) => (Cm(o, e), o));
+  return navigator.mediaDevices.getUserMedia(i).then((o) => (Xm(o, e), o));
 }
-function Sm(i) {
-  return i.filter(
+function Ym(l) {
+  return l.filter(
     (t) => t.kind === "videoinput"
   );
 }
 const {
-  SvelteComponent: qm,
-  action_destroyer: zm,
-  add_render_callback: Bm,
-  append: Ft,
+  SvelteComponent: Hm,
+  action_destroyer: Im,
+  add_render_callback: jm,
+  append: Nt,
   attr: ve,
-  binding_callbacks: Dm,
-  check_outros: Li,
-  create_component: ni,
-  create_in_transition: Lm,
-  destroy_component: ii,
-  destroy_each: Mm,
-  detach: Pe,
+  binding_callbacks: Tm,
+  check_outros: Hl,
+  create_component: _l,
+  create_in_transition: $m,
+  destroy_component: cl,
+  destroy_each: Fm,
+  detach: Ue,
   element: nt,
-  empty: ws,
-  ensure_array_like: La,
-  group_outros: Mi,
-  init: Em,
-  insert: Ke,
-  listen: ql,
-  mount_component: li,
-  noop: vs,
-  run_all: Rm,
-  safe_not_equal: Wm,
-  set_data: S_,
-  set_input_value: os,
-  space: Ai,
-  stop_propagation: Am,
-  text: q_,
-  toggle_class: Ki,
-  transition_in: ze,
-  transition_out: Ee
-} = window.__gradio__svelte__internal, { createEventDispatcher: Xm, onMount: Ym } = window.__gradio__svelte__internal;
-function Ma(i, e, t) {
-  const n = i.slice();
+  empty: Ls,
+  ensure_array_like: Ta,
+  group_outros: Il,
+  init: Om,
+  insert: Pe,
+  listen: Ri,
+  mount_component: ul,
+  noop: Es,
+  run_all: xm,
+  safe_not_equal: Vm,
+  set_data: j_,
+  set_input_value: gs,
+  space: $l,
+  stop_propagation: Nm,
+  text: T_,
+  toggle_class: ti,
+  transition_in: qe,
+  transition_out: Le
+} = window.__gradio__svelte__internal, { createEventDispatcher: Um, onMount: Pm } = window.__gradio__svelte__internal;
+function $a(l, e, t) {
+  const n = l.slice();
   return n[32] = e[t], n;
 }
-function Im(i) {
-  let e, t, n, l, o, s, r, a, _, c, u;
-  const f = [Tm, jm], d = [];
-  function h(b, w) {
+function Km(l) {
+  let e, t, n, i, o, s, r, a, _, c, f;
+  const u = [Jm, Gm], d = [];
+  function h(b, v) {
     return (
       /*mode*/
       b[1] === "video" || /*streaming*/
       b[0] ? 0 : 1
     );
   }
-  n = h(i), l = d[n] = f[n](i);
+  n = h(l), i = d[n] = u[n](l);
   let m = !/*recording*/
-  i[8] && Ea(i), g = (
+  l[8] && Fa(l), g = (
     /*options_open*/
-    i[10] && /*selected_device*/
-    i[7] && Ra(i)
+    l[10] && /*selected_device*/
+    l[7] && Oa(l)
   );
   return {
     c() {
-      e = nt("div"), t = nt("button"), l.c(), s = Ai(), m && m.c(), r = Ai(), g && g.c(), a = ws(), ve(t, "aria-label", o = /*mode*/
-      i[1] === "image" ? "capture photo" : "start recording"), ve(t, "class", "svelte-8hqvb6"), ve(e, "class", "button-wrap svelte-8hqvb6");
+      e = nt("div"), t = nt("button"), i.c(), s = $l(), m && m.c(), r = $l(), g && g.c(), a = Ls(), ve(t, "aria-label", o = /*mode*/
+      l[1] === "image" ? "capture photo" : "start recording"), ve(t, "class", "svelte-8hqvb6"), ve(e, "class", "button-wrap svelte-8hqvb6");
     },
-    m(b, w) {
-      Ke(b, e, w), Ft(e, t), d[n].m(t, null), Ft(e, s), m && m.m(e, null), Ke(b, r, w), g && g.m(b, w), Ke(b, a, w), _ = !0, c || (u = ql(
+    m(b, v) {
+      Pe(b, e, v), Nt(e, t), d[n].m(t, null), Nt(e, s), m && m.m(e, null), Pe(b, r, v), g && g.m(b, v), Pe(b, a, v), _ = !0, c || (f = Ri(
         t,
         "click",
         /*record_video_or_photo*/
-        i[13]
+        l[13]
       ), c = !0);
     },
-    p(b, w) {
+    p(b, v) {
       let p = n;
-      n = h(b), n === p ? d[n].p(b, w) : (Mi(), Ee(d[p], 1, 1, () => {
+      n = h(b), n === p ? d[n].p(b, v) : (Il(), Le(d[p], 1, 1, () => {
         d[p] = null;
-      }), Li(), l = d[n], l ? l.p(b, w) : (l = d[n] = f[n](b), l.c()), ze(l, 1), l.m(t, null)), (!_ || w[0] & /*mode*/
+      }), Hl(), i = d[n], i ? i.p(b, v) : (i = d[n] = u[n](b), i.c()), qe(i, 1), i.m(t, null)), (!_ || v[0] & /*mode*/
       2 && o !== (o = /*mode*/
       b[1] === "image" ? "capture photo" : "start recording")) && ve(t, "aria-label", o), /*recording*/
-      b[8] ? m && (Mi(), Ee(m, 1, 1, () => {
+      b[8] ? m && (Il(), Le(m, 1, 1, () => {
         m = null;
-      }), Li()) : m ? (m.p(b, w), w[0] & /*recording*/
-      256 && ze(m, 1)) : (m = Ea(b), m.c(), ze(m, 1), m.m(e, null)), /*options_open*/
+      }), Hl()) : m ? (m.p(b, v), v[0] & /*recording*/
+      256 && qe(m, 1)) : (m = Fa(b), m.c(), qe(m, 1), m.m(e, null)), /*options_open*/
       b[10] && /*selected_device*/
-      b[7] ? g ? (g.p(b, w), w[0] & /*options_open, selected_device*/
-      1152 && ze(g, 1)) : (g = Ra(b), g.c(), ze(g, 1), g.m(a.parentNode, a)) : g && (Mi(), Ee(g, 1, 1, () => {
+      b[7] ? g ? (g.p(b, v), v[0] & /*options_open, selected_device*/
+      1152 && qe(g, 1)) : (g = Oa(b), g.c(), qe(g, 1), g.m(a.parentNode, a)) : g && (Il(), Le(g, 1, 1, () => {
         g = null;
-      }), Li());
+      }), Hl());
     },
     i(b) {
-      _ || (ze(l), ze(m), ze(g), _ = !0);
+      _ || (qe(i), qe(m), qe(g), _ = !0);
     },
     o(b) {
-      Ee(l), Ee(m), Ee(g), _ = !1;
+      Le(i), Le(m), Le(g), _ = !1;
     },
     d(b) {
-      b && (Pe(e), Pe(r), Pe(a)), d[n].d(), m && m.d(), g && g.d(b), c = !1, u();
+      b && (Ue(e), Ue(r), Ue(a)), d[n].d(), m && m.d(), g && g.d(b), c = !1, f();
     }
   };
 }
-function Hm(i) {
-  let e, t, n, l;
-  return t = new km({}), t.$on(
+function Zm(l) {
+  let e, t, n, i;
+  return t = new Wm({}), t.$on(
     "click",
     /*click_handler*/
-    i[20]
+    l[20]
   ), {
     c() {
-      e = nt("div"), ni(t.$$.fragment), ve(e, "title", "grant webcam access");
+      e = nt("div"), _l(t.$$.fragment), ve(e, "title", "grant webcam access");
     },
     m(o, s) {
-      Ke(o, e, s), li(t, e, null), l = !0;
+      Pe(o, e, s), ul(t, e, null), i = !0;
     },
-    p: vs,
+    p: Es,
     i(o) {
-      l || (ze(t.$$.fragment, o), o && (n || Bm(() => {
-        n = Lm(e, z1, { delay: 100, duration: 200 }), n.start();
-      })), l = !0);
+      i || (qe(t.$$.fragment, o), o && (n || jm(() => {
+        n = $m(e, I1, { delay: 100, duration: 200 }), n.start();
+      })), i = !0);
     },
     o(o) {
-      Ee(t.$$.fragment, o), l = !1;
+      Le(t.$$.fragment, o), i = !1;
     },
     d(o) {
-      o && Pe(e), ii(t);
+      o && Ue(e), cl(t);
     }
   };
 }
-function jm(i) {
+function Gm(l) {
   let e, t, n;
-  return t = new au({}), {
+  return t = new wf({}), {
     c() {
-      e = nt("div"), ni(t.$$.fragment), ve(e, "class", "icon svelte-8hqvb6"), ve(e, "title", "capture photo");
+      e = nt("div"), _l(t.$$.fragment), ve(e, "class", "icon svelte-8hqvb6"), ve(e, "title", "capture photo");
     },
-    m(l, o) {
-      Ke(l, e, o), li(t, e, null), n = !0;
+    m(i, o) {
+      Pe(i, e, o), ul(t, e, null), n = !0;
     },
-    p: vs,
-    i(l) {
-      n || (ze(t.$$.fragment, l), n = !0);
+    p: Es,
+    i(i) {
+      n || (qe(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      Ee(t.$$.fragment, l), n = !1;
+    o(i) {
+      Le(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && Pe(e), ii(t);
+    d(i) {
+      i && Ue(e), cl(t);
     }
   };
 }
-function Tm(i) {
-  let e, t, n, l;
-  const o = [Om, Fm], s = [];
+function Jm(l) {
+  let e, t, n, i;
+  const o = [e0, Qm], s = [];
   function r(a, _) {
     return (
       /*recording*/
       a[8] ? 0 : 1
     );
   }
-  return e = r(i), t = s[e] = o[e](i), {
+  return e = r(l), t = s[e] = o[e](l), {
     c() {
-      t.c(), n = ws();
+      t.c(), n = Ls();
     },
     m(a, _) {
-      s[e].m(a, _), Ke(a, n, _), l = !0;
+      s[e].m(a, _), Pe(a, n, _), i = !0;
     },
     p(a, _) {
       let c = e;
-      e = r(a), e !== c && (Mi(), Ee(s[c], 1, 1, () => {
+      e = r(a), e !== c && (Il(), Le(s[c], 1, 1, () => {
         s[c] = null;
-      }), Li(), t = s[e], t || (t = s[e] = o[e](a), t.c()), ze(t, 1), t.m(n.parentNode, n));
+      }), Hl(), t = s[e], t || (t = s[e] = o[e](a), t.c()), qe(t, 1), t.m(n.parentNode, n));
     },
     i(a) {
-      l || (ze(t), l = !0);
+      i || (qe(t), i = !0);
     },
     o(a) {
-      Ee(t), l = !1;
+      Le(t), i = !1;
     },
     d(a) {
-      a && Pe(n), s[e].d(a);
+      a && Ue(n), s[e].d(a);
     }
   };
 }
-function Fm(i) {
+function Qm(l) {
   let e, t, n;
-  return t = new mu({}), {
+  return t = new Bf({}), {
     c() {
-      e = nt("div"), ni(t.$$.fragment), ve(e, "class", "icon red svelte-8hqvb6"), ve(e, "title", "start recording");
+      e = nt("div"), _l(t.$$.fragment), ve(e, "class", "icon red svelte-8hqvb6"), ve(e, "title", "start recording");
     },
-    m(l, o) {
-      Ke(l, e, o), li(t, e, null), n = !0;
+    m(i, o) {
+      Pe(i, e, o), ul(t, e, null), n = !0;
     },
-    i(l) {
-      n || (ze(t.$$.fragment, l), n = !0);
+    i(i) {
+      n || (qe(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      Ee(t.$$.fragment, l), n = !1;
+    o(i) {
+      Le(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && Pe(e), ii(t);
+    d(i) {
+      i && Ue(e), cl(t);
     }
   };
 }
-function Om(i) {
+function e0(l) {
   let e, t, n;
-  return t = new zd({}), {
+  return t = new Id({}), {
     c() {
-      e = nt("div"), ni(t.$$.fragment), ve(e, "class", "icon red svelte-8hqvb6"), ve(e, "title", "stop recording");
+      e = nt("div"), _l(t.$$.fragment), ve(e, "class", "icon red svelte-8hqvb6"), ve(e, "title", "stop recording");
     },
-    m(l, o) {
-      Ke(l, e, o), li(t, e, null), n = !0;
+    m(i, o) {
+      Pe(i, e, o), ul(t, e, null), n = !0;
     },
-    i(l) {
-      n || (ze(t.$$.fragment, l), n = !0);
+    i(i) {
+      n || (qe(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      Ee(t.$$.fragment, l), n = !1;
+    o(i) {
+      Le(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && Pe(e), ii(t);
+    d(i) {
+      i && Ue(e), cl(t);
     }
   };
 }
-function Ea(i) {
-  let e, t, n, l, o;
-  return t = new hs({}), {
+function Fa(l) {
+  let e, t, n, i, o;
+  return t = new qs({}), {
     c() {
-      e = nt("button"), ni(t.$$.fragment), ve(e, "class", "icon svelte-8hqvb6"), ve(e, "aria-label", "select input source");
+      e = nt("button"), _l(t.$$.fragment), ve(e, "class", "icon svelte-8hqvb6"), ve(e, "aria-label", "select input source");
     },
     m(s, r) {
-      Ke(s, e, r), li(t, e, null), n = !0, l || (o = ql(
+      Pe(s, e, r), ul(t, e, null), n = !0, i || (o = Ri(
         e,
         "click",
         /*click_handler_1*/
-        i[21]
-      ), l = !0);
+        l[21]
+      ), i = !0);
     },
-    p: vs,
+    p: Es,
     i(s) {
-      n || (ze(t.$$.fragment, s), n = !0);
+      n || (qe(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      Ee(t.$$.fragment, s), n = !1;
+      Le(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Pe(e), ii(t), l = !1, o();
+      s && Ue(e), cl(t), i = !1, o();
     }
   };
 }
-function Ra(i) {
-  let e, t, n, l, o, s, r;
-  n = new hs({});
-  function a(u, f) {
+function Oa(l) {
+  let e, t, n, i, o, s, r;
+  n = new qs({});
+  function a(f, u) {
     return (
       /*available_video_devices*/
-      u[6].length === 0 ? xm : $m
+      f[6].length === 0 ? n0 : t0
     );
   }
-  let _ = a(i), c = _(i);
+  let _ = a(l), c = _(l);
   return {
     c() {
-      e = nt("select"), t = nt("button"), ni(n.$$.fragment), l = Ai(), c.c(), ve(t, "class", "inset-icon svelte-8hqvb6"), ve(e, "class", "select-wrap svelte-8hqvb6"), ve(e, "aria-label", "select source");
+      e = nt("select"), t = nt("button"), _l(n.$$.fragment), i = $l(), c.c(), ve(t, "class", "inset-icon svelte-8hqvb6"), ve(e, "class", "select-wrap svelte-8hqvb6"), ve(e, "aria-label", "select source");
     },
-    m(u, f) {
-      Ke(u, e, f), Ft(e, t), li(n, t, null), Ft(t, l), c.m(e, null), o = !0, s || (r = [
-        ql(t, "click", Am(
+    m(f, u) {
+      Pe(f, e, u), Nt(e, t), ul(n, t, null), Nt(t, i), c.m(e, null), o = !0, s || (r = [
+        Ri(t, "click", Nm(
           /*click_handler_2*/
-          i[22]
+          l[22]
         )),
-        zm(ks.call(
+        Im(Rs.call(
           null,
           e,
           /*handle_click_outside*/
-          i[14]
+          l[14]
         )),
-        ql(
+        Ri(
           e,
           "change",
           /*handle_device_change*/
-          i[11]
+          l[11]
         )
       ], s = !0);
     },
-    p(u, f) {
-      _ === (_ = a(u)) && c ? c.p(u, f) : (c.d(1), c = _(u), c && (c.c(), c.m(e, null)));
+    p(f, u) {
+      _ === (_ = a(f)) && c ? c.p(f, u) : (c.d(1), c = _(f), c && (c.c(), c.m(e, null)));
     },
-    i(u) {
-      o || (ze(n.$$.fragment, u), o = !0);
+    i(f) {
+      o || (qe(n.$$.fragment, f), o = !0);
     },
-    o(u) {
-      Ee(n.$$.fragment, u), o = !1;
+    o(f) {
+      Le(n.$$.fragment, f), o = !1;
     },
-    d(u) {
-      u && Pe(e), ii(n), c.d(), s = !1, Rm(r);
+    d(f) {
+      f && Ue(e), cl(n), c.d(), s = !1, xm(r);
     }
   };
 }
-function $m(i) {
-  let e, t = La(
+function t0(l) {
+  let e, t = Ta(
     /*available_video_devices*/
-    i[6]
+    l[6]
   ), n = [];
-  for (let l = 0; l < t.length; l += 1)
-    n[l] = Wa(Ma(i, t, l));
+  for (let i = 0; i < t.length; i += 1)
+    n[i] = xa($a(l, t, i));
   return {
     c() {
-      for (let l = 0; l < n.length; l += 1)
-        n[l].c();
-      e = ws();
+      for (let i = 0; i < n.length; i += 1)
+        n[i].c();
+      e = Ls();
     },
-    m(l, o) {
+    m(i, o) {
       for (let s = 0; s < n.length; s += 1)
-        n[s] && n[s].m(l, o);
-      Ke(l, e, o);
+        n[s] && n[s].m(i, o);
+      Pe(i, e, o);
     },
-    p(l, o) {
+    p(i, o) {
       if (o[0] & /*available_video_devices, selected_device*/
       192) {
-        t = La(
+        t = Ta(
           /*available_video_devices*/
-          l[6]
+          i[6]
         );
         let s;
         for (s = 0; s < t.length; s += 1) {
-          const r = Ma(l, t, s);
-          n[s] ? n[s].p(r, o) : (n[s] = Wa(r), n[s].c(), n[s].m(e.parentNode, e));
+          const r = $a(i, t, s);
+          n[s] ? n[s].p(r, o) : (n[s] = xa(r), n[s].c(), n[s].m(e.parentNode, e));
         }
         for (; s < n.length; s += 1)
           n[s].d(1);
         n.length = t.length;
       }
     },
-    d(l) {
-      l && Pe(e), Mm(n, l);
+    d(i) {
+      i && Ue(e), Fm(n, i);
     }
   };
 }
-function xm(i) {
+function n0(l) {
   let e, t = (
     /*i18n*/
-    i[3]("common.no_devices") + ""
+    l[3]("common.no_devices") + ""
   ), n;
   return {
     c() {
-      e = nt("option"), n = q_(t), e.__value = "", os(e, e.__value), ve(e, "class", "svelte-8hqvb6");
+      e = nt("option"), n = T_(t), e.__value = "", gs(e, e.__value), ve(e, "class", "svelte-8hqvb6");
     },
-    m(l, o) {
-      Ke(l, e, o), Ft(e, n);
+    m(i, o) {
+      Pe(i, e, o), Nt(e, n);
     },
-    p(l, o) {
+    p(i, o) {
       o[0] & /*i18n*/
       8 && t !== (t = /*i18n*/
-      l[3]("common.no_devices") + "") && S_(n, t);
+      i[3]("common.no_devices") + "") && j_(n, t);
     },
-    d(l) {
-      l && Pe(e);
+    d(i) {
+      i && Ue(e);
     }
   };
 }
-function Wa(i) {
+function xa(l) {
   let e, t = (
     /*device*/
-    i[32].label + ""
-  ), n, l, o, s;
+    l[32].label + ""
+  ), n, i, o, s;
   return {
     c() {
-      e = nt("option"), n = q_(t), l = Ai(), e.__value = o = /*device*/
-      i[32].deviceId, os(e, e.__value), e.selected = s = /*selected_device*/
-      i[7].deviceId === /*device*/
-      i[32].deviceId, ve(e, "class", "svelte-8hqvb6");
+      e = nt("option"), n = T_(t), i = $l(), e.__value = o = /*device*/
+      l[32].deviceId, gs(e, e.__value), e.selected = s = /*selected_device*/
+      l[7].deviceId === /*device*/
+      l[32].deviceId, ve(e, "class", "svelte-8hqvb6");
     },
     m(r, a) {
-      Ke(r, e, a), Ft(e, n), Ft(e, l);
+      Pe(r, e, a), Nt(e, n), Nt(e, i);
     },
     p(r, a) {
       a[0] & /*available_video_devices*/
       64 && t !== (t = /*device*/
-      r[32].label + "") && S_(n, t), a[0] & /*available_video_devices*/
+      r[32].label + "") && j_(n, t), a[0] & /*available_video_devices*/
       64 && o !== (o = /*device*/
-      r[32].deviceId) && (e.__value = o, os(e, e.__value)), a[0] & /*selected_device, available_video_devices*/
+      r[32].deviceId) && (e.__value = o, gs(e, e.__value)), a[0] & /*selected_device, available_video_devices*/
       192 && s !== (s = /*selected_device*/
       r[7].deviceId === /*device*/
       r[32].deviceId) && (e.selected = s);
     },
     d(r) {
-      r && Pe(e);
+      r && Ue(e);
     }
   };
 }
-function Nm(i) {
-  let e, t, n, l, o, s;
-  const r = [Hm, Im], a = [];
-  function _(c, u) {
+function l0(l) {
+  let e, t, n, i, o, s;
+  const r = [Zm, Km], a = [];
+  function _(c, f) {
     return (
       /*webcam_accessed*/
       c[9] ? 1 : 0
     );
   }
-  return l = _(i), o = a[l] = r[l](i), {
+  return i = _(l), o = a[i] = r[i](l), {
     c() {
-      e = nt("div"), t = nt("video"), n = Ai(), o.c(), ve(t, "class", "svelte-8hqvb6"), Ki(
+      e = nt("div"), t = nt("video"), n = $l(), o.c(), ve(t, "class", "svelte-8hqvb6"), ti(
         t,
         "flip",
         /*mirror_webcam*/
-        i[2]
-      ), Ki(t, "hide", !/*webcam_accessed*/
-      i[9]), ve(e, "class", "wrap svelte-8hqvb6");
+        l[2]
+      ), ti(t, "hide", !/*webcam_accessed*/
+      l[9]), ve(e, "class", "wrap svelte-8hqvb6");
     },
-    m(c, u) {
-      Ke(c, e, u), Ft(e, t), i[19](t), Ft(e, n), a[l].m(e, null), s = !0;
+    m(c, f) {
+      Pe(c, e, f), Nt(e, t), l[19](t), Nt(e, n), a[i].m(e, null), s = !0;
     },
-    p(c, u) {
-      (!s || u[0] & /*mirror_webcam*/
-      4) && Ki(
+    p(c, f) {
+      (!s || f[0] & /*mirror_webcam*/
+      4) && ti(
         t,
         "flip",
         /*mirror_webcam*/
         c[2]
-      ), (!s || u[0] & /*webcam_accessed*/
-      512) && Ki(t, "hide", !/*webcam_accessed*/
+      ), (!s || f[0] & /*webcam_accessed*/
+      512) && ti(t, "hide", !/*webcam_accessed*/
       c[9]);
-      let f = l;
-      l = _(c), l === f ? a[l].p(c, u) : (Mi(), Ee(a[f], 1, 1, () => {
-        a[f] = null;
-      }), Li(), o = a[l], o ? o.p(c, u) : (o = a[l] = r[l](c), o.c()), ze(o, 1), o.m(e, null));
+      let u = i;
+      i = _(c), i === u ? a[i].p(c, f) : (Il(), Le(a[u], 1, 1, () => {
+        a[u] = null;
+      }), Hl(), o = a[i], o ? o.p(c, f) : (o = a[i] = r[i](c), o.c()), qe(o, 1), o.m(e, null));
     },
     i(c) {
-      s || (ze(o), s = !0);
+      s || (qe(o), s = !0);
     },
     o(c) {
-      Ee(o), s = !1;
+      Le(o), s = !1;
     },
     d(c) {
-      c && Pe(e), i[19](null), a[l].d();
+      c && Ue(e), l[19](null), a[i].d();
     }
   };
 }
-function ks(i, e) {
+function Rs(l, e) {
   const t = (n) => {
-    i && !i.contains(n.target) && !n.defaultPrevented && e(n);
+    l && !l.contains(n.target) && !n.defaultPrevented && e(n);
   };
   return document.addEventListener("click", t, !0), {
     destroy() {
@@ -6104,55 +6104,55 @@ function ks(i, e) {
     }
   };
 }
-function Um(i, e, t) {
-  var n = this && this.__awaiter || function(R, $, I, O) {
-    function _e(Z) {
-      return Z instanceof I ? Z : new I(function(re) {
-        re(Z);
+function i0(l, e, t) {
+  var n = this && this.__awaiter || function(R, V, H, x) {
+    function _e(se) {
+      return se instanceof H ? se : new H(function(ae) {
+        ae(se);
       });
     }
-    return new (I || (I = Promise))(function(Z, re) {
-      function j(x) {
+    return new (H || (H = Promise))(function(se, ae) {
+      function j($) {
         try {
-          W(O.next(x));
-        } catch (oe) {
-          re(oe);
+          W(x.next($));
+        } catch (ne) {
+          ae(ne);
         }
       }
-      function ke(x) {
+      function Ke($) {
         try {
-          W(O.throw(x));
-        } catch (oe) {
-          re(oe);
+          W(x.throw($));
+        } catch (ne) {
+          ae(ne);
         }
       }
-      function W(x) {
-        x.done ? Z(x.value) : _e(x.value).then(j, ke);
+      function W($) {
+        $.done ? se($.value) : _e($.value).then(j, Ke);
       }
-      W((O = O.apply(R, $ || [])).next());
+      W((x = x.apply(R, V || [])).next());
     });
   };
-  let l, o = [], s = null, r, { streaming: a = !1 } = e, { pending: _ = !1 } = e, { root: c = "" } = e, { mode: u = "image" } = e, { mirror_webcam: f } = e, { include_audio: d } = e, { i18n: h } = e, { upload: m } = e;
-  const g = Xm();
-  Ym(() => r = document.createElement("canvas"));
+  let i, o = [], s = null, r, { streaming: a = !1 } = e, { pending: _ = !1 } = e, { root: c = "" } = e, { mode: f = "image" } = e, { mirror_webcam: u } = e, { include_audio: d } = e, { i18n: h } = e, { upload: m } = e;
+  const g = Um();
+  Pm(() => r = document.createElement("canvas"));
   const b = (R) => n(void 0, void 0, void 0, function* () {
-    const I = R.target.value;
-    yield Da(d, l, I).then((O) => n(void 0, void 0, void 0, function* () {
-      D = O, t(7, s = o.find((_e) => _e.deviceId === I) || null), t(10, S = !1);
+    const H = R.target.value;
+    yield ja(d, i, H).then((x) => n(void 0, void 0, void 0, function* () {
+      D = x, t(7, s = o.find((_e) => _e.deviceId === H) || null), t(10, w = !1);
     }));
   });
-  function w() {
+  function v() {
     return n(this, void 0, void 0, function* () {
       try {
-        Da(d, l).then((R) => n(this, void 0, void 0, function* () {
-          t(9, B = !0), t(6, o = yield ym()), D = R;
-        })).then(() => Sm(o)).then((R) => {
+        ja(d, i).then((R) => n(this, void 0, void 0, function* () {
+          t(9, X = !0), t(6, o = yield Am()), D = R;
+        })).then(() => Ym(o)).then((R) => {
           t(6, o = R);
-          const $ = D.getTracks().map((I) => {
-            var O;
-            return (O = I.getSettings()) === null || O === void 0 ? void 0 : O.deviceId;
+          const V = D.getTracks().map((H) => {
+            var x;
+            return (x = H.getSettings()) === null || x === void 0 ? void 0 : x.deviceId;
           })[0];
-          t(7, s = $ && R.find((I) => I.deviceId === $) || o[0]);
+          t(7, s = V && R.find((H) => H.deviceId === V) || o[0]);
         }), (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) && g("error", h("image.no_webcam_support"));
       } catch (R) {
         if (R instanceof DOMException && R.name == "NotAllowedError")
@@ -6164,104 +6164,104 @@ function Um(i, e, t) {
   }
   function p() {
     var R = r.getContext("2d");
-    (!a || a && q) && l.videoWidth && l.videoHeight && (r.width = l.videoWidth, r.height = l.videoHeight, R.drawImage(l, 0, 0, l.videoWidth, l.videoHeight), f && (R.scale(-1, 1), R.drawImage(l, -l.videoWidth, 0)), r.toBlob(
-      ($) => {
-        g(a ? "stream" : "capture", $);
+    (!a || a && y) && i.videoWidth && i.videoHeight && (r.width = i.videoWidth, r.height = i.videoHeight, R.drawImage(i, 0, 0, i.videoWidth, i.videoHeight), u && (R.scale(-1, 1), R.drawImage(i, -i.videoWidth, 0)), r.toBlob(
+      (V) => {
+        g(a ? "stream" : "capture", V);
       },
       "image/png",
       0.8
     ));
   }
-  let q = !1, M = [], D, C, k;
-  function y() {
-    if (q) {
-      k.stop();
-      let R = new Blob(M, { type: C }), $ = new FileReader();
-      $.onload = function(I) {
+  let y = !1, q = [], D, M, S;
+  function C() {
+    if (y) {
+      S.stop();
+      let R = new Blob(q, { type: M }), V = new FileReader();
+      V.onload = function(H) {
         return n(this, void 0, void 0, function* () {
-          var O;
-          if (I.target) {
-            let _e = new File([R], "sample." + C.substring(6));
-            const Z = yield d_([_e]);
-            let re = ((O = yield m(Z, c)) === null || O === void 0 ? void 0 : O.filter(Boolean))[0];
-            g("capture", re), g("stop_recording");
+          var x;
+          if (H.target) {
+            let _e = new File([R], "sample." + M.substring(6));
+            const se = yield D_([_e]);
+            let ae = ((x = yield m(se, c)) === null || x === void 0 ? void 0 : x.filter(Boolean))[0];
+            g("capture", ae), g("stop_recording");
           }
         });
-      }, $.readAsDataURL(R);
+      }, V.readAsDataURL(R);
     } else {
-      g("start_recording"), M = [];
+      g("start_recording"), q = [];
       let R = ["video/webm", "video/mp4"];
-      for (let $ of R)
-        if (MediaRecorder.isTypeSupported($)) {
-          C = $;
+      for (let V of R)
+        if (MediaRecorder.isTypeSupported(V)) {
+          M = V;
           break;
         }
-      if (C === null) {
+      if (M === null) {
         console.error("No supported MediaRecorder mimeType");
         return;
       }
-      k = new MediaRecorder(D, { mimeType: C }), k.addEventListener("dataavailable", function($) {
-        M.push($.data);
-      }), k.start(200);
+      S = new MediaRecorder(D, { mimeType: M }), S.addEventListener("dataavailable", function(V) {
+        q.push(V.data);
+      }), S.start(200);
     }
-    t(8, q = !q);
+    t(8, y = !y);
   }
-  let B = !1;
-  function A() {
-    u === "image" && a && t(8, q = !q), u === "image" ? p() : y(), !q && D && (D.getTracks().forEach((R) => R.stop()), t(5, l.srcObject = null, l), t(9, B = !1));
+  let X = !1;
+  function I() {
+    f === "image" && a && t(8, y = !y), f === "image" ? p() : C(), !y && D && (D.getTracks().forEach((R) => R.stop()), t(5, i.srcObject = null, i), t(9, X = !1));
   }
-  a && u === "image" && window.setInterval(
+  a && f === "image" && window.setInterval(
     () => {
-      l && !_ && p();
+      i && !_ && p();
     },
     500
   );
-  let S = !1;
-  function Y(R) {
-    R.preventDefault(), R.stopPropagation(), t(10, S = !1);
+  let w = !1;
+  function L(R) {
+    R.preventDefault(), R.stopPropagation(), t(10, w = !1);
   }
   function F(R) {
-    Dm[R ? "unshift" : "push"](() => {
-      l = R, t(5, l);
+    Tm[R ? "unshift" : "push"](() => {
+      i = R, t(5, i);
     });
   }
-  const J = async () => w(), z = () => t(10, S = !0), me = () => t(10, S = !1);
-  return i.$$set = (R) => {
-    "streaming" in R && t(0, a = R.streaming), "pending" in R && t(15, _ = R.pending), "root" in R && t(16, c = R.root), "mode" in R && t(1, u = R.mode), "mirror_webcam" in R && t(2, f = R.mirror_webcam), "include_audio" in R && t(17, d = R.include_audio), "i18n" in R && t(3, h = R.i18n), "upload" in R && t(18, m = R.upload);
+  const O = async () => v(), z = () => t(10, w = !0), me = () => t(10, w = !1);
+  return l.$$set = (R) => {
+    "streaming" in R && t(0, a = R.streaming), "pending" in R && t(15, _ = R.pending), "root" in R && t(16, c = R.root), "mode" in R && t(1, f = R.mode), "mirror_webcam" in R && t(2, u = R.mirror_webcam), "include_audio" in R && t(17, d = R.include_audio), "i18n" in R && t(3, h = R.i18n), "upload" in R && t(18, m = R.upload);
   }, [
     a,
-    u,
     f,
+    u,
     h,
-    ks,
-    l,
+    Rs,
+    i,
     o,
     s,
-    q,
-    B,
-    S,
-    b,
+    y,
+    X,
     w,
-    A,
-    Y,
+    b,
+    v,
+    I,
+    L,
     _,
     c,
     d,
     m,
     F,
-    J,
+    O,
     z,
     me
   ];
 }
-class Vm extends qm {
+class o0 extends Hm {
   constructor(e) {
-    super(), Em(
+    super(), Om(
       this,
       e,
-      Um,
-      Nm,
-      Wm,
+      i0,
+      l0,
+      Vm,
       {
         streaming: 0,
         pending: 15,
@@ -6278,565 +6278,633 @@ class Vm extends qm {
     );
   }
   get click_outside() {
-    return ks;
+    return Rs;
   }
 }
 const {
-  SvelteComponent: O7,
-  attr: $7,
-  create_component: x7,
-  destroy_component: N7,
-  detach: U7,
-  element: V7,
-  init: P7,
-  insert: K7,
-  mount_component: Z7,
-  noop: G7,
-  safe_not_equal: J7,
-  transition_in: Q7,
-  transition_out: e9
-} = window.__gradio__svelte__internal, { createEventDispatcher: t9 } = window.__gradio__svelte__internal, {
-  SvelteComponent: n9,
-  add_flush_callback: i9,
-  append: l9,
-  attr: o9,
-  bind: s9,
-  binding_callbacks: a9,
-  bubble: r9,
-  check_outros: _9,
-  create_component: c9,
-  create_slot: f9,
-  destroy_component: u9,
-  detach: d9,
-  element: h9,
-  empty: m9,
-  get_all_dirty_from_scope: g9,
-  get_slot_changes: b9,
-  group_outros: p9,
-  init: w9,
-  insert: v9,
-  listen: k9,
+  SvelteComponent: h9,
+  attr: m9,
+  create_component: g9,
+  destroy_component: b9,
+  detach: p9,
+  element: w9,
+  init: v9,
+  insert: k9,
   mount_component: y9,
   noop: C9,
   safe_not_equal: S9,
-  space: q9,
-  toggle_class: z9,
-  transition_in: B9,
-  transition_out: D9,
-  update_slot_base: L9
-} = window.__gradio__svelte__internal, { createEventDispatcher: M9, tick: E9 } = window.__gradio__svelte__internal, {
-  SvelteComponent: R9,
-  attr: W9,
-  check_outros: A9,
-  create_component: X9,
-  destroy_component: Y9,
-  detach: I9,
-  element: H9,
-  group_outros: j9,
-  init: T9,
-  insert: F9,
-  mount_component: O9,
-  safe_not_equal: $9,
-  toggle_class: x9,
-  transition_in: N9,
-  transition_out: U9
+  transition_in: q9,
+  transition_out: z9
+} = window.__gradio__svelte__internal, { createEventDispatcher: B9 } = window.__gradio__svelte__internal, {
+  SvelteComponent: D9,
+  add_flush_callback: M9,
+  append: L9,
+  attr: E9,
+  bind: R9,
+  binding_callbacks: W9,
+  bubble: A9,
+  check_outros: X9,
+  create_component: Y9,
+  create_slot: H9,
+  destroy_component: I9,
+  detach: j9,
+  element: T9,
+  empty: $9,
+  get_all_dirty_from_scope: F9,
+  get_slot_changes: O9,
+  group_outros: x9,
+  init: V9,
+  insert: N9,
+  listen: U9,
+  mount_component: P9,
+  noop: K9,
+  safe_not_equal: Z9,
+  space: G9,
+  toggle_class: J9,
+  transition_in: Q9,
+  transition_out: ey,
+  update_slot_base: ty
+} = window.__gradio__svelte__internal, { createEventDispatcher: ny, tick: ly } = window.__gradio__svelte__internal, {
+  SvelteComponent: iy,
+  attr: oy,
+  check_outros: sy,
+  create_component: ay,
+  destroy_component: ry,
+  detach: _y,
+  element: cy,
+  group_outros: uy,
+  init: fy,
+  insert: dy,
+  mount_component: hy,
+  safe_not_equal: my,
+  toggle_class: gy,
+  transition_in: by,
+  transition_out: py
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: V9,
-  add_flush_callback: P9,
-  assign: K9,
-  bind: Z9,
-  binding_callbacks: G9,
-  check_outros: J9,
-  create_component: Q9,
-  destroy_component: ey,
-  detach: ty,
-  empty: ny,
-  flush: iy,
-  get_spread_object: ly,
-  get_spread_update: oy,
-  group_outros: sy,
-  init: ay,
-  insert: ry,
-  mount_component: _y,
-  safe_not_equal: cy,
-  space: fy,
-  transition_in: uy,
-  transition_out: dy
+  SvelteComponent: wy,
+  add_flush_callback: vy,
+  assign: ky,
+  bind: yy,
+  binding_callbacks: Cy,
+  check_outros: Sy,
+  create_component: qy,
+  destroy_component: zy,
+  detach: By,
+  empty: Dy,
+  flush: My,
+  get_spread_object: Ly,
+  get_spread_update: Ey,
+  group_outros: Ry,
+  init: Wy,
+  insert: Ay,
+  mount_component: Xy,
+  safe_not_equal: Yy,
+  space: Hy,
+  transition_in: Iy,
+  transition_out: jy
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: hy,
-  append: my,
-  attr: gy,
-  detach: by,
-  init: py,
-  insert: wy,
-  noop: vy,
-  safe_not_equal: ky,
-  set_style: yy,
-  svg_element: Cy
+  SvelteComponent: Ty,
+  append: $y,
+  attr: Fy,
+  detach: Oy,
+  init: xy,
+  insert: Vy,
+  noop: Ny,
+  safe_not_equal: Uy,
+  set_style: Py,
+  svg_element: Ky
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: Pm,
-  append: Jt,
+  SvelteComponent: s0,
+  append: tn,
   attr: T,
-  detach: Km,
-  init: Zm,
-  insert: Gm,
-  noop: zo,
-  safe_not_equal: Jm,
-  set_style: Qt,
-  svg_element: Xt
-} = window.__gradio__svelte__internal;
-function Qm(i) {
-  let e, t, n, l, o, s, r, a, _;
-  return {
-    c() {
-      e = Xt("svg"), t = Xt("rect"), n = Xt("rect"), l = Xt("rect"), o = Xt("rect"), s = Xt("line"), r = Xt("line"), a = Xt("line"), _ = Xt("line"), T(t, "x", "2"), T(t, "y", "2"), T(t, "width", "5"), T(t, "height", "5"), T(t, "rx", "1"), T(t, "ry", "1"), T(t, "stroke-width", "2"), T(t, "fill", "none"), T(n, "x", "17"), T(n, "y", "2"), T(n, "width", "5"), T(n, "height", "5"), T(n, "rx", "1"), T(n, "ry", "1"), T(n, "stroke-width", "2"), T(n, "fill", "none"), T(l, "x", "2"), T(l, "y", "17"), T(l, "width", "5"), T(l, "height", "5"), T(l, "rx", "1"), T(l, "ry", "1"), T(l, "stroke-width", "2"), T(l, "fill", "none"), T(o, "x", "17"), T(o, "y", "17"), T(o, "width", "5"), T(o, "height", "5"), T(o, "rx", "1"), T(o, "ry", "1"), T(o, "stroke-width", "2"), T(o, "fill", "none"), T(s, "x1", "7.5"), T(s, "y1", "4.5"), T(s, "x2", "16"), T(s, "y2", "4.5"), Qt(s, "stroke-width", "2px"), T(r, "x1", "7.5"), T(r, "y1", "19.5"), T(r, "x2", "16"), T(r, "y2", "19.5"), Qt(r, "stroke-width", "2px"), T(a, "x1", "4.5"), T(a, "y1", "8"), T(a, "x2", "4.5"), T(a, "y2", "16"), Qt(a, "stroke-width", "2px"), T(_, "x1", "19.5"), T(_, "y1", "8"), T(_, "x2", "19.5"), T(_, "y2", "16"), Qt(_, "stroke-width", "2px"), T(e, "width", "100%"), T(e, "height", "100%"), T(e, "viewBox", "0 0 24 24"), T(e, "version", "1.1"), T(e, "xmlns", "http://www.w3.org/2000/svg"), T(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), T(e, "xml:space", "preserve"), T(e, "stroke", "currentColor"), Qt(e, "fill-rule", "evenodd"), Qt(e, "clip-rule", "evenodd"), Qt(e, "stroke-linecap", "round"), Qt(e, "stroke-linejoin", "round");
-    },
-    m(c, u) {
-      Gm(c, e, u), Jt(e, t), Jt(e, n), Jt(e, l), Jt(e, o), Jt(e, s), Jt(e, r), Jt(e, a), Jt(e, _);
-    },
-    p: zo,
-    i: zo,
-    o: zo,
-    d(c) {
-      c && Km(e);
-    }
-  };
-}
-class e0 extends Pm {
-  constructor(e) {
-    super(), Zm(this, e, null, Qm, Jm, {});
-  }
-}
-const {
-  SvelteComponent: t0,
-  append: n0,
-  attr: bt,
-  detach: i0,
-  init: l0,
-  insert: o0,
-  noop: Bo,
-  safe_not_equal: s0,
-  set_style: Zi,
-  svg_element: Aa
-} = window.__gradio__svelte__internal;
-function a0(i) {
-  let e, t;
-  return {
-    c() {
-      e = Aa("svg"), t = Aa("path"), bt(t, "d", "M 14.4 2.85 V 11.1 V 3.95 C 14.4 3.0387 15.1388 2.3 16.05 2.3 C 16.9612 2.3 17.7 3.0387 17.7 3.95 V 11.1 V 7.25 C 17.7 6.3387 18.4388 5.6 19.35 5.6 C 20.2612 5.6 21 6.3387 21 7.25 V 16.6 C 21 20.2451 18.0451 23.2 14.4 23.2 H 13.16 C 11.4831 23.2 9.8692 22.5618 8.6459 21.4149 L 3.1915 16.3014 C 2.403 15.5622 2.3829 14.3171 3.1472 13.5528 C 3.8943 12.8057 5.1057 12.8057 5.8528 13.5528 L 7.8 15.5 V 6.15 C 7.8 5.2387 8.5387 4.5 9.45 4.5 C 10.3612 4.5 11.1 5.2387 11.1 6.15 V 11.1 V 2.85 C 11.1 1.9387 11.8388 1.2 12.75 1.2 C 13.6612 1.2 14.4 1.9387 14.4 2.85 Z"), bt(t, "fill", "none"), bt(t, "stroke-width", "2"), bt(e, "width", "100%"), bt(e, "height", "100%"), bt(e, "viewBox", "0 0 24 24"), bt(e, "version", "1.1"), bt(e, "xmlns", "http://www.w3.org/2000/svg"), bt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), bt(e, "xml:space", "preserve"), bt(e, "stroke", "currentColor"), Zi(e, "fill-rule", "evenodd"), Zi(e, "clip-rule", "evenodd"), Zi(e, "stroke-linecap", "round"), Zi(e, "stroke-linejoin", "round");
-    },
-    m(n, l) {
-      o0(n, e, l), n0(e, t);
-    },
-    p: Bo,
-    i: Bo,
-    o: Bo,
-    d(n) {
-      n && i0(e);
-    }
-  };
-}
-class r0 extends t0 {
-  constructor(e) {
-    super(), l0(this, e, null, a0, s0, {});
-  }
-}
-const {
-  SvelteComponent: _0,
-  append: c0,
-  attr: pt,
-  detach: f0,
-  init: u0,
-  insert: d0,
-  noop: Do,
-  safe_not_equal: h0,
-  set_style: Gi,
-  svg_element: Xa
-} = window.__gradio__svelte__internal;
-function m0(i) {
-  let e, t;
-  return {
-    c() {
-      e = Xa("svg"), t = Xa("path"), pt(t, "d", "M10 12L14 16M14 12L10 16M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6"), pt(t, "fill", "none"), pt(t, "stroke-width", "2"), pt(e, "width", "100%"), pt(e, "height", "100%"), pt(e, "viewBox", "0 0 24 24"), pt(e, "version", "1.1"), pt(e, "xmlns", "http://www.w3.org/2000/svg"), pt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), pt(e, "xml:space", "preserve"), pt(e, "stroke", "currentColor"), Gi(e, "fill-rule", "evenodd"), Gi(e, "clip-rule", "evenodd"), Gi(e, "stroke-linecap", "round"), Gi(e, "stroke-linejoin", "round");
-    },
-    m(n, l) {
-      d0(n, e, l), c0(e, t);
-    },
-    p: Do,
-    i: Do,
-    o: Do,
-    d(n) {
-      n && f0(e);
-    }
-  };
-}
-class g0 extends _0 {
-  constructor(e) {
-    super(), u0(this, e, null, m0, h0, {});
-  }
-}
-const {
-  SvelteComponent: b0,
-  append: Ya,
-  attr: Yt,
-  detach: p0,
-  init: w0,
-  insert: v0,
-  noop: Lo,
-  safe_not_equal: k0,
-  set_style: Ji,
-  svg_element: Mo
-} = window.__gradio__svelte__internal;
-function y0(i) {
-  let e, t, n;
-  return {
-    c() {
-      e = Mo("svg"), t = Mo("path"), n = Mo("path"), Yt(t, "d", "M12,2.5L2.5,12c-.7.7-.7,1.8,0,2.4l7.1,7.1c.7.7,1.8.7,2.4,0l9.5-9.5c.3-.3.5-.8.5-1.2V3.7c0-1-.8-1.7-1.7-1.7h-7.1c-.5,0-.9.2-1.2.5ZM7.3,14.1l4.7-4.7M9.9,16.7l2.2-2.2"), Yt(n, "d", "M18.5,6.3c0,.5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9Z"), Yt(e, "width", "100%"), Yt(e, "height", "100%"), Yt(e, "viewBox", "0 0 24 24"), Yt(e, "xmlns", "http://www.w3.org/2000/svg"), Yt(e, "fill", "none"), Yt(e, "stroke", "currentColor"), Yt(e, "stroke-width", "2"), Ji(e, "fill-rule", "evenodd"), Ji(e, "clip-rule", "evenodd"), Ji(e, "stroke-linecap", "round"), Ji(e, "stroke-linejoin", "round");
-    },
-    m(l, o) {
-      v0(l, e, o), Ya(e, t), Ya(e, n);
-    },
-    p: Lo,
-    i: Lo,
-    o: Lo,
-    d(l) {
-      l && p0(e);
-    }
-  };
-}
-class C0 extends b0 {
-  constructor(e) {
-    super(), w0(this, e, null, y0, k0, {});
-  }
-}
-const {
-  SvelteComponent: S0,
-  append: q0,
-  attr: en,
-  detach: z0,
-  init: B0,
-  insert: D0,
-  noop: Eo,
-  safe_not_equal: L0,
-  set_style: Qi,
-  svg_element: Ia
-} = window.__gradio__svelte__internal;
-function M0(i) {
-  let e, t;
-  return {
-    c() {
-      e = Ia("svg"), t = Ia("path"), en(t, "d", "M4 6h16M4 12h16M4 18h10"), en(e, "width", "100%"), en(e, "height", "100%"), en(e, "viewBox", "0 0 24 24"), en(e, "xmlns", "http://www.w3.org/2000/svg"), en(e, "fill", "none"), en(e, "stroke", "currentColor"), en(e, "stroke-width", "2"), Qi(e, "fill-rule", "evenodd"), Qi(e, "clip-rule", "evenodd"), Qi(e, "stroke-linecap", "round"), Qi(e, "stroke-linejoin", "round");
-    },
-    m(n, l) {
-      D0(n, e, l), q0(e, t);
-    },
-    p: Eo,
-    i: Eo,
-    o: Eo,
-    d(n) {
-      n && z0(e);
-    }
-  };
-}
-class E0 extends S0 {
-  constructor(e) {
-    super(), B0(this, e, null, M0, L0, {});
-  }
-}
-const {
-  SvelteComponent: R0,
-  append: Ha,
-  attr: st,
-  detach: W0,
-  init: A0,
-  insert: X0,
-  noop: Ro,
-  safe_not_equal: Y0,
-  set_style: el,
-  svg_element: Wo
-} = window.__gradio__svelte__internal;
-function I0(i) {
-  let e, t, n;
-  return {
-    c() {
-      e = Wo("svg"), t = Wo("path"), n = Wo("line"), st(t, "d", "M4 6h16M4 12h16M4 18h10"), st(n, "x1", "2"), st(n, "y1", "2"), st(n, "x2", "22"), st(n, "y2", "22"), st(e, "width", "100%"), st(e, "height", "100%"), st(e, "viewBox", "0 0 24 24"), st(e, "xmlns", "http://www.w3.org/2000/svg"), st(e, "fill", "none"), st(e, "stroke", "currentColor"), st(e, "stroke-width", "2"), el(e, "fill-rule", "evenodd"), el(e, "clip-rule", "evenodd"), el(e, "stroke-linecap", "round"), el(e, "stroke-linejoin", "round");
-    },
-    m(l, o) {
-      X0(l, e, o), Ha(e, t), Ha(e, n);
-    },
-    p: Ro,
-    i: Ro,
-    o: Ro,
-    d(l) {
-      l && W0(e);
-    }
-  };
-}
-class H0 extends R0 {
-  constructor(e) {
-    super(), A0(this, e, null, I0, Y0, {});
-  }
-}
-const {
-  SvelteComponent: j0,
-  append: T0,
-  attr: tn,
-  detach: F0,
-  init: O0,
-  insert: $0,
-  noop: Ao,
-  safe_not_equal: x0,
-  set_style: tl,
-  svg_element: ja
-} = window.__gradio__svelte__internal;
-function N0(i) {
-  let e, t;
-  return {
-    c() {
-      e = ja("svg"), t = ja("path"), tn(t, "d", "M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C15.9474 10 16.5286 10 17 10.0288M7 10.0288C6.41168 10.0647 5.99429 10.1455 5.63803 10.327C5.07354 10.6146 4.6146 11.0735 4.32698 11.638C4 12.2798 4 13.1198 4 14.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H15.2C16.8802 21 17.7202 21 18.362 20.673C18.9265 20.3854 19.3854 19.9265 19.673 19.362C20 18.7202 20 17.8802 20 16.2V14.8C20 13.1198 20 12.2798 19.673 11.638C19.3854 11.0735 18.9265 10.6146 18.362 10.327C18.0057 10.1455 17.5883 10.0647 17 10.0288M7 10.0288V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10.0288"), tn(e, "width", "100%"), tn(e, "height", "100%"), tn(e, "viewBox", "0 0 24 24"), tn(e, "fill", "none"), tn(e, "stroke", "currentColor"), tn(e, "stroke-width", "2"), tl(e, "fill-rule", "evenodd"), tl(e, "clip-rule", "evenodd"), tl(e, "stroke-linecap", "round"), tl(e, "stroke-linejoin", "round"), tn(e, "xmlns", "http://www.w3.org/2000/svg");
-    },
-    m(n, l) {
-      $0(n, e, l), T0(e, t);
-    },
-    p: Ao,
-    i: Ao,
-    o: Ao,
-    d(n) {
-      n && F0(e);
-    }
-  };
-}
-class z_ extends j0 {
-  constructor(e) {
-    super(), O0(this, e, null, N0, x0, {});
-  }
-}
-const {
-  SvelteComponent: U0,
-  append: V0,
-  attr: nn,
-  detach: P0,
-  init: K0,
-  insert: Z0,
+  detach: a0,
+  init: r0,
+  insert: _0,
   noop: Xo,
-  safe_not_equal: G0,
-  set_style: nl,
-  svg_element: Ta
+  safe_not_equal: c0,
+  set_style: nn,
+  svg_element: jt
 } = window.__gradio__svelte__internal;
-function J0(i) {
-  let e, t;
+function u0(l) {
+  let e, t, n, i, o, s, r, a, _;
   return {
     c() {
-      e = Ta("svg"), t = Ta("path"), nn(t, "d", "M16.584 6C15.8124 4.2341 14.0503 3 12 3C9.23858 3 7 5.23858 7 8V10.0288M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C16.8802 10 17.7202 10 18.362 10.327C18.9265 10.6146 19.3854 11.0735 19.673 11.638C20 12.2798 20 13.1198 20 14.8V16.2C20 17.8802 20 18.7202 19.673 19.362C19.3854 19.9265 18.9265 20.3854 18.362 20.673C17.7202 21 16.8802 21 15.2 21H8.8C7.11984 21 6.27976 21 5.63803 20.673C5.07354 20.3854 4.6146 19.9265 4.32698 19.362C4 18.7202 4 17.8802 4 16.2V14.8C4 13.1198 4 12.2798 4.32698 11.638C4.6146 11.0735 5.07354 10.6146 5.63803 10.327C5.99429 10.1455 6.41168 10.0647 7 10.0288Z"), nn(e, "width", "100%"), nn(e, "height", "100%"), nn(e, "viewBox", "0 0 24 24"), nn(e, "fill", "none"), nn(e, "stroke", "currentColor"), nn(e, "stroke-width", "2"), nl(e, "fill-rule", "evenodd"), nl(e, "clip-rule", "evenodd"), nl(e, "stroke-linecap", "round"), nl(e, "stroke-linejoin", "round"), nn(e, "xmlns", "http://www.w3.org/2000/svg");
+      e = jt("svg"), t = jt("rect"), n = jt("rect"), i = jt("rect"), o = jt("rect"), s = jt("line"), r = jt("line"), a = jt("line"), _ = jt("line"), T(t, "x", "2"), T(t, "y", "2"), T(t, "width", "5"), T(t, "height", "5"), T(t, "rx", "1"), T(t, "ry", "1"), T(t, "stroke-width", "2"), T(t, "fill", "none"), T(n, "x", "17"), T(n, "y", "2"), T(n, "width", "5"), T(n, "height", "5"), T(n, "rx", "1"), T(n, "ry", "1"), T(n, "stroke-width", "2"), T(n, "fill", "none"), T(i, "x", "2"), T(i, "y", "17"), T(i, "width", "5"), T(i, "height", "5"), T(i, "rx", "1"), T(i, "ry", "1"), T(i, "stroke-width", "2"), T(i, "fill", "none"), T(o, "x", "17"), T(o, "y", "17"), T(o, "width", "5"), T(o, "height", "5"), T(o, "rx", "1"), T(o, "ry", "1"), T(o, "stroke-width", "2"), T(o, "fill", "none"), T(s, "x1", "7.5"), T(s, "y1", "4.5"), T(s, "x2", "16"), T(s, "y2", "4.5"), nn(s, "stroke-width", "2px"), T(r, "x1", "7.5"), T(r, "y1", "19.5"), T(r, "x2", "16"), T(r, "y2", "19.5"), nn(r, "stroke-width", "2px"), T(a, "x1", "4.5"), T(a, "y1", "8"), T(a, "x2", "4.5"), T(a, "y2", "16"), nn(a, "stroke-width", "2px"), T(_, "x1", "19.5"), T(_, "y1", "8"), T(_, "x2", "19.5"), T(_, "y2", "16"), nn(_, "stroke-width", "2px"), T(e, "width", "100%"), T(e, "height", "100%"), T(e, "viewBox", "0 0 24 24"), T(e, "version", "1.1"), T(e, "xmlns", "http://www.w3.org/2000/svg"), T(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), T(e, "xml:space", "preserve"), T(e, "stroke", "currentColor"), nn(e, "fill-rule", "evenodd"), nn(e, "clip-rule", "evenodd"), nn(e, "stroke-linecap", "round"), nn(e, "stroke-linejoin", "round");
     },
-    m(n, l) {
-      Z0(n, e, l), V0(e, t);
+    m(c, f) {
+      _0(c, e, f), tn(e, t), tn(e, n), tn(e, i), tn(e, o), tn(e, s), tn(e, r), tn(e, a), tn(e, _);
     },
     p: Xo,
     i: Xo,
     o: Xo,
-    d(n) {
-      n && P0(e);
+    d(c) {
+      c && a0(e);
     }
   };
 }
-class Q0 extends U0 {
+class f0 extends s0 {
   constructor(e) {
-    super(), K0(this, e, null, J0, G0, {});
+    super(), r0(this, e, null, u0, c0, {});
   }
 }
 const {
-  SvelteComponent: eg,
-  append: il,
-  attr: ue,
-  detach: tg,
-  init: ng,
-  insert: ig,
+  SvelteComponent: d0,
+  append: h0,
+  attr: wt,
+  detach: m0,
+  init: g0,
+  insert: b0,
   noop: Yo,
-  safe_not_equal: lg,
-  set_style: at,
-  svg_element: bi
+  safe_not_equal: p0,
+  set_style: ni,
+  svg_element: Va
 } = window.__gradio__svelte__internal;
-function og(i) {
-  let e, t, n, l, o;
+function w0(l) {
+  let e, t;
   return {
     c() {
-      e = bi("svg"), t = bi("circle"), n = bi("line"), l = bi("line"), o = bi("line"), ue(t, "cx", "9"), ue(t, "cy", "9"), ue(t, "r", "6"), at(t, "fill", "none"), at(t, "stroke-width", "2px"), ue(n, "x1", "13"), ue(n, "y1", "13"), ue(n, "x2", "20"), ue(n, "y2", "20"), at(n, "fill", "none"), at(n, "stroke-width", "2px"), ue(l, "x1", "6"), ue(l, "y1", "9"), ue(l, "x2", "12"), ue(l, "y2", "9"), at(l, "fill", "none"), at(l, "stroke-width", "2px"), ue(o, "x1", "9"), ue(o, "y1", "6"), ue(o, "x2", "9"), ue(o, "y2", "12"), at(o, "fill", "none"), at(o, "stroke-width", "2px"), ue(e, "width", "100%"), ue(e, "height", "100%"), ue(e, "viewBox", "0 0 24 24"), ue(e, "version", "1.1"), ue(e, "xmlns", "http://www.w3.org/2000/svg"), ue(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), ue(e, "xml:space", "preserve"), ue(e, "stroke", "currentColor"), at(e, "fill-rule", "evenodd"), at(e, "clip-rule", "evenodd"), at(e, "stroke-linecap", "round"), at(e, "stroke-linejoin", "round");
+      e = Va("svg"), t = Va("path"), wt(t, "d", "M 14.4 2.85 V 11.1 V 3.95 C 14.4 3.0387 15.1388 2.3 16.05 2.3 C 16.9612 2.3 17.7 3.0387 17.7 3.95 V 11.1 V 7.25 C 17.7 6.3387 18.4388 5.6 19.35 5.6 C 20.2612 5.6 21 6.3387 21 7.25 V 16.6 C 21 20.2451 18.0451 23.2 14.4 23.2 H 13.16 C 11.4831 23.2 9.8692 22.5618 8.6459 21.4149 L 3.1915 16.3014 C 2.403 15.5622 2.3829 14.3171 3.1472 13.5528 C 3.8943 12.8057 5.1057 12.8057 5.8528 13.5528 L 7.8 15.5 V 6.15 C 7.8 5.2387 8.5387 4.5 9.45 4.5 C 10.3612 4.5 11.1 5.2387 11.1 6.15 V 11.1 V 2.85 C 11.1 1.9387 11.8388 1.2 12.75 1.2 C 13.6612 1.2 14.4 1.9387 14.4 2.85 Z"), wt(t, "fill", "none"), wt(t, "stroke-width", "2"), wt(e, "width", "100%"), wt(e, "height", "100%"), wt(e, "viewBox", "0 0 24 24"), wt(e, "version", "1.1"), wt(e, "xmlns", "http://www.w3.org/2000/svg"), wt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), wt(e, "xml:space", "preserve"), wt(e, "stroke", "currentColor"), ni(e, "fill-rule", "evenodd"), ni(e, "clip-rule", "evenodd"), ni(e, "stroke-linecap", "round"), ni(e, "stroke-linejoin", "round");
     },
-    m(s, r) {
-      ig(s, e, r), il(e, t), il(e, n), il(e, l), il(e, o);
+    m(n, i) {
+      b0(n, e, i), h0(e, t);
     },
     p: Yo,
     i: Yo,
     o: Yo,
-    d(s) {
-      s && tg(e);
+    d(n) {
+      n && m0(e);
     }
   };
 }
-class sg extends eg {
+class v0 extends d0 {
   constructor(e) {
-    super(), ng(this, e, null, og, lg, {});
+    super(), g0(this, e, null, w0, p0, {});
   }
 }
 const {
-  SvelteComponent: ag,
-  append: Io,
-  attr: ye,
-  detach: rg,
-  init: _g,
-  insert: cg,
+  SvelteComponent: k0,
+  append: y0,
+  attr: vt,
+  detach: C0,
+  init: S0,
+  insert: q0,
   noop: Ho,
-  safe_not_equal: fg,
-  set_style: St,
-  svg_element: ll
+  safe_not_equal: z0,
+  set_style: li,
+  svg_element: Na
 } = window.__gradio__svelte__internal;
-function ug(i) {
-  let e, t, n, l;
+function B0(l) {
+  let e, t;
   return {
     c() {
-      e = ll("svg"), t = ll("circle"), n = ll("line"), l = ll("line"), ye(t, "cx", "9"), ye(t, "cy", "9"), ye(t, "r", "6"), St(t, "fill", "none"), St(t, "stroke-width", "2px"), ye(n, "x1", "13"), ye(n, "y1", "13"), ye(n, "x2", "20"), ye(n, "y2", "20"), St(n, "fill", "none"), St(n, "stroke-width", "2px"), ye(l, "x1", "6"), ye(l, "y1", "9"), ye(l, "x2", "12"), ye(l, "y2", "9"), St(l, "fill", "none"), St(l, "stroke-width", "2px"), ye(e, "width", "100%"), ye(e, "height", "100%"), ye(e, "viewBox", "0 0 24 24"), ye(e, "version", "1.1"), ye(e, "xmlns", "http://www.w3.org/2000/svg"), ye(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), ye(e, "xml:space", "preserve"), ye(e, "stroke", "currentColor"), St(e, "fill-rule", "evenodd"), St(e, "clip-rule", "evenodd"), St(e, "stroke-linecap", "round"), St(e, "stroke-linejoin", "round");
+      e = Na("svg"), t = Na("path"), vt(t, "d", "M10 12L14 16M14 12L10 16M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6"), vt(t, "fill", "none"), vt(t, "stroke-width", "2"), vt(e, "width", "100%"), vt(e, "height", "100%"), vt(e, "viewBox", "0 0 24 24"), vt(e, "version", "1.1"), vt(e, "xmlns", "http://www.w3.org/2000/svg"), vt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), vt(e, "xml:space", "preserve"), vt(e, "stroke", "currentColor"), li(e, "fill-rule", "evenodd"), li(e, "clip-rule", "evenodd"), li(e, "stroke-linecap", "round"), li(e, "stroke-linejoin", "round");
     },
-    m(o, s) {
-      cg(o, e, s), Io(e, t), Io(e, n), Io(e, l);
+    m(n, i) {
+      q0(n, e, i), y0(e, t);
     },
     p: Ho,
     i: Ho,
     o: Ho,
-    d(o) {
-      o && rg(e);
+    d(n) {
+      n && C0(e);
     }
   };
 }
-class dg extends ag {
+class D0 extends k0 {
   constructor(e) {
-    super(), _g(this, e, null, ug, fg, {});
+    super(), S0(this, e, null, B0, z0, {});
   }
 }
 const {
-  SvelteComponent: hg,
-  append: jo,
-  attr: xe,
-  detach: mg,
-  init: gg,
-  insert: bg,
-  noop: To,
-  safe_not_equal: pg,
-  set_style: qt,
-  svg_element: ol
+  SvelteComponent: M0,
+  append: Ua,
+  attr: Tt,
+  detach: L0,
+  init: E0,
+  insert: R0,
+  noop: Io,
+  safe_not_equal: W0,
+  set_style: ii,
+  svg_element: jo
 } = window.__gradio__svelte__internal;
-function wg(i) {
-  let e, t, n, l;
+function A0(l) {
+  let e, t, n;
   return {
     c() {
-      e = ol("svg"), t = ol("rect"), n = ol("path"), l = ol("path"), xe(t, "x", "3"), xe(t, "y", "3"), xe(t, "width", "18"), xe(t, "height", "18"), qt(t, "fill", "none"), qt(t, "stroke-width", "2px"), xe(n, "d", "M 7 7 L 10 10 M 7 10 L 10 7"), qt(n, "fill", "none"), qt(n, "stroke-width", "2px"), xe(l, "d", "M 14 17 L 17 14 M 14 14 L 17 17"), qt(l, "fill", "none"), qt(l, "stroke-width", "2px"), xe(e, "width", "100%"), xe(e, "height", "100%"), xe(e, "viewBox", "0 0 24 24"), xe(e, "version", "1.1"), xe(e, "xmlns", "http://www.w3.org/2000/svg"), xe(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), xe(e, "xml:space", "preserve"), xe(e, "stroke", "currentColor"), qt(e, "fill-rule", "evenodd"), qt(e, "clip-rule", "evenodd"), qt(e, "stroke-linecap", "round"), qt(e, "stroke-linejoin", "round");
+      e = jo("svg"), t = jo("path"), n = jo("path"), Tt(t, "d", "M12,2.5L2.5,12c-.7.7-.7,1.8,0,2.4l7.1,7.1c.7.7,1.8.7,2.4,0l9.5-9.5c.3-.3.5-.8.5-1.2V3.7c0-1-.8-1.7-1.7-1.7h-7.1c-.5,0-.9.2-1.2.5ZM7.3,14.1l4.7-4.7M9.9,16.7l2.2-2.2"), Tt(n, "d", "M18.5,6.3c0,.5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9Z"), Tt(e, "width", "100%"), Tt(e, "height", "100%"), Tt(e, "viewBox", "0 0 24 24"), Tt(e, "xmlns", "http://www.w3.org/2000/svg"), Tt(e, "fill", "none"), Tt(e, "stroke", "currentColor"), Tt(e, "stroke-width", "2"), ii(e, "fill-rule", "evenodd"), ii(e, "clip-rule", "evenodd"), ii(e, "stroke-linecap", "round"), ii(e, "stroke-linejoin", "round");
     },
-    m(o, s) {
-      bg(o, e, s), jo(e, t), jo(e, n), jo(e, l);
+    m(i, o) {
+      R0(i, e, o), Ua(e, t), Ua(e, n);
+    },
+    p: Io,
+    i: Io,
+    o: Io,
+    d(i) {
+      i && L0(e);
+    }
+  };
+}
+class X0 extends M0 {
+  constructor(e) {
+    super(), E0(this, e, null, A0, W0, {});
+  }
+}
+const {
+  SvelteComponent: Y0,
+  append: H0,
+  attr: ln,
+  detach: I0,
+  init: j0,
+  insert: T0,
+  noop: To,
+  safe_not_equal: $0,
+  set_style: oi,
+  svg_element: Pa
+} = window.__gradio__svelte__internal;
+function F0(l) {
+  let e, t;
+  return {
+    c() {
+      e = Pa("svg"), t = Pa("path"), ln(t, "d", "M4 6h16M4 12h16M4 18h10"), ln(e, "width", "100%"), ln(e, "height", "100%"), ln(e, "viewBox", "0 0 24 24"), ln(e, "xmlns", "http://www.w3.org/2000/svg"), ln(e, "fill", "none"), ln(e, "stroke", "currentColor"), ln(e, "stroke-width", "2"), oi(e, "fill-rule", "evenodd"), oi(e, "clip-rule", "evenodd"), oi(e, "stroke-linecap", "round"), oi(e, "stroke-linejoin", "round");
+    },
+    m(n, i) {
+      T0(n, e, i), H0(e, t);
     },
     p: To,
     i: To,
     o: To,
-    d(o) {
-      o && mg(e);
+    d(n) {
+      n && I0(e);
     }
   };
 }
-class vg extends hg {
+class O0 extends Y0 {
   constructor(e) {
-    super(), gg(this, e, null, wg, pg, {});
+    super(), j0(this, e, null, F0, $0, {});
   }
 }
 const {
-  SvelteComponent: kg,
-  append: Fa,
-  attr: Fo,
-  bubble: Oa,
-  create_component: yg,
-  destroy_component: Cg,
-  detach: B_,
-  element: $a,
-  init: Sg,
-  insert: D_,
-  listen: Oo,
-  mount_component: qg,
-  run_all: zg,
-  safe_not_equal: Bg,
-  set_data: Dg,
-  set_input_value: xa,
-  space: Lg,
-  text: Mg,
-  transition_in: Eg,
-  transition_out: Rg
-} = window.__gradio__svelte__internal, { createEventDispatcher: Wg, afterUpdate: Ag } = window.__gradio__svelte__internal;
-function Xg(i) {
+  SvelteComponent: x0,
+  append: Ka,
+  attr: st,
+  detach: V0,
+  init: N0,
+  insert: U0,
+  noop: $o,
+  safe_not_equal: P0,
+  set_style: si,
+  svg_element: Fo
+} = window.__gradio__svelte__internal;
+function K0(l) {
+  let e, t, n;
+  return {
+    c() {
+      e = Fo("svg"), t = Fo("path"), n = Fo("line"), st(t, "d", "M4 6h16M4 12h16M4 18h10"), st(n, "x1", "2"), st(n, "y1", "2"), st(n, "x2", "22"), st(n, "y2", "22"), st(e, "width", "100%"), st(e, "height", "100%"), st(e, "viewBox", "0 0 24 24"), st(e, "xmlns", "http://www.w3.org/2000/svg"), st(e, "fill", "none"), st(e, "stroke", "currentColor"), st(e, "stroke-width", "2"), si(e, "fill-rule", "evenodd"), si(e, "clip-rule", "evenodd"), si(e, "stroke-linecap", "round"), si(e, "stroke-linejoin", "round");
+    },
+    m(i, o) {
+      U0(i, e, o), Ka(e, t), Ka(e, n);
+    },
+    p: $o,
+    i: $o,
+    o: $o,
+    d(i) {
+      i && V0(e);
+    }
+  };
+}
+class Z0 extends x0 {
+  constructor(e) {
+    super(), N0(this, e, null, K0, P0, {});
+  }
+}
+const {
+  SvelteComponent: G0,
+  append: J0,
+  attr: on,
+  detach: Q0,
+  init: eg,
+  insert: tg,
+  noop: Oo,
+  safe_not_equal: ng,
+  set_style: ai,
+  svg_element: Za
+} = window.__gradio__svelte__internal;
+function lg(l) {
+  let e, t;
+  return {
+    c() {
+      e = Za("svg"), t = Za("path"), on(t, "d", "M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C15.9474 10 16.5286 10 17 10.0288M7 10.0288C6.41168 10.0647 5.99429 10.1455 5.63803 10.327C5.07354 10.6146 4.6146 11.0735 4.32698 11.638C4 12.2798 4 13.1198 4 14.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H15.2C16.8802 21 17.7202 21 18.362 20.673C18.9265 20.3854 19.3854 19.9265 19.673 19.362C20 18.7202 20 17.8802 20 16.2V14.8C20 13.1198 20 12.2798 19.673 11.638C19.3854 11.0735 18.9265 10.6146 18.362 10.327C18.0057 10.1455 17.5883 10.0647 17 10.0288M7 10.0288V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10.0288"), on(e, "width", "100%"), on(e, "height", "100%"), on(e, "viewBox", "0 0 24 24"), on(e, "fill", "none"), on(e, "stroke", "currentColor"), on(e, "stroke-width", "2"), ai(e, "fill-rule", "evenodd"), ai(e, "clip-rule", "evenodd"), ai(e, "stroke-linecap", "round"), ai(e, "stroke-linejoin", "round"), on(e, "xmlns", "http://www.w3.org/2000/svg");
+    },
+    m(n, i) {
+      tg(n, e, i), J0(e, t);
+    },
+    p: Oo,
+    i: Oo,
+    o: Oo,
+    d(n) {
+      n && Q0(e);
+    }
+  };
+}
+class $_ extends G0 {
+  constructor(e) {
+    super(), eg(this, e, null, lg, ng, {});
+  }
+}
+const {
+  SvelteComponent: ig,
+  append: og,
+  attr: sn,
+  detach: sg,
+  init: ag,
+  insert: rg,
+  noop: xo,
+  safe_not_equal: _g,
+  set_style: ri,
+  svg_element: Ga
+} = window.__gradio__svelte__internal;
+function cg(l) {
+  let e, t;
+  return {
+    c() {
+      e = Ga("svg"), t = Ga("path"), sn(t, "d", "M16.584 6C15.8124 4.2341 14.0503 3 12 3C9.23858 3 7 5.23858 7 8V10.0288M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C16.8802 10 17.7202 10 18.362 10.327C18.9265 10.6146 19.3854 11.0735 19.673 11.638C20 12.2798 20 13.1198 20 14.8V16.2C20 17.8802 20 18.7202 19.673 19.362C19.3854 19.9265 18.9265 20.3854 18.362 20.673C17.7202 21 16.8802 21 15.2 21H8.8C7.11984 21 6.27976 21 5.63803 20.673C5.07354 20.3854 4.6146 19.9265 4.32698 19.362C4 18.7202 4 17.8802 4 16.2V14.8C4 13.1198 4 12.2798 4.32698 11.638C4.6146 11.0735 5.07354 10.6146 5.63803 10.327C5.99429 10.1455 6.41168 10.0647 7 10.0288Z"), sn(e, "width", "100%"), sn(e, "height", "100%"), sn(e, "viewBox", "0 0 24 24"), sn(e, "fill", "none"), sn(e, "stroke", "currentColor"), sn(e, "stroke-width", "2"), ri(e, "fill-rule", "evenodd"), ri(e, "clip-rule", "evenodd"), ri(e, "stroke-linecap", "round"), ri(e, "stroke-linejoin", "round"), sn(e, "xmlns", "http://www.w3.org/2000/svg");
+    },
+    m(n, i) {
+      rg(n, e, i), og(e, t);
+    },
+    p: xo,
+    i: xo,
+    o: xo,
+    d(n) {
+      n && sg(e);
+    }
+  };
+}
+class ug extends ig {
+  constructor(e) {
+    super(), ag(this, e, null, cg, _g, {});
+  }
+}
+const {
+  SvelteComponent: fg,
+  append: _i,
+  attr: fe,
+  detach: dg,
+  init: hg,
+  insert: mg,
+  noop: Vo,
+  safe_not_equal: gg,
+  set_style: at,
+  svg_element: Sl
+} = window.__gradio__svelte__internal;
+function bg(l) {
+  let e, t, n, i, o;
+  return {
+    c() {
+      e = Sl("svg"), t = Sl("circle"), n = Sl("line"), i = Sl("line"), o = Sl("line"), fe(t, "cx", "9"), fe(t, "cy", "9"), fe(t, "r", "6"), at(t, "fill", "none"), at(t, "stroke-width", "2px"), fe(n, "x1", "13"), fe(n, "y1", "13"), fe(n, "x2", "20"), fe(n, "y2", "20"), at(n, "fill", "none"), at(n, "stroke-width", "2px"), fe(i, "x1", "6"), fe(i, "y1", "9"), fe(i, "x2", "12"), fe(i, "y2", "9"), at(i, "fill", "none"), at(i, "stroke-width", "2px"), fe(o, "x1", "9"), fe(o, "y1", "6"), fe(o, "x2", "9"), fe(o, "y2", "12"), at(o, "fill", "none"), at(o, "stroke-width", "2px"), fe(e, "width", "100%"), fe(e, "height", "100%"), fe(e, "viewBox", "0 0 24 24"), fe(e, "version", "1.1"), fe(e, "xmlns", "http://www.w3.org/2000/svg"), fe(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), fe(e, "xml:space", "preserve"), fe(e, "stroke", "currentColor"), at(e, "fill-rule", "evenodd"), at(e, "clip-rule", "evenodd"), at(e, "stroke-linecap", "round"), at(e, "stroke-linejoin", "round");
+    },
+    m(s, r) {
+      mg(s, e, r), _i(e, t), _i(e, n), _i(e, i), _i(e, o);
+    },
+    p: Vo,
+    i: Vo,
+    o: Vo,
+    d(s) {
+      s && dg(e);
+    }
+  };
+}
+class pg extends fg {
+  constructor(e) {
+    super(), hg(this, e, null, bg, gg, {});
+  }
+}
+const {
+  SvelteComponent: wg,
+  append: No,
+  attr: ke,
+  detach: vg,
+  init: kg,
+  insert: yg,
+  noop: Uo,
+  safe_not_equal: Cg,
+  set_style: zt,
+  svg_element: ci
+} = window.__gradio__svelte__internal;
+function Sg(l) {
+  let e, t, n, i;
+  return {
+    c() {
+      e = ci("svg"), t = ci("circle"), n = ci("line"), i = ci("line"), ke(t, "cx", "9"), ke(t, "cy", "9"), ke(t, "r", "6"), zt(t, "fill", "none"), zt(t, "stroke-width", "2px"), ke(n, "x1", "13"), ke(n, "y1", "13"), ke(n, "x2", "20"), ke(n, "y2", "20"), zt(n, "fill", "none"), zt(n, "stroke-width", "2px"), ke(i, "x1", "6"), ke(i, "y1", "9"), ke(i, "x2", "12"), ke(i, "y2", "9"), zt(i, "fill", "none"), zt(i, "stroke-width", "2px"), ke(e, "width", "100%"), ke(e, "height", "100%"), ke(e, "viewBox", "0 0 24 24"), ke(e, "version", "1.1"), ke(e, "xmlns", "http://www.w3.org/2000/svg"), ke(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), ke(e, "xml:space", "preserve"), ke(e, "stroke", "currentColor"), zt(e, "fill-rule", "evenodd"), zt(e, "clip-rule", "evenodd"), zt(e, "stroke-linecap", "round"), zt(e, "stroke-linejoin", "round");
+    },
+    m(o, s) {
+      yg(o, e, s), No(e, t), No(e, n), No(e, i);
+    },
+    p: Uo,
+    i: Uo,
+    o: Uo,
+    d(o) {
+      o && vg(e);
+    }
+  };
+}
+class qg extends wg {
+  constructor(e) {
+    super(), kg(this, e, null, Sg, Cg, {});
+  }
+}
+const {
+  SvelteComponent: zg,
+  append: Po,
+  attr: Oe,
+  detach: Bg,
+  init: Dg,
+  insert: Mg,
+  noop: Ko,
+  safe_not_equal: Lg,
+  set_style: Bt,
+  svg_element: ui
+} = window.__gradio__svelte__internal;
+function Eg(l) {
+  let e, t, n, i;
+  return {
+    c() {
+      e = ui("svg"), t = ui("rect"), n = ui("path"), i = ui("path"), Oe(t, "x", "3"), Oe(t, "y", "3"), Oe(t, "width", "18"), Oe(t, "height", "18"), Bt(t, "fill", "none"), Bt(t, "stroke-width", "2px"), Oe(n, "d", "M 7 7 L 10 10 M 7 10 L 10 7"), Bt(n, "fill", "none"), Bt(n, "stroke-width", "2px"), Oe(i, "d", "M 14 17 L 17 14 M 14 14 L 17 17"), Bt(i, "fill", "none"), Bt(i, "stroke-width", "2px"), Oe(e, "width", "100%"), Oe(e, "height", "100%"), Oe(e, "viewBox", "0 0 24 24"), Oe(e, "version", "1.1"), Oe(e, "xmlns", "http://www.w3.org/2000/svg"), Oe(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), Oe(e, "xml:space", "preserve"), Oe(e, "stroke", "currentColor"), Bt(e, "fill-rule", "evenodd"), Bt(e, "clip-rule", "evenodd"), Bt(e, "stroke-linecap", "round"), Bt(e, "stroke-linejoin", "round");
+    },
+    m(o, s) {
+      Mg(o, e, s), Po(e, t), Po(e, n), Po(e, i);
+    },
+    p: Ko,
+    i: Ko,
+    o: Ko,
+    d(o) {
+      o && Bg(e);
+    }
+  };
+}
+class Rg extends zg {
+  constructor(e) {
+    super(), Dg(this, e, null, Eg, Lg, {});
+  }
+}
+const {
+  SvelteComponent: Wg,
+  append: fi,
+  attr: rt,
+  detach: Ag,
+  init: Xg,
+  insert: Yg,
+  noop: Zo,
+  safe_not_equal: Hg,
+  set_style: _t,
+  svg_element: ql
+} = window.__gradio__svelte__internal;
+function Ig(l) {
+  let e, t, n, i, o;
+  return {
+    c() {
+      e = ql("svg"), t = ql("path"), n = ql("path"), i = ql("path"), o = ql("path"), rt(t, "d", "M8 3H5C3.89543 3 3 3.89543 3 5V8"), _t(t, "fill", "none"), _t(t, "stroke-width", "2px"), rt(n, "d", "M21 8V5C21 3.89543 20.1046 3 19 3H16"), _t(n, "fill", "none"), _t(n, "stroke-width", "2px"), rt(i, "d", "M16 21H19C20.1046 21 21 20.1046 21 19V16"), _t(i, "fill", "none"), _t(i, "stroke-width", "2px"), rt(o, "d", "M3 16V19C3 20.1046 3.89543 21 5 21H8"), _t(o, "fill", "none"), _t(o, "stroke-width", "2px"), rt(e, "width", "100%"), rt(e, "height", "100%"), rt(e, "viewBox", "0 0 24 24"), rt(e, "version", "1.1"), rt(e, "xmlns", "http://www.w3.org/2000/svg"), rt(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), rt(e, "xml:space", "preserve"), rt(e, "stroke", "currentColor"), _t(e, "fill-rule", "evenodd"), _t(e, "clip-rule", "evenodd"), _t(e, "stroke-linecap", "round"), _t(e, "stroke-linejoin", "round");
+    },
+    m(s, r) {
+      Yg(s, e, r), fi(e, t), fi(e, n), fi(e, i), fi(e, o);
+    },
+    p: Zo,
+    i: Zo,
+    o: Zo,
+    d(s) {
+      s && Ag(e);
+    }
+  };
+}
+class Ja extends Wg {
+  constructor(e) {
+    super(), Xg(this, e, null, Ig, Hg, {});
+  }
+}
+const {
+  SvelteComponent: jg,
+  append: Tg,
+  attr: $t,
+  detach: $g,
+  init: Fg,
+  insert: Og,
+  noop: Go,
+  safe_not_equal: xg,
+  set_style: an,
+  svg_element: Qa
+} = window.__gradio__svelte__internal;
+function Vg(l) {
+  let e, t;
+  return {
+    c() {
+      e = Qa("svg"), t = Qa("path"), $t(t, "d", "M8 3V8M8 8H3M21 8H16V3M16 21V16H21M3 16H8V21"), an(t, "fill", "none"), an(t, "stroke-width", "2px"), an(t, "stroke-linecap", "round"), an(t, "stroke-linejoin", "round"), $t(e, "width", "100%"), $t(e, "height", "100%"), $t(e, "viewBox", "0 0 24 24"), $t(e, "version", "1.1"), $t(e, "xmlns", "http://www.w3.org/2000/svg"), $t(e, "xmlns:xlink", "http://www.w3.org/1999/xlink"), $t(e, "xml:space", "preserve"), $t(e, "stroke", "currentColor"), an(e, "fill-rule", "evenodd"), an(e, "clip-rule", "evenodd"), an(e, "stroke-linecap", "round"), an(e, "stroke-linejoin", "round");
+    },
+    m(n, i) {
+      Og(n, e, i), Tg(e, t);
+    },
+    p: Go,
+    i: Go,
+    o: Go,
+    d(n) {
+      n && $g(e);
+    }
+  };
+}
+class er extends jg {
+  constructor(e) {
+    super(), Fg(this, e, null, Vg, xg, {});
+  }
+}
+const {
+  SvelteComponent: Ng,
+  append: tr,
+  attr: Jo,
+  bubble: nr,
+  create_component: Ug,
+  destroy_component: Pg,
+  detach: F_,
+  element: lr,
+  init: Kg,
+  insert: O_,
+  listen: Qo,
+  mount_component: Zg,
+  run_all: Gg,
+  safe_not_equal: Jg,
+  set_data: Qg,
+  set_input_value: ir,
+  space: eb,
+  text: tb,
+  transition_in: nb,
+  transition_out: lb
+} = window.__gradio__svelte__internal, { createEventDispatcher: ib, afterUpdate: ob } = window.__gradio__svelte__internal;
+function sb(l) {
   let e;
   return {
     c() {
-      e = Mg(
+      e = tb(
         /*label*/
-        i[1]
+        l[1]
       );
     },
     m(t, n) {
-      D_(t, e, n);
+      O_(t, e, n);
     },
     p(t, n) {
       n & /*label*/
-      2 && Dg(
+      2 && Qg(
         e,
         /*label*/
         t[1]
       );
     },
     d(t) {
-      t && B_(e);
+      t && F_(e);
     }
   };
 }
-function Yg(i) {
-  let e, t, n, l, o, s, r;
-  return t = new Ar({
+function ab(l) {
+  let e, t, n, i, o, s, r;
+  return t = new Kr({
     props: {
       show_label: (
         /*show_label*/
-        i[4]
+        l[4]
       ),
       info: (
         /*info*/
-        i[2]
+        l[2]
       ),
-      $$slots: { default: [Xg] },
-      $$scope: { ctx: i }
+      $$slots: { default: [sb] },
+      $$scope: { ctx: l }
     }
   }), {
     c() {
-      e = $a("label"), yg(t.$$.fragment), n = Lg(), l = $a("input"), Fo(l, "type", "color"), l.disabled = /*disabled*/
-      i[3], Fo(l, "class", "svelte-16l8u73"), Fo(e, "class", "block");
+      e = lr("label"), Ug(t.$$.fragment), n = eb(), i = lr("input"), Jo(i, "type", "color"), i.disabled = /*disabled*/
+      l[3], Jo(i, "class", "svelte-16l8u73"), Jo(e, "class", "block");
     },
     m(a, _) {
-      D_(a, e, _), qg(t, e, null), Fa(e, n), Fa(e, l), xa(
-        l,
+      O_(a, e, _), Zg(t, e, null), tr(e, n), tr(e, i), ir(
+        i,
         /*value*/
-        i[0]
+        l[0]
       ), o = !0, s || (r = [
-        Oo(
-          l,
+        Qo(
+          i,
           "input",
           /*input_input_handler*/
-          i[8]
+          l[8]
         ),
-        Oo(
-          l,
+        Qo(
+          i,
           "focus",
           /*focus_handler*/
-          i[6]
+          l[6]
         ),
-        Oo(
-          l,
+        Qo(
+          i,
           "blur",
           /*blur_handler*/
-          i[7]
+          l[7]
         )
       ], s = !0);
     },
@@ -6848,47 +6916,47 @@ function Yg(i) {
       4 && (c.info = /*info*/
       a[2]), _ & /*$$scope, label*/
       2050 && (c.$$scope = { dirty: _, ctx: a }), t.$set(c), (!o || _ & /*disabled*/
-      8) && (l.disabled = /*disabled*/
+      8) && (i.disabled = /*disabled*/
       a[3]), _ & /*value*/
-      1 && xa(
-        l,
+      1 && ir(
+        i,
         /*value*/
         a[0]
       );
     },
     i(a) {
-      o || (Eg(t.$$.fragment, a), o = !0);
+      o || (nb(t.$$.fragment, a), o = !0);
     },
     o(a) {
-      Rg(t.$$.fragment, a), o = !1;
+      lb(t.$$.fragment, a), o = !1;
     },
     d(a) {
-      a && B_(e), Cg(t), s = !1, zg(r);
+      a && F_(e), Pg(t), s = !1, Gg(r);
     }
   };
 }
-function Ig(i, e, t) {
-  let { value: n = "#000000" } = e, { value_is_output: l = !1 } = e, { label: o } = e, { info: s = void 0 } = e, { disabled: r = !1 } = e, { show_label: a = !0 } = e;
-  const _ = Wg();
+function rb(l, e, t) {
+  let { value: n = "#000000" } = e, { value_is_output: i = !1 } = e, { label: o } = e, { info: s = void 0 } = e, { disabled: r = !1 } = e, { show_label: a = !0 } = e;
+  const _ = ib();
   function c() {
-    _("change", n), l || _("input");
+    _("change", n), i || _("input");
   }
-  Ag(() => {
-    t(5, l = !1);
+  ob(() => {
+    t(5, i = !1);
   });
-  function u(h) {
-    Oa.call(this, i, h);
-  }
   function f(h) {
-    Oa.call(this, i, h);
+    nr.call(this, l, h);
+  }
+  function u(h) {
+    nr.call(this, l, h);
   }
   function d() {
     n = this.value, t(0, n);
   }
-  return i.$$set = (h) => {
-    "value" in h && t(0, n = h.value), "value_is_output" in h && t(5, l = h.value_is_output), "label" in h && t(1, o = h.label), "info" in h && t(2, s = h.info), "disabled" in h && t(3, r = h.disabled), "show_label" in h && t(4, a = h.show_label);
-  }, i.$$.update = () => {
-    i.$$.dirty & /*value*/
+  return l.$$set = (h) => {
+    "value" in h && t(0, n = h.value), "value_is_output" in h && t(5, i = h.value_is_output), "label" in h && t(1, o = h.label), "info" in h && t(2, s = h.info), "disabled" in h && t(3, r = h.disabled), "show_label" in h && t(4, a = h.show_label);
+  }, l.$$.update = () => {
+    l.$$.dirty & /*value*/
     1 && c();
   }, [
     n,
@@ -6896,15 +6964,15 @@ function Ig(i, e, t) {
     s,
     r,
     a,
-    l,
-    u,
+    i,
     f,
+    u,
     d
   ];
 }
-class Hg extends kg {
+class _b extends Ng {
   constructor(e) {
-    super(), Sg(this, e, Ig, Yg, Bg, {
+    super(), Kg(this, e, rb, ab, Jg, {
       value: 0,
       value_is_output: 5,
       label: 1,
@@ -6915,498 +6983,498 @@ class Hg extends kg {
   }
 }
 const {
-  SvelteComponent: Sy,
-  append: qy,
-  attr: zy,
-  component_subscribe: By,
-  detach: Dy,
-  element: Ly,
-  init: My,
-  insert: Ey,
-  noop: Ry,
-  safe_not_equal: Wy,
-  set_style: Ay,
-  svg_element: Xy,
-  toggle_class: Yy
-} = window.__gradio__svelte__internal, { onMount: Iy } = window.__gradio__svelte__internal, {
-  SvelteComponent: Hy,
-  append: jy,
-  attr: Ty,
-  binding_callbacks: Fy,
-  check_outros: Oy,
-  create_component: $y,
-  create_slot: xy,
-  destroy_component: Ny,
-  destroy_each: Uy,
-  detach: Vy,
-  element: Py,
-  empty: Ky,
-  ensure_array_like: Zy,
-  get_all_dirty_from_scope: Gy,
-  get_slot_changes: Jy,
-  group_outros: Qy,
-  init: eC,
-  insert: tC,
-  mount_component: nC,
+  SvelteComponent: Zy,
+  append: Gy,
+  attr: Jy,
+  component_subscribe: Qy,
+  detach: eC,
+  element: tC,
+  init: nC,
+  insert: lC,
   noop: iC,
-  safe_not_equal: lC,
-  set_data: oC,
+  safe_not_equal: oC,
   set_style: sC,
-  space: aC,
-  text: rC,
-  toggle_class: _C,
-  transition_in: cC,
-  transition_out: fC,
-  update_slot_base: uC
-} = window.__gradio__svelte__internal, { tick: dC } = window.__gradio__svelte__internal, { onDestroy: hC } = window.__gradio__svelte__internal, {
-  SvelteComponent: mC,
-  add_render_callback: gC,
-  append: bC,
-  attr: pC,
-  bubble: wC,
-  check_outros: vC,
-  create_component: kC,
-  create_in_transition: yC,
-  create_out_transition: CC,
-  destroy_component: SC,
-  detach: qC,
-  element: zC,
-  group_outros: BC,
-  init: DC,
-  insert: LC,
-  listen: MC,
-  mount_component: EC,
-  run_all: RC,
-  safe_not_equal: WC,
-  set_data: AC,
-  space: XC,
-  stop_propagation: YC,
-  text: IC,
-  transition_in: HC,
-  transition_out: jC
-} = window.__gradio__svelte__internal, { createEventDispatcher: TC, onMount: FC } = window.__gradio__svelte__internal, {
-  SvelteComponent: OC,
-  append: $C,
+  svg_element: aC,
+  toggle_class: rC
+} = window.__gradio__svelte__internal, { onMount: _C } = window.__gradio__svelte__internal, {
+  SvelteComponent: cC,
+  append: uC,
+  attr: fC,
+  binding_callbacks: dC,
+  check_outros: hC,
+  create_component: mC,
+  create_slot: gC,
+  destroy_component: bC,
+  destroy_each: pC,
+  detach: wC,
+  element: vC,
+  empty: kC,
+  ensure_array_like: yC,
+  get_all_dirty_from_scope: CC,
+  get_slot_changes: SC,
+  group_outros: qC,
+  init: zC,
+  insert: BC,
+  mount_component: DC,
+  noop: MC,
+  safe_not_equal: LC,
+  set_data: EC,
+  set_style: RC,
+  space: WC,
+  text: AC,
+  toggle_class: XC,
+  transition_in: YC,
+  transition_out: HC,
+  update_slot_base: IC
+} = window.__gradio__svelte__internal, { tick: jC } = window.__gradio__svelte__internal, { onDestroy: TC } = window.__gradio__svelte__internal, {
+  SvelteComponent: $C,
+  add_render_callback: FC,
+  append: OC,
   attr: xC,
-  bubble: NC,
-  check_outros: UC,
-  create_animation: VC,
-  create_component: PC,
-  destroy_component: KC,
-  detach: ZC,
-  element: GC,
-  ensure_array_like: JC,
-  fix_and_outro_and_destroy_block: QC,
-  fix_position: eS,
-  group_outros: tS,
-  init: nS,
-  insert: iS,
+  bubble: VC,
+  check_outros: NC,
+  create_component: UC,
+  create_in_transition: PC,
+  create_out_transition: KC,
+  destroy_component: ZC,
+  detach: GC,
+  element: JC,
+  group_outros: QC,
+  init: eS,
+  insert: tS,
+  listen: nS,
   mount_component: lS,
-  noop: oS,
-  safe_not_equal: sS,
-  set_style: aS,
-  space: rS,
-  transition_in: _S,
-  transition_out: cS,
-  update_keyed_each: fS
+  run_all: iS,
+  safe_not_equal: oS,
+  set_data: sS,
+  space: aS,
+  stop_propagation: rS,
+  text: _S,
+  transition_in: cS,
+  transition_out: uS
+} = window.__gradio__svelte__internal, { createEventDispatcher: fS, onMount: dS } = window.__gradio__svelte__internal, {
+  SvelteComponent: hS,
+  append: mS,
+  attr: gS,
+  bubble: bS,
+  check_outros: pS,
+  create_animation: wS,
+  create_component: vS,
+  destroy_component: kS,
+  detach: yS,
+  element: CS,
+  ensure_array_like: SS,
+  fix_and_outro_and_destroy_block: qS,
+  fix_position: zS,
+  group_outros: BS,
+  init: DS,
+  insert: MS,
+  mount_component: LS,
+  noop: ES,
+  safe_not_equal: RS,
+  set_style: WS,
+  space: AS,
+  transition_in: XS,
+  transition_out: YS,
+  update_keyed_each: HS
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: uS,
-  attr: dS,
-  detach: hS,
-  element: mS,
-  init: gS,
-  insert: bS,
-  noop: pS,
-  safe_not_equal: wS,
-  set_style: vS,
-  toggle_class: kS
+  SvelteComponent: IS,
+  attr: jS,
+  detach: TS,
+  element: $S,
+  init: FS,
+  insert: OS,
+  noop: xS,
+  safe_not_equal: VS,
+  set_style: NS,
+  toggle_class: US
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: yS,
-  add_flush_callback: CS,
-  assign: SS,
-  bind: qS,
-  binding_callbacks: zS,
-  create_component: BS,
-  destroy_component: DS,
-  detach: LS,
-  flush: MS,
-  get_spread_object: ES,
-  get_spread_update: RS,
-  init: WS,
-  insert: AS,
-  mount_component: XS,
-  safe_not_equal: YS,
-  space: IS,
-  transition_in: HS,
-  transition_out: jS
+  SvelteComponent: PS,
+  add_flush_callback: KS,
+  assign: ZS,
+  bind: GS,
+  binding_callbacks: JS,
+  create_component: QS,
+  destroy_component: eq,
+  detach: tq,
+  flush: nq,
+  get_spread_object: lq,
+  get_spread_update: iq,
+  init: oq,
+  insert: sq,
+  mount_component: aq,
+  safe_not_equal: rq,
+  space: _q,
+  transition_in: cq,
+  transition_out: uq
 } = window.__gradio__svelte__internal;
-var L_ = (i) => {
-  throw TypeError(i);
-}, M_ = (i, e, t) => e.has(i) || L_("Cannot " + t), pi = (i, e, t) => (M_(i, e, "read from private field"), e.get(i)), jg = (i, e, t) => e.has(i) ? L_("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(i) : e.set(i, t), Tg = (i, e, t, n) => (M_(i, e, "write to private field"), e.set(i, t), t);
+var x_ = (l) => {
+  throw TypeError(l);
+}, V_ = (l, e, t) => e.has(l) || x_("Cannot " + t), zl = (l, e, t) => (V_(l, e, "read from private field"), e.get(l)), cb = (l, e, t) => e.has(l) ? x_("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(l) : e.set(l, t), ub = (l, e, t, n) => (V_(l, e, "write to private field"), e.set(l, t), t);
 new Intl.Collator(0, { numeric: 1 }).compare;
 typeof process < "u" && process.versions && process.versions.node;
-var sn;
-class TS extends TransformStream {
+var un;
+class fq extends TransformStream {
   /** Constructs a new instance. */
   constructor(e = { allowCR: !1 }) {
     super({
       transform: (t, n) => {
-        for (t = pi(this, sn) + t; ; ) {
-          const l = t.indexOf(`
+        for (t = zl(this, un) + t; ; ) {
+          const i = t.indexOf(`
 `), o = e.allowCR ? t.indexOf("\r") : -1;
-          if (o !== -1 && o !== t.length - 1 && (l === -1 || l - 1 > o)) {
+          if (o !== -1 && o !== t.length - 1 && (i === -1 || i - 1 > o)) {
             n.enqueue(t.slice(0, o)), t = t.slice(o + 1);
             continue;
           }
-          if (l === -1)
+          if (i === -1)
             break;
-          const s = t[l - 1] === "\r" ? l - 1 : l;
-          n.enqueue(t.slice(0, s)), t = t.slice(l + 1);
+          const s = t[i - 1] === "\r" ? i - 1 : i;
+          n.enqueue(t.slice(0, s)), t = t.slice(i + 1);
         }
-        Tg(this, sn, t);
+        ub(this, un, t);
       },
       flush: (t) => {
-        if (pi(this, sn) === "")
+        if (zl(this, un) === "")
           return;
-        const n = e.allowCR && pi(this, sn).endsWith("\r") ? pi(this, sn).slice(0, -1) : pi(this, sn);
+        const n = e.allowCR && zl(this, un).endsWith("\r") ? zl(this, un).slice(0, -1) : zl(this, un);
         t.enqueue(n);
       }
-    }), jg(this, sn, "");
+    }), cb(this, un, "");
   }
 }
-sn = /* @__PURE__ */ new WeakMap();
+un = /* @__PURE__ */ new WeakMap();
 const {
-  SvelteComponent: Fg,
-  append: E_,
+  SvelteComponent: fb,
+  append: N_,
   attr: de,
-  bubble: Og,
-  check_outros: $g,
-  create_slot: R_,
-  detach: Ii,
-  element: Fl,
-  empty: xg,
-  get_all_dirty_from_scope: W_,
-  get_slot_changes: A_,
-  group_outros: Ng,
-  init: Ug,
-  insert: Hi,
-  listen: Vg,
-  safe_not_equal: Pg,
-  set_style: Ue,
-  space: X_,
-  src_url_equal: zl,
-  toggle_class: Kn,
-  transition_in: Bl,
-  transition_out: Dl,
-  update_slot_base: Y_
+  bubble: db,
+  check_outros: hb,
+  create_slot: U_,
+  detach: xl,
+  element: Ui,
+  empty: mb,
+  get_all_dirty_from_scope: P_,
+  get_slot_changes: K_,
+  group_outros: gb,
+  init: bb,
+  insert: Vl,
+  listen: pb,
+  safe_not_equal: wb,
+  set_style: Ve,
+  space: Z_,
+  src_url_equal: Wi,
+  toggle_class: el,
+  transition_in: Ai,
+  transition_out: Xi,
+  update_slot_base: G_
 } = window.__gradio__svelte__internal;
-function Kg(i) {
-  let e, t, n, l, o, s, r = (
+function vb(l) {
+  let e, t, n, i, o, s, r = (
     /*icon*/
-    i[7] && Na(i)
+    l[7] && or(l)
   );
   const a = (
     /*#slots*/
-    i[12].default
-  ), _ = R_(
+    l[12].default
+  ), _ = U_(
     a,
-    i,
+    l,
     /*$$scope*/
-    i[11],
+    l[11],
     null
   );
   return {
     c() {
-      e = Fl("button"), r && r.c(), t = X_(), _ && _.c(), de(e, "class", n = /*size*/
-      i[4] + " " + /*variant*/
-      i[3] + " " + /*elem_classes*/
-      i[1].join(" ") + " svelte-8huxfn"), de(
+      e = Ui("button"), r && r.c(), t = Z_(), _ && _.c(), de(e, "class", n = /*size*/
+      l[4] + " " + /*variant*/
+      l[3] + " " + /*elem_classes*/
+      l[1].join(" ") + " svelte-8huxfn"), de(
         e,
         "id",
         /*elem_id*/
-        i[0]
+        l[0]
       ), e.disabled = /*disabled*/
-      i[8], Kn(e, "hidden", !/*visible*/
-      i[2]), Ue(
+      l[8], el(e, "hidden", !/*visible*/
+      l[2]), Ve(
         e,
         "flex-grow",
         /*scale*/
-        i[9]
-      ), Ue(
+        l[9]
+      ), Ve(
         e,
         "width",
         /*scale*/
-        i[9] === 0 ? "fit-content" : null
-      ), Ue(e, "min-width", typeof /*min_width*/
-      i[10] == "number" ? `calc(min(${/*min_width*/
-      i[10]}px, 100%))` : null);
+        l[9] === 0 ? "fit-content" : null
+      ), Ve(e, "min-width", typeof /*min_width*/
+      l[10] == "number" ? `calc(min(${/*min_width*/
+      l[10]}px, 100%))` : null);
     },
-    m(c, u) {
-      Hi(c, e, u), r && r.m(e, null), E_(e, t), _ && _.m(e, null), l = !0, o || (s = Vg(
+    m(c, f) {
+      Vl(c, e, f), r && r.m(e, null), N_(e, t), _ && _.m(e, null), i = !0, o || (s = pb(
         e,
         "click",
         /*click_handler*/
-        i[13]
+        l[13]
       ), o = !0);
     },
-    p(c, u) {
+    p(c, f) {
       /*icon*/
-      c[7] ? r ? r.p(c, u) : (r = Na(c), r.c(), r.m(e, t)) : r && (r.d(1), r = null), _ && _.p && (!l || u & /*$$scope*/
-      2048) && Y_(
+      c[7] ? r ? r.p(c, f) : (r = or(c), r.c(), r.m(e, t)) : r && (r.d(1), r = null), _ && _.p && (!i || f & /*$$scope*/
+      2048) && G_(
         _,
         a,
         c,
         /*$$scope*/
         c[11],
-        l ? A_(
+        i ? K_(
           a,
           /*$$scope*/
           c[11],
-          u,
+          f,
           null
-        ) : W_(
+        ) : P_(
           /*$$scope*/
           c[11]
         ),
         null
-      ), (!l || u & /*size, variant, elem_classes*/
+      ), (!i || f & /*size, variant, elem_classes*/
       26 && n !== (n = /*size*/
       c[4] + " " + /*variant*/
       c[3] + " " + /*elem_classes*/
-      c[1].join(" ") + " svelte-8huxfn")) && de(e, "class", n), (!l || u & /*elem_id*/
+      c[1].join(" ") + " svelte-8huxfn")) && de(e, "class", n), (!i || f & /*elem_id*/
       1) && de(
         e,
         "id",
         /*elem_id*/
         c[0]
-      ), (!l || u & /*disabled*/
+      ), (!i || f & /*disabled*/
       256) && (e.disabled = /*disabled*/
-      c[8]), (!l || u & /*size, variant, elem_classes, visible*/
-      30) && Kn(e, "hidden", !/*visible*/
-      c[2]), u & /*scale*/
-      512 && Ue(
+      c[8]), (!i || f & /*size, variant, elem_classes, visible*/
+      30) && el(e, "hidden", !/*visible*/
+      c[2]), f & /*scale*/
+      512 && Ve(
         e,
         "flex-grow",
         /*scale*/
         c[9]
-      ), u & /*scale*/
-      512 && Ue(
+      ), f & /*scale*/
+      512 && Ve(
         e,
         "width",
         /*scale*/
         c[9] === 0 ? "fit-content" : null
-      ), u & /*min_width*/
-      1024 && Ue(e, "min-width", typeof /*min_width*/
+      ), f & /*min_width*/
+      1024 && Ve(e, "min-width", typeof /*min_width*/
       c[10] == "number" ? `calc(min(${/*min_width*/
       c[10]}px, 100%))` : null);
     },
     i(c) {
-      l || (Bl(_, c), l = !0);
+      i || (Ai(_, c), i = !0);
     },
     o(c) {
-      Dl(_, c), l = !1;
+      Xi(_, c), i = !1;
     },
     d(c) {
-      c && Ii(e), r && r.d(), _ && _.d(c), o = !1, s();
+      c && xl(e), r && r.d(), _ && _.d(c), o = !1, s();
     }
   };
 }
-function Zg(i) {
-  let e, t, n, l, o = (
+function kb(l) {
+  let e, t, n, i, o = (
     /*icon*/
-    i[7] && Ua(i)
+    l[7] && sr(l)
   );
   const s = (
     /*#slots*/
-    i[12].default
-  ), r = R_(
+    l[12].default
+  ), r = U_(
     s,
-    i,
+    l,
     /*$$scope*/
-    i[11],
+    l[11],
     null
   );
   return {
     c() {
-      e = Fl("a"), o && o.c(), t = X_(), r && r.c(), de(
+      e = Ui("a"), o && o.c(), t = Z_(), r && r.c(), de(
         e,
         "href",
         /*link*/
-        i[6]
+        l[6]
       ), de(e, "rel", "noopener noreferrer"), de(
         e,
         "aria-disabled",
         /*disabled*/
-        i[8]
+        l[8]
       ), de(e, "class", n = /*size*/
-      i[4] + " " + /*variant*/
-      i[3] + " " + /*elem_classes*/
-      i[1].join(" ") + " svelte-8huxfn"), de(
+      l[4] + " " + /*variant*/
+      l[3] + " " + /*elem_classes*/
+      l[1].join(" ") + " svelte-8huxfn"), de(
         e,
         "id",
         /*elem_id*/
-        i[0]
-      ), Kn(e, "hidden", !/*visible*/
-      i[2]), Kn(
+        l[0]
+      ), el(e, "hidden", !/*visible*/
+      l[2]), el(
         e,
         "disabled",
         /*disabled*/
-        i[8]
-      ), Ue(
+        l[8]
+      ), Ve(
         e,
         "flex-grow",
         /*scale*/
-        i[9]
-      ), Ue(
+        l[9]
+      ), Ve(
         e,
         "pointer-events",
         /*disabled*/
-        i[8] ? "none" : null
-      ), Ue(
+        l[8] ? "none" : null
+      ), Ve(
         e,
         "width",
         /*scale*/
-        i[9] === 0 ? "fit-content" : null
-      ), Ue(e, "min-width", typeof /*min_width*/
-      i[10] == "number" ? `calc(min(${/*min_width*/
-      i[10]}px, 100%))` : null);
+        l[9] === 0 ? "fit-content" : null
+      ), Ve(e, "min-width", typeof /*min_width*/
+      l[10] == "number" ? `calc(min(${/*min_width*/
+      l[10]}px, 100%))` : null);
     },
     m(a, _) {
-      Hi(a, e, _), o && o.m(e, null), E_(e, t), r && r.m(e, null), l = !0;
+      Vl(a, e, _), o && o.m(e, null), N_(e, t), r && r.m(e, null), i = !0;
     },
     p(a, _) {
       /*icon*/
-      a[7] ? o ? o.p(a, _) : (o = Ua(a), o.c(), o.m(e, t)) : o && (o.d(1), o = null), r && r.p && (!l || _ & /*$$scope*/
-      2048) && Y_(
+      a[7] ? o ? o.p(a, _) : (o = sr(a), o.c(), o.m(e, t)) : o && (o.d(1), o = null), r && r.p && (!i || _ & /*$$scope*/
+      2048) && G_(
         r,
         s,
         a,
         /*$$scope*/
         a[11],
-        l ? A_(
+        i ? K_(
           s,
           /*$$scope*/
           a[11],
           _,
           null
-        ) : W_(
+        ) : P_(
           /*$$scope*/
           a[11]
         ),
         null
-      ), (!l || _ & /*link*/
+      ), (!i || _ & /*link*/
       64) && de(
         e,
         "href",
         /*link*/
         a[6]
-      ), (!l || _ & /*disabled*/
+      ), (!i || _ & /*disabled*/
       256) && de(
         e,
         "aria-disabled",
         /*disabled*/
         a[8]
-      ), (!l || _ & /*size, variant, elem_classes*/
+      ), (!i || _ & /*size, variant, elem_classes*/
       26 && n !== (n = /*size*/
       a[4] + " " + /*variant*/
       a[3] + " " + /*elem_classes*/
-      a[1].join(" ") + " svelte-8huxfn")) && de(e, "class", n), (!l || _ & /*elem_id*/
+      a[1].join(" ") + " svelte-8huxfn")) && de(e, "class", n), (!i || _ & /*elem_id*/
       1) && de(
         e,
         "id",
         /*elem_id*/
         a[0]
-      ), (!l || _ & /*size, variant, elem_classes, visible*/
-      30) && Kn(e, "hidden", !/*visible*/
-      a[2]), (!l || _ & /*size, variant, elem_classes, disabled*/
-      282) && Kn(
+      ), (!i || _ & /*size, variant, elem_classes, visible*/
+      30) && el(e, "hidden", !/*visible*/
+      a[2]), (!i || _ & /*size, variant, elem_classes, disabled*/
+      282) && el(
         e,
         "disabled",
         /*disabled*/
         a[8]
       ), _ & /*scale*/
-      512 && Ue(
+      512 && Ve(
         e,
         "flex-grow",
         /*scale*/
         a[9]
       ), _ & /*disabled*/
-      256 && Ue(
+      256 && Ve(
         e,
         "pointer-events",
         /*disabled*/
         a[8] ? "none" : null
       ), _ & /*scale*/
-      512 && Ue(
+      512 && Ve(
         e,
         "width",
         /*scale*/
         a[9] === 0 ? "fit-content" : null
       ), _ & /*min_width*/
-      1024 && Ue(e, "min-width", typeof /*min_width*/
+      1024 && Ve(e, "min-width", typeof /*min_width*/
       a[10] == "number" ? `calc(min(${/*min_width*/
       a[10]}px, 100%))` : null);
     },
     i(a) {
-      l || (Bl(r, a), l = !0);
+      i || (Ai(r, a), i = !0);
     },
     o(a) {
-      Dl(r, a), l = !1;
+      Xi(r, a), i = !1;
     },
     d(a) {
-      a && Ii(e), o && o.d(), r && r.d(a);
+      a && xl(e), o && o.d(), r && r.d(a);
     }
   };
 }
-function Na(i) {
+function or(l) {
   let e, t, n;
   return {
     c() {
-      e = Fl("img"), de(e, "class", "button-icon svelte-8huxfn"), zl(e.src, t = /*icon*/
-      i[7].url) || de(e, "src", t), de(e, "alt", n = `${/*value*/
-      i[5]} icon`);
+      e = Ui("img"), de(e, "class", "button-icon svelte-8huxfn"), Wi(e.src, t = /*icon*/
+      l[7].url) || de(e, "src", t), de(e, "alt", n = `${/*value*/
+      l[5]} icon`);
     },
-    m(l, o) {
-      Hi(l, e, o);
+    m(i, o) {
+      Vl(i, e, o);
     },
-    p(l, o) {
+    p(i, o) {
       o & /*icon*/
-      128 && !zl(e.src, t = /*icon*/
-      l[7].url) && de(e, "src", t), o & /*value*/
+      128 && !Wi(e.src, t = /*icon*/
+      i[7].url) && de(e, "src", t), o & /*value*/
       32 && n !== (n = `${/*value*/
-      l[5]} icon`) && de(e, "alt", n);
+      i[5]} icon`) && de(e, "alt", n);
     },
-    d(l) {
-      l && Ii(e);
+    d(i) {
+      i && xl(e);
     }
   };
 }
-function Ua(i) {
+function sr(l) {
   let e, t, n;
   return {
     c() {
-      e = Fl("img"), de(e, "class", "button-icon svelte-8huxfn"), zl(e.src, t = /*icon*/
-      i[7].url) || de(e, "src", t), de(e, "alt", n = `${/*value*/
-      i[5]} icon`);
+      e = Ui("img"), de(e, "class", "button-icon svelte-8huxfn"), Wi(e.src, t = /*icon*/
+      l[7].url) || de(e, "src", t), de(e, "alt", n = `${/*value*/
+      l[5]} icon`);
     },
-    m(l, o) {
-      Hi(l, e, o);
+    m(i, o) {
+      Vl(i, e, o);
     },
-    p(l, o) {
+    p(i, o) {
       o & /*icon*/
-      128 && !zl(e.src, t = /*icon*/
-      l[7].url) && de(e, "src", t), o & /*value*/
+      128 && !Wi(e.src, t = /*icon*/
+      i[7].url) && de(e, "src", t), o & /*value*/
       32 && n !== (n = `${/*value*/
-      l[5]} icon`) && de(e, "alt", n);
+      i[5]} icon`) && de(e, "alt", n);
     },
-    d(l) {
-      l && Ii(e);
+    d(i) {
+      i && xl(e);
     }
   };
 }
-function Gg(i) {
-  let e, t, n, l;
-  const o = [Zg, Kg], s = [];
+function yb(l) {
+  let e, t, n, i;
+  const o = [kb, vb], s = [];
   function r(a, _) {
     return (
       /*link*/
@@ -7414,37 +7482,37 @@ function Gg(i) {
       a[6].length > 0 ? 0 : 1
     );
   }
-  return e = r(i), t = s[e] = o[e](i), {
+  return e = r(l), t = s[e] = o[e](l), {
     c() {
-      t.c(), n = xg();
+      t.c(), n = mb();
     },
     m(a, _) {
-      s[e].m(a, _), Hi(a, n, _), l = !0;
+      s[e].m(a, _), Vl(a, n, _), i = !0;
     },
     p(a, [_]) {
       let c = e;
-      e = r(a), e === c ? s[e].p(a, _) : (Ng(), Dl(s[c], 1, 1, () => {
+      e = r(a), e === c ? s[e].p(a, _) : (gb(), Xi(s[c], 1, 1, () => {
         s[c] = null;
-      }), $g(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), Bl(t, 1), t.m(n.parentNode, n));
+      }), hb(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), Ai(t, 1), t.m(n.parentNode, n));
     },
     i(a) {
-      l || (Bl(t), l = !0);
+      i || (Ai(t), i = !0);
     },
     o(a) {
-      Dl(t), l = !1;
+      Xi(t), i = !1;
     },
     d(a) {
-      a && Ii(n), s[e].d(a);
+      a && xl(n), s[e].d(a);
     }
   };
 }
-function Jg(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e, { elem_id: o = "" } = e, { elem_classes: s = [] } = e, { visible: r = !0 } = e, { variant: a = "secondary" } = e, { size: _ = "lg" } = e, { value: c = null } = e, { link: u = null } = e, { icon: f = null } = e, { disabled: d = !1 } = e, { scale: h = null } = e, { min_width: m = void 0 } = e;
+function Cb(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e, { elem_id: o = "" } = e, { elem_classes: s = [] } = e, { visible: r = !0 } = e, { variant: a = "secondary" } = e, { size: _ = "lg" } = e, { value: c = null } = e, { link: f = null } = e, { icon: u = null } = e, { disabled: d = !1 } = e, { scale: h = null } = e, { min_width: m = void 0 } = e;
   function g(b) {
-    Og.call(this, i, b);
+    db.call(this, l, b);
   }
-  return i.$$set = (b) => {
-    "elem_id" in b && t(0, o = b.elem_id), "elem_classes" in b && t(1, s = b.elem_classes), "visible" in b && t(2, r = b.visible), "variant" in b && t(3, a = b.variant), "size" in b && t(4, _ = b.size), "value" in b && t(5, c = b.value), "link" in b && t(6, u = b.link), "icon" in b && t(7, f = b.icon), "disabled" in b && t(8, d = b.disabled), "scale" in b && t(9, h = b.scale), "min_width" in b && t(10, m = b.min_width), "$$scope" in b && t(11, l = b.$$scope);
+  return l.$$set = (b) => {
+    "elem_id" in b && t(0, o = b.elem_id), "elem_classes" in b && t(1, s = b.elem_classes), "visible" in b && t(2, r = b.visible), "variant" in b && t(3, a = b.variant), "size" in b && t(4, _ = b.size), "value" in b && t(5, c = b.value), "link" in b && t(6, f = b.link), "icon" in b && t(7, u = b.icon), "disabled" in b && t(8, d = b.disabled), "scale" in b && t(9, h = b.scale), "min_width" in b && t(10, m = b.min_width), "$$scope" in b && t(11, i = b.$$scope);
   }, [
     o,
     s,
@@ -7452,19 +7520,19 @@ function Jg(i, e, t) {
     a,
     _,
     c,
-    u,
     f,
+    u,
     d,
     h,
     m,
-    l,
+    i,
     n,
     g
   ];
 }
-class ss extends Fg {
+class bs extends fb {
   constructor(e) {
-    super(), Ug(this, e, Jg, Gg, Pg, {
+    super(), bb(this, e, Cb, yb, wb, {
       elem_id: 0,
       elem_classes: 1,
       visible: 2,
@@ -7480,110 +7548,110 @@ class ss extends Fg {
   }
 }
 const {
-  SvelteComponent: FS,
-  create_component: OS,
-  destroy_component: $S,
-  detach: xS,
-  init: NS,
-  insert: US,
-  mount_component: VS,
-  safe_not_equal: PS,
-  set_data: KS,
-  text: ZS,
-  transition_in: GS,
-  transition_out: JS
+  SvelteComponent: dq,
+  create_component: hq,
+  destroy_component: mq,
+  detach: gq,
+  init: bq,
+  insert: pq,
+  mount_component: wq,
+  safe_not_equal: vq,
+  set_data: kq,
+  text: yq,
+  transition_in: Cq,
+  transition_out: Sq
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: Qg,
-  add_render_callback: I_,
-  append: sl,
+  SvelteComponent: Sb,
+  add_render_callback: J_,
+  append: di,
   attr: et,
-  binding_callbacks: Va,
-  check_outros: eb,
-  create_bidirectional_transition: Pa,
-  destroy_each: tb,
-  detach: Ei,
-  element: Ll,
-  empty: nb,
-  ensure_array_like: Ka,
-  group_outros: ib,
-  init: lb,
-  insert: Ri,
-  listen: as,
-  prevent_default: ob,
-  run_all: sb,
-  safe_not_equal: ab,
-  set_data: rb,
-  set_style: On,
-  space: rs,
-  text: _b,
-  toggle_class: zt,
-  transition_in: $o,
-  transition_out: Za
-} = window.__gradio__svelte__internal, { createEventDispatcher: cb } = window.__gradio__svelte__internal;
-function Ga(i, e, t) {
-  const n = i.slice();
+  binding_callbacks: ar,
+  check_outros: qb,
+  create_bidirectional_transition: rr,
+  destroy_each: zb,
+  detach: jl,
+  element: Yi,
+  empty: Bb,
+  ensure_array_like: _r,
+  group_outros: Db,
+  init: Mb,
+  insert: Tl,
+  listen: ps,
+  prevent_default: Lb,
+  run_all: Eb,
+  safe_not_equal: Rb,
+  set_data: Wb,
+  set_style: Pn,
+  space: ws,
+  text: Ab,
+  toggle_class: Dt,
+  transition_in: es,
+  transition_out: cr
+} = window.__gradio__svelte__internal, { createEventDispatcher: Xb } = window.__gradio__svelte__internal;
+function ur(l, e, t) {
+  const n = l.slice();
   return n[26] = e[t], n;
 }
-function Ja(i) {
-  let e, t, n, l, o, s = Ka(
+function fr(l) {
+  let e, t, n, i, o, s = _r(
     /*filtered_indices*/
-    i[1]
+    l[1]
   ), r = [];
   for (let a = 0; a < s.length; a += 1)
-    r[a] = Qa(Ga(i, s, a));
+    r[a] = dr(ur(l, s, a));
   return {
     c() {
-      e = Ll("ul");
+      e = Yi("ul");
       for (let a = 0; a < r.length; a += 1)
         r[a].c();
-      et(e, "class", "options svelte-yuohum"), et(e, "role", "listbox"), On(
+      et(e, "class", "options svelte-yuohum"), et(e, "role", "listbox"), Pn(
         e,
         "bottom",
         /*bottom*/
-        i[9]
-      ), On(e, "max-height", `calc(${/*max_height*/
-      i[10]}px - var(--window-padding))`), On(
+        l[9]
+      ), Pn(e, "max-height", `calc(${/*max_height*/
+      l[10]}px - var(--window-padding))`), Pn(
         e,
         "width",
         /*input_width*/
-        i[8] + "px"
+        l[8] + "px"
       );
     },
     m(a, _) {
-      Ri(a, e, _);
+      Tl(a, e, _);
       for (let c = 0; c < r.length; c += 1)
         r[c] && r[c].m(e, null);
-      i[22](e), n = !0, l || (o = as(e, "mousedown", ob(
+      l[22](e), n = !0, i || (o = ps(e, "mousedown", Lb(
         /*mousedown_handler*/
-        i[21]
-      )), l = !0);
+        l[21]
+      )), i = !0);
     },
     p(a, _) {
       if (_ & /*filtered_indices, choices, selected_indices, active_index*/
       51) {
-        s = Ka(
+        s = _r(
           /*filtered_indices*/
           a[1]
         );
         let c;
         for (c = 0; c < s.length; c += 1) {
-          const u = Ga(a, s, c);
-          r[c] ? r[c].p(u, _) : (r[c] = Qa(u), r[c].c(), r[c].m(e, null));
+          const f = ur(a, s, c);
+          r[c] ? r[c].p(f, _) : (r[c] = dr(f), r[c].c(), r[c].m(e, null));
         }
         for (; c < r.length; c += 1)
           r[c].d(1);
         r.length = s.length;
       }
       _ & /*bottom*/
-      512 && On(
+      512 && Pn(
         e,
         "bottom",
         /*bottom*/
         a[9]
       ), _ & /*max_height*/
-      1024 && On(e, "max-height", `calc(${/*max_height*/
+      1024 && Pn(e, "max-height", `calc(${/*max_height*/
       a[10]}px - var(--window-padding))`), _ & /*input_width*/
-      256 && On(
+      256 && Pn(
         e,
         "width",
         /*input_width*/
@@ -7591,97 +7659,97 @@ function Ja(i) {
       );
     },
     i(a) {
-      n || (a && I_(() => {
-        n && (t || (t = Pa(e, ea, { duration: 200, y: 5 }, !0)), t.run(1));
+      n || (a && J_(() => {
+        n && (t || (t = rr(e, ua, { duration: 200, y: 5 }, !0)), t.run(1));
       }), n = !0);
     },
     o(a) {
-      a && (t || (t = Pa(e, ea, { duration: 200, y: 5 }, !1)), t.run(0)), n = !1;
+      a && (t || (t = rr(e, ua, { duration: 200, y: 5 }, !1)), t.run(0)), n = !1;
     },
     d(a) {
-      a && Ei(e), tb(r, a), i[22](null), a && t && t.end(), l = !1, o();
+      a && jl(e), zb(r, a), l[22](null), a && t && t.end(), i = !1, o();
     }
   };
 }
-function Qa(i) {
-  let e, t, n, l = (
+function dr(l) {
+  let e, t, n, i = (
     /*choices*/
-    i[0][
+    l[0][
       /*index*/
-      i[26]
+      l[26]
     ][0] + ""
   ), o, s, r, a, _;
   return {
     c() {
-      e = Ll("li"), t = Ll("span"), t.textContent = "✓", n = rs(), o = _b(l), s = rs(), et(t, "class", "inner-item svelte-yuohum"), zt(t, "hide", !/*selected_indices*/
-      i[4].includes(
+      e = Yi("li"), t = Yi("span"), t.textContent = "✓", n = ws(), o = Ab(i), s = ws(), et(t, "class", "inner-item svelte-yuohum"), Dt(t, "hide", !/*selected_indices*/
+      l[4].includes(
         /*index*/
-        i[26]
+        l[26]
       )), et(e, "class", "item svelte-yuohum"), et(e, "data-index", r = /*index*/
-      i[26]), et(e, "aria-label", a = /*choices*/
-      i[0][
+      l[26]), et(e, "aria-label", a = /*choices*/
+      l[0][
         /*index*/
-        i[26]
+        l[26]
       ][0]), et(e, "data-testid", "dropdown-option"), et(e, "role", "option"), et(e, "aria-selected", _ = /*selected_indices*/
-      i[4].includes(
+      l[4].includes(
         /*index*/
-        i[26]
-      )), zt(
+        l[26]
+      )), Dt(
         e,
         "selected",
         /*selected_indices*/
-        i[4].includes(
+        l[4].includes(
           /*index*/
-          i[26]
+          l[26]
         )
-      ), zt(
+      ), Dt(
         e,
         "active",
         /*index*/
-        i[26] === /*active_index*/
-        i[5]
-      ), zt(
+        l[26] === /*active_index*/
+        l[5]
+      ), Dt(
         e,
         "bg-gray-100",
         /*index*/
-        i[26] === /*active_index*/
-        i[5]
-      ), zt(
+        l[26] === /*active_index*/
+        l[5]
+      ), Dt(
         e,
         "dark:bg-gray-600",
         /*index*/
-        i[26] === /*active_index*/
-        i[5]
+        l[26] === /*active_index*/
+        l[5]
       );
     },
-    m(c, u) {
-      Ri(c, e, u), sl(e, t), sl(e, n), sl(e, o), sl(e, s);
+    m(c, f) {
+      Tl(c, e, f), di(e, t), di(e, n), di(e, o), di(e, s);
     },
-    p(c, u) {
-      u & /*selected_indices, filtered_indices*/
-      18 && zt(t, "hide", !/*selected_indices*/
+    p(c, f) {
+      f & /*selected_indices, filtered_indices*/
+      18 && Dt(t, "hide", !/*selected_indices*/
       c[4].includes(
         /*index*/
         c[26]
-      )), u & /*choices, filtered_indices*/
-      3 && l !== (l = /*choices*/
+      )), f & /*choices, filtered_indices*/
+      3 && i !== (i = /*choices*/
       c[0][
         /*index*/
         c[26]
-      ][0] + "") && rb(o, l), u & /*filtered_indices*/
+      ][0] + "") && Wb(o, i), f & /*filtered_indices*/
       2 && r !== (r = /*index*/
-      c[26]) && et(e, "data-index", r), u & /*choices, filtered_indices*/
+      c[26]) && et(e, "data-index", r), f & /*choices, filtered_indices*/
       3 && a !== (a = /*choices*/
       c[0][
         /*index*/
         c[26]
-      ][0]) && et(e, "aria-label", a), u & /*selected_indices, filtered_indices*/
+      ][0]) && et(e, "aria-label", a), f & /*selected_indices, filtered_indices*/
       18 && _ !== (_ = /*selected_indices*/
       c[4].includes(
         /*index*/
         c[26]
-      )) && et(e, "aria-selected", _), u & /*selected_indices, filtered_indices*/
-      18 && zt(
+      )) && et(e, "aria-selected", _), f & /*selected_indices, filtered_indices*/
+      18 && Dt(
         e,
         "selected",
         /*selected_indices*/
@@ -7689,22 +7757,22 @@ function Qa(i) {
           /*index*/
           c[26]
         )
-      ), u & /*filtered_indices, active_index*/
-      34 && zt(
+      ), f & /*filtered_indices, active_index*/
+      34 && Dt(
         e,
         "active",
         /*index*/
         c[26] === /*active_index*/
         c[5]
-      ), u & /*filtered_indices, active_index*/
-      34 && zt(
+      ), f & /*filtered_indices, active_index*/
+      34 && Dt(
         e,
         "bg-gray-100",
         /*index*/
         c[26] === /*active_index*/
         c[5]
-      ), u & /*filtered_indices, active_index*/
-      34 && zt(
+      ), f & /*filtered_indices, active_index*/
+      34 && Dt(
         e,
         "dark:bg-gray-600",
         /*index*/
@@ -7713,110 +7781,110 @@ function Qa(i) {
       );
     },
     d(c) {
-      c && Ei(e);
+      c && jl(e);
     }
   };
 }
-function fb(i) {
-  let e, t, n, l, o;
-  I_(
+function Yb(l) {
+  let e, t, n, i, o;
+  J_(
     /*onwindowresize*/
-    i[19]
+    l[19]
   );
   let s = (
     /*show_options*/
-    i[2] && !/*disabled*/
-    i[3] && Ja(i)
+    l[2] && !/*disabled*/
+    l[3] && fr(l)
   );
   return {
     c() {
-      e = Ll("div"), t = rs(), s && s.c(), n = nb(), et(e, "class", "reference");
+      e = Yi("div"), t = ws(), s && s.c(), n = Bb(), et(e, "class", "reference");
     },
     m(r, a) {
-      Ri(r, e, a), i[20](e), Ri(r, t, a), s && s.m(r, a), Ri(r, n, a), l || (o = [
-        as(
+      Tl(r, e, a), l[20](e), Tl(r, t, a), s && s.m(r, a), Tl(r, n, a), i || (o = [
+        ps(
           window,
           "scroll",
           /*scroll_listener*/
-          i[12]
+          l[12]
         ),
-        as(
+        ps(
           window,
           "resize",
           /*onwindowresize*/
-          i[19]
+          l[19]
         )
-      ], l = !0);
+      ], i = !0);
     },
     p(r, [a]) {
       /*show_options*/
       r[2] && !/*disabled*/
       r[3] ? s ? (s.p(r, a), a & /*show_options, disabled*/
-      12 && $o(s, 1)) : (s = Ja(r), s.c(), $o(s, 1), s.m(n.parentNode, n)) : s && (ib(), Za(s, 1, 1, () => {
+      12 && es(s, 1)) : (s = fr(r), s.c(), es(s, 1), s.m(n.parentNode, n)) : s && (Db(), cr(s, 1, 1, () => {
         s = null;
-      }), eb());
+      }), qb());
     },
     i(r) {
-      $o(s);
+      es(s);
     },
     o(r) {
-      Za(s);
+      cr(s);
     },
     d(r) {
-      r && (Ei(e), Ei(t), Ei(n)), i[20](null), s && s.d(r), l = !1, sb(o);
+      r && (jl(e), jl(t), jl(n)), l[20](null), s && s.d(r), i = !1, Eb(o);
     }
   };
 }
-function ub(i, e, t) {
-  var n, l;
-  let { choices: o } = e, { filtered_indices: s } = e, { show_options: r = !1 } = e, { disabled: a = !1 } = e, { selected_indices: _ = [] } = e, { active_index: c = null } = e, u, f, d, h, m, g, b, w, p;
-  function q() {
-    const { top: S, bottom: Y } = m.getBoundingClientRect();
-    t(16, u = S), t(17, f = p - Y);
+function Hb(l, e, t) {
+  var n, i;
+  let { choices: o } = e, { filtered_indices: s } = e, { show_options: r = !1 } = e, { disabled: a = !1 } = e, { selected_indices: _ = [] } = e, { active_index: c = null } = e, f, u, d, h, m, g, b, v, p;
+  function y() {
+    const { top: w, bottom: L } = m.getBoundingClientRect();
+    t(16, f = w), t(17, u = p - L);
   }
-  let M = null;
+  let q = null;
   function D() {
-    r && (M !== null && clearTimeout(M), M = setTimeout(
+    r && (q !== null && clearTimeout(q), q = setTimeout(
       () => {
-        q(), M = null;
+        y(), q = null;
       },
       10
     ));
   }
-  const C = cb();
-  function k() {
+  const M = Xb();
+  function S() {
     t(11, p = window.innerHeight);
   }
-  function y(S) {
-    Va[S ? "unshift" : "push"](() => {
-      m = S, t(6, m);
+  function C(w) {
+    ar[w ? "unshift" : "push"](() => {
+      m = w, t(6, m);
     });
   }
-  const B = (S) => C("change", S);
-  function A(S) {
-    Va[S ? "unshift" : "push"](() => {
-      g = S, t(7, g);
+  const X = (w) => M("change", w);
+  function I(w) {
+    ar[w ? "unshift" : "push"](() => {
+      g = w, t(7, g);
     });
   }
-  return i.$$set = (S) => {
-    "choices" in S && t(0, o = S.choices), "filtered_indices" in S && t(1, s = S.filtered_indices), "show_options" in S && t(2, r = S.show_options), "disabled" in S && t(3, a = S.disabled), "selected_indices" in S && t(4, _ = S.selected_indices), "active_index" in S && t(5, c = S.active_index);
-  }, i.$$.update = () => {
-    if (i.$$.dirty & /*show_options, refElement, listElement, selected_indices, _a, _b, distance_from_bottom, distance_from_top, input_height*/
+  return l.$$set = (w) => {
+    "choices" in w && t(0, o = w.choices), "filtered_indices" in w && t(1, s = w.filtered_indices), "show_options" in w && t(2, r = w.show_options), "disabled" in w && t(3, a = w.disabled), "selected_indices" in w && t(4, _ = w.selected_indices), "active_index" in w && t(5, c = w.active_index);
+  }, l.$$.update = () => {
+    if (l.$$.dirty & /*show_options, refElement, listElement, selected_indices, _a, _b, distance_from_bottom, distance_from_top, input_height*/
     508116) {
       if (r && m) {
         if (g && _.length > 0) {
-          let Y = g.querySelectorAll("li");
-          for (const F of Array.from(Y))
+          let L = g.querySelectorAll("li");
+          for (const F of Array.from(L))
             if (F.getAttribute("data-index") === _[0].toString()) {
               t(14, n = g == null ? void 0 : g.scrollTo) === null || n === void 0 || n.call(g, 0, F.offsetTop);
               break;
             }
         }
-        q();
-        const S = t(15, l = m.parentElement) === null || l === void 0 ? void 0 : l.getBoundingClientRect();
-        t(18, d = (S == null ? void 0 : S.height) || 0), t(8, h = (S == null ? void 0 : S.width) || 0);
+        y();
+        const w = t(15, i = m.parentElement) === null || i === void 0 ? void 0 : i.getBoundingClientRect();
+        t(18, d = (w == null ? void 0 : w.height) || 0), t(8, h = (w == null ? void 0 : w.width) || 0);
       }
-      f > u ? (t(10, w = f), t(9, b = null)) : (t(9, b = `${f + d}px`), t(10, w = u - d));
+      u > f ? (t(10, v = u), t(9, b = null)) : (t(9, b = `${u + d}px`), t(10, v = f - d));
     }
   }, [
     o,
@@ -7829,24 +7897,24 @@ function ub(i, e, t) {
     g,
     h,
     b,
-    w,
+    v,
     p,
     D,
-    C,
+    M,
     n,
-    l,
-    u,
+    i,
     f,
+    u,
     d,
-    k,
-    y,
-    B,
-    A
+    S,
+    C,
+    X,
+    I
   ];
 }
-class db extends Qg {
+class Ib extends Sb {
   constructor(e) {
-    super(), lb(this, e, ub, fb, ab, {
+    super(), Mb(this, e, Hb, Yb, Rb, {
       choices: 0,
       filtered_indices: 1,
       show_options: 2,
@@ -7856,287 +7924,287 @@ class db extends Qg {
     });
   }
 }
-function hb(i, e) {
-  return (i % e + e) % e;
+function jb(l, e) {
+  return (l % e + e) % e;
 }
-function er(i, e) {
-  return i.reduce((t, n, l) => ((!e || n[0].toLowerCase().includes(e.toLowerCase())) && t.push(l), t), []);
+function hr(l, e) {
+  return l.reduce((t, n, i) => ((!e || n[0].toLowerCase().includes(e.toLowerCase())) && t.push(i), t), []);
 }
-function mb(i, e, t) {
-  i("change", e), t || i("input");
+function Tb(l, e, t) {
+  l("change", e), t || l("input");
 }
-function gb(i, e, t) {
-  if (i.key === "Escape")
+function $b(l, e, t) {
+  if (l.key === "Escape")
     return [!1, e];
-  if ((i.key === "ArrowDown" || i.key === "ArrowUp") && t.length >= 0)
+  if ((l.key === "ArrowDown" || l.key === "ArrowUp") && t.length >= 0)
     if (e === null)
-      e = i.key === "ArrowDown" ? t[0] : t[t.length - 1];
+      e = l.key === "ArrowDown" ? t[0] : t[t.length - 1];
     else {
-      const n = t.indexOf(e), l = i.key === "ArrowUp" ? -1 : 1;
-      e = t[hb(n + l, t.length)];
+      const n = t.indexOf(e), i = l.key === "ArrowUp" ? -1 : 1;
+      e = t[jb(n + i, t.length)];
     }
   return [!0, e];
 }
 const {
-  SvelteComponent: QS,
-  append: eq,
-  attr: tq,
-  binding_callbacks: nq,
-  check_outros: iq,
-  create_component: lq,
-  destroy_component: oq,
-  destroy_each: sq,
-  detach: aq,
-  element: rq,
-  ensure_array_like: _q,
-  group_outros: cq,
-  init: fq,
-  insert: uq,
-  listen: dq,
-  mount_component: hq,
-  prevent_default: mq,
-  run_all: gq,
-  safe_not_equal: bq,
-  set_data: pq,
-  set_input_value: wq,
-  space: vq,
-  text: kq,
-  toggle_class: yq,
-  transition_in: Cq,
-  transition_out: Sq
-} = window.__gradio__svelte__internal, { afterUpdate: qq, createEventDispatcher: zq } = window.__gradio__svelte__internal, {
-  SvelteComponent: bb,
-  append: hn,
+  SvelteComponent: qq,
+  append: zq,
+  attr: Bq,
+  binding_callbacks: Dq,
+  check_outros: Mq,
+  create_component: Lq,
+  destroy_component: Eq,
+  destroy_each: Rq,
+  detach: Wq,
+  element: Aq,
+  ensure_array_like: Xq,
+  group_outros: Yq,
+  init: Hq,
+  insert: Iq,
+  listen: jq,
+  mount_component: Tq,
+  prevent_default: $q,
+  run_all: Fq,
+  safe_not_equal: Oq,
+  set_data: xq,
+  set_input_value: Vq,
+  space: Nq,
+  text: Uq,
+  toggle_class: Pq,
+  transition_in: Kq,
+  transition_out: Zq
+} = window.__gradio__svelte__internal, { afterUpdate: Gq, createEventDispatcher: Jq } = window.__gradio__svelte__internal, {
+  SvelteComponent: Fb,
+  append: Sn,
   attr: Qe,
-  binding_callbacks: pb,
-  check_outros: wb,
-  create_component: _s,
-  destroy_component: cs,
-  detach: ys,
-  element: Nn,
-  group_outros: vb,
-  init: kb,
-  insert: Cs,
-  listen: wi,
-  mount_component: fs,
-  run_all: yb,
-  safe_not_equal: Cb,
-  set_data: Sb,
-  set_input_value: tr,
-  space: xo,
-  text: qb,
-  toggle_class: $n,
-  transition_in: Un,
-  transition_out: Bi
-} = window.__gradio__svelte__internal, { onMount: zb } = window.__gradio__svelte__internal, { createEventDispatcher: Bb, afterUpdate: Db } = window.__gradio__svelte__internal;
-function Lb(i) {
+  binding_callbacks: Ob,
+  check_outros: xb,
+  create_component: vs,
+  destroy_component: ks,
+  detach: Ws,
+  element: Zn,
+  group_outros: Vb,
+  init: Nb,
+  insert: As,
+  listen: Bl,
+  mount_component: ys,
+  run_all: Ub,
+  safe_not_equal: Pb,
+  set_data: Kb,
+  set_input_value: mr,
+  space: ts,
+  text: Zb,
+  toggle_class: Kn,
+  transition_in: Gn,
+  transition_out: Xl
+} = window.__gradio__svelte__internal, { onMount: Gb } = window.__gradio__svelte__internal, { createEventDispatcher: Jb, afterUpdate: Qb } = window.__gradio__svelte__internal;
+function e2(l) {
   let e;
   return {
     c() {
-      e = qb(
+      e = Zb(
         /*label*/
-        i[0]
+        l[0]
       );
     },
     m(t, n) {
-      Cs(t, e, n);
+      As(t, e, n);
     },
     p(t, n) {
       n[0] & /*label*/
-      1 && Sb(
+      1 && Kb(
         e,
         /*label*/
         t[0]
       );
     },
     d(t) {
-      t && ys(e);
+      t && Ws(e);
     }
   };
 }
-function nr(i) {
+function gr(l) {
   let e, t, n;
-  return t = new hs({}), {
+  return t = new qs({}), {
     c() {
-      e = Nn("div"), _s(t.$$.fragment), Qe(e, "class", "icon-wrap svelte-1m1zvyj");
+      e = Zn("div"), vs(t.$$.fragment), Qe(e, "class", "icon-wrap svelte-1m1zvyj");
     },
-    m(l, o) {
-      Cs(l, e, o), fs(t, e, null), n = !0;
+    m(i, o) {
+      As(i, e, o), ys(t, e, null), n = !0;
     },
-    i(l) {
-      n || (Un(t.$$.fragment, l), n = !0);
+    i(i) {
+      n || (Gn(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      Bi(t.$$.fragment, l), n = !1;
+    o(i) {
+      Xl(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && ys(e), cs(t);
+    d(i) {
+      i && Ws(e), ks(t);
     }
   };
 }
-function Mb(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f, d, h;
-  t = new Ar({
+function t2(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u, d, h;
+  t = new Kr({
     props: {
       show_label: (
         /*show_label*/
-        i[4]
+        l[4]
       ),
       info: (
         /*info*/
-        i[1]
+        l[1]
       ),
-      $$slots: { default: [Lb] },
-      $$scope: { ctx: i }
+      $$slots: { default: [e2] },
+      $$scope: { ctx: l }
     }
   });
   let m = !/*disabled*/
-  i[3] && nr();
-  return u = new db({
+  l[3] && gr();
+  return f = new Ib({
     props: {
       show_options: (
         /*show_options*/
-        i[12]
+        l[12]
       ),
       choices: (
         /*choices*/
-        i[2]
+        l[2]
       ),
       filtered_indices: (
         /*filtered_indices*/
-        i[10]
+        l[10]
       ),
       disabled: (
         /*disabled*/
-        i[3]
+        l[3]
       ),
       selected_indices: (
         /*selected_index*/
-        i[11] === null ? [] : [
+        l[11] === null ? [] : [
           /*selected_index*/
-          i[11]
+          l[11]
         ]
       ),
       active_index: (
         /*active_index*/
-        i[14]
+        l[14]
       )
     }
-  }), u.$on(
+  }), f.$on(
     "change",
     /*handle_option_selected*/
-    i[16]
+    l[16]
   ), {
     c() {
-      e = Nn("div"), _s(t.$$.fragment), n = xo(), l = Nn("div"), o = Nn("div"), s = Nn("div"), r = Nn("input"), _ = xo(), m && m.c(), c = xo(), _s(u.$$.fragment), Qe(r, "role", "listbox"), Qe(r, "aria-controls", "dropdown-options"), Qe(
+      e = Zn("div"), vs(t.$$.fragment), n = ts(), i = Zn("div"), o = Zn("div"), s = Zn("div"), r = Zn("input"), _ = ts(), m && m.c(), c = ts(), vs(f.$$.fragment), Qe(r, "role", "listbox"), Qe(r, "aria-controls", "dropdown-options"), Qe(
         r,
         "aria-expanded",
         /*show_options*/
-        i[12]
+        l[12]
       ), Qe(
         r,
         "aria-label",
         /*label*/
-        i[0]
+        l[0]
       ), Qe(r, "class", "border-none svelte-1m1zvyj"), r.disabled = /*disabled*/
-      i[3], Qe(r, "autocomplete", "off"), r.readOnly = a = !/*filterable*/
-      i[7], $n(r, "subdued", !/*choices_names*/
-      i[13].includes(
+      l[3], Qe(r, "autocomplete", "off"), r.readOnly = a = !/*filterable*/
+      l[7], Kn(r, "subdued", !/*choices_names*/
+      l[13].includes(
         /*input_text*/
-        i[9]
+        l[9]
       ) && !/*allow_custom_value*/
-      i[6]), Qe(s, "class", "secondary-wrap svelte-1m1zvyj"), Qe(o, "class", "wrap-inner svelte-1m1zvyj"), $n(
+      l[6]), Qe(s, "class", "secondary-wrap svelte-1m1zvyj"), Qe(o, "class", "wrap-inner svelte-1m1zvyj"), Kn(
         o,
         "show_options",
         /*show_options*/
-        i[12]
-      ), Qe(l, "class", "wrap svelte-1m1zvyj"), Qe(e, "class", "svelte-1m1zvyj"), $n(
+        l[12]
+      ), Qe(i, "class", "wrap svelte-1m1zvyj"), Qe(e, "class", "svelte-1m1zvyj"), Kn(
         e,
         "container",
         /*container*/
-        i[5]
+        l[5]
       );
     },
     m(g, b) {
-      Cs(g, e, b), fs(t, e, null), hn(e, n), hn(e, l), hn(l, o), hn(o, s), hn(s, r), tr(
+      As(g, e, b), ys(t, e, null), Sn(e, n), Sn(e, i), Sn(i, o), Sn(o, s), Sn(s, r), mr(
         r,
         /*input_text*/
-        i[9]
-      ), i[29](r), hn(s, _), m && m.m(s, null), hn(l, c), fs(u, l, null), f = !0, d || (h = [
-        wi(
+        l[9]
+      ), l[29](r), Sn(s, _), m && m.m(s, null), Sn(i, c), ys(f, i, null), u = !0, d || (h = [
+        Bl(
           r,
           "input",
           /*input_input_handler*/
-          i[28]
+          l[28]
         ),
-        wi(
+        Bl(
           r,
           "keydown",
           /*handle_key_down*/
-          i[19]
+          l[19]
         ),
-        wi(
+        Bl(
           r,
           "keyup",
           /*keyup_handler*/
-          i[30]
+          l[30]
         ),
-        wi(
+        Bl(
           r,
           "blur",
           /*handle_blur*/
-          i[18]
+          l[18]
         ),
-        wi(
+        Bl(
           r,
           "focus",
           /*handle_focus*/
-          i[17]
+          l[17]
         )
       ], d = !0);
     },
     p(g, b) {
-      const w = {};
+      const v = {};
       b[0] & /*show_label*/
-      16 && (w.show_label = /*show_label*/
+      16 && (v.show_label = /*show_label*/
       g[4]), b[0] & /*info*/
-      2 && (w.info = /*info*/
+      2 && (v.info = /*info*/
       g[1]), b[0] & /*label*/
       1 | b[1] & /*$$scope*/
-      4 && (w.$$scope = { dirty: b, ctx: g }), t.$set(w), (!f || b[0] & /*show_options*/
+      4 && (v.$$scope = { dirty: b, ctx: g }), t.$set(v), (!u || b[0] & /*show_options*/
       4096) && Qe(
         r,
         "aria-expanded",
         /*show_options*/
         g[12]
-      ), (!f || b[0] & /*label*/
+      ), (!u || b[0] & /*label*/
       1) && Qe(
         r,
         "aria-label",
         /*label*/
         g[0]
-      ), (!f || b[0] & /*disabled*/
+      ), (!u || b[0] & /*disabled*/
       8) && (r.disabled = /*disabled*/
-      g[3]), (!f || b[0] & /*filterable*/
+      g[3]), (!u || b[0] & /*filterable*/
       128 && a !== (a = !/*filterable*/
       g[7])) && (r.readOnly = a), b[0] & /*input_text*/
       512 && r.value !== /*input_text*/
-      g[9] && tr(
+      g[9] && mr(
         r,
         /*input_text*/
         g[9]
-      ), (!f || b[0] & /*choices_names, input_text, allow_custom_value*/
-      8768) && $n(r, "subdued", !/*choices_names*/
+      ), (!u || b[0] & /*choices_names, input_text, allow_custom_value*/
+      8768) && Kn(r, "subdued", !/*choices_names*/
       g[13].includes(
         /*input_text*/
         g[9]
       ) && !/*allow_custom_value*/
       g[6]), /*disabled*/
-      g[3] ? m && (vb(), Bi(m, 1, 1, () => {
+      g[3] ? m && (Vb(), Xl(m, 1, 1, () => {
         m = null;
-      }), wb()) : m ? b[0] & /*disabled*/
-      8 && Un(m, 1) : (m = nr(), m.c(), Un(m, 1), m.m(s, null)), (!f || b[0] & /*show_options*/
-      4096) && $n(
+      }), xb()) : m ? b[0] & /*disabled*/
+      8 && Gn(m, 1) : (m = gr(), m.c(), Gn(m, 1), m.m(s, null)), (!u || b[0] & /*show_options*/
+      4096) && Kn(
         o,
         "show_options",
         /*show_options*/
@@ -8158,8 +8226,8 @@ function Mb(i) {
         g[11]
       ]), b[0] & /*active_index*/
       16384 && (p.active_index = /*active_index*/
-      g[14]), u.$set(p), (!f || b[0] & /*container*/
-      32) && $n(
+      g[14]), f.$set(p), (!u || b[0] & /*container*/
+      32) && Kn(
         e,
         "container",
         /*container*/
@@ -8167,111 +8235,111 @@ function Mb(i) {
       );
     },
     i(g) {
-      f || (Un(t.$$.fragment, g), Un(m), Un(u.$$.fragment, g), f = !0);
+      u || (Gn(t.$$.fragment, g), Gn(m), Gn(f.$$.fragment, g), u = !0);
     },
     o(g) {
-      Bi(t.$$.fragment, g), Bi(m), Bi(u.$$.fragment, g), f = !1;
+      Xl(t.$$.fragment, g), Xl(m), Xl(f.$$.fragment, g), u = !1;
     },
     d(g) {
-      g && ys(e), cs(t), i[29](null), m && m.d(), cs(u), d = !1, yb(h);
+      g && Ws(e), ks(t), l[29](null), m && m.d(), ks(f), d = !1, Ub(h);
     }
   };
 }
-function Eb(i, e, t) {
-  let { label: n } = e, { info: l = void 0 } = e, { value: o = [] } = e, s = [], { value_is_output: r = !1 } = e, { choices: a } = e, _, { disabled: c = !1 } = e, { show_label: u } = e, { container: f = !0 } = e, { allow_custom_value: d = !1 } = e, { filterable: h = !0 } = e, m, g = !1, b, w, p = "", q = "", M = !1, D = [], C = null, k = null, y;
-  const B = Bb();
-  o ? (y = a.map((I) => I[1]).indexOf(o), k = y, k === -1 ? (s = o, k = null) : ([p, s] = a[k], q = p), S()) : a.length > 0 && (y = 0, k = 0, [p, o] = a[k], s = o, q = p);
-  function A() {
-    t(13, b = a.map((I) => I[0])), t(24, w = a.map((I) => I[1]));
+function n2(l, e, t) {
+  let { label: n } = e, { info: i = void 0 } = e, { value: o = [] } = e, s = [], { value_is_output: r = !1 } = e, { choices: a } = e, _, { disabled: c = !1 } = e, { show_label: f } = e, { container: u = !0 } = e, { allow_custom_value: d = !1 } = e, { filterable: h = !0 } = e, m, g = !1, b, v, p = "", y = "", q = !1, D = [], M = null, S = null, C;
+  const X = Jb();
+  o ? (C = a.map((H) => H[1]).indexOf(o), S = C, S === -1 ? (s = o, S = null) : ([p, s] = a[S], y = p), w()) : a.length > 0 && (C = 0, S = 0, [p, o] = a[S], s = o, y = p);
+  function I() {
+    t(13, b = a.map((H) => H[0])), t(24, v = a.map((H) => H[1]));
   }
-  function S() {
-    A(), o === void 0 || Array.isArray(o) && o.length === 0 ? (t(9, p = ""), t(11, k = null)) : w.includes(o) ? (t(9, p = b[w.indexOf(o)]), t(11, k = w.indexOf(o))) : d ? (t(9, p = o), t(11, k = null)) : (t(9, p = ""), t(11, k = null)), t(27, y = k);
+  function w() {
+    I(), o === void 0 || Array.isArray(o) && o.length === 0 ? (t(9, p = ""), t(11, S = null)) : v.includes(o) ? (t(9, p = b[v.indexOf(o)]), t(11, S = v.indexOf(o))) : d ? (t(9, p = o), t(11, S = null)) : (t(9, p = ""), t(11, S = null)), t(27, C = S);
   }
-  function Y(I) {
-    if (t(11, k = parseInt(I.detail.target.dataset.index)), isNaN(k)) {
-      t(11, k = null);
+  function L(H) {
+    if (t(11, S = parseInt(H.detail.target.dataset.index)), isNaN(S)) {
+      t(11, S = null);
       return;
     }
-    t(12, g = !1), t(14, C = null), m.blur();
+    t(12, g = !1), t(14, M = null), m.blur();
   }
-  function F(I) {
-    t(10, D = a.map((O, _e) => _e)), t(12, g = !0), B("focus");
+  function F(H) {
+    t(10, D = a.map((x, _e) => _e)), t(12, g = !0), X("focus");
   }
-  function J() {
-    d ? t(20, o = p) : t(9, p = b[w.indexOf(o)]), t(12, g = !1), t(14, C = null), B("blur");
+  function O() {
+    d ? t(20, o = p) : t(9, p = b[v.indexOf(o)]), t(12, g = !1), t(14, M = null), X("blur");
   }
-  function z(I) {
-    t(12, [g, C] = gb(I, C, D), g, (t(14, C), t(2, a), t(23, _), t(6, d), t(9, p), t(10, D), t(8, m), t(25, q), t(11, k), t(27, y), t(26, M), t(24, w))), I.key === "Enter" && (C !== null ? (t(11, k = C), t(12, g = !1), m.blur(), t(14, C = null)) : b.includes(p) ? (t(11, k = b.indexOf(p)), t(12, g = !1), t(14, C = null), m.blur()) : d && (t(20, o = p), t(11, k = null), t(12, g = !1), t(14, C = null), m.blur()), B("enter", o));
+  function z(H) {
+    t(12, [g, M] = $b(H, M, D), g, (t(14, M), t(2, a), t(23, _), t(6, d), t(9, p), t(10, D), t(8, m), t(25, y), t(11, S), t(27, C), t(26, q), t(24, v))), H.key === "Enter" && (M !== null ? (t(11, S = M), t(12, g = !1), m.blur(), t(14, M = null)) : b.includes(p) ? (t(11, S = b.indexOf(p)), t(12, g = !1), t(14, M = null), m.blur()) : d && (t(20, o = p), t(11, S = null), t(12, g = !1), t(14, M = null), m.blur()), X("enter", o));
   }
-  Db(() => {
-    t(21, r = !1), t(26, M = !0);
-  }), zb(() => {
+  Qb(() => {
+    t(21, r = !1), t(26, q = !0);
+  }), Gb(() => {
     m.focus();
   });
   function me() {
-    p = this.value, t(9, p), t(11, k), t(27, y), t(26, M), t(2, a), t(24, w);
+    p = this.value, t(9, p), t(11, S), t(27, C), t(26, q), t(2, a), t(24, v);
   }
-  function R(I) {
-    pb[I ? "unshift" : "push"](() => {
-      m = I, t(8, m);
+  function R(H) {
+    Ob[H ? "unshift" : "push"](() => {
+      m = H, t(8, m);
     });
   }
-  const $ = (I) => B("key_up", { key: I.key, input_value: p });
-  return i.$$set = (I) => {
-    "label" in I && t(0, n = I.label), "info" in I && t(1, l = I.info), "value" in I && t(20, o = I.value), "value_is_output" in I && t(21, r = I.value_is_output), "choices" in I && t(2, a = I.choices), "disabled" in I && t(3, c = I.disabled), "show_label" in I && t(4, u = I.show_label), "container" in I && t(5, f = I.container), "allow_custom_value" in I && t(6, d = I.allow_custom_value), "filterable" in I && t(7, h = I.filterable);
-  }, i.$$.update = () => {
-    i.$$.dirty[0] & /*selected_index, old_selected_index, initialized, choices, choices_values*/
-    218105860 && k !== y && k !== null && M && (t(9, [p, o] = a[k], p, (t(20, o), t(11, k), t(27, y), t(26, M), t(2, a), t(24, w))), t(27, y = k), B("select", {
-      index: k,
-      value: w[k],
+  const V = (H) => X("key_up", { key: H.key, input_value: p });
+  return l.$$set = (H) => {
+    "label" in H && t(0, n = H.label), "info" in H && t(1, i = H.info), "value" in H && t(20, o = H.value), "value_is_output" in H && t(21, r = H.value_is_output), "choices" in H && t(2, a = H.choices), "disabled" in H && t(3, c = H.disabled), "show_label" in H && t(4, f = H.show_label), "container" in H && t(5, u = H.container), "allow_custom_value" in H && t(6, d = H.allow_custom_value), "filterable" in H && t(7, h = H.filterable);
+  }, l.$$.update = () => {
+    l.$$.dirty[0] & /*selected_index, old_selected_index, initialized, choices, choices_values*/
+    218105860 && S !== C && S !== null && q && (t(9, [p, o] = a[S], p, (t(20, o), t(11, S), t(27, C), t(26, q), t(2, a), t(24, v))), t(27, C = S), X("select", {
+      index: S,
+      value: v[S],
       selected: !0
-    })), i.$$.dirty[0] & /*value, old_value, value_is_output*/
-    7340032 && o != s && (S(), mb(B, o, r), t(22, s = o)), i.$$.dirty[0] & /*choices*/
-    4 && A(), i.$$.dirty[0] & /*choices, old_choices, allow_custom_value, input_text, filtered_indices, filter_input*/
-    8390468 && a !== _ && (d || S(), t(23, _ = a), t(10, D = er(a, p)), !d && D.length > 0 && t(14, C = D[0]), m == document.activeElement && t(12, g = !0)), i.$$.dirty[0] & /*input_text, old_input_text, choices, allow_custom_value, filtered_indices*/
-    33556036 && p !== q && (t(10, D = er(a, p)), t(25, q = p), !d && D.length > 0 && t(14, C = D[0]));
+    })), l.$$.dirty[0] & /*value, old_value, value_is_output*/
+    7340032 && o != s && (w(), Tb(X, o, r), t(22, s = o)), l.$$.dirty[0] & /*choices*/
+    4 && I(), l.$$.dirty[0] & /*choices, old_choices, allow_custom_value, input_text, filtered_indices, filter_input*/
+    8390468 && a !== _ && (d || w(), t(23, _ = a), t(10, D = hr(a, p)), !d && D.length > 0 && t(14, M = D[0]), m == document.activeElement && t(12, g = !0)), l.$$.dirty[0] & /*input_text, old_input_text, choices, allow_custom_value, filtered_indices*/
+    33556036 && p !== y && (t(10, D = hr(a, p)), t(25, y = p), !d && D.length > 0 && t(14, M = D[0]));
   }, [
     n,
-    l,
+    i,
     a,
     c,
-    u,
     f,
+    u,
     d,
     h,
     m,
     p,
     D,
-    k,
+    S,
     g,
     b,
-    C,
-    B,
-    Y,
+    M,
+    X,
+    L,
     F,
-    J,
+    O,
     z,
     o,
     r,
     s,
     _,
-    w,
-    q,
-    M,
+    v,
     y,
+    q,
+    C,
     me,
     R,
-    $
+    V
   ];
 }
-class Rb extends bb {
+class l2 extends Fb {
   constructor(e) {
-    super(), kb(
+    super(), Nb(
       this,
       e,
-      Eb,
-      Mb,
-      Cb,
+      n2,
+      t2,
+      Pb,
       {
         label: 0,
         info: 1,
@@ -8290,237 +8358,237 @@ class Rb extends bb {
   }
 }
 const {
-  SvelteComponent: Bq,
-  attr: Dq,
-  detach: Lq,
-  element: Mq,
-  init: Eq,
-  insert: Rq,
-  noop: Wq,
-  safe_not_equal: Aq,
-  toggle_class: Xq
+  SvelteComponent: Qq,
+  attr: ez,
+  detach: tz,
+  element: nz,
+  init: lz,
+  insert: iz,
+  noop: oz,
+  safe_not_equal: sz,
+  toggle_class: az
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: Yq,
-  add_flush_callback: Iq,
-  assign: Hq,
-  bind: jq,
-  binding_callbacks: Tq,
-  check_outros: Fq,
-  create_component: Oq,
-  destroy_component: $q,
-  detach: xq,
-  empty: Nq,
-  get_spread_object: Uq,
-  get_spread_update: Vq,
-  group_outros: Pq,
-  init: Kq,
-  insert: Zq,
-  mount_component: Gq,
-  safe_not_equal: Jq,
-  space: Qq,
-  transition_in: ez,
-  transition_out: tz
+  SvelteComponent: rz,
+  add_flush_callback: _z,
+  assign: cz,
+  bind: uz,
+  binding_callbacks: fz,
+  check_outros: dz,
+  create_component: hz,
+  destroy_component: mz,
+  detach: gz,
+  empty: bz,
+  get_spread_object: pz,
+  get_spread_update: wz,
+  group_outros: vz,
+  init: kz,
+  insert: yz,
+  mount_component: Cz,
+  safe_not_equal: Sz,
+  space: qz,
+  transition_in: zz,
+  transition_out: Bz
 } = window.__gradio__svelte__internal, {
-  SvelteComponent: Wb,
-  append: rt,
-  attr: Zn,
-  check_outros: us,
-  create_component: Cn,
-  destroy_component: Sn,
-  detach: oi,
-  element: Bt,
-  group_outros: ds,
-  init: Ab,
-  insert: si,
-  listen: Xb,
-  mount_component: qn,
-  safe_not_equal: Yb,
-  set_style: Gn,
-  space: vi,
-  text: Ss,
-  toggle_class: ir,
-  transition_in: Re,
+  SvelteComponent: i2,
+  append: ct,
+  attr: tl,
+  check_outros: Cs,
+  create_component: En,
+  destroy_component: Rn,
+  detach: fl,
+  element: Mt,
+  group_outros: Ss,
+  init: o2,
+  insert: dl,
+  listen: s2,
+  mount_component: Wn,
+  safe_not_equal: a2,
+  set_style: nl,
+  space: Dl,
+  text: Xs,
+  toggle_class: br,
+  transition_in: Ee,
   transition_out: tt
-} = window.__gradio__svelte__internal, { createEventDispatcher: Ib } = window.__gradio__svelte__internal, { onMount: Hb } = window.__gradio__svelte__internal;
-function lr(i) {
-  let e, t, n, l, o, s, r;
-  const a = [Tb, jb], _ = [];
-  function c(u, f) {
+} = window.__gradio__svelte__internal, { createEventDispatcher: r2 } = window.__gradio__svelte__internal, { onMount: _2 } = window.__gradio__svelte__internal;
+function pr(l) {
+  let e, t, n, i, o, s, r;
+  const a = [u2, c2], _ = [];
+  function c(f, u) {
     return (
       /*labelDetailLock*/
-      u[2] ? 0 : 1
+      f[2] ? 0 : 1
     );
   }
-  return n = c(i), l = _[n] = a[n](i), {
+  return n = c(l), i = _[n] = a[n](l), {
     c() {
-      e = Bt("div"), t = Bt("button"), l.c(), Zn(t, "class", "icon svelte-d9x7u0"), Zn(t, "aria-label", "Lock label detail"), ir(
+      e = Mt("div"), t = Mt("button"), i.c(), tl(t, "class", "icon svelte-d9x7u0"), tl(t, "aria-label", "Lock label detail"), br(
         t,
         "selected",
         /*labelDetailLock*/
-        i[2] === !0
-      ), Gn(e, "margin-right", "8px");
+        l[2] === !0
+      ), nl(e, "margin-right", "8px");
     },
-    m(u, f) {
-      si(u, e, f), rt(e, t), _[n].m(t, null), o = !0, s || (r = Xb(
+    m(f, u) {
+      dl(f, e, u), ct(e, t), _[n].m(t, null), o = !0, s || (r = s2(
         t,
         "click",
         /*onLockClick*/
-        i[9]
+        l[9]
       ), s = !0);
     },
-    p(u, f) {
+    p(f, u) {
       let d = n;
-      n = c(u), n !== d && (ds(), tt(_[d], 1, 1, () => {
+      n = c(f), n !== d && (Ss(), tt(_[d], 1, 1, () => {
         _[d] = null;
-      }), us(), l = _[n], l || (l = _[n] = a[n](u), l.c()), Re(l, 1), l.m(t, null)), (!o || f & /*labelDetailLock*/
-      4) && ir(
+      }), Cs(), i = _[n], i || (i = _[n] = a[n](f), i.c()), Ee(i, 1), i.m(t, null)), (!o || u & /*labelDetailLock*/
+      4) && br(
         t,
         "selected",
         /*labelDetailLock*/
-        u[2] === !0
+        f[2] === !0
       );
     },
-    i(u) {
-      o || (Re(l), o = !0);
+    i(f) {
+      o || (Ee(i), o = !0);
     },
-    o(u) {
-      tt(l), o = !1;
+    o(f) {
+      tt(i), o = !1;
     },
-    d(u) {
-      u && oi(e), _[n].d(), s = !1, r();
+    d(f) {
+      f && fl(e), _[n].d(), s = !1, r();
     }
   };
 }
-function jb(i) {
+function c2(l) {
   let e, t;
-  return e = new Q0({}), {
+  return e = new ug({}), {
     c() {
-      Cn(e.$$.fragment);
+      En(e.$$.fragment);
     },
-    m(n, l) {
-      qn(e, n, l), t = !0;
+    m(n, i) {
+      Wn(e, n, i), t = !0;
     },
     i(n) {
-      t || (Re(e.$$.fragment, n), t = !0);
+      t || (Ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
       tt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Sn(e, n);
+      Rn(e, n);
     }
   };
 }
-function Tb(i) {
+function u2(l) {
   let e, t;
-  return e = new z_({}), {
+  return e = new $_({}), {
     c() {
-      Cn(e.$$.fragment);
+      En(e.$$.fragment);
     },
-    m(n, l) {
-      qn(e, n, l), t = !0;
+    m(n, i) {
+      Wn(e, n, i), t = !0;
     },
     i(n) {
-      t || (Re(e.$$.fragment, n), t = !0);
+      t || (Ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
       tt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Sn(e, n);
+      Rn(e, n);
     }
   };
 }
-function Fb(i) {
+function f2(l) {
   let e;
   return {
     c() {
-      e = Ss("Cancel");
+      e = Xs("Cancel");
     },
     m(t, n) {
-      si(t, e, n);
+      dl(t, e, n);
     },
     d(t) {
-      t && oi(e);
+      t && fl(e);
     }
   };
 }
-function or(i) {
+function wr(l) {
   let e, t, n;
-  return t = new ss({
+  return t = new bs({
     props: {
       variant: "stop",
-      $$slots: { default: [Ob] },
-      $$scope: { ctx: i }
+      $$slots: { default: [d2] },
+      $$scope: { ctx: l }
     }
   }), t.$on(
     "click",
     /*click_handler_1*/
-    i[14]
+    l[14]
   ), {
     c() {
-      e = Bt("div"), Cn(t.$$.fragment), Gn(e, "margin-right", "8px");
+      e = Mt("div"), En(t.$$.fragment), nl(e, "margin-right", "8px");
     },
-    m(l, o) {
-      si(l, e, o), qn(t, e, null), n = !0;
+    m(i, o) {
+      dl(i, e, o), Wn(t, e, null), n = !0;
     },
-    p(l, o) {
+    p(i, o) {
       const s = {};
       o & /*$$scope*/
-      262144 && (s.$$scope = { dirty: o, ctx: l }), t.$set(s);
+      262144 && (s.$$scope = { dirty: o, ctx: i }), t.$set(s);
     },
-    i(l) {
-      n || (Re(t.$$.fragment, l), n = !0);
+    i(i) {
+      n || (Ee(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      tt(t.$$.fragment, l), n = !1;
+    o(i) {
+      tt(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && oi(e), Sn(t);
+    d(i) {
+      i && fl(e), Rn(t);
     }
   };
 }
-function Ob(i) {
+function d2(l) {
   let e;
   return {
     c() {
-      e = Ss("Remove");
+      e = Xs("Remove");
     },
     m(t, n) {
-      si(t, e, n);
+      dl(t, e, n);
     },
     d(t) {
-      t && oi(e);
+      t && fl(e);
     }
   };
 }
-function $b(i) {
+function h2(l) {
   let e;
   return {
     c() {
-      e = Ss("OK");
+      e = Xs("OK");
     },
     m(t, n) {
-      si(t, e, n);
+      dl(t, e, n);
     },
     d(t) {
-      t && oi(e);
+      t && fl(e);
     }
   };
 }
-function xb(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f, d, h, m, g, b, w = !/*showRemove*/
-  i[4] && lr(i);
-  s = new Rb({
+function m2(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u, d, h, m, g, b, v = !/*showRemove*/
+  l[4] && pr(l);
+  s = new l2({
     props: {
       value: (
         /*currentLabel*/
-        i[0]
+        l[0]
       ),
       label: "Label",
       choices: (
         /*choices*/
-        i[3]
+        l[3]
       ),
       show_label: !1,
       allow_custom_value: !0
@@ -8528,16 +8596,16 @@ function xb(i) {
   }), s.$on(
     "change",
     /*onDropDownChange*/
-    i[6]
+    l[6]
   ), s.$on(
     "enter",
     /*onDropDownEnter*/
-    i[8]
-  ), _ = new Hg({
+    l[8]
+  ), _ = new _b({
     props: {
       value: (
         /*currentColor*/
-        i[1]
+        l[1]
       ),
       label: "Color",
       show_label: !1
@@ -8545,126 +8613,126 @@ function xb(i) {
   }), _.$on(
     "change",
     /*onColorChange*/
-    i[7]
-  ), f = new ss({
+    l[7]
+  ), u = new bs({
     props: {
-      $$slots: { default: [Fb] },
-      $$scope: { ctx: i }
+      $$slots: { default: [f2] },
+      $$scope: { ctx: l }
     }
-  }), f.$on(
+  }), u.$on(
     "click",
     /*click_handler*/
-    i[13]
+    l[13]
   );
   let p = (
     /*showRemove*/
-    i[4] && or(i)
+    l[4] && wr(l)
   );
-  return g = new ss({
+  return g = new bs({
     props: {
       variant: "primary",
-      $$slots: { default: [$b] },
-      $$scope: { ctx: i }
+      $$slots: { default: [h2] },
+      $$scope: { ctx: l }
     }
   }), g.$on(
     "click",
     /*click_handler_2*/
-    i[15]
+    l[15]
   ), {
     c() {
-      e = Bt("div"), t = Bt("div"), n = Bt("span"), w && w.c(), l = vi(), o = Bt("div"), Cn(s.$$.fragment), r = vi(), a = Bt("div"), Cn(_.$$.fragment), c = vi(), u = Bt("div"), Cn(f.$$.fragment), d = vi(), p && p.c(), h = vi(), m = Bt("div"), Cn(g.$$.fragment), Gn(o, "margin-right", "10px"), Gn(a, "margin-right", "40px"), Gn(a, "margin-bottom", "8px"), Gn(u, "margin-right", "8px"), Zn(n, "class", "model-content svelte-d9x7u0"), Zn(t, "class", "modal-container svelte-d9x7u0"), Zn(e, "class", "modal svelte-d9x7u0"), Zn(e, "id", "model-box-edit");
+      e = Mt("div"), t = Mt("div"), n = Mt("span"), v && v.c(), i = Dl(), o = Mt("div"), En(s.$$.fragment), r = Dl(), a = Mt("div"), En(_.$$.fragment), c = Dl(), f = Mt("div"), En(u.$$.fragment), d = Dl(), p && p.c(), h = Dl(), m = Mt("div"), En(g.$$.fragment), nl(o, "margin-right", "10px"), nl(a, "margin-right", "40px"), nl(a, "margin-bottom", "8px"), nl(f, "margin-right", "8px"), tl(n, "class", "model-content svelte-d9x7u0"), tl(t, "class", "modal-container svelte-d9x7u0"), tl(e, "class", "modal svelte-d9x7u0"), tl(e, "id", "model-box-edit");
     },
-    m(q, M) {
-      si(q, e, M), rt(e, t), rt(t, n), w && w.m(n, null), rt(n, l), rt(n, o), qn(s, o, null), rt(n, r), rt(n, a), qn(_, a, null), rt(n, c), rt(n, u), qn(f, u, null), rt(n, d), p && p.m(n, null), rt(n, h), rt(n, m), qn(g, m, null), b = !0;
+    m(y, q) {
+      dl(y, e, q), ct(e, t), ct(t, n), v && v.m(n, null), ct(n, i), ct(n, o), Wn(s, o, null), ct(n, r), ct(n, a), Wn(_, a, null), ct(n, c), ct(n, f), Wn(u, f, null), ct(n, d), p && p.m(n, null), ct(n, h), ct(n, m), Wn(g, m, null), b = !0;
     },
-    p(q, [M]) {
+    p(y, [q]) {
       /*showRemove*/
-      q[4] ? w && (ds(), tt(w, 1, 1, () => {
-        w = null;
-      }), us()) : w ? (w.p(q, M), M & /*showRemove*/
-      16 && Re(w, 1)) : (w = lr(q), w.c(), Re(w, 1), w.m(n, l));
+      y[4] ? v && (Ss(), tt(v, 1, 1, () => {
+        v = null;
+      }), Cs()) : v ? (v.p(y, q), q & /*showRemove*/
+      16 && Ee(v, 1)) : (v = pr(y), v.c(), Ee(v, 1), v.m(n, i));
       const D = {};
-      M & /*currentLabel*/
+      q & /*currentLabel*/
       1 && (D.value = /*currentLabel*/
-      q[0]), M & /*choices*/
+      y[0]), q & /*choices*/
       8 && (D.choices = /*choices*/
-      q[3]), s.$set(D);
-      const C = {};
-      M & /*currentColor*/
-      2 && (C.value = /*currentColor*/
-      q[1]), _.$set(C);
-      const k = {};
-      M & /*$$scope*/
-      262144 && (k.$$scope = { dirty: M, ctx: q }), f.$set(k), /*showRemove*/
-      q[4] ? p ? (p.p(q, M), M & /*showRemove*/
-      16 && Re(p, 1)) : (p = or(q), p.c(), Re(p, 1), p.m(n, h)) : p && (ds(), tt(p, 1, 1, () => {
+      y[3]), s.$set(D);
+      const M = {};
+      q & /*currentColor*/
+      2 && (M.value = /*currentColor*/
+      y[1]), _.$set(M);
+      const S = {};
+      q & /*$$scope*/
+      262144 && (S.$$scope = { dirty: q, ctx: y }), u.$set(S), /*showRemove*/
+      y[4] ? p ? (p.p(y, q), q & /*showRemove*/
+      16 && Ee(p, 1)) : (p = wr(y), p.c(), Ee(p, 1), p.m(n, h)) : p && (Ss(), tt(p, 1, 1, () => {
         p = null;
-      }), us());
-      const y = {};
-      M & /*$$scope*/
-      262144 && (y.$$scope = { dirty: M, ctx: q }), g.$set(y);
+      }), Cs());
+      const C = {};
+      q & /*$$scope*/
+      262144 && (C.$$scope = { dirty: q, ctx: y }), g.$set(C);
     },
-    i(q) {
-      b || (Re(w), Re(s.$$.fragment, q), Re(_.$$.fragment, q), Re(f.$$.fragment, q), Re(p), Re(g.$$.fragment, q), b = !0);
+    i(y) {
+      b || (Ee(v), Ee(s.$$.fragment, y), Ee(_.$$.fragment, y), Ee(u.$$.fragment, y), Ee(p), Ee(g.$$.fragment, y), b = !0);
     },
-    o(q) {
-      tt(w), tt(s.$$.fragment, q), tt(_.$$.fragment, q), tt(f.$$.fragment, q), tt(p), tt(g.$$.fragment, q), b = !1;
+    o(y) {
+      tt(v), tt(s.$$.fragment, y), tt(_.$$.fragment, y), tt(u.$$.fragment, y), tt(p), tt(g.$$.fragment, y), b = !1;
     },
-    d(q) {
-      q && oi(e), w && w.d(), Sn(s), Sn(_), Sn(f), p && p.d(), Sn(g);
+    d(y) {
+      y && fl(e), v && v.d(), Rn(s), Rn(_), Rn(u), p && p.d(), Rn(g);
     }
   };
 }
-function Nb(i, e, t) {
-  let { label: n = "" } = e, { currentLabel: l = "" } = e, { choices: o = [] } = e, { choicesColors: s = [] } = e, { color: r = "" } = e, { currentColor: a = "" } = e, { showRemove: _ = !0 } = e, { labelDetailLock: c = !1 } = e;
-  const u = Ib();
-  function f(M) {
-    u("change", {
-      label: l,
+function g2(l, e, t) {
+  let { label: n = "" } = e, { currentLabel: i = "" } = e, { choices: o = [] } = e, { choicesColors: s = [] } = e, { color: r = "" } = e, { currentColor: a = "" } = e, { showRemove: _ = !0 } = e, { labelDetailLock: c = !1 } = e;
+  const f = r2();
+  function u(q) {
+    f("change", {
+      label: i,
       color: a,
       lock: c,
-      ret: M
+      ret: q
       // -1: remove, 0: cancel, 1: change
     });
   }
-  function d(M) {
-    const { detail: D } = M;
-    let C = D;
-    Number.isInteger(C) ? (Array.isArray(s) && C < s.length && t(1, a = s[C]), Array.isArray(o) && C < o.length && t(0, l = o[C][0])) : t(0, l = C);
+  function d(q) {
+    const { detail: D } = q;
+    let M = D;
+    Number.isInteger(M) ? (Array.isArray(s) && M < s.length && t(1, a = s[M]), Array.isArray(o) && M < o.length && t(0, i = o[M][0])) : t(0, i = M);
   }
-  function h(M) {
-    const { detail: D } = M;
+  function h(q) {
+    const { detail: D } = q;
     t(1, a = D);
   }
-  function m(M) {
-    d(M), f(1);
+  function m(q) {
+    d(q), u(1);
   }
-  function g(M) {
+  function g(q) {
     t(2, c = !c);
   }
-  function b(M) {
-    switch (M.key.toLowerCase()) {
+  function b(q) {
+    switch (q.key.toLowerCase()) {
       case "enter":
-        f(1);
+        u(1);
         break;
       case "escape":
-        f(0);
+        u(0);
         break;
     }
   }
-  Hb(() => (document.addEventListener("keydown", b), t(0, l = n), t(1, a = r), () => {
+  _2(() => (document.addEventListener("keydown", b), t(0, i = n), t(1, a = r), () => {
     document.removeEventListener("keydown", b);
   }));
-  const w = () => f(0), p = () => f(-1), q = () => f(1);
-  return i.$$set = (M) => {
-    "label" in M && t(10, n = M.label), "currentLabel" in M && t(0, l = M.currentLabel), "choices" in M && t(3, o = M.choices), "choicesColors" in M && t(11, s = M.choicesColors), "color" in M && t(12, r = M.color), "currentColor" in M && t(1, a = M.currentColor), "showRemove" in M && t(4, _ = M.showRemove), "labelDetailLock" in M && t(2, c = M.labelDetailLock);
+  const v = () => u(0), p = () => u(-1), y = () => u(1);
+  return l.$$set = (q) => {
+    "label" in q && t(10, n = q.label), "currentLabel" in q && t(0, i = q.currentLabel), "choices" in q && t(3, o = q.choices), "choicesColors" in q && t(11, s = q.choicesColors), "color" in q && t(12, r = q.color), "currentColor" in q && t(1, a = q.currentColor), "showRemove" in q && t(4, _ = q.showRemove), "labelDetailLock" in q && t(2, c = q.labelDetailLock);
   }, [
-    l,
+    i,
     a,
     c,
     o,
     _,
-    f,
+    u,
     d,
     h,
     m,
@@ -8672,14 +8740,14 @@ function Nb(i, e, t) {
     n,
     s,
     r,
-    w,
+    v,
     p,
-    q
+    y
   ];
 }
-class qs extends Wb {
+class Ys extends i2 {
   constructor(e) {
-    super(), Ab(this, e, Nb, xb, Yb, {
+    super(), o2(this, e, g2, m2, a2, {
       label: 10,
       currentLabel: 0,
       choices: 3,
@@ -8691,71 +8759,71 @@ class qs extends Wb {
     });
   }
 }
-const Se = (i, e, t) => Math.min(Math.max(i, e), t);
-function No(i, e) {
-  if (i.startsWith("rgba"))
-    return i.replace(/[\d.]+$/, e.toString());
-  const t = i.match(/\d+/g);
+const Ce = (l, e, t) => Math.min(Math.max(l, e), t);
+function ns(l, e) {
+  if (l.startsWith("rgba"))
+    return l.replace(/[\d.]+$/, e.toString());
+  const t = l.match(/\d+/g);
   if (!t || t.length !== 3)
     return `rgba(50, 50, 50, ${e})`;
-  const [n, l, o] = t;
-  return `rgba(${n}, ${l}, ${o}, ${e})`;
+  const [n, i, o] = t;
+  return `rgba(${n}, ${i}, ${o}, ${e})`;
 }
-class al {
-  constructor(e, t, n, l, o, s, r, a, _, c, u, f, d, h = "rgb(255, 255, 255)", m = 0.5, g = 25, b = 8, w = 2, p = 4, q = 1, M = !0) {
+class hi {
+  constructor(e, t, n, i, o, s, r, a, _, c, f, u, d, h = "rgb(255, 255, 255)", m = 0.5, g = 25, b = 8, v = 2, p = 4, y = 1, q = !0) {
     this.stopDrag = () => {
       this.isDragging = !1, document.removeEventListener("pointermove", this.handleDrag), document.removeEventListener("pointerup", this.stopDrag);
     }, this.handleDrag = (D) => {
       if (this.isDragging && this.pointersCache.size === 1) {
-        let C = (D.clientX - this.offsetMouseX) / this.canvasWindow.scale - this._xmin, k = (D.clientY - this.offsetMouseY) / this.canvasWindow.scale - this._ymin;
-        const y = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, B = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
-        C = Se(C, -this._xmin, y - this._xmax), k = Se(k, -this._ymin, B - this._ymax), this._xmin += C, this._ymin += k, this._xmax += C, this._ymax += k, this.applyUserScale(), this.renderCallBack();
+        let M = (D.clientX - this.offsetMouseX) / this.canvasWindow.scale - this._xmin, S = (D.clientY - this.offsetMouseY) / this.canvasWindow.scale - this._ymin;
+        const C = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, X = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
+        M = Ce(M, -this._xmin, C - this._xmax), S = Ce(S, -this._ymin, X - this._ymax), this._xmin += M, this._ymin += S, this._xmax += M, this._ymax += S, this.applyUserScale(), this.renderCallBack();
       }
     }, this.handleCreating = (D) => {
       if (this.isCreating && this.pointersCache.size === 1) {
-        let [C, k] = this.toBoxCoordinates(D.clientX, D.clientY);
-        C = (C - this.offsetMouseX) / this.canvasWindow.scale, k = (k - this.offsetMouseY) / this.canvasWindow.scale, C > this._xmax ? (this.creatingAnchorX == "xmax" && (this._xmin = this._xmax), this._xmax = C, this.creatingAnchorX = "xmin") : C > this._xmin && C < this._xmax && this.creatingAnchorX == "xmin" ? this._xmax = C : C > this._xmin && C < this._xmax && this.creatingAnchorX == "xmax" ? this._xmin = C : C < this._xmin && (this.creatingAnchorX == "xmin" && (this._xmax = this._xmin), this._xmin = C, this.creatingAnchorX = "xmax"), k > this._ymax ? (this.creatingAnchorY == "ymax" && (this._ymin = this._ymax), this._ymax = k, this.creatingAnchorY = "ymin") : k > this._ymin && k < this._ymax && this.creatingAnchorY == "ymin" ? this._ymax = k : k > this._ymin && k < this._ymax && this.creatingAnchorY == "ymax" ? this._ymin = k : k < this._ymin && (this.creatingAnchorY == "ymin" && (this._ymax = this._ymin), this._ymin = k, this.creatingAnchorY = "ymax"), this.applyUserScale(), this.renderCallBack();
+        let [M, S] = this.toBoxCoordinates(D.clientX, D.clientY);
+        M = (M - this.offsetMouseX) / this.canvasWindow.scale, S = (S - this.offsetMouseY) / this.canvasWindow.scale, M > this._xmax ? (this.creatingAnchorX == "xmax" && (this._xmin = this._xmax), this._xmax = M, this.creatingAnchorX = "xmin") : M > this._xmin && M < this._xmax && this.creatingAnchorX == "xmin" ? this._xmax = M : M > this._xmin && M < this._xmax && this.creatingAnchorX == "xmax" ? this._xmin = M : M < this._xmin && (this.creatingAnchorX == "xmin" && (this._xmax = this._xmin), this._xmin = M, this.creatingAnchorX = "xmax"), S > this._ymax ? (this.creatingAnchorY == "ymax" && (this._ymin = this._ymax), this._ymax = S, this.creatingAnchorY = "ymin") : S > this._ymin && S < this._ymax && this.creatingAnchorY == "ymin" ? this._ymax = S : S > this._ymin && S < this._ymax && this.creatingAnchorY == "ymax" ? this._ymin = S : S < this._ymin && (this.creatingAnchorY == "ymin" && (this._ymax = this._ymin), this._ymin = S, this.creatingAnchorY = "ymax"), this.applyUserScale(), this.renderCallBack();
       }
     }, this.stopCreating = (D) => {
       if (this.isCreating = !1, document.removeEventListener("pointermove", this.handleCreating), document.removeEventListener("pointerup", this.stopCreating), this.getArea() > 0) {
-        const C = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, k = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
-        this._xmin = Se(this._xmin, 0, C - this.minSize), this._ymin = Se(this._ymin, 0, k - this.minSize), this._xmax = Se(this._xmax, this.minSize, C), this._ymax = Se(this._ymax, this.minSize, k), this.minSize > 0 && (this.getWidth() / this.canvasWindow.scale < this.minSize && (this.creatingAnchorX == "xmin" ? this._xmax = this._xmin + this.minSize : this._xmin = this._xmax - this.minSize), this.getHeight() / this.canvasWindow.scale < this.minSize && (this.creatingAnchorY == "ymin" ? this._ymax = this._ymin + this.minSize : this._ymin = this._ymax - this.minSize), this._xmax > C ? (this._xmin -= this._xmax - C, this._xmax = C) : this._xmin < 0 && (this._xmax -= this._xmin, this._xmin = 0), this._ymax > k ? (this._ymin -= this._ymax - k, this._ymax = k) : this._ymin < 0 && (this._ymax -= this._ymin, this._ymin = 0)), this.applyUserScale(), this.renderCallBack();
+        const M = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, S = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
+        this._xmin = Ce(this._xmin, 0, M - this.minSize), this._ymin = Ce(this._ymin, 0, S - this.minSize), this._xmax = Ce(this._xmax, this.minSize, M), this._ymax = Ce(this._ymax, this.minSize, S), this.minSize > 0 && (this.getWidth() / this.canvasWindow.scale < this.minSize && (this.creatingAnchorX == "xmin" ? this._xmax = this._xmin + this.minSize : this._xmin = this._xmax - this.minSize), this.getHeight() / this.canvasWindow.scale < this.minSize && (this.creatingAnchorY == "ymin" ? this._ymax = this._ymin + this.minSize : this._ymin = this._ymax - this.minSize), this._xmax > M ? (this._xmin -= this._xmax - M, this._xmax = M) : this._xmin < 0 && (this._xmax -= this._xmin, this._xmin = 0), this._ymax > S ? (this._ymin -= this._ymax - S, this._ymax = S) : this._ymin < 0 && (this._ymax -= this._ymin, this._ymin = 0)), this.applyUserScale(), this.renderCallBack();
       }
       this.onFinishCreation();
     }, this.handleResize = (D) => {
       if (this.isResizing && this.pointersCache.size === 1) {
-        const C = D.clientX, k = D.clientY, y = (C - this.offsetMouseX - this.resizeHandles[this.resizingHandleIndex].xmin) / this.canvasWindow.scale, B = (k - this.offsetMouseY - this.resizeHandles[this.resizingHandleIndex].ymin) / this.canvasWindow.scale, A = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, S = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
+        const M = D.clientX, S = D.clientY, C = (M - this.offsetMouseX - this.resizeHandles[this.resizingHandleIndex].xmin) / this.canvasWindow.scale, X = (S - this.offsetMouseY - this.resizeHandles[this.resizingHandleIndex].ymin) / this.canvasWindow.scale, I = (this.canvasXmax - this.canvasXmin) / this.canvasWindow.scale, w = (this.canvasYmax - this.canvasYmin) / this.canvasWindow.scale;
         switch (this.resizingHandleIndex) {
           case 0:
-            this._xmin += y, this._ymin += B, this._xmin = Se(this._xmin, 0, this._xmax - this.minSize), this._ymin = Se(this._ymin, 0, this._ymax - this.minSize);
+            this._xmin += C, this._ymin += X, this._xmin = Ce(this._xmin, 0, this._xmax - this.minSize), this._ymin = Ce(this._ymin, 0, this._ymax - this.minSize);
             break;
           case 1:
-            this._xmax += y, this._ymin += B, this._xmax = Se(this._xmax, this._xmin + this.minSize, A), this._ymin = Se(this._ymin, 0, this._ymax - this.minSize);
+            this._xmax += C, this._ymin += X, this._xmax = Ce(this._xmax, this._xmin + this.minSize, I), this._ymin = Ce(this._ymin, 0, this._ymax - this.minSize);
             break;
           case 2:
-            this._xmax += y, this._ymax += B, this._xmax = Se(this._xmax, this._xmin + this.minSize, A), this._ymax = Se(this._ymax, this._ymin + this.minSize, S);
+            this._xmax += C, this._ymax += X, this._xmax = Ce(this._xmax, this._xmin + this.minSize, I), this._ymax = Ce(this._ymax, this._ymin + this.minSize, w);
             break;
           case 3:
-            this._xmin += y, this._ymax += B, this._xmin = Se(this._xmin, 0, this._xmax - this.minSize), this._ymax = Se(this._ymax, this._ymin + this.minSize, S);
+            this._xmin += C, this._ymax += X, this._xmin = Ce(this._xmin, 0, this._xmax - this.minSize), this._ymax = Ce(this._ymax, this._ymin + this.minSize, w);
             break;
           case 4:
-            this._ymin += B, this._ymin = Se(this._ymin, 0, this._ymax - this.minSize);
+            this._ymin += X, this._ymin = Ce(this._ymin, 0, this._ymax - this.minSize);
             break;
           case 5:
-            this._xmax += y, this._xmax = Se(this._xmax, this._xmin + this.minSize, A);
+            this._xmax += C, this._xmax = Ce(this._xmax, this._xmin + this.minSize, I);
             break;
           case 6:
-            this._ymax += B, this._ymax = Se(this._ymax, this._ymin + this.minSize, S);
+            this._ymax += X, this._ymax = Ce(this._ymax, this._ymin + this.minSize, w);
             break;
           case 7:
-            this._xmin += y, this._xmin = Se(this._xmin, 0, this._xmax - this.minSize);
+            this._xmin += C, this._xmin = Ce(this._xmin, 0, this._xmax - this.minSize);
             break;
         }
         this.applyUserScale(), this.renderCallBack();
       }
     }, this.stopResize = () => {
       this.isResizing = !1, document.removeEventListener("pointermove", this.handleResize), document.removeEventListener("pointerup", this.stopResize);
-    }, this.renderCallBack = e, this.onFinishCreation = t, this.canvasWindow = n, this.pointersCache = l, this.canvasXmin = o, this.canvasYmin = s, this.canvasXmax = r, this.canvasYmax = a, this.scaleFactor = q, this.label = _, this.isDragging = !1, this.isCreating = !1, this._xmin = c, this._ymin = u, this._xmax = f, this._ymax = d, this.xmin = this._xmin * this.canvasWindow.scale, this.ymin = this._ymin * this.canvasWindow.scale, this.xmax = this._xmax * this.canvasWindow.scale, this.ymax = this._ymax * this.canvasWindow.scale, this.isResizing = !1, this.isSelected = !1, this.offsetMouseX = 0, this.offsetMouseY = 0, this.resizeHandleSize = b, this.thickness = w, this.selectedThickness = p, this.updateHandles(), this.resizingHandleIndex = -1, this.minSize = g, this.color = h, this.alpha = m, this.showLabel = M, this.creatingAnchorX = "xmin", this.creatingAnchorY = "ymin";
+    }, this.renderCallBack = e, this.onFinishCreation = t, this.canvasWindow = n, this.pointersCache = i, this.canvasXmin = o, this.canvasYmin = s, this.canvasXmax = r, this.canvasYmax = a, this.scaleFactor = y, this.label = _, this.isDragging = !1, this.isCreating = !1, this._xmin = c, this._ymin = f, this._xmax = u, this._ymax = d, this.xmin = this._xmin * this.canvasWindow.scale, this.ymin = this._ymin * this.canvasWindow.scale, this.xmax = this._xmax * this.canvasWindow.scale, this.ymax = this._ymax * this.canvasWindow.scale, this.isResizing = !1, this.isSelected = !1, this.offsetMouseX = 0, this.offsetMouseY = 0, this.resizeHandleSize = b, this.thickness = v, this.selectedThickness = p, this.updateHandles(), this.resizingHandleIndex = -1, this.minSize = g, this.color = h, this.alpha = m, this.showLabel = q, this.creatingAnchorX = "xmin", this.creatingAnchorY = "ymin";
   }
   toJSON() {
     return {
@@ -8870,19 +8938,19 @@ class al {
   }
   render(e) {
     let t, n;
-    if (this.updateOffset(), e.beginPath(), [t, n] = this.toCanvasCoordinates(this.xmin, this.ymin), e.rect(t, n, this.getWidth(), this.getHeight()), e.fillStyle = No(this.color, this.alpha), e.fill(), this.isSelected ? e.lineWidth = this.selectedThickness : e.lineWidth = this.thickness, e.strokeStyle = No(this.color, 1), e.stroke(), e.closePath(), this.showLabel && this.label !== null && this.label.trim() !== "") {
+    if (this.updateOffset(), e.beginPath(), [t, n] = this.toCanvasCoordinates(this.xmin, this.ymin), e.rect(t, n, this.getWidth(), this.getHeight()), e.fillStyle = ns(this.color, this.alpha), e.fill(), this.isSelected ? e.lineWidth = this.selectedThickness : e.lineWidth = this.thickness, e.strokeStyle = ns(this.color, 1), e.stroke(), e.closePath(), this.showLabel && this.label !== null && this.label.trim() !== "") {
       this.isSelected ? e.font = "bold 14px Arial" : e.font = "12px Arial";
-      const l = e.measureText(this.label).width + 10, o = 20;
+      const i = e.measureText(this.label).width + 10, o = 20;
       let s = this.xmin, r = this.ymin - o;
-      e.fillStyle = "white", [s, r] = this.toCanvasCoordinates(s, r), e.fillRect(s, r, l, o), e.lineWidth = 1, e.strokeStyle = "black", e.strokeRect(s, r, l, o), e.fillStyle = "black", e.fillText(this.label, s + 5, r + 15);
+      e.fillStyle = "white", [s, r] = this.toCanvasCoordinates(s, r), e.fillRect(s, r, i, o), e.lineWidth = 1, e.strokeStyle = "black", e.strokeRect(s, r, i, o), e.fillStyle = "black", e.fillText(this.label, s + 5, r + 15);
     }
-    e.fillStyle = No(this.color, 1);
-    for (const l of this.resizeHandles)
-      [t, n] = this.toCanvasCoordinates(l.xmin, l.ymin), e.fillRect(
+    e.fillStyle = ns(this.color, 1);
+    for (const i of this.resizeHandles)
+      [t, n] = this.toCanvasCoordinates(i.xmin, i.ymin), e.fillRect(
         t,
         n,
-        l.xmax - l.xmin,
-        l.ymax - l.ymin
+        i.xmax - i.xmin,
+        i.ymax - i.ymin
       );
   }
   startDrag(e) {
@@ -8894,8 +8962,8 @@ class al {
   indexOfPointInsideHandle(e, t) {
     [e, t] = this.toBoxCoordinates(e, t);
     for (let n = 0; n < this.resizeHandles.length; n++) {
-      const l = this.resizeHandles[n];
-      if (e >= l.xmin && e <= l.xmax && t >= l.ymin && t <= l.ymax)
+      const i = this.resizeHandles[n];
+      if (e >= i.xmin && e <= i.xmax && t >= i.ymin && t <= i.ymax)
         return this.resizingHandleIndex = n, n;
     }
     return -1;
@@ -8907,19 +8975,19 @@ class al {
     this.resizingHandleIndex = e, this.isResizing = !0, this.offsetMouseX = t.clientX - this.resizeHandles[e].xmin, this.offsetMouseY = t.clientY - this.resizeHandles[e].ymin, document.addEventListener("pointermove", this.handleResize), document.addEventListener("pointerup", this.stopResize);
   }
   onRotate(e) {
-    const [t, n, l, o] = [this._xmin, this._xmax, this._ymin, this._ymax];
+    const [t, n, i, o] = [this._xmin, this._xmax, this._ymin, this._ymax];
     switch (e) {
       case 1:
-        this._xmin = this.canvasWindow.imageWidth - o, this._xmax = this.canvasWindow.imageWidth - l, this._ymin = t, this._ymax = n;
+        this._xmin = this.canvasWindow.imageWidth - o, this._xmax = this.canvasWindow.imageWidth - i, this._ymin = t, this._ymax = n;
         break;
       case -1:
-        this._xmin = l, this._xmax = o, this._ymin = this.canvasWindow.imageHeight - n, this._ymax = this.canvasWindow.imageHeight - t;
+        this._xmin = i, this._xmax = o, this._ymin = this.canvasWindow.imageHeight - n, this._ymax = this.canvasWindow.imageHeight - t;
         break;
     }
     this.applyUserScale();
   }
 }
-const mn = [
+const qn = [
   "rgb(255, 168, 77)",
   "rgb(92, 172, 238)",
   "rgb(255, 99, 71)",
@@ -8933,8 +9001,8 @@ const mn = [
   "rgb(255, 193, 37)",
   "rgb(255, 193, 7)",
   "rgb(255, 250, 138)"
-], rl = (i, e, t) => Math.min(Math.max(i, e), t);
-class Ub {
+], mi = (l, e, t) => Math.min(Math.max(l, e), t);
+class b2 {
   constructor(e, t) {
     this.stopDrag = () => {
       this.pointersCache.size === 0 ? (this.isDragging = !1, document.removeEventListener("pointermove", this.handleDrag), document.removeEventListener("pointerup", this.stopDrag)) : this.pointersCache.size === 1 && (this.isDragging = !0, this.startDragX = this.pointersCache.values().next().value.clientX, this.startDragY = this.pointersCache.values().next().value.clientY);
@@ -8944,8 +9012,8 @@ class Ub {
           this.offsetX = (this.canvasWidth - this.imageWidth) / 2, this.offsetY = 0, this.renderCallBack();
           return;
         }
-        let l = n.clientX - this.startDragX, o = n.clientY - this.startDragY;
-        this.imageWidth * this.scale > this.canvasWidth ? l = rl(l, this.canvasWidth - this.offsetX - this.imageWidth * this.scale, -this.offsetX) : l = rl(l, -this.offsetX, this.canvasWidth - this.offsetX - this.imageWidth * this.scale), this.imageHeight * this.scale > this.canvasHeight ? o = rl(o, this.canvasHeight - this.offsetY - this.imageHeight * this.scale, -this.offsetY) : o = rl(o, -this.offsetY, this.canvasHeight - this.offsetY - this.imageHeight * this.scale), this.offsetX += l, this.offsetY += o, this.startDragX = n.clientX, this.startDragY = n.clientY, this.renderCallBack();
+        let i = n.clientX - this.startDragX, o = n.clientY - this.startDragY;
+        this.imageWidth * this.scale > this.canvasWidth ? i = mi(i, this.canvasWidth - this.offsetX - this.imageWidth * this.scale, -this.offsetX) : i = mi(i, -this.offsetX, this.canvasWidth - this.offsetX - this.imageWidth * this.scale), this.imageHeight * this.scale > this.canvasHeight ? o = mi(o, this.canvasHeight - this.offsetY - this.imageHeight * this.scale, -this.offsetY) : o = mi(o, -this.offsetY, this.canvasHeight - this.offsetY - this.imageHeight * this.scale), this.offsetX += i, this.offsetY += o, this.startDragX = n.clientX, this.startDragY = n.clientY, this.renderCallBack();
       }
     }, this.renderCallBack = e, this.pointersCache = t, this.scale = 1, this.offsetX = 0, this.offsetY = 0, this.canvasWidth = 0, this.canvasHeight = 0, this.imageWidth = 0, this.imageHeight = 0, this.imageRotatedWidth = 0, this.imageRotatedHeight = 0, this.isDragging = !1, this.startDragX = 0, this.startDragY = 0, this.orientation = 0;
   }
@@ -8955,363 +9023,363 @@ class Ub {
   setRotatedImage(e) {
     e !== null && (this.orientation == 0 || this.orientation == 2 ? (this.imageRotatedWidth = e.width, this.imageRotatedHeight = e.height) : (this.imageRotatedWidth = e.height, this.imageRotatedHeight = e.width));
   }
-  resize(e, t, n = 0, l = 0) {
-    this.canvasWidth == e && this.canvasHeight == t || (this.canvasWidth = e, this.canvasHeight = t, this.scale = 1, this.offsetX = n, this.offsetY = l);
+  resize(e, t, n = 0, i = 0) {
+    this.canvasWidth == e && this.canvasHeight == t || (this.canvasWidth = e, this.canvasHeight = t, this.scale = 1, this.offsetX = n, this.offsetY = i);
   }
 }
 const {
-  SvelteComponent: Vb,
+  SvelteComponent: p2,
   append: we,
-  attr: K,
-  binding_callbacks: sr,
-  bubble: Uo,
-  check_outros: Ht,
-  create_component: Ye,
-  destroy_component: Ie,
-  detach: Ae,
+  attr: G,
+  binding_callbacks: vr,
+  bubble: ls,
+  check_outros: Ot,
+  create_component: Xe,
+  destroy_component: Ye,
+  detach: We,
   element: Me,
-  empty: H_,
-  group_outros: jt,
-  init: Pb,
-  insert: Xe,
-  listen: Be,
+  empty: Q_,
+  group_outros: xt,
+  init: w2,
+  insert: Ae,
+  listen: ze,
   mount_component: He,
-  noop: j_,
-  run_all: zs,
-  safe_not_equal: Kb,
-  set_data: Zb,
-  set_style: _l,
-  space: We,
-  text: ar,
-  toggle_class: Tt,
-  transition_in: P,
-  transition_out: ie
-} = window.__gradio__svelte__internal, { onMount: Gb, createEventDispatcher: Jb } = window.__gradio__svelte__internal;
-function rr(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f, d, h, m, g, b, w, p, q, M, D, C, k, y, B, A, S, Y = !/*readOnlyBoxes*/
-  i[8] && _r(i), F = (
+  noop: ec,
+  run_all: Hs,
+  safe_not_equal: v2,
+  set_data: k2,
+  set_style: gi,
+  space: Re,
+  text: kr,
+  toggle_class: Vt,
+  transition_in: K,
+  transition_out: oe
+} = window.__gradio__svelte__internal, { onMount: y2, createEventDispatcher: C2 } = window.__gradio__svelte__internal;
+function yr(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u, d, h, m, g, b, v, p, y, q, D, M, S, C, X, I, w, L = !/*readOnlyBoxes*/
+  l[8] && Cr(l), F = (
     /*readOnlyBoxes*/
-    i[8] && ur()
+    l[8] && zr()
   );
-  const J = [e2, Qb], z = [];
-  function me(R, $) {
+  const O = [q2, S2], z = [];
+  function me(R, V) {
     return (
       /*labelsVisible*/
       R[17] ? 0 : 1
     );
   }
-  return o = me(i), s = z[o] = J[o](i), _ = new Wd({}), f = new pd({}), m = new vg({}), w = new dg({}), y = new sg({}), {
+  return o = me(l), s = z[o] = O[o](l), _ = new Vd({}), u = new Ld({}), m = new Rg({}), v = new qg({}), C = new pg({}), {
     c() {
-      e = Me("span"), Y && Y.c(), t = We(), F && F.c(), n = We(), l = Me("button"), s.c(), r = We(), a = Me("button"), Ye(_.$$.fragment), c = We(), u = Me("button"), Ye(f.$$.fragment), d = We(), h = Me("button"), Ye(m.$$.fragment), g = We(), b = Me("button"), Ye(w.$$.fragment), p = We(), q = Me("span"), M = ar(
+      e = Me("span"), L && L.c(), t = Re(), F && F.c(), n = Re(), i = Me("button"), s.c(), r = Re(), a = Me("button"), Xe(_.$$.fragment), c = Re(), f = Me("button"), Xe(u.$$.fragment), d = Re(), h = Me("button"), Xe(m.$$.fragment), g = Re(), b = Me("button"), Xe(v.$$.fragment), p = Re(), y = Me("span"), q = kr(
         /*zoomLevel*/
-        i[19]
-      ), D = ar("%"), C = We(), k = Me("button"), Ye(y.$$.fragment), K(l, "class", "icon svelte-bbigew"), K(l, "aria-label", "Toggle labels"), K(l, "title", "Toggle labels"), Tt(
-        l,
+        l[19]
+      ), D = kr("%"), M = Re(), S = Me("button"), Xe(C.$$.fragment), G(i, "class", "icon svelte-bbigew"), G(i, "aria-label", "Toggle labels"), G(i, "title", "Toggle labels"), Vt(
+        i,
         "active",
         /*labelsVisible*/
-        i[17]
-      ), K(a, "class", "icon svelte-bbigew"), K(a, "aria-label", "Rotate counterclockwise"), K(a, "title", "Rotate counterclockwise"), K(u, "class", "icon svelte-bbigew"), K(u, "aria-label", "Rotate clockwise"), K(u, "title", "Rotate clockwise"), K(h, "class", "icon svelte-bbigew"), K(h, "aria-label", "Reset zoom"), K(h, "title", "Reset zoom (Space)"), K(b, "class", "icon svelte-bbigew"), K(b, "aria-label", "Zoom out"), K(b, "title", "Zoom out"), K(q, "class", "zoom-level svelte-bbigew"), K(k, "class", "icon svelte-bbigew"), K(k, "aria-label", "Zoom in"), K(k, "title", "Zoom in"), K(e, "class", "canvas-control svelte-bbigew");
+        l[17]
+      ), G(a, "class", "icon svelte-bbigew"), G(a, "aria-label", "Rotate counterclockwise"), G(a, "title", "Rotate counterclockwise"), G(f, "class", "icon svelte-bbigew"), G(f, "aria-label", "Rotate clockwise"), G(f, "title", "Rotate clockwise"), G(h, "class", "icon svelte-bbigew"), G(h, "aria-label", "Reset zoom"), G(h, "title", "Reset zoom (Space)"), G(b, "class", "icon svelte-bbigew"), G(b, "aria-label", "Zoom out"), G(b, "title", "Zoom out"), G(y, "class", "zoom-level svelte-bbigew"), G(S, "class", "icon svelte-bbigew"), G(S, "aria-label", "Zoom in"), G(S, "title", "Zoom in"), G(e, "class", "canvas-control svelte-bbigew");
     },
-    m(R, $) {
-      Xe(R, e, $), Y && Y.m(e, null), we(e, t), F && F.m(e, null), we(e, n), we(e, l), z[o].m(l, null), we(e, r), we(e, a), He(_, a, null), we(e, c), we(e, u), He(f, u, null), we(e, d), we(e, h), He(m, h, null), we(e, g), we(e, b), He(w, b, null), we(e, p), we(e, q), we(q, M), we(q, D), we(e, C), we(e, k), He(y, k, null), B = !0, A || (S = [
-        Be(
-          l,
+    m(R, V) {
+      Ae(R, e, V), L && L.m(e, null), we(e, t), F && F.m(e, null), we(e, n), we(e, i), z[o].m(i, null), we(e, r), we(e, a), He(_, a, null), we(e, c), we(e, f), He(u, f, null), we(e, d), we(e, h), He(m, h, null), we(e, g), we(e, b), He(v, b, null), we(e, p), we(e, y), we(y, q), we(y, D), we(e, M), we(e, S), He(C, S, null), X = !0, I || (w = [
+        ze(
+          i,
           "click",
           /*toggleLabels*/
-          i[20]
+          l[20]
         ),
-        Be(
+        ze(
           a,
           "click",
           /*click_handler_4*/
-          i[55]
+          l[55]
         ),
-        Be(
-          u,
+        ze(
+          f,
           "click",
           /*click_handler_5*/
-          i[56]
+          l[56]
         ),
-        Be(
+        ze(
           h,
           "click",
           /*resetView*/
-          i[25]
+          l[25]
         ),
-        Be(
+        ze(
           b,
           "click",
           /*zoomOut*/
-          i[27]
+          l[27]
         ),
-        Be(
-          k,
+        ze(
+          S,
           "click",
           /*zoomIn*/
-          i[26]
+          l[26]
         )
-      ], A = !0);
+      ], I = !0);
     },
-    p(R, $) {
+    p(R, V) {
       /*readOnlyBoxes*/
-      R[8] ? Y && (jt(), ie(Y, 1, 1, () => {
-        Y = null;
-      }), Ht()) : Y ? (Y.p(R, $), $[0] & /*readOnlyBoxes*/
-      256 && P(Y, 1)) : (Y = _r(R), Y.c(), P(Y, 1), Y.m(e, t)), /*readOnlyBoxes*/
-      R[8] ? F ? $[0] & /*readOnlyBoxes*/
-      256 && P(F, 1) : (F = ur(), F.c(), P(F, 1), F.m(e, n)) : F && (jt(), ie(F, 1, 1, () => {
+      R[8] ? L && (xt(), oe(L, 1, 1, () => {
+        L = null;
+      }), Ot()) : L ? (L.p(R, V), V[0] & /*readOnlyBoxes*/
+      256 && K(L, 1)) : (L = Cr(R), L.c(), K(L, 1), L.m(e, t)), /*readOnlyBoxes*/
+      R[8] ? F ? V[0] & /*readOnlyBoxes*/
+      256 && K(F, 1) : (F = zr(), F.c(), K(F, 1), F.m(e, n)) : F && (xt(), oe(F, 1, 1, () => {
         F = null;
-      }), Ht());
-      let I = o;
-      o = me(R), o !== I && (jt(), ie(z[I], 1, 1, () => {
-        z[I] = null;
-      }), Ht(), s = z[o], s || (s = z[o] = J[o](R), s.c()), P(s, 1), s.m(l, null)), (!B || $[0] & /*labelsVisible*/
-      131072) && Tt(
-        l,
+      }), Ot());
+      let H = o;
+      o = me(R), o !== H && (xt(), oe(z[H], 1, 1, () => {
+        z[H] = null;
+      }), Ot(), s = z[o], s || (s = z[o] = O[o](R), s.c()), K(s, 1), s.m(i, null)), (!X || V[0] & /*labelsVisible*/
+      131072) && Vt(
+        i,
         "active",
         /*labelsVisible*/
         R[17]
-      ), (!B || $[0] & /*zoomLevel*/
-      524288) && Zb(
-        M,
+      ), (!X || V[0] & /*zoomLevel*/
+      524288) && k2(
+        q,
         /*zoomLevel*/
         R[19]
       );
     },
     i(R) {
-      B || (P(Y), P(F), P(s), P(_.$$.fragment, R), P(f.$$.fragment, R), P(m.$$.fragment, R), P(w.$$.fragment, R), P(y.$$.fragment, R), B = !0);
+      X || (K(L), K(F), K(s), K(_.$$.fragment, R), K(u.$$.fragment, R), K(m.$$.fragment, R), K(v.$$.fragment, R), K(C.$$.fragment, R), X = !0);
     },
     o(R) {
-      ie(Y), ie(F), ie(s), ie(_.$$.fragment, R), ie(f.$$.fragment, R), ie(m.$$.fragment, R), ie(w.$$.fragment, R), ie(y.$$.fragment, R), B = !1;
+      oe(L), oe(F), oe(s), oe(_.$$.fragment, R), oe(u.$$.fragment, R), oe(m.$$.fragment, R), oe(v.$$.fragment, R), oe(C.$$.fragment, R), X = !1;
     },
     d(R) {
-      R && Ae(e), Y && Y.d(), F && F.d(), z[o].d(), Ie(_), Ie(f), Ie(m), Ie(w), Ie(y), A = !1, zs(S);
+      R && We(e), L && L.d(), F && F.d(), z[o].d(), Ye(_), Ye(u), Ye(m), Ye(v), Ye(C), I = !1, Hs(w);
     }
   };
 }
-function _r(i) {
-  let e, t, n, l, o, s, r, a, _, c, u;
-  t = new e0({}), o = new r0({});
-  let f = (
+function Cr(l) {
+  let e, t, n, i, o, s, r, a, _, c, f;
+  t = new f0({}), o = new v0({});
+  let u = (
     /*showRemoveButton*/
-    i[1] && cr(i)
+    l[1] && Sr(l)
   ), d = !/*disableEditBoxes*/
-  i[5] && /*labelDetailLock*/
-  i[18] && fr(i);
+  l[5] && /*labelDetailLock*/
+  l[18] && qr(l);
   return {
     c() {
-      e = Me("button"), Ye(t.$$.fragment), n = We(), l = Me("button"), Ye(o.$$.fragment), s = We(), f && f.c(), r = We(), d && d.c(), a = H_(), K(e, "class", "icon svelte-bbigew"), K(e, "aria-label", "Create box"), K(e, "title", "Create box (C)"), Tt(
+      e = Me("button"), Xe(t.$$.fragment), n = Re(), i = Me("button"), Xe(o.$$.fragment), s = Re(), u && u.c(), r = Re(), d && d.c(), a = Q_(), G(e, "class", "icon svelte-bbigew"), G(e, "aria-label", "Create box"), G(e, "title", "Create box (C)"), Vt(
         e,
         "selected",
         /*mode*/
-        i[13] === /*Mode*/
-        i[9].creation
-      ), K(l, "class", "icon svelte-bbigew"), K(l, "aria-label", "Drag boxes"), K(l, "title", "Drag boxes (D)"), Tt(
-        l,
+        l[13] === /*Mode*/
+        l[9].creation
+      ), G(i, "class", "icon svelte-bbigew"), G(i, "aria-label", "Drag boxes"), G(i, "title", "Drag boxes (D)"), Vt(
+        i,
         "selected",
         /*mode*/
-        i[13] === /*Mode*/
-        i[9].drag
+        l[13] === /*Mode*/
+        l[9].drag
       );
     },
     m(h, m) {
-      Xe(h, e, m), He(t, e, null), Xe(h, n, m), Xe(h, l, m), He(o, l, null), Xe(h, s, m), f && f.m(h, m), Xe(h, r, m), d && d.m(h, m), Xe(h, a, m), _ = !0, c || (u = [
-        Be(
+      Ae(h, e, m), He(t, e, null), Ae(h, n, m), Ae(h, i, m), He(o, i, null), Ae(h, s, m), u && u.m(h, m), Ae(h, r, m), d && d.m(h, m), Ae(h, a, m), _ = !0, c || (f = [
+        ze(
           e,
           "click",
           /*click_handler*/
-          i[51]
+          l[51]
         ),
-        Be(
-          l,
+        ze(
+          i,
           "click",
           /*click_handler_1*/
-          i[52]
+          l[52]
         )
       ], c = !0);
     },
     p(h, m) {
       (!_ || m[0] & /*mode, Mode*/
-      8704) && Tt(
+      8704) && Vt(
         e,
         "selected",
         /*mode*/
         h[13] === /*Mode*/
         h[9].creation
       ), (!_ || m[0] & /*mode, Mode*/
-      8704) && Tt(
-        l,
+      8704) && Vt(
+        i,
         "selected",
         /*mode*/
         h[13] === /*Mode*/
         h[9].drag
       ), /*showRemoveButton*/
-      h[1] ? f ? (f.p(h, m), m[0] & /*showRemoveButton*/
-      2 && P(f, 1)) : (f = cr(h), f.c(), P(f, 1), f.m(r.parentNode, r)) : f && (jt(), ie(f, 1, 1, () => {
-        f = null;
-      }), Ht()), !/*disableEditBoxes*/
+      h[1] ? u ? (u.p(h, m), m[0] & /*showRemoveButton*/
+      2 && K(u, 1)) : (u = Sr(h), u.c(), K(u, 1), u.m(r.parentNode, r)) : u && (xt(), oe(u, 1, 1, () => {
+        u = null;
+      }), Ot()), !/*disableEditBoxes*/
       h[5] && /*labelDetailLock*/
       h[18] ? d ? (d.p(h, m), m[0] & /*disableEditBoxes, labelDetailLock*/
-      262176 && P(d, 1)) : (d = fr(h), d.c(), P(d, 1), d.m(a.parentNode, a)) : d && (jt(), ie(d, 1, 1, () => {
+      262176 && K(d, 1)) : (d = qr(h), d.c(), K(d, 1), d.m(a.parentNode, a)) : d && (xt(), oe(d, 1, 1, () => {
         d = null;
-      }), Ht());
+      }), Ot());
     },
     i(h) {
-      _ || (P(t.$$.fragment, h), P(o.$$.fragment, h), P(f), P(d), _ = !0);
+      _ || (K(t.$$.fragment, h), K(o.$$.fragment, h), K(u), K(d), _ = !0);
     },
     o(h) {
-      ie(t.$$.fragment, h), ie(o.$$.fragment, h), ie(f), ie(d), _ = !1;
+      oe(t.$$.fragment, h), oe(o.$$.fragment, h), oe(u), oe(d), _ = !1;
     },
     d(h) {
-      h && (Ae(e), Ae(n), Ae(l), Ae(s), Ae(r), Ae(a)), Ie(t), Ie(o), f && f.d(h), d && d.d(h), c = !1, zs(u);
+      h && (We(e), We(n), We(i), We(s), We(r), We(a)), Ye(t), Ye(o), u && u.d(h), d && d.d(h), c = !1, Hs(f);
     }
   };
 }
-function cr(i) {
-  let e, t, n, l, o;
-  return t = new g0({}), {
+function Sr(l) {
+  let e, t, n, i, o;
+  return t = new D0({}), {
     c() {
-      e = Me("button"), Ye(t.$$.fragment), K(e, "class", "icon svelte-bbigew"), K(e, "aria-label", "Remove box"), K(e, "title", "Remove box (Del)");
+      e = Me("button"), Xe(t.$$.fragment), G(e, "class", "icon svelte-bbigew"), G(e, "aria-label", "Remove box"), G(e, "title", "Remove box (Del)");
     },
     m(s, r) {
-      Xe(s, e, r), He(t, e, null), n = !0, l || (o = Be(
+      Ae(s, e, r), He(t, e, null), n = !0, i || (o = ze(
         e,
         "click",
         /*click_handler_2*/
-        i[53]
-      ), l = !0);
+        l[53]
+      ), i = !0);
     },
-    p: j_,
+    p: ec,
     i(s) {
-      n || (P(t.$$.fragment, s), n = !0);
+      n || (K(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      ie(t.$$.fragment, s), n = !1;
+      oe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Ae(e), Ie(t), l = !1, o();
+      s && We(e), Ye(t), i = !1, o();
     }
   };
 }
-function fr(i) {
-  let e, t, n, l, o;
-  return t = new C0({}), {
+function qr(l) {
+  let e, t, n, i, o;
+  return t = new X0({}), {
     c() {
-      e = Me("button"), Ye(t.$$.fragment), K(e, "class", "icon svelte-bbigew"), K(e, "aria-label", "Edit label"), K(e, "title", "Edit label");
+      e = Me("button"), Xe(t.$$.fragment), G(e, "class", "icon svelte-bbigew"), G(e, "aria-label", "Edit label"), G(e, "title", "Edit label");
     },
     m(s, r) {
-      Xe(s, e, r), He(t, e, null), n = !0, l || (o = Be(
+      Ae(s, e, r), He(t, e, null), n = !0, i || (o = ze(
         e,
         "click",
         /*click_handler_3*/
-        i[54]
-      ), l = !0);
+        l[54]
+      ), i = !0);
     },
-    p: j_,
+    p: ec,
     i(s) {
-      n || (P(t.$$.fragment, s), n = !0);
+      n || (K(t.$$.fragment, s), n = !0);
     },
     o(s) {
-      ie(t.$$.fragment, s), n = !1;
+      oe(t.$$.fragment, s), n = !1;
     },
     d(s) {
-      s && Ae(e), Ie(t), l = !1, o();
+      s && We(e), Ye(t), i = !1, o();
     }
   };
 }
-function ur(i) {
+function zr(l) {
   let e, t, n;
-  return t = new z_({}), {
+  return t = new $_({}), {
     c() {
-      e = Me("button"), Ye(t.$$.fragment), K(e, "class", "icon svelte-bbigew"), K(e, "aria-label", "Boxes are read-only"), K(e, "title", "Boxes are read-only"), e.disabled = !0, Tt(e, "locked", !0);
+      e = Me("button"), Xe(t.$$.fragment), G(e, "class", "icon svelte-bbigew"), G(e, "aria-label", "Boxes are read-only"), G(e, "title", "Boxes are read-only"), e.disabled = !0, Vt(e, "locked", !0);
     },
-    m(l, o) {
-      Xe(l, e, o), He(t, e, null), n = !0;
+    m(i, o) {
+      Ae(i, e, o), He(t, e, null), n = !0;
     },
-    i(l) {
-      n || (P(t.$$.fragment, l), n = !0);
+    i(i) {
+      n || (K(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      ie(t.$$.fragment, l), n = !1;
+    o(i) {
+      oe(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && Ae(e), Ie(t);
+    d(i) {
+      i && We(e), Ye(t);
     }
   };
 }
-function Qb(i) {
+function S2(l) {
   let e, t;
-  return e = new H0({}), {
+  return e = new Z0({}), {
     c() {
-      Ye(e.$$.fragment);
+      Xe(e.$$.fragment);
     },
-    m(n, l) {
-      He(e, n, l), t = !0;
+    m(n, i) {
+      He(e, n, i), t = !0;
     },
     i(n) {
-      t || (P(e.$$.fragment, n), t = !0);
+      t || (K(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      ie(e.$$.fragment, n), t = !1;
+      oe(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Ie(e, n);
+      Ye(e, n);
     }
   };
 }
-function e2(i) {
+function q2(l) {
   let e, t;
-  return e = new E0({}), {
+  return e = new O0({}), {
     c() {
-      Ye(e.$$.fragment);
+      Xe(e.$$.fragment);
     },
-    m(n, l) {
-      He(e, n, l), t = !0;
+    m(n, i) {
+      He(e, n, i), t = !0;
     },
     i(n) {
-      t || (P(e.$$.fragment, n), t = !0);
+      t || (K(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      ie(e.$$.fragment, n), t = !1;
+      oe(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Ie(e, n);
+      Ye(e, n);
     }
   };
 }
-function dr(i) {
+function Br(l) {
   let e, t;
-  return e = new qs({
+  return e = new Ys({
     props: {
       choices: (
         /*choices*/
-        i[3]
+        l[3]
       ),
       choicesColors: (
         /*choicesColors*/
-        i[4]
+        l[4]
       ),
       label: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? (
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? (
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].label
         ) : ""
       ),
       color: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? En(
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? Hn(
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].color
         ) : ""
       )
@@ -9319,25 +9387,25 @@ function dr(i) {
   }), e.$on(
     "change",
     /*onModalEditChange*/
-    i[33]
+    l[33]
   ), e.$on(
     "enter{onModalEditChange}",
     /*enter_onModalEditChange_handler*/
-    i[59]
+    l[59]
   ), {
     c() {
-      Ye(e.$$.fragment);
+      Xe(e.$$.fragment);
     },
-    m(n, l) {
-      He(e, n, l), t = !0;
+    m(n, i) {
+      He(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*choices*/
+      i[0] & /*choices*/
       8 && (o.choices = /*choices*/
-      n[3]), l[0] & /*choicesColors*/
+      n[3]), i[0] & /*choicesColors*/
       16 && (o.choicesColors = /*choicesColors*/
-      n[4]), l[0] & /*selectedBox, value*/
+      n[4]), i[0] & /*selectedBox, value*/
       4097 && (o.label = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
@@ -9347,11 +9415,11 @@ function dr(i) {
           /*selectedBox*/
           n[12]
         ].label
-      ) : ""), l[0] & /*selectedBox, value*/
+      ) : ""), i[0] & /*selectedBox, value*/
       4097 && (o.color = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
-      n[0].boxes.length ? En(
+      n[0].boxes.length ? Hn(
         /*value*/
         n[0].boxes[
           /*selectedBox*/
@@ -9360,80 +9428,80 @@ function dr(i) {
       ) : ""), e.$set(o);
     },
     i(n) {
-      t || (P(e.$$.fragment, n), t = !0);
+      t || (K(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      ie(e.$$.fragment, n), t = !1;
+      oe(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Ie(e, n);
+      Ye(e, n);
     }
   };
 }
-function hr(i) {
+function Dr(l) {
   let e, t;
-  return e = new qs({
+  return e = new Ys({
     props: {
       choices: (
         /*choices*/
-        i[3]
+        l[3]
       ),
       showRemove: !1,
       choicesColors: (
         /*choicesColors*/
-        i[4]
+        l[4]
       ),
       label: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? (
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? (
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].label
         ) : ""
       ),
       color: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? En(
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? Hn(
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].color
         ) : ""
       ),
       labelDetailLock: (
         /*labelDetailLock*/
-        i[18]
+        l[18]
       )
     }
   }), e.$on(
     "change",
     /*onModalNewChange*/
-    i[34]
+    l[34]
   ), e.$on(
     "enter{onModalNewChange}",
     /*enter_onModalNewChange_handler*/
-    i[60]
+    l[60]
   ), {
     c() {
-      Ye(e.$$.fragment);
+      Xe(e.$$.fragment);
     },
-    m(n, l) {
-      He(e, n, l), t = !0;
+    m(n, i) {
+      He(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*choices*/
+      i[0] & /*choices*/
       8 && (o.choices = /*choices*/
-      n[3]), l[0] & /*choicesColors*/
+      n[3]), i[0] & /*choicesColors*/
       16 && (o.choicesColors = /*choicesColors*/
-      n[4]), l[0] & /*selectedBox, value*/
+      n[4]), i[0] & /*selectedBox, value*/
       4097 && (o.label = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
@@ -9443,95 +9511,95 @@ function hr(i) {
           /*selectedBox*/
           n[12]
         ].label
-      ) : ""), l[0] & /*selectedBox, value*/
+      ) : ""), i[0] & /*selectedBox, value*/
       4097 && (o.color = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
-      n[0].boxes.length ? En(
+      n[0].boxes.length ? Hn(
         /*value*/
         n[0].boxes[
           /*selectedBox*/
           n[12]
         ].color
-      ) : ""), l[0] & /*labelDetailLock*/
+      ) : ""), i[0] & /*labelDetailLock*/
       262144 && (o.labelDetailLock = /*labelDetailLock*/
       n[18]), e.$set(o);
     },
     i(n) {
-      t || (P(e.$$.fragment, n), t = !0);
+      t || (K(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      ie(e.$$.fragment, n), t = !1;
+      oe(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Ie(e, n);
+      Ye(e, n);
     }
   };
 }
-function mr(i) {
+function Mr(l) {
   let e, t;
-  return e = new qs({
+  return e = new Ys({
     props: {
       choices: (
         /*choices*/
-        i[3]
+        l[3]
       ),
       showRemove: !1,
       choicesColors: (
         /*choicesColors*/
-        i[4]
+        l[4]
       ),
       label: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? (
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? (
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].label
         ) : ""
       ),
       color: (
         /*selectedBox*/
-        i[12] >= 0 && /*selectedBox*/
-        i[12] < /*value*/
-        i[0].boxes.length ? En(
+        l[12] >= 0 && /*selectedBox*/
+        l[12] < /*value*/
+        l[0].boxes.length ? Hn(
           /*value*/
-          i[0].boxes[
+          l[0].boxes[
             /*selectedBox*/
-            i[12]
+            l[12]
           ].color
         ) : ""
       ),
       labelDetailLock: (
         /*labelDetailLock*/
-        i[18]
+        l[18]
       )
     }
   }), e.$on(
     "change",
     /*onDefaultLabelEditChange*/
-    i[35]
+    l[35]
   ), e.$on(
     "enter{onDefaultLabelEditChange}",
     /*enter_onDefaultLabelEditChange_handler*/
-    i[61]
+    l[61]
   ), {
     c() {
-      Ye(e.$$.fragment);
+      Xe(e.$$.fragment);
     },
-    m(n, l) {
-      He(e, n, l), t = !0;
+    m(n, i) {
+      He(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*choices*/
+      i[0] & /*choices*/
       8 && (o.choices = /*choices*/
-      n[3]), l[0] & /*choicesColors*/
+      n[3]), i[0] & /*choicesColors*/
       16 && (o.choicesColors = /*choicesColors*/
-      n[4]), l[0] & /*selectedBox, value*/
+      n[4]), i[0] & /*selectedBox, value*/
       4097 && (o.label = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
@@ -9541,308 +9609,308 @@ function mr(i) {
           /*selectedBox*/
           n[12]
         ].label
-      ) : ""), l[0] & /*selectedBox, value*/
+      ) : ""), i[0] & /*selectedBox, value*/
       4097 && (o.color = /*selectedBox*/
       n[12] >= 0 && /*selectedBox*/
       n[12] < /*value*/
-      n[0].boxes.length ? En(
+      n[0].boxes.length ? Hn(
         /*value*/
         n[0].boxes[
           /*selectedBox*/
           n[12]
         ].color
-      ) : ""), l[0] & /*labelDetailLock*/
+      ) : ""), i[0] & /*labelDetailLock*/
       262144 && (o.labelDetailLock = /*labelDetailLock*/
       n[18]), e.$set(o);
     },
     i(n) {
-      t || (P(e.$$.fragment, n), t = !0);
+      t || (K(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      ie(e.$$.fragment, n), t = !1;
+      oe(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Ie(e, n);
+      Ye(e, n);
     }
   };
 }
-function t2(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f = (
+function z2(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u = (
     /*interactive*/
-    i[2] && rr(i)
+    l[2] && yr(l)
   ), d = (
     /*editModalVisible*/
-    i[14] && dr(i)
+    l[14] && Br(l)
   ), h = (
     /*newModalVisible*/
-    i[15] && hr(i)
+    l[15] && Dr(l)
   ), m = (
     /*editDefaultLabelVisible*/
-    i[16] && mr(i)
+    l[16] && Mr(l)
   );
   return {
     c() {
-      e = Me("div"), t = Me("div"), n = Me("canvas"), l = We(), f && f.c(), o = We(), d && d.c(), s = We(), h && h.c(), r = We(), m && m.c(), a = H_(), _l(
+      e = Me("div"), t = Me("div"), n = Me("canvas"), i = Re(), u && u.c(), o = Re(), d && d.c(), s = Re(), h && h.c(), r = Re(), m && m.c(), a = Q_(), gi(
         n,
         "height",
         /*height*/
-        i[6]
-      ), _l(
+        l[6]
+      ), gi(
         n,
         "width",
         /*width*/
-        i[7]
-      ), K(n, "class", "canvas-annotator svelte-bbigew"), Tt(
+        l[7]
+      ), G(n, "class", "canvas-annotator svelte-bbigew"), Vt(
         n,
         "read-only",
         /*readOnlyBoxes*/
-        i[8]
-      ), K(t, "class", "canvas-container svelte-bbigew"), K(e, "class", "annotator-container"), K(e, "tabindex", "0");
+        l[8]
+      ), G(t, "class", "canvas-container svelte-bbigew"), G(e, "class", "annotator-container"), G(e, "tabindex", "0");
     },
     m(g, b) {
-      Xe(g, e, b), we(e, t), we(t, n), i[50](n), we(e, l), f && f.m(e, null), i[57](e), Xe(g, o, b), d && d.m(g, b), Xe(g, s, b), h && h.m(g, b), Xe(g, r, b), m && m.m(g, b), Xe(g, a, b), _ = !0, c || (u = [
-        Be(
+      Ae(g, e, b), we(e, t), we(t, n), l[50](n), we(e, i), u && u.m(e, null), l[57](e), Ae(g, o, b), d && d.m(g, b), Ae(g, s, b), h && h.m(g, b), Ae(g, r, b), m && m.m(g, b), Ae(g, a, b), _ = !0, c || (f = [
+        ze(
           n,
           "pointerdown",
           /*handlePointerDown*/
-          i[21]
+          l[21]
         ),
-        Be(
+        ze(
           n,
           "pointerup",
           /*handlePointerUp*/
-          i[22]
+          l[22]
         ),
-        Be(
+        ze(
           n,
           "pointermove",
           /*handlePointerMove*/
-          i[24]
+          l[24]
         ),
-        Be(
+        ze(
           n,
           "pointercancel",
           /*handlePointerCancel*/
-          i[23]
+          l[23]
         ),
-        Be(
+        ze(
           n,
           "dblclick",
           /*handleDoubleClick*/
-          i[32]
+          l[32]
         ),
-        Be(
+        ze(
           n,
           "wheel",
           /*handleMouseWheel*/
-          i[29]
+          l[29]
         ),
-        Be(
+        ze(
           e,
           "keydown",
           /*handleKeyPress*/
-          i[28]
+          l[28]
         ),
-        Be(
+        ze(
           e,
           "click",
           /*click_handler_6*/
-          i[58]
+          l[58]
         )
       ], c = !0);
     },
     p(g, b) {
       (!_ || b[0] & /*height*/
-      64) && _l(
+      64) && gi(
         n,
         "height",
         /*height*/
         g[6]
       ), (!_ || b[0] & /*width*/
-      128) && _l(
+      128) && gi(
         n,
         "width",
         /*width*/
         g[7]
       ), (!_ || b[0] & /*readOnlyBoxes*/
-      256) && Tt(
+      256) && Vt(
         n,
         "read-only",
         /*readOnlyBoxes*/
         g[8]
       ), /*interactive*/
-      g[2] ? f ? (f.p(g, b), b[0] & /*interactive*/
-      4 && P(f, 1)) : (f = rr(g), f.c(), P(f, 1), f.m(e, null)) : f && (jt(), ie(f, 1, 1, () => {
-        f = null;
-      }), Ht()), /*editModalVisible*/
+      g[2] ? u ? (u.p(g, b), b[0] & /*interactive*/
+      4 && K(u, 1)) : (u = yr(g), u.c(), K(u, 1), u.m(e, null)) : u && (xt(), oe(u, 1, 1, () => {
+        u = null;
+      }), Ot()), /*editModalVisible*/
       g[14] ? d ? (d.p(g, b), b[0] & /*editModalVisible*/
-      16384 && P(d, 1)) : (d = dr(g), d.c(), P(d, 1), d.m(s.parentNode, s)) : d && (jt(), ie(d, 1, 1, () => {
+      16384 && K(d, 1)) : (d = Br(g), d.c(), K(d, 1), d.m(s.parentNode, s)) : d && (xt(), oe(d, 1, 1, () => {
         d = null;
-      }), Ht()), /*newModalVisible*/
+      }), Ot()), /*newModalVisible*/
       g[15] ? h ? (h.p(g, b), b[0] & /*newModalVisible*/
-      32768 && P(h, 1)) : (h = hr(g), h.c(), P(h, 1), h.m(r.parentNode, r)) : h && (jt(), ie(h, 1, 1, () => {
+      32768 && K(h, 1)) : (h = Dr(g), h.c(), K(h, 1), h.m(r.parentNode, r)) : h && (xt(), oe(h, 1, 1, () => {
         h = null;
-      }), Ht()), /*editDefaultLabelVisible*/
+      }), Ot()), /*editDefaultLabelVisible*/
       g[16] ? m ? (m.p(g, b), b[0] & /*editDefaultLabelVisible*/
-      65536 && P(m, 1)) : (m = mr(g), m.c(), P(m, 1), m.m(a.parentNode, a)) : m && (jt(), ie(m, 1, 1, () => {
+      65536 && K(m, 1)) : (m = Mr(g), m.c(), K(m, 1), m.m(a.parentNode, a)) : m && (xt(), oe(m, 1, 1, () => {
         m = null;
-      }), Ht());
+      }), Ot());
     },
     i(g) {
-      _ || (P(f), P(d), P(h), P(m), _ = !0);
+      _ || (K(u), K(d), K(h), K(m), _ = !0);
     },
     o(g) {
-      ie(f), ie(d), ie(h), ie(m), _ = !1;
+      oe(u), oe(d), oe(h), oe(m), _ = !1;
     },
     d(g) {
-      g && (Ae(e), Ae(o), Ae(s), Ae(r), Ae(a)), i[50](null), f && f.d(), i[57](null), d && d.d(g), h && h.d(g), m && m.d(g), c = !1, zs(u);
+      g && (We(e), We(o), We(s), We(r), We(a)), l[50](null), u && u.d(), l[57](null), d && d.d(g), h && h.d(g), m && m.d(g), c = !1, Hs(f);
     }
   };
 }
-const gr = 100;
-function cl(i) {
-  var e = parseInt(i.slice(1, 3), 16), t = parseInt(i.slice(3, 5), 16), n = parseInt(i.slice(5, 7), 16);
+const Lr = 100;
+function bi(l) {
+  var e = parseInt(l.slice(1, 3), 16), t = parseInt(l.slice(3, 5), 16), n = parseInt(l.slice(5, 7), 16);
   return "rgb(" + e + ", " + t + ", " + n + ")";
 }
-function En(i) {
-  const e = i.match(/(\d+(\.\d+)?)/g), t = parseInt(e[0]), n = parseInt(e[1]), l = parseInt(e[2]);
-  return "#" + (1 << 24 | t << 16 | n << 8 | l).toString(16).slice(1);
+function Hn(l) {
+  const e = l.match(/(\d+(\.\d+)?)/g), t = parseInt(e[0]), n = parseInt(e[1]), i = parseInt(e[2]);
+  return "#" + (1 << 24 | t << 16 | n << 8 | i).toString(16).slice(1);
 }
-function n2(i, e, t) {
+function B2(l, e, t) {
   let n;
-  var l;
-  (function(v) {
-    v[v.creation = 0] = "creation", v[v.drag = 1] = "drag";
-  })(l || (l = {}));
-  let { imageUrl: o = null } = e, { interactive: s } = e, { boxAlpha: r = 0.5 } = e, { boxMinSize: a = 10 } = e, { handleSize: _ } = e, { boxThickness: c } = e, { boxSelectedThickness: u } = e, { value: f } = e, { choices: d = [] } = e, { choicesColors: h = [] } = e, { disableEditBoxes: m = !1 } = e, { height: g = "100%" } = e, { width: b = "100%" } = e, { singleBox: w = !1 } = e, { showRemoveButton: p = null } = e, { handlesCursor: q = !0 } = e, { useDefaultLabel: M = !1 } = e, { enableKeyboardShortcuts: D = !0 } = e, { showBoxLabels: C = !0 } = e, { readOnlyBoxes: k = !1 } = e;
+  var i;
+  (function(k) {
+    k[k.creation = 0] = "creation", k[k.drag = 1] = "drag";
+  })(i || (i = {}));
+  let { imageUrl: o = null } = e, { interactive: s } = e, { boxAlpha: r = 0.5 } = e, { boxMinSize: a = 10 } = e, { handleSize: _ } = e, { boxThickness: c } = e, { boxSelectedThickness: f } = e, { value: u } = e, { choices: d = [] } = e, { choicesColors: h = [] } = e, { disableEditBoxes: m = !1 } = e, { height: g = "100%" } = e, { width: b = "100%" } = e, { singleBox: v = !1 } = e, { showRemoveButton: p = null } = e, { handlesCursor: y = !0 } = e, { useDefaultLabel: q = !1 } = e, { enableKeyboardShortcuts: D = !0 } = e, { showBoxLabels: M = !0 } = e, { readOnlyBoxes: S = !1 } = e;
   p === null && (p = m);
-  let y, B, A, S = null, Y = -1, F = l.drag, J = /* @__PURE__ */ new Map(), z = new Ub(te, J), me = null;
-  f !== null && f.boxes.length == 0 && (F = l.creation);
-  let R = 0, $ = 0, I = 0, O = 0, _e = 1, Z = 0, re = 0, j = !1, ke = !1, W = !1, x = C, oe = M, se = { label: "", color: "" }, le = { x: 0, y: 0, distance: 0 };
-  const ge = Jb();
+  let C, X, I, w = null, L = -1, F = i.drag, O = /* @__PURE__ */ new Map(), z = new b2(te, O), me = null;
+  u !== null && u.boxes.length == 0 && (F = i.creation);
+  let R = 0, V = 0, H = 0, x = 0, _e = 1, se = 0, ae = 0, j = !1, Ke = !1, W = !1, $ = M, ne = q, re = { label: "", color: "" }, le = { x: 0, y: 0, distance: 0 };
+  const ge = C2();
   function te() {
-    if (A) {
-      if (A.clearRect(0, 0, y.width, y.height), A.save(), A.translate(z.offsetX, z.offsetY), A.scale(z.scale, z.scale), S !== null) {
-        switch (f.orientation) {
+    if (I) {
+      if (I.clearRect(0, 0, C.width, C.height), I.save(), I.translate(z.offsetX, z.offsetY), I.scale(z.scale, z.scale), w !== null) {
+        switch (u.orientation) {
           case 0:
-            A.drawImage(S, 0, 0, Z, re);
+            I.drawImage(w, 0, 0, se, ae);
             break;
           case 1:
-            A.translate(Z, 0), A.rotate(Math.PI / 2), A.drawImage(S, 0, 0, re, Z);
+            I.translate(se, 0), I.rotate(Math.PI / 2), I.drawImage(w, 0, 0, ae, se);
             break;
           case 2:
-            A.translate(Z, re), A.rotate(Math.PI), A.drawImage(S, 0, 0, Z, re);
+            I.translate(se, ae), I.rotate(Math.PI), I.drawImage(w, 0, 0, se, ae);
             break;
           case 3:
-            A.translate(0, re), A.rotate(-Math.PI / 2), A.drawImage(S, 0, 0, re, Z);
+            I.translate(0, ae), I.rotate(-Math.PI / 2), I.drawImage(w, 0, 0, ae, se);
             break;
         }
-        A.restore();
+        I.restore();
       }
-      for (const v of f.boxes.slice().reverse())
-        v.render(A);
+      for (const k of u.boxes.slice().reverse())
+        k.render(I);
     }
   }
-  function E(v) {
-    k || (t(12, Y = v), f.boxes.forEach((X) => {
-      X.setSelected(!1);
-    }), v >= 0 && v < f.boxes.length && f.boxes[v].setSelected(!0), te());
+  function E(k) {
+    S || (t(12, L = k), u.boxes.forEach((A) => {
+      A.setSelected(!1);
+    }), k >= 0 && k < u.boxes.length && u.boxes[k].setSelected(!0), te());
   }
   function Ze() {
-    t(17, x = !x);
-    for (const v of f.boxes)
-      v.setShowLabel(x);
+    t(17, $ = !$);
+    for (const k of u.boxes)
+      k.setShowLabel($);
     te();
   }
-  const it = (v, X) => {
-    const H = Math.sqrt(Math.pow(v.clientX - X.clientX, 2) + Math.pow(v.clientY - X.clientY, 2));
-    return H < gr ? gr : H;
+  const lt = (k, A) => {
+    const Y = Math.sqrt(Math.pow(k.clientX - A.clientX, 2) + Math.pow(k.clientY - A.clientY, 2));
+    return Y < Lr ? Lr : Y;
   };
-  function ut(v) {
+  function ht(k) {
     if (s) {
-      if (v.preventDefault(), y.setPointerCapture(v.pointerId), J.set(v.pointerId, v), J.size == 1) {
-        if (k) {
-          z.startDrag(v);
+      if (k.preventDefault(), C.setPointerCapture(k.pointerId), O.set(k.pointerId, k), O.size == 1) {
+        if (S) {
+          z.startDrag(k);
           return;
         }
-        F === l.creation ? Xn(v) : F === l.drag && cn(v);
-      } else if (J.size == 2) {
-        t(49, z.isDragging = !1, z), f.boxes.forEach((Te) => {
-          Te.isCreating = !1, Te.isDragging = !1, Te.isResizing = !1;
+        F === i.creation ? to(k) : F === i.drag && wn(k);
+      } else if (O.size == 2) {
+        t(49, z.isDragging = !1, z), u.boxes.forEach((je) => {
+          je.isCreating = !1, je.isDragging = !1, je.isResizing = !1;
         });
-        const X = Array.from(J.values()), H = X[0], V = X[1], G = it(H, V), Q = y.getBoundingClientRect(), ce = (H.clientX + V.clientX) / 2 - Q.left, je = (H.clientY + V.clientY) / 2 - Q.top;
-        le.distance = G, le.x = ce, le.y = je;
+        const A = Array.from(O.values()), Y = A[0], N = A[1], Z = lt(Y, N), J = C.getBoundingClientRect(), ue = (Y.clientX + N.clientX) / 2 - J.left, Ie = (Y.clientY + N.clientY) / 2 - J.top;
+        le.distance = Z, le.x = ue, le.y = Ie;
       }
     }
   }
-  function cn(v) {
-    if (k) {
-      z.startDrag(v);
+  function wn(k) {
+    if (S) {
+      z.startDrag(k);
       return;
     }
-    const X = y.getBoundingClientRect(), H = v.clientX - X.left, V = v.clientY - X.top;
-    let G = !1;
-    for (const [Q, ce] of f.boxes.entries()) {
-      const je = ce.indexOfPointInsideHandle(H, V);
-      if (je >= 0) {
-        G = !0, E(Q), ce.startResize(je, v);
+    const A = C.getBoundingClientRect(), Y = k.clientX - A.left, N = k.clientY - A.top;
+    let Z = !1;
+    for (const [J, ue] of u.boxes.entries()) {
+      const Ie = ue.indexOfPointInsideHandle(Y, N);
+      if (Ie >= 0) {
+        Z = !0, E(J), ue.startResize(Ie, k);
         return;
       }
     }
-    for (const [Q, ce] of f.boxes.entries())
-      if (ce.isPointInsideBox(H, V)) {
-        G = !0, E(Q), ce.startDrag(v);
+    for (const [J, ue] of u.boxes.entries())
+      if (ue.isPointInsideBox(Y, N)) {
+        Z = !0, E(J), ue.startDrag(k);
         return;
       }
-    w || E(-1), G || z.startDrag(v);
+    v || E(-1), Z || z.startDrag(k);
   }
-  function Ol(v) {
-    s && (J.delete(v.pointerId), y.releasePointerCapture(v.pointerId), ge("change"));
+  function Pi(k) {
+    s && (O.delete(k.pointerId), C.releasePointerCapture(k.pointerId), ge("change"));
   }
-  function $l(v) {
-    s && (J.delete(v.pointerId), y.releasePointerCapture(v.pointerId), ge("change"));
+  function Ki(k) {
+    s && (O.delete(k.pointerId), C.releasePointerCapture(k.pointerId), ge("change"));
   }
-  function xl(v) {
+  function Zi(k) {
     if (s)
-      if (v.preventDefault(), v.pointerType === "mouse") {
-        if (!q || f === null || F !== l.drag)
+      if (k.preventDefault(), k.pointerType === "mouse") {
+        if (!y || u === null || F !== i.drag)
           return;
-        const X = y.getBoundingClientRect(), H = v.clientX - X.left, V = v.clientY - X.top;
-        for (const [G, Q] of f.boxes.entries()) {
-          const ce = Q.indexOfPointInsideHandle(H, V);
-          if (ce >= 0) {
-            t(10, y.style.cursor = Q.resizeHandles[ce].cursor, y);
+        const A = C.getBoundingClientRect(), Y = k.clientX - A.left, N = k.clientY - A.top;
+        for (const [Z, J] of u.boxes.entries()) {
+          const ue = J.indexOfPointInsideHandle(Y, N);
+          if (ue >= 0) {
+            t(10, C.style.cursor = J.resizeHandles[ue].cursor, C);
             return;
           }
         }
-        t(10, y.style.cursor = "default", y);
+        t(10, C.style.cursor = "default", C);
       } else {
-        if (!J.has(v.pointerId))
+        if (!O.has(k.pointerId))
           return;
-        if (J.set(v.pointerId, v), J.size === 2) {
-          const X = Array.from(J.values()), H = X[0], V = X[1], G = it(H, V), Q = y.getBoundingClientRect(), ce = (H.clientX + V.clientX) / 2 - Q.left, je = (H.clientY + V.clientY) / 2 - Q.top, Te = parseFloat((z.scale * (G / le.distance)).toFixed(2)), Pt = Te < 1 ? 1 : Te, ui = Pt / z.scale;
-          t(49, z.offsetX = le.x - (le.x - z.offsetX) * ui, z), t(49, z.offsetY = le.y - (le.y - z.offsetY) * ui, z);
-          const di = ce - le.x, rc = je - le.y;
-          t(49, z.offsetX += di, z), t(49, z.offsetY += rc, z), t(49, z.scale = Pt, z), le.x = ce, le.y = je, le.distance = G, te();
+        if (O.set(k.pointerId, k), O.size === 2) {
+          const A = Array.from(O.values()), Y = A[0], N = A[1], Z = lt(Y, N), J = C.getBoundingClientRect(), ue = (Y.clientX + N.clientX) / 2 - J.left, Ie = (Y.clientY + N.clientY) / 2 - J.top, je = parseFloat((z.scale * (Z / le.distance)).toFixed(2)), Gt = je < 1 ? 1 : je, wl = Gt / z.scale;
+          t(49, z.offsetX = le.x - (le.x - z.offsetX) * wl, z), t(49, z.offsetY = le.y - (le.y - z.offsetY) * wl, z);
+          const vl = ue - le.x, vc = Ie - le.y;
+          t(49, z.offsetX += vl, z), t(49, z.offsetY += vc, z), t(49, z.scale = Gt, z), le.x = ue, le.y = Ie, le.distance = Z, te();
         }
       }
   }
-  function ai() {
-    const v = y.width / Z, X = y.height / re, H = Math.min(v, X);
-    t(49, z.scale = H, z), t(49, z.offsetX = (y.width - Z * H) / 2, z), t(49, z.offsetY = (y.height - re * H) / 2, z), te();
+  function hl() {
+    const k = C.width / se, A = C.height / ae, Y = Math.min(k, A);
+    t(49, z.scale = Y, z), t(49, z.offsetX = (C.width - se * Y) / 2, z), t(49, z.offsetY = (C.height - ae * Y) / 2, z), te();
   }
-  function Nl() {
-    const v = parseFloat((z.scale * 1.25).toFixed(2)), X = y.width / 2, H = y.height / 2, V = (X - z.offsetX) / z.scale, G = (H - z.offsetY) / z.scale;
-    t(49, z.offsetX = X - V * v, z), t(49, z.offsetY = H - G * v, z), t(49, z.scale = v, z), te();
+  function Gi() {
+    const k = parseFloat((z.scale * 1.25).toFixed(2)), A = C.width / 2, Y = C.height / 2, N = (A - z.offsetX) / z.scale, Z = (Y - z.offsetY) / z.scale;
+    t(49, z.offsetX = A - N * k, z), t(49, z.offsetY = Y - Z * k, z), t(49, z.scale = k, z), te();
   }
-  function Ul() {
-    const v = parseFloat((z.scale * 0.8).toFixed(2)), X = v < 1 ? 1 : v, H = y.width / 2, V = y.height / 2, G = (H - z.offsetX) / z.scale, Q = (V - z.offsetY) / z.scale;
-    t(49, z.offsetX = H - G * X, z), t(49, z.offsetY = V - Q * X, z), t(49, z.scale = X, z), te();
+  function Ji() {
+    const k = parseFloat((z.scale * 0.8).toFixed(2)), A = k < 1 ? 1 : k, Y = C.width / 2, N = C.height / 2, Z = (Y - z.offsetX) / z.scale, J = (N - z.offsetY) / z.scale;
+    t(49, z.offsetX = Y - Z * A, z), t(49, z.offsetY = N - J * A, z), t(49, z.scale = A, z), te();
   }
-  function L(v) {
-    if (!D || v.target !== B || !s)
+  function Qi(k) {
+    if (!D || k.target !== X || !s)
       return;
-    const X = v.key.toLowerCase(), H = v.ctrlKey || v.metaKey;
+    const A = k.key.toLowerCase(), Y = k.ctrlKey || k.metaKey;
     if (((/* @__PURE__ */ new Set([
       "delete",
       "c",
@@ -9854,209 +9922,207 @@ function n2(i, e, t) {
       "arrowdown",
       "arrowleft",
       "arrowright"
-    ])).has(X) || H && (X === "c" || X === "v")) && (v.preventDefault(), v.stopPropagation()), k) {
-      X === " " && ai();
+    ])).has(A) || Y && (A === "c" || A === "v")) && (k.preventDefault(), k.stopPropagation()), S) {
+      A === " " && hl();
       return;
     }
-    if (H && X === "c") {
-      U_();
+    if (Y && A === "c") {
+      Ht();
       return;
     }
-    if (H && X === "v") {
-      V_();
+    if (Y && A === "v") {
+      bl();
       return;
     }
-    switch (X) {
+    switch (A) {
       case "delete":
       case "q":
-        Yn();
+        Kt();
         break;
       case " ":
-        ai();
+        hl();
         break;
       case "arrowup":
-        ji(0, -3);
+        Zt(0, -3);
         break;
       case "arrowdown":
-        ji(0, 3);
+        Zt(0, 3);
         break;
       case "arrowleft":
-        ji(-3, 0);
+        Zt(-3, 0);
         break;
       case "arrowright":
-        ji(3, 0);
+        Zt(3, 0);
         break;
     }
   }
-  function kt() {
+  function ml() {
     setTimeout(
       () => {
-        B == null || B.focus();
+        X == null || X.focus();
       },
       0
     );
   }
-  function Et(v) {
+  function eo(k) {
     if (!s)
       return;
-    v.preventDefault();
-    const X = 1 / (1 + v.deltaY / 1e3 * 0.5), H = parseFloat((z.scale * X).toFixed(2)), V = H < 1 ? 1 : H, G = y.getBoundingClientRect(), Q = v.clientX - G.left, ce = v.clientY - G.top, je = (Q - z.offsetX) / z.scale, Te = (ce - z.offsetY) / z.scale;
-    t(49, z.offsetX = Q - je * V, z), t(49, z.offsetY = ce - Te * V, z), t(49, z.scale = V, z), te();
+    k.preventDefault();
+    const A = 1 / (1 + k.deltaY / 1e3 * 0.5), Y = parseFloat((z.scale * A).toFixed(2)), N = Y < 1 ? 1 : Y, Z = C.getBoundingClientRect(), J = k.clientX - Z.left, ue = k.clientY - Z.top, Ie = (J - z.offsetX) / z.scale, je = (ue - z.offsetY) / z.scale;
+    t(49, z.offsetX = J - Ie * N, z), t(49, z.offsetY = ue - je * N, z), t(49, z.scale = N, z), te();
   }
-  function Xn(v) {
-    const X = y.getBoundingClientRect(), H = (v.clientX - X.left - z.offsetX) / _e / z.scale, V = (v.clientY - X.top - z.offsetY) / _e / z.scale;
-    let G;
-    h.length > 0 ? G = cl(h[0]) : w ? f.boxes.length > 0 ? G = f.boxes[0].color : G = mn[0] : G = mn[f.boxes.length % mn.length];
-    let Q = new al(te, Vt, z, J, R, $, I, O, "", H, V, H, V, G, r, a, _, c, u, _e, C);
-    Q.startCreating(v, X.left, X.top), w ? t(0, f.boxes = [Q], f) : t(0, f.boxes = [Q, ...f.boxes], f), E(0), te(), ge("change");
+  function to(k) {
+    const A = C.getBoundingClientRect(), Y = (k.clientX - A.left - z.offsetX) / _e / z.scale, N = (k.clientY - A.top - z.offsetY) / _e / z.scale;
+    let Z;
+    h.length > 0 ? Z = bi(h[0]) : v ? u.boxes.length > 0 ? Z = u.boxes[0].color : Z = qn[0] : Z = qn[u.boxes.length % qn.length];
+    let J = new hi(te, Ct, z, O, R, V, H, x, "", Y, N, Y, N, Z, r, a, _, c, f, _e, M);
+    J.startCreating(k, A.left, A.top), v ? t(0, u.boxes = [J], u) : t(0, u.boxes = [J, ...u.boxes], u), E(0), te(), ge("change");
   }
-  function ri() {
-    t(13, F = l.creation), t(10, y.style.cursor = "crosshair", y);
+  function gl() {
+    t(13, F = i.creation), t(10, C.style.cursor = "crosshair", C);
   }
-  function Rt() {
-    t(13, F = l.drag), t(10, y.style.cursor = "default", y);
+  function B() {
+    t(13, F = i.drag), t(10, C.style.cursor = "default", C);
   }
-  function Vt() {
-    Y >= 0 && Y < f.boxes.length && (f.boxes[Y].getArea() < 1 ? Yn() : (m || (oe ? N_() : t(15, ke = !0)), w && Rt()));
+  function Ct() {
+    L >= 0 && L < u.boxes.length && (u.boxes[L].getArea() < 1 ? Kt() : (m || (ne ? lo() : t(15, Ke = !0)), v && B()));
   }
-  function Vl() {
-    Y >= 0 && Y < f.boxes.length && !m && t(14, j = !0);
+  function Yt() {
+    L >= 0 && L < u.boxes.length && !m && t(14, j = !0);
   }
-  function Pl(v) {
-    s && Vl();
+  function $n(k) {
+    s && Yt();
   }
-  function _i(v) {
-    t(14, j = !1), kt();
-    const { detail: X } = v;
-    let H = X.label, V = X.color, G = X.ret;
-    if (Y >= 0 && Y < f.boxes.length) {
-      let Q = f.boxes[Y];
-      G == 1 ? (Q.label = H, Q.color = cl(V), te(), ge("change")) : G == -1 && Yn();
+  function no(k) {
+    t(14, j = !1), ml();
+    const { detail: A } = k;
+    let Y = A.label, N = A.color, Z = A.ret;
+    if (L >= 0 && L < u.boxes.length) {
+      let J = u.boxes[L];
+      Z == 1 ? (J.label = Y, J.color = bi(N), te(), ge("change")) : Z == -1 && Kt();
     }
   }
-  function Wt(v) {
-    t(15, ke = !1), kt();
-    const { detail: X } = v;
-    let H = X.label, V = X.color, G = X.ret, Q = X.lock;
-    if (Y >= 0 && Y < f.boxes.length) {
-      let ce = f.boxes[Y];
-      G == 1 ? (t(18, oe = Q), se.label = H, se.color = V, ce.label = H, ce.color = cl(V), te(), ge("change")) : Yn();
+  function vn(k) {
+    t(15, Ke = !1), ml();
+    const { detail: A } = k;
+    let Y = A.label, N = A.color, Z = A.ret, J = A.lock;
+    if (L >= 0 && L < u.boxes.length) {
+      let ue = u.boxes[L];
+      Z == 1 ? (t(18, ne = J), re.label = Y, re.color = N, ue.label = Y, ue.color = bi(N), te(), ge("change")) : Kt();
     }
   }
-  function ci(v) {
-    t(16, W = !1), kt();
-    const { detail: X } = v;
-    let H = X.label, V = X.color, G = X.ret, Q = X.lock;
-    G == 1 && (t(18, oe = Q), se.label = H, se.color = V);
+  function Fn(k) {
+    t(16, W = !1), ml();
+    const { detail: A } = k;
+    let Y = A.label, N = A.color, Z = A.ret, J = A.lock;
+    Z == 1 && (t(18, ne = J), re.label = Y, re.color = N);
   }
-  function N_() {
-    if (Y >= 0 && Y < f.boxes.length) {
-      let v = f.boxes[Y];
-      v.label = se.label, se.color !== "" && (v.color = cl(se.color)), te(), ge("change");
+  function lo() {
+    if (L >= 0 && L < u.boxes.length) {
+      let k = u.boxes[L];
+      k.label = re.label, re.color !== "" && (k.color = bi(re.color)), te(), ge("change");
     }
   }
-  function Yn() {
-    Y >= 0 && Y < f.boxes.length && (f.boxes.splice(Y, 1), E(-1), w && ri(), ge("change"));
+  function Kt() {
+    L >= 0 && L < u.boxes.length && (u.boxes.splice(L, 1), E(-1), v && gl(), ge("change"));
   }
-  function ji(v, X) {
-    if (Y < 0 || Y >= f.boxes.length)
+  function Zt(k, A) {
+    if (L < 0 || L >= u.boxes.length)
       return;
-    const H = f.boxes[Y], V = H.canvasWindow.scale, G = v / V, Q = X / V, ce = H.canvasWindow.imageWidth, je = H.canvasWindow.imageHeight, Te = Math.max(-H._xmin, Math.min(G, ce - H._xmax)), Pt = Math.max(-H._ymin, Math.min(Q, je - H._ymax));
-    H._xmin += Te, H._ymin += Pt, H._xmax += Te, H._ymax += Pt, H.applyUserScale(), te(), ge("change");
+    const Y = u.boxes[L], N = Y.canvasWindow.scale, Z = k / N, J = A / N, ue = Y.canvasWindow.imageWidth, Ie = Y.canvasWindow.imageHeight, je = Math.max(-Y._xmin, Math.min(Z, ue - Y._xmax)), Gt = Math.max(-Y._ymin, Math.min(J, Ie - Y._ymax));
+    Y._xmin += je, Y._ymin += Gt, Y._xmax += je, Y._ymax += Gt, Y.applyUserScale(), te(), ge("change");
   }
-  function U_() {
-    Y >= 0 && Y < f.boxes.length && (me = f.boxes[Y].toJSON());
+  function Ht() {
+    L >= 0 && L < u.boxes.length && (me = u.boxes[L].toJSON());
   }
-  function V_() {
+  function bl() {
     if (me === null)
       return;
-    const v = me, X = v.scaleFactor || 1, H = 20 / X;
-    let V = v.xmin + H, G = v.ymin + H, Q = v.xmax + H, ce = v.ymax + H;
-    const je = (I - R) / z.scale, Te = (O - $) / z.scale, Pt = Q - V, ui = ce - G;
-    Q > je && (V = Math.max(0, je - Pt), Q = V + Pt), ce > Te && (G = Math.max(0, Te - ui), ce = G + ui);
-    const di = new al(te, Vt, z, J, R, $, I, O, v.label, V, G, Q, ce, v.color, r, a, _, c, u, X, C);
-    w ? t(0, f.boxes = [di], f) : t(0, f.boxes = [di, ...f.boxes], f), me = di.toJSON(), E(0), te(), ge("change");
+    const k = me, A = k.scaleFactor || 1, Y = 20 / A;
+    let N = k.xmin + Y, Z = k.ymin + Y, J = k.xmax + Y, ue = k.ymax + Y;
+    const Ie = (H - R) / z.scale, je = (x - V) / z.scale, Gt = J - N, wl = ue - Z;
+    J > Ie && (N = Math.max(0, Ie - Gt), J = N + Gt), ue > je && (Z = Math.max(0, je - wl), ue = Z + wl);
+    const vl = new hi(te, Ct, z, O, R, V, H, x, k.label, N, Z, J, ue, k.color, r, a, _, c, f, A, M);
+    v ? t(0, u.boxes = [vl], u) : t(0, u.boxes = [vl, ...u.boxes], u), me = vl.toJSON(), E(0), te(), ge("change");
   }
-  function Kl(v) {
-    t(0, f.orientation = ((f.orientation + v) % 4 + 4) % 4, f), t(49, z.orientation = f.orientation, z), fi();
-    for (const X of f.boxes)
-      X.onRotate(v);
+  function io(k) {
+    t(0, u.orientation = ((u.orientation + k) % 4 + 4) % 4, u), t(49, z.orientation = u.orientation, z), pl();
+    for (const A of u.boxes)
+      A.onRotate(k);
     te();
   }
-  function fi() {
-    if (y) {
-      if (_e = 1, t(10, y.width = y.clientWidth, y), z.setRotatedImage(S), S !== null) {
-        if (z.imageRotatedWidth > y.width)
-          _e = y.width / z.imageRotatedWidth, Z = Math.round(z.imageRotatedWidth * _e), re = Math.round(z.imageRotatedHeight * _e), R = 0, $ = 0, I = Z, O = re, t(10, y.height = re, y);
-        else {
-          Z = z.imageRotatedWidth, re = z.imageRotatedHeight;
-          var v = (y.width - Z) / 2;
-          R = v, $ = 0, I = v + Z, O = re, t(10, y.height = re, y);
-        }
-        t(49, z.imageWidth = Z, z), t(49, z.imageHeight = re, z);
+  function pl() {
+    if (C) {
+      _e = 1;
+      const k = C.clientWidth, A = C.clientHeight;
+      if (t(10, C.width = k, C), t(10, C.height = A, C), z.setRotatedImage(w), w !== null) {
+        const Y = k / z.imageRotatedWidth, N = A / z.imageRotatedHeight;
+        _e = Math.min(Y, N, 1), se = Math.round(z.imageRotatedWidth * _e), ae = Math.round(z.imageRotatedHeight * _e);
+        const Z = Math.round((k - se) / 2), J = Math.round((A - ae) / 2);
+        R = Z, V = J, H = Z + se, x = J + ae, t(49, z.imageWidth = se, z), t(49, z.imageHeight = ae, z);
       } else
-        R = 0, $ = 0, I = y.width, O = y.height, t(10, y.height = y.clientHeight, y);
-      if (z.resize(y.width, y.height, R, $), I > 0 && O > 0)
-        for (const X of f.boxes)
-          X.canvasXmin = R, X.canvasYmin = $, X.canvasXmax = I, X.canvasYmax = O, X.setScaleFactor(_e);
+        R = 0, V = 0, H = C.width, x = C.height;
+      if (z.resize(C.width, C.height, R, V), H > 0 && x > 0)
+        for (const Y of u.boxes)
+          Y.canvasXmin = R, Y.canvasYmin = V, Y.canvasXmax = H, Y.canvasYmax = x, Y.setScaleFactor(_e);
       te(), ge("change");
     }
   }
-  const P_ = new ResizeObserver(fi);
-  function K_() {
-    for (let v = 0; v < f.boxes.length; v++) {
-      let X = f.boxes[v];
-      if (!(X instanceof al)) {
-        let H = "", V = "";
-        X.hasOwnProperty("color") ? (H = X.color, Array.isArray(H) && H.length === 3 && (H = `rgb(${H[0]}, ${H[1]}, ${H[2]})`)) : H = mn[v % mn.length], X.hasOwnProperty("label") && (V = X.label), X = new al(te, Vt, z, J, R, $, I, O, V, X.xmin, X.ymin, X.xmax, X.ymax, H, r, a, _, c, u, X.scaleFactor || 1, C), t(0, f.boxes[v] = X, f);
+  const sc = new ResizeObserver(pl);
+  function ac() {
+    for (let k = 0; k < u.boxes.length; k++) {
+      let A = u.boxes[k];
+      if (!(A instanceof hi)) {
+        let Y = "", N = "";
+        A.hasOwnProperty("color") ? (Y = A.color, Array.isArray(Y) && Y.length === 3 && (Y = `rgb(${Y[0]}, ${Y[1]}, ${Y[2]})`)) : Y = qn[k % qn.length], A.hasOwnProperty("label") && (N = A.label), A = new hi(te, Ct, z, O, R, V, H, x, N, A.xmin, A.ymin, A.xmax, A.ymax, Y, r, a, _, c, f, A.scaleFactor || 1, M), t(0, u.boxes[k] = A, u);
       }
     }
   }
-  function Bs() {
-    o !== null && (S === null || S.src != o) && (S = new Image(), S.src = o, S.onload = function() {
-      fi(), te();
+  function Is() {
+    o !== null && (w === null || w.src != o) && (w = new Image(), w.src = o, w.onload = function() {
+      pl(), te();
     });
   }
-  Gb(() => {
+  y2(() => {
     if (Array.isArray(d) && d.length > 0) {
       if (!Array.isArray(h) || h.length == 0)
-        for (let v = 0; v < d.length; v++) {
-          let X = mn[v % mn.length];
-          h.push(En(X));
+        for (let k = 0; k < d.length; k++) {
+          let A = qn[k % qn.length];
+          h.push(Hn(A));
         }
-      se.label = d[0][0], se.color = h[0];
+      re.label = d[0][0], re.color = h[0];
     }
-    A = y.getContext("2d"), P_.observe(y), Y < 0 && f !== null && f.boxes.length > 0 && E(0), Bs(), fi(), te();
+    I = C.getContext("2d"), sc.observe(C), L < 0 && u !== null && u.boxes.length > 0 && E(0), Is(), pl(), te();
   });
-  function Z_(v) {
-    sr[v ? "unshift" : "push"](() => {
-      y = v, t(10, y);
+  function rc(k) {
+    vr[k ? "unshift" : "push"](() => {
+      C = k, t(10, C);
     });
   }
-  const G_ = () => ri(), J_ = () => Rt(), Q_ = () => Yn(), ec = () => t(16, W = !0), tc = () => Kl(-1), nc = () => Kl(1);
-  function ic(v) {
-    sr[v ? "unshift" : "push"](() => {
-      B = v, t(11, B);
+  const _c = () => gl(), cc = () => B(), uc = () => Kt(), fc = () => t(16, W = !0), dc = () => io(-1), hc = () => io(1);
+  function mc(k) {
+    vr[k ? "unshift" : "push"](() => {
+      X = k, t(11, X);
     });
   }
-  const lc = () => B.focus();
-  function oc(v) {
-    Uo.call(this, i, v);
+  const gc = () => X.focus();
+  function bc(k) {
+    ls.call(this, l, k);
   }
-  function sc(v) {
-    Uo.call(this, i, v);
+  function pc(k) {
+    ls.call(this, l, k);
   }
-  function ac(v) {
-    Uo.call(this, i, v);
+  function wc(k) {
+    ls.call(this, l, k);
   }
-  return i.$$set = (v) => {
-    "imageUrl" in v && t(38, o = v.imageUrl), "interactive" in v && t(2, s = v.interactive), "boxAlpha" in v && t(39, r = v.boxAlpha), "boxMinSize" in v && t(40, a = v.boxMinSize), "handleSize" in v && t(41, _ = v.handleSize), "boxThickness" in v && t(42, c = v.boxThickness), "boxSelectedThickness" in v && t(43, u = v.boxSelectedThickness), "value" in v && t(0, f = v.value), "choices" in v && t(3, d = v.choices), "choicesColors" in v && t(4, h = v.choicesColors), "disableEditBoxes" in v && t(5, m = v.disableEditBoxes), "height" in v && t(6, g = v.height), "width" in v && t(7, b = v.width), "singleBox" in v && t(44, w = v.singleBox), "showRemoveButton" in v && t(1, p = v.showRemoveButton), "handlesCursor" in v && t(45, q = v.handlesCursor), "useDefaultLabel" in v && t(46, M = v.useDefaultLabel), "enableKeyboardShortcuts" in v && t(47, D = v.enableKeyboardShortcuts), "showBoxLabels" in v && t(48, C = v.showBoxLabels), "readOnlyBoxes" in v && t(8, k = v.readOnlyBoxes);
-  }, i.$$.update = () => {
-    i.$$.dirty[0] & /*value*/
-    1 && (t(49, z.orientation = f.orientation, z), Bs(), K_(), fi(), te()), i.$$.dirty[1] & /*canvasWindow*/
+  return l.$$set = (k) => {
+    "imageUrl" in k && t(38, o = k.imageUrl), "interactive" in k && t(2, s = k.interactive), "boxAlpha" in k && t(39, r = k.boxAlpha), "boxMinSize" in k && t(40, a = k.boxMinSize), "handleSize" in k && t(41, _ = k.handleSize), "boxThickness" in k && t(42, c = k.boxThickness), "boxSelectedThickness" in k && t(43, f = k.boxSelectedThickness), "value" in k && t(0, u = k.value), "choices" in k && t(3, d = k.choices), "choicesColors" in k && t(4, h = k.choicesColors), "disableEditBoxes" in k && t(5, m = k.disableEditBoxes), "height" in k && t(6, g = k.height), "width" in k && t(7, b = k.width), "singleBox" in k && t(44, v = k.singleBox), "showRemoveButton" in k && t(1, p = k.showRemoveButton), "handlesCursor" in k && t(45, y = k.handlesCursor), "useDefaultLabel" in k && t(46, q = k.useDefaultLabel), "enableKeyboardShortcuts" in k && t(47, D = k.enableKeyboardShortcuts), "showBoxLabels" in k && t(48, M = k.showBoxLabels), "readOnlyBoxes" in k && t(8, S = k.readOnlyBoxes);
+  }, l.$$.update = () => {
+    l.$$.dirty[0] & /*value*/
+    1 && (t(49, z.orientation = u.orientation, z), Is(), ac(), pl(), te()), l.$$.dirty[1] & /*canvasWindow*/
     262144 && t(19, n = Math.round(z.scale * 100));
   }, [
-    f,
+    u,
     p,
     s,
     d,
@@ -10064,70 +10130,70 @@ function n2(i, e, t) {
     m,
     g,
     b,
-    k,
-    l,
-    y,
-    B,
-    Y,
+    S,
+    i,
+    C,
+    X,
+    L,
     F,
     j,
-    ke,
+    Ke,
     W,
-    x,
-    oe,
+    $,
+    ne,
     n,
     Ze,
-    ut,
-    Ol,
-    $l,
-    xl,
-    ai,
-    Nl,
-    Ul,
-    L,
-    Et,
-    ri,
-    Rt,
-    Pl,
-    _i,
-    Wt,
-    ci,
-    Yn,
-    Kl,
+    ht,
+    Pi,
+    Ki,
+    Zi,
+    hl,
+    Gi,
+    Ji,
+    Qi,
+    eo,
+    gl,
+    B,
+    $n,
+    no,
+    vn,
+    Fn,
+    Kt,
+    io,
     o,
     r,
     a,
     _,
     c,
-    u,
-    w,
+    f,
+    v,
+    y,
     q,
-    M,
     D,
-    C,
+    M,
     z,
-    Z_,
-    G_,
-    J_,
-    Q_,
-    ec,
-    tc,
-    nc,
-    ic,
-    lc,
-    oc,
-    sc,
-    ac
+    rc,
+    _c,
+    cc,
+    uc,
+    fc,
+    dc,
+    hc,
+    mc,
+    gc,
+    bc,
+    pc,
+    wc
   ];
 }
-class i2 extends Vb {
+class D2 extends p2 {
   constructor(e) {
-    super(), Pb(
+    super(), w2(
       this,
       e,
-      n2,
-      t2,
-      Kb,
+      B2,
+      z2,
+      v2,
       {
         imageUrl: 38,
         interactive: 2,
@@ -10156,114 +10222,114 @@ class i2 extends Vb {
   }
 }
 const {
-  SvelteComponent: l2,
-  add_flush_callback: o2,
-  bind: s2,
-  binding_callbacks: a2,
-  create_component: r2,
-  destroy_component: _2,
-  init: c2,
-  mount_component: f2,
-  safe_not_equal: u2,
-  transition_in: d2,
-  transition_out: h2
-} = window.__gradio__svelte__internal, { createEventDispatcher: m2 } = window.__gradio__svelte__internal;
-function g2(i) {
+  SvelteComponent: M2,
+  add_flush_callback: L2,
+  bind: E2,
+  binding_callbacks: R2,
+  create_component: W2,
+  destroy_component: A2,
+  init: X2,
+  mount_component: Y2,
+  safe_not_equal: H2,
+  transition_in: I2,
+  transition_out: j2
+} = window.__gradio__svelte__internal, { createEventDispatcher: T2 } = window.__gradio__svelte__internal;
+function $2(l) {
   let e, t, n;
-  function l(s) {
-    i[23](s);
+  function i(s) {
+    l[23](s);
   }
   let o = {
     interactive: (
       /*interactive*/
-      i[1]
+      l[1]
     ),
     boxAlpha: (
       /*boxesAlpha*/
-      i[2]
+      l[2]
     ),
     choices: (
       /*labelList*/
-      i[3]
+      l[3]
     ),
     choicesColors: (
       /*labelColors*/
-      i[4]
+      l[4]
     ),
     height: (
       /*height*/
-      i[8]
+      l[8]
     ),
     width: (
       /*width*/
-      i[9]
+      l[9]
     ),
     boxMinSize: (
       /*boxMinSize*/
-      i[5]
+      l[5]
     ),
     handleSize: (
       /*handleSize*/
-      i[6]
+      l[6]
     ),
     boxThickness: (
       /*boxThickness*/
-      i[7]
+      l[7]
     ),
     boxSelectedThickness: (
       /*boxSelectedThickness*/
-      i[10]
+      l[10]
     ),
     disableEditBoxes: (
       /*disableEditBoxes*/
-      i[11]
+      l[11]
     ),
     singleBox: (
       /*singleBox*/
-      i[12]
+      l[12]
     ),
     showRemoveButton: (
       /*showRemoveButton*/
-      i[13]
+      l[13]
     ),
     handlesCursor: (
       /*handlesCursor*/
-      i[14]
+      l[14]
     ),
     useDefaultLabel: (
       /*useDefaultLabel*/
-      i[15]
+      l[15]
     ),
     enableKeyboardShortcuts: (
       /*enableKeyboardShortcuts*/
-      i[16]
+      l[16]
     ),
     showBoxLabels: (
       /*showBoxLabels*/
-      i[17]
+      l[17]
     ),
     readOnlyBoxes: (
       /*readOnlyBoxes*/
-      i[18]
+      l[18]
     ),
     imageUrl: (
       /*resolved_src*/
-      i[19]
+      l[19]
     )
   };
   return (
     /*value*/
-    i[0] !== void 0 && (o.value = /*value*/
-    i[0]), e = new i2({ props: o }), a2.push(() => s2(e, "value", l)), e.$on(
+    l[0] !== void 0 && (o.value = /*value*/
+    l[0]), e = new D2({ props: o }), R2.push(() => E2(e, "value", i)), e.$on(
       "change",
       /*change_handler*/
-      i[24]
+      l[24]
     ), {
       c() {
-        r2(e.$$.fragment);
+        W2(e.$$.fragment);
       },
       m(s, r) {
-        f2(e, s, r), n = !0;
+        Y2(e, s, r), n = !0;
       },
       p(s, [r]) {
         const a = {};
@@ -10307,69 +10373,69 @@ function g2(i) {
         524288 && (a.imageUrl = /*resolved_src*/
         s[19]), !t && r & /*value*/
         1 && (t = !0, a.value = /*value*/
-        s[0], o2(() => t = !1)), e.$set(a);
+        s[0], L2(() => t = !1)), e.$set(a);
       },
       i(s) {
-        n || (d2(e.$$.fragment, s), n = !0);
+        n || (I2(e.$$.fragment, s), n = !0);
       },
       o(s) {
-        h2(e.$$.fragment, s), n = !1;
+        j2(e.$$.fragment, s), n = !1;
       },
       d(s) {
-        _2(e, s);
+        A2(e, s);
       }
     }
   );
 }
-function b2(i, e, t) {
-  let { src: n = void 0 } = e, { interactive: l } = e, { boxesAlpha: o } = e, { labelList: s } = e, { labelColors: r } = e, { boxMinSize: a } = e, { handleSize: _ } = e, { boxThickness: c } = e, { height: u } = e, { width: f } = e, { boxSelectedThickness: d } = e, { value: h } = e, { disableEditBoxes: m } = e, { singleBox: g } = e, { showRemoveButton: b } = e, { handlesCursor: w } = e, { useDefaultLabel: p } = e, { enableKeyboardShortcuts: q } = e, { showBoxLabels: M } = e, { readOnlyBoxes: D = !1 } = e, C, k;
-  const y = m2();
-  function B(S) {
-    h = S, t(0, h);
+function F2(l, e, t) {
+  let { src: n = void 0 } = e, { interactive: i } = e, { boxesAlpha: o } = e, { labelList: s } = e, { labelColors: r } = e, { boxMinSize: a } = e, { handleSize: _ } = e, { boxThickness: c } = e, { height: f } = e, { width: u } = e, { boxSelectedThickness: d } = e, { value: h } = e, { disableEditBoxes: m } = e, { singleBox: g } = e, { showRemoveButton: b } = e, { handlesCursor: v } = e, { useDefaultLabel: p } = e, { enableKeyboardShortcuts: y } = e, { showBoxLabels: q } = e, { readOnlyBoxes: D = !1 } = e, M, S;
+  const C = T2();
+  function X(w) {
+    h = w, t(0, h);
   }
-  const A = () => y("change");
-  return i.$$set = (S) => {
-    "src" in S && t(21, n = S.src), "interactive" in S && t(1, l = S.interactive), "boxesAlpha" in S && t(2, o = S.boxesAlpha), "labelList" in S && t(3, s = S.labelList), "labelColors" in S && t(4, r = S.labelColors), "boxMinSize" in S && t(5, a = S.boxMinSize), "handleSize" in S && t(6, _ = S.handleSize), "boxThickness" in S && t(7, c = S.boxThickness), "height" in S && t(8, u = S.height), "width" in S && t(9, f = S.width), "boxSelectedThickness" in S && t(10, d = S.boxSelectedThickness), "value" in S && t(0, h = S.value), "disableEditBoxes" in S && t(11, m = S.disableEditBoxes), "singleBox" in S && t(12, g = S.singleBox), "showRemoveButton" in S && t(13, b = S.showRemoveButton), "handlesCursor" in S && t(14, w = S.handlesCursor), "useDefaultLabel" in S && t(15, p = S.useDefaultLabel), "enableKeyboardShortcuts" in S && t(16, q = S.enableKeyboardShortcuts), "showBoxLabels" in S && t(17, M = S.showBoxLabels), "readOnlyBoxes" in S && t(18, D = S.readOnlyBoxes);
-  }, i.$$.update = () => {
-    if (i.$$.dirty & /*src, latest_src*/
+  const I = () => C("change");
+  return l.$$set = (w) => {
+    "src" in w && t(21, n = w.src), "interactive" in w && t(1, i = w.interactive), "boxesAlpha" in w && t(2, o = w.boxesAlpha), "labelList" in w && t(3, s = w.labelList), "labelColors" in w && t(4, r = w.labelColors), "boxMinSize" in w && t(5, a = w.boxMinSize), "handleSize" in w && t(6, _ = w.handleSize), "boxThickness" in w && t(7, c = w.boxThickness), "height" in w && t(8, f = w.height), "width" in w && t(9, u = w.width), "boxSelectedThickness" in w && t(10, d = w.boxSelectedThickness), "value" in w && t(0, h = w.value), "disableEditBoxes" in w && t(11, m = w.disableEditBoxes), "singleBox" in w && t(12, g = w.singleBox), "showRemoveButton" in w && t(13, b = w.showRemoveButton), "handlesCursor" in w && t(14, v = w.handlesCursor), "useDefaultLabel" in w && t(15, p = w.useDefaultLabel), "enableKeyboardShortcuts" in w && t(16, y = w.enableKeyboardShortcuts), "showBoxLabels" in w && t(17, q = w.showBoxLabels), "readOnlyBoxes" in w && t(18, D = w.readOnlyBoxes);
+  }, l.$$.update = () => {
+    if (l.$$.dirty & /*src, latest_src*/
     6291456) {
-      t(19, C = n), t(22, k = n);
-      const S = n;
-      ch(S).then((Y) => {
-        k === S && t(19, C = Y);
+      t(19, M = n), t(22, S = n);
+      const w = n;
+      yh(w).then((L) => {
+        S === w && t(19, M = L);
       });
     }
   }, [
     h,
-    l,
+    i,
     o,
     s,
     r,
     a,
     _,
     c,
-    u,
     f,
+    u,
     d,
     m,
     g,
     b,
-    w,
+    v,
     p,
-    q,
-    M,
-    D,
-    C,
     y,
+    q,
+    D,
+    M,
+    C,
     n,
-    k,
-    B,
-    A
+    S,
+    X,
+    I
   ];
 }
-class p2 extends l2 {
+class O2 extends M2 {
   constructor(e) {
-    super(), c2(this, e, b2, g2, u2, {
+    super(), X2(this, e, F2, $2, H2, {
       src: 21,
       interactive: 1,
       boxesAlpha: 2,
@@ -10393,444 +10459,487 @@ class p2 extends l2 {
     });
   }
 }
-class br {
+class Er {
   constructor() {
     this.boxes = [], this.orientation = 0;
   }
 }
 const {
-  SvelteComponent: w2,
-  add_flush_callback: Ml,
-  append: xn,
-  attr: Di,
-  bind: El,
-  binding_callbacks: Xi,
-  bubble: ki,
-  check_outros: bn,
-  create_component: Ot,
-  create_slot: v2,
-  destroy_component: $t,
-  detach: zn,
-  element: Wi,
-  empty: k2,
-  get_all_dirty_from_scope: y2,
-  get_slot_changes: C2,
-  group_outros: pn,
-  init: S2,
-  insert: Bn,
-  mount_component: xt,
-  noop: q2,
-  safe_not_equal: z2,
-  space: gn,
-  toggle_class: pr,
-  transition_in: ae,
-  transition_out: fe,
-  update_slot_base: B2
-} = window.__gradio__svelte__internal, { createEventDispatcher: D2, tick: L2 } = window.__gradio__svelte__internal;
-function wr(i) {
+  SvelteComponent: x2,
+  add_flush_callback: Hi,
+  append: zn,
+  attr: Yl,
+  bind: Ii,
+  binding_callbacks: ol,
+  bubble: Ml,
+  check_outros: fn,
+  create_component: Wt,
+  create_slot: V2,
+  destroy_component: At,
+  detach: mn,
+  element: il,
+  empty: N2,
+  get_all_dirty_from_scope: U2,
+  get_slot_changes: P2,
+  group_outros: dn,
+  init: K2,
+  insert: gn,
+  mount_component: Xt,
+  noop: Z2,
+  safe_not_equal: G2,
+  space: rn,
+  toggle_class: Rr,
+  transition_in: ee,
+  transition_out: ce,
+  update_slot_base: J2
+} = window.__gradio__svelte__internal, { onMount: Q2, createEventDispatcher: ep, tick: tp } = window.__gradio__svelte__internal;
+function Wr(l) {
   let e, t;
-  return e = new Ch({
+  return e = new Xh({
     props: {
       href: (
         /*value*/
-        i[1].image.url
+        l[1].image.url
       ),
       download: (
         /*value*/
-        i[1].image.orig_name || "image"
+        l[1].image.orig_name || "image"
       ),
-      $$slots: { default: [M2] },
-      $$scope: { ctx: i }
+      $$slots: { default: [np] },
+      $$scope: { ctx: l }
     }
   }), {
     c() {
-      Ot(e.$$.fragment);
+      Wt(e.$$.fragment);
     },
-    m(n, l) {
-      xt(e, n, l), t = !0;
+    m(n, i) {
+      Xt(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*value*/
+      i[0] & /*value*/
       2 && (o.href = /*value*/
-      n[1].image.url), l[0] & /*value*/
+      n[1].image.url), i[0] & /*value*/
       2 && (o.download = /*value*/
-      n[1].image.orig_name || "image"), l[0] & /*i18n*/
-      256 | l[1] & /*$$scope*/
-      33554432 && (o.$$scope = { dirty: l, ctx: n }), e.$set(o);
+      n[1].image.orig_name || "image"), i[0] & /*i18n*/
+      256 | i[1] & /*$$scope*/
+      536870912 && (o.$$scope = { dirty: i, ctx: n }), e.$set(o);
     },
     i(n) {
-      t || (ae(e.$$.fragment, n), t = !0);
+      t || (ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      fe(e.$$.fragment, n), t = !1;
+      ce(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $t(e, n);
+      At(e, n);
     }
   };
 }
-function M2(i) {
+function np(l) {
   let e, t;
-  return e = new Rl({
+  return e = new Fl({
     props: {
-      Icon: Iu,
+      Icon: Kf,
       label: (
         /*i18n*/
-        i[8]("common.download")
+        l[8]("common.download")
       )
     }
   }), {
     c() {
-      Ot(e.$$.fragment);
+      Wt(e.$$.fragment);
     },
-    m(n, l) {
-      xt(e, n, l), t = !0;
+    m(n, i) {
+      Xt(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*i18n*/
+      i[0] & /*i18n*/
       256 && (o.label = /*i18n*/
       n[8]("common.download")), e.$set(o);
     },
     i(n) {
-      t || (ae(e.$$.fragment, n), t = !0);
+      t || (ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      fe(e.$$.fragment, n), t = !1;
+      ce(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $t(e, n);
+      At(e, n);
     }
   };
 }
-function vr(i) {
+function Ar(l) {
   let e, t;
-  return e = new s1({
+  return e = new p1({
     props: {
       i18n: (
         /*i18n*/
-        i[8]
+        l[8]
       ),
       formatter: (
         /*func*/
-        i[41]
+        l[44]
       ),
       value: (
         /*value*/
-        i[1]
+        l[1]
       )
     }
   }), e.$on(
     "share",
     /*share_handler*/
-    i[42]
+    l[45]
   ), e.$on(
     "error",
     /*error_handler*/
-    i[43]
+    l[46]
   ), {
     c() {
-      Ot(e.$$.fragment);
+      Wt(e.$$.fragment);
     },
-    m(n, l) {
-      xt(e, n, l), t = !0;
+    m(n, i) {
+      Xt(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*i18n*/
+      i[0] & /*i18n*/
       256 && (o.i18n = /*i18n*/
-      n[8]), l[0] & /*value*/
+      n[8]), i[0] & /*value*/
       2 && (o.value = /*value*/
       n[1]), e.$set(o);
     },
     i(n) {
-      t || (ae(e.$$.fragment, n), t = !0);
+      t || (ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      fe(e.$$.fragment, n), t = !1;
+      ce(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $t(e, n);
+      At(e, n);
     }
   };
 }
-function kr(i) {
+function Xr(l) {
   let e, t, n;
-  return t = new Rl({
-    props: { Icon: Ir, label: "Remove Image" }
+  return t = new Fl({
+    props: { Icon: Jr, label: "Remove Image" }
   }), t.$on(
     "click",
     /*clear*/
-    i[39]
+    l[41]
   ), {
     c() {
-      e = Wi("div"), Ot(t.$$.fragment);
+      e = il("div"), Wt(t.$$.fragment);
     },
-    m(l, o) {
-      Bn(l, e, o), xt(t, e, null), n = !0;
+    m(i, o) {
+      gn(i, e, o), Xt(t, e, null), n = !0;
     },
-    p: q2,
-    i(l) {
-      n || (ae(t.$$.fragment, l), n = !0);
+    p: Z2,
+    i(i) {
+      n || (ee(t.$$.fragment, i), n = !0);
     },
-    o(l) {
-      fe(t.$$.fragment, l), n = !1;
+    o(i) {
+      ce(t.$$.fragment, i), n = !1;
     },
-    d(l) {
-      l && zn(e), $t(t);
+    d(i) {
+      i && mn(e), At(t);
     }
   };
 }
-function yr(i) {
+function Yr(l) {
+  let e, t, n;
+  return t = new Fl({
+    props: {
+      Icon: (
+        /*isFullscreen*/
+        l[35] ? er : Ja
+      ),
+      label: (
+        /*isFullscreen*/
+        l[35] ? "Exit Fullscreen" : "Enter Fullscreen"
+      )
+    }
+  }), t.$on(
+    "click",
+    /*toggleFullscreen*/
+    l[42]
+  ), {
+    c() {
+      e = il("div"), Wt(t.$$.fragment);
+    },
+    m(i, o) {
+      gn(i, e, o), Xt(t, e, null), n = !0;
+    },
+    p(i, o) {
+      const s = {};
+      o[1] & /*isFullscreen*/
+      16 && (s.Icon = /*isFullscreen*/
+      i[35] ? er : Ja), o[1] & /*isFullscreen*/
+      16 && (s.label = /*isFullscreen*/
+      i[35] ? "Exit Fullscreen" : "Enter Fullscreen"), t.$set(s);
+    },
+    i(i) {
+      n || (ee(t.$$.fragment, i), n = !0);
+    },
+    o(i) {
+      ce(t.$$.fragment, i), n = !1;
+    },
+    d(i) {
+      i && mn(e), At(t);
+    }
+  };
+}
+function Hr(l) {
   let e;
   const t = (
     /*#slots*/
-    i[40].default
-  ), n = v2(
+    l[43].default
+  ), n = V2(
     t,
-    i,
+    l,
     /*$$scope*/
-    i[56],
+    l[60],
     null
   );
   return {
     c() {
       n && n.c();
     },
-    m(l, o) {
-      n && n.m(l, o), e = !0;
+    m(i, o) {
+      n && n.m(i, o), e = !0;
     },
-    p(l, o) {
+    p(i, o) {
       n && n.p && (!e || o[1] & /*$$scope*/
-      33554432) && B2(
+      536870912) && J2(
         n,
         t,
-        l,
+        i,
         /*$$scope*/
-        l[56],
-        e ? C2(
+        i[60],
+        e ? P2(
           t,
           /*$$scope*/
-          l[56],
+          i[60],
           o,
           null
-        ) : y2(
+        ) : U2(
           /*$$scope*/
-          l[56]
+          i[60]
         ),
         null
       );
     },
-    i(l) {
-      e || (ae(n, l), e = !0);
+    i(i) {
+      e || (ee(n, i), e = !0);
     },
-    o(l) {
-      fe(n, l), e = !1;
+    o(i) {
+      ce(n, i), e = !1;
     },
-    d(l) {
-      n && n.d(l);
+    d(i) {
+      n && n.d(i);
     }
   };
 }
-function E2(i) {
+function lp(l) {
   let e, t, n = (
     /*value*/
-    i[1] === null && yr(i)
+    l[1] === null && Hr(l)
   );
   return {
     c() {
-      n && n.c(), e = k2();
+      n && n.c(), e = N2();
     },
-    m(l, o) {
-      n && n.m(l, o), Bn(l, e, o), t = !0;
+    m(i, o) {
+      n && n.m(i, o), gn(i, e, o), t = !0;
     },
-    p(l, o) {
+    p(i, o) {
       /*value*/
-      l[1] === null ? n ? (n.p(l, o), o[0] & /*value*/
-      2 && ae(n, 1)) : (n = yr(l), n.c(), ae(n, 1), n.m(e.parentNode, e)) : n && (pn(), fe(n, 1, 1, () => {
+      i[1] === null ? n ? (n.p(i, o), o[0] & /*value*/
+      2 && ee(n, 1)) : (n = Hr(i), n.c(), ee(n, 1), n.m(e.parentNode, e)) : n && (dn(), ce(n, 1, 1, () => {
         n = null;
-      }), bn());
+      }), fn());
     },
-    i(l) {
-      t || (ae(n), t = !0);
+    i(i) {
+      t || (ee(n), t = !0);
     },
-    o(l) {
-      fe(n), t = !1;
+    o(i) {
+      ce(n), t = !1;
     },
-    d(l) {
-      l && zn(e), n && n.d(l);
+    d(i) {
+      i && mn(e), n && n.d(i);
     }
   };
 }
-function Cr(i) {
+function Ir(l) {
   let e, t;
-  return e = new Vm({
+  return e = new o0({
     props: {
       root: (
         /*root*/
-        i[6]
+        l[6]
       ),
       mode: "image",
       include_audio: !1,
       i18n: (
         /*i18n*/
-        i[8]
+        l[8]
       ),
       upload: (
         /*upload*/
-        i[34]
+        l[34]
       )
     }
   }), e.$on(
     "capture",
     /*capture_handler*/
-    i[48]
+    l[51]
   ), e.$on(
     "stream",
     /*stream_handler_1*/
-    i[49]
+    l[52]
   ), e.$on(
     "error",
     /*error_handler_2*/
-    i[50]
+    l[53]
   ), e.$on(
     "drag",
     /*drag_handler*/
-    i[51]
+    l[54]
   ), e.$on(
     "upload",
     /*upload_handler*/
-    i[52]
+    l[55]
   ), {
     c() {
-      Ot(e.$$.fragment);
+      Wt(e.$$.fragment);
     },
-    m(n, l) {
-      xt(e, n, l), t = !0;
+    m(n, i) {
+      Xt(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*root*/
+      i[0] & /*root*/
       64 && (o.root = /*root*/
-      n[6]), l[0] & /*i18n*/
+      n[6]), i[0] & /*i18n*/
       256 && (o.i18n = /*i18n*/
-      n[8]), l[1] & /*upload*/
+      n[8]), i[1] & /*upload*/
       8 && (o.upload = /*upload*/
       n[34]), e.$set(o);
     },
     i(n) {
-      t || (ae(e.$$.fragment, n), t = !0);
+      t || (ee(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      fe(e.$$.fragment, n), t = !1;
+      ce(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      $t(e, n);
+      At(e, n);
     }
   };
 }
-function Sr(i) {
-  let e, t, n, l;
+function jr(l) {
+  let e, t, n, i;
   function o(r) {
-    i[53](r);
+    l[56](r);
   }
   let s = {
     height: (
       /*height*/
-      i[17]
+      l[17]
     ),
     width: (
       /*width*/
-      i[18]
+      l[18]
     ),
     boxesAlpha: (
       /*boxesAlpha*/
-      i[12]
+      l[12]
     ),
     labelList: (
       /*labelList*/
-      i[13]
+      l[13]
     ),
     labelColors: (
       /*labelColors*/
-      i[14]
+      l[14]
     ),
     boxMinSize: (
       /*boxMinSize*/
-      i[15]
+      l[15]
     ),
     interactive: (
       /*interactive*/
-      i[7]
+      l[7]
     ),
     handleSize: (
       /*handleSize*/
-      i[16]
+      l[16]
     ),
     boxThickness: (
       /*boxThickness*/
-      i[19]
+      l[19]
     ),
     singleBox: (
       /*singleBox*/
-      i[21]
+      l[21]
     ),
     disableEditBoxes: (
       /*disableEditBoxes*/
-      i[20]
+      l[20]
     ),
     showRemoveButton: (
       /*showRemoveButton*/
-      i[22]
+      l[22]
     ),
     handlesCursor: (
       /*handlesCursor*/
-      i[23]
+      l[23]
     ),
     boxSelectedThickness: (
       /*boxSelectedThickness*/
-      i[24]
+      l[24]
     ),
     useDefaultLabel: (
       /*useDefaultLabel*/
-      i[28]
+      l[28]
     ),
     enableKeyboardShortcuts: (
       /*enableKeyboardShortcuts*/
-      i[29]
+      l[29]
     ),
     showBoxLabels: (
       /*showBoxLabels*/
-      i[30]
+      l[30]
     ),
     readOnlyBoxes: (
       /*readOnlyBoxes*/
-      i[31]
+      l[31]
     ),
     src: (
       /*value*/
-      i[1].image.url
+      l[1].image.url
     )
   };
   return (
     /*value*/
-    i[1] !== void 0 && (s.value = /*value*/
-    i[1]), t = new p2({ props: s }), Xi.push(() => El(t, "value", o)), t.$on(
+    l[1] !== void 0 && (s.value = /*value*/
+    l[1]), t = new O2({ props: s }), ol.push(() => Ii(t, "value", o)), t.$on(
       "change",
       /*change_handler*/
-      i[54]
+      l[57]
     ), {
       c() {
-        e = Wi("div"), Ot(t.$$.fragment), Di(e, "class", "image-frame svelte-1gjdske"), pr(
+        e = il("div"), Wt(t.$$.fragment), Yl(e, "class", "image-frame svelte-14g2qrl"), Rr(
           e,
           "selectable",
           /*selectable*/
-          i[5]
+          l[5]
         );
       },
       m(r, a) {
-        Bn(r, e, a), xt(t, e, null), l = !0;
+        gn(r, e, a), Xt(t, e, null), i = !0;
       },
       p(r, a) {
         const _ = {};
@@ -10874,8 +10983,8 @@ function Sr(i) {
         2 && (_.src = /*value*/
         r[1].image.url), !n && a[0] & /*value*/
         2 && (n = !0, _.value = /*value*/
-        r[1], Ml(() => n = !1)), t.$set(_), (!l || a[0] & /*selectable*/
-        32) && pr(
+        r[1], Hi(() => n = !1)), t.$set(_), (!i || a[0] & /*selectable*/
+        32) && Rr(
           e,
           "selectable",
           /*selectable*/
@@ -10883,45 +10992,45 @@ function Sr(i) {
         );
       },
       i(r) {
-        l || (ae(t.$$.fragment, r), l = !0);
+        i || (ee(t.$$.fragment, r), i = !0);
       },
       o(r) {
-        fe(t.$$.fragment, r), l = !1;
+        ce(t.$$.fragment, r), i = !1;
       },
       d(r) {
-        r && zn(e), $t(t);
+        r && mn(e), At(t);
       }
     }
   );
 }
-function qr(i) {
+function Tr(l) {
   let e, t, n;
-  function l(s) {
-    i[55](s);
+  function i(s) {
+    l[58](s);
   }
   let o = {
     sources: (
       /*sources*/
-      i[4]
+      l[4]
     ),
     handle_clear: (
       /*clear*/
-      i[39]
+      l[41]
     ),
     handle_select: (
       /*handle_select_source*/
-      i[38]
+      l[40]
     )
   };
   return (
     /*active_source*/
-    i[0] !== void 0 && (o.active_source = /*active_source*/
-    i[0]), e = new y1({ props: o }), Xi.push(() => El(e, "active_source", l)), {
+    l[0] !== void 0 && (o.active_source = /*active_source*/
+    l[0]), e = new A1({ props: o }), ol.push(() => Ii(e, "active_source", i)), {
       c() {
-        Ot(e.$$.fragment);
+        Wt(e.$$.fragment);
       },
       m(s, r) {
-        xt(e, s, r), n = !0;
+        Xt(e, s, r), n = !0;
       },
       p(s, r) {
         const a = {};
@@ -10929,359 +11038,405 @@ function qr(i) {
         16 && (a.sources = /*sources*/
         s[4]), !t && r[0] & /*active_source*/
         1 && (t = !0, a.active_source = /*active_source*/
-        s[0], Ml(() => t = !1)), e.$set(a);
+        s[0], Hi(() => t = !1)), e.$set(a);
       },
       i(s) {
-        n || (ae(e.$$.fragment, s), n = !0);
+        n || (ee(e.$$.fragment, s), n = !0);
       },
       o(s) {
-        fe(e.$$.fragment, s), n = !1;
+        ce(e.$$.fragment, s), n = !1;
       },
       d(s) {
-        $t(e, s);
+        At(e, s);
       }
     }
   );
 }
-function R2(i) {
-  let e, t, n, l, o, s, r, a, _, c, u, f, d, h, m = (
+function ip(l) {
+  let e, t, n, i, o, s, r, a, _, c, f, u, d, h, m, g = (
     /*sources*/
-    (i[4].length > 1 || /*sources*/
-    i[4].includes("clipboard")) && /*value*/
-    i[1] === null && /*interactive*/
-    i[7]
-  ), g;
-  e = new Cf({
+    (l[4].length > 1 || /*sources*/
+    l[4].includes("clipboard")) && /*value*/
+    l[1] === null && /*interactive*/
+    l[7]
+  ), b;
+  e = new Au({
     props: {
       show_label: (
         /*show_label*/
-        i[3]
+        l[3]
       ),
-      Icon: Hr,
+      Icon: Qr,
       label: (
         /*label*/
-        i[2] || "Image Annotator"
+        l[2] || "Image Annotator"
       )
     }
   });
-  let b = (
+  let v = (
     /*showDownloadButton*/
-    i[10] && /*value*/
-    i[1] !== null && wr(i)
-  ), w = (
-    /*showShareButton*/
-    i[9] && /*value*/
-    i[1] !== null && vr(i)
+    l[10] && /*value*/
+    l[1] !== null && Wr(l)
   ), p = (
+    /*showShareButton*/
+    l[9] && /*value*/
+    l[1] !== null && Ar(l)
+  ), y = (
     /*showClearButton*/
-    i[11] && /*value*/
-    i[1] !== null && /*interactive*/
-    i[7] && kr(i)
+    l[11] && /*value*/
+    l[1] !== null && /*interactive*/
+    l[7] && Xr(l)
+  ), q = (
+    /*value*/
+    l[1] !== null && /*interactive*/
+    l[7] && Yr(l)
   );
-  function q(B) {
-    i[45](B);
+  function D(w) {
+    l[48](w);
   }
-  function M(B) {
-    i[46](B);
+  function M(w) {
+    l[49](w);
   }
-  let D = {
+  let S = {
     hidden: (
       /*value*/
-      i[1] !== null || /*active_source*/
-      i[0] === "webcam"
+      l[1] !== null || /*active_source*/
+      l[0] === "webcam"
     ),
     filetype: (
       /*active_source*/
-      i[0] === "clipboard" ? "clipboard" : "image/*"
+      l[0] === "clipboard" ? "clipboard" : "image/*"
     ),
     root: (
       /*root*/
-      i[6]
+      l[6]
     ),
     max_file_size: (
       /*max_file_size*/
-      i[25]
+      l[25]
     ),
     disable_click: !/*sources*/
-    i[4].includes("upload"),
+    l[4].includes("upload"),
     upload: (
       /*cli_upload*/
-      i[26]
+      l[26]
     ),
     stream_handler: (
       /*stream_handler*/
-      i[27]
+      l[27]
     ),
-    $$slots: { default: [E2] },
-    $$scope: { ctx: i }
+    $$slots: { default: [lp] },
+    $$scope: { ctx: l }
   };
   /*uploading*/
-  i[32] !== void 0 && (D.uploading = /*uploading*/
-  i[32]), /*dragging*/
-  i[33] !== void 0 && (D.dragging = /*dragging*/
-  i[33]), _ = new nm({ props: D }), i[44](_), Xi.push(() => El(_, "uploading", q)), Xi.push(() => El(_, "dragging", M)), _.$on(
+  l[32] !== void 0 && (S.uploading = /*uploading*/
+  l[32]), /*dragging*/
+  l[33] !== void 0 && (S.dragging = /*dragging*/
+  l[33]), c = new hm({ props: S }), l[47](c), ol.push(() => Ii(c, "uploading", D)), ol.push(() => Ii(c, "dragging", M)), c.$on(
     "load",
     /*handle_upload*/
-    i[35]
-  ), _.$on(
+    l[37]
+  ), c.$on(
     "error",
     /*error_handler_1*/
-    i[47]
+    l[50]
   );
   let C = (
     /*value*/
-    i[1] === null && /*active_source*/
-    i[0] === "webcam" && Cr(i)
-  ), k = (
+    l[1] === null && /*active_source*/
+    l[0] === "webcam" && Ir(l)
+  ), X = (
     /*value*/
-    i[1] !== null && Sr(i)
-  ), y = m && qr(i);
+    l[1] !== null && jr(l)
+  ), I = g && Tr(l);
   return {
     c() {
-      Ot(e.$$.fragment), t = gn(), n = Wi("div"), b && b.c(), l = gn(), w && w.c(), o = gn(), p && p.c(), s = gn(), r = Wi("div"), a = Wi("div"), Ot(_.$$.fragment), f = gn(), C && C.c(), d = gn(), k && k.c(), h = gn(), y && y.c(), Di(n, "class", "icon-buttons svelte-1gjdske"), Di(a, "class", "upload-container svelte-1gjdske"), Di(r, "data-testid", "image"), Di(r, "class", "image-container svelte-1gjdske");
+      Wt(e.$$.fragment), t = rn(), n = il("div"), v && v.c(), i = rn(), p && p.c(), o = rn(), y && y.c(), s = rn(), q && q.c(), r = rn(), a = il("div"), _ = il("div"), Wt(c.$$.fragment), d = rn(), C && C.c(), h = rn(), X && X.c(), m = rn(), I && I.c(), Yl(n, "class", "icon-buttons svelte-14g2qrl"), Yl(_, "class", "upload-container svelte-14g2qrl"), Yl(a, "data-testid", "image"), Yl(a, "class", "image-container svelte-14g2qrl");
     },
-    m(B, A) {
-      xt(e, B, A), Bn(B, t, A), Bn(B, n, A), b && b.m(n, null), xn(n, l), w && w.m(n, null), xn(n, o), p && p.m(n, null), Bn(B, s, A), Bn(B, r, A), xn(r, a), xt(_, a, null), xn(a, f), C && C.m(a, null), xn(a, d), k && k.m(a, null), xn(r, h), y && y.m(r, null), g = !0;
+    m(w, L) {
+      Xt(e, w, L), gn(w, t, L), gn(w, n, L), v && v.m(n, null), zn(n, i), p && p.m(n, null), zn(n, o), y && y.m(n, null), zn(n, s), q && q.m(n, null), gn(w, r, L), gn(w, a, L), zn(a, _), Xt(c, _, null), zn(_, d), C && C.m(_, null), zn(_, h), X && X.m(_, null), zn(a, m), I && I.m(a, null), l[59](a), b = !0;
     },
-    p(B, A) {
-      const S = {};
-      A[0] & /*show_label*/
-      8 && (S.show_label = /*show_label*/
-      B[3]), A[0] & /*label*/
-      4 && (S.label = /*label*/
-      B[2] || "Image Annotator"), e.$set(S), /*showDownloadButton*/
-      B[10] && /*value*/
-      B[1] !== null ? b ? (b.p(B, A), A[0] & /*showDownloadButton, value*/
-      1026 && ae(b, 1)) : (b = wr(B), b.c(), ae(b, 1), b.m(n, l)) : b && (pn(), fe(b, 1, 1, () => {
-        b = null;
-      }), bn()), /*showShareButton*/
-      B[9] && /*value*/
-      B[1] !== null ? w ? (w.p(B, A), A[0] & /*showShareButton, value*/
-      514 && ae(w, 1)) : (w = vr(B), w.c(), ae(w, 1), w.m(n, o)) : w && (pn(), fe(w, 1, 1, () => {
-        w = null;
-      }), bn()), /*showClearButton*/
-      B[11] && /*value*/
-      B[1] !== null && /*interactive*/
-      B[7] ? p ? (p.p(B, A), A[0] & /*showClearButton, value, interactive*/
-      2178 && ae(p, 1)) : (p = kr(B), p.c(), ae(p, 1), p.m(n, null)) : p && (pn(), fe(p, 1, 1, () => {
+    p(w, L) {
+      const F = {};
+      L[0] & /*show_label*/
+      8 && (F.show_label = /*show_label*/
+      w[3]), L[0] & /*label*/
+      4 && (F.label = /*label*/
+      w[2] || "Image Annotator"), e.$set(F), /*showDownloadButton*/
+      w[10] && /*value*/
+      w[1] !== null ? v ? (v.p(w, L), L[0] & /*showDownloadButton, value*/
+      1026 && ee(v, 1)) : (v = Wr(w), v.c(), ee(v, 1), v.m(n, i)) : v && (dn(), ce(v, 1, 1, () => {
+        v = null;
+      }), fn()), /*showShareButton*/
+      w[9] && /*value*/
+      w[1] !== null ? p ? (p.p(w, L), L[0] & /*showShareButton, value*/
+      514 && ee(p, 1)) : (p = Ar(w), p.c(), ee(p, 1), p.m(n, o)) : p && (dn(), ce(p, 1, 1, () => {
         p = null;
-      }), bn());
-      const Y = {};
-      A[0] & /*value, active_source*/
-      3 && (Y.hidden = /*value*/
-      B[1] !== null || /*active_source*/
-      B[0] === "webcam"), A[0] & /*active_source*/
-      1 && (Y.filetype = /*active_source*/
-      B[0] === "clipboard" ? "clipboard" : "image/*"), A[0] & /*root*/
-      64 && (Y.root = /*root*/
-      B[6]), A[0] & /*max_file_size*/
-      33554432 && (Y.max_file_size = /*max_file_size*/
-      B[25]), A[0] & /*sources*/
-      16 && (Y.disable_click = !/*sources*/
-      B[4].includes("upload")), A[0] & /*cli_upload*/
-      67108864 && (Y.upload = /*cli_upload*/
-      B[26]), A[0] & /*stream_handler*/
-      134217728 && (Y.stream_handler = /*stream_handler*/
-      B[27]), A[0] & /*value*/
-      2 | A[1] & /*$$scope*/
-      33554432 && (Y.$$scope = { dirty: A, ctx: B }), !c && A[1] & /*uploading*/
-      2 && (c = !0, Y.uploading = /*uploading*/
-      B[32], Ml(() => c = !1)), !u && A[1] & /*dragging*/
-      4 && (u = !0, Y.dragging = /*dragging*/
-      B[33], Ml(() => u = !1)), _.$set(Y), /*value*/
-      B[1] === null && /*active_source*/
-      B[0] === "webcam" ? C ? (C.p(B, A), A[0] & /*value, active_source*/
-      3 && ae(C, 1)) : (C = Cr(B), C.c(), ae(C, 1), C.m(a, d)) : C && (pn(), fe(C, 1, 1, () => {
-        C = null;
-      }), bn()), /*value*/
-      B[1] !== null ? k ? (k.p(B, A), A[0] & /*value*/
-      2 && ae(k, 1)) : (k = Sr(B), k.c(), ae(k, 1), k.m(a, null)) : k && (pn(), fe(k, 1, 1, () => {
-        k = null;
-      }), bn()), A[0] & /*sources, value, interactive*/
-      146 && (m = /*sources*/
-      (B[4].length > 1 || /*sources*/
-      B[4].includes("clipboard")) && /*value*/
-      B[1] === null && /*interactive*/
-      B[7]), m ? y ? (y.p(B, A), A[0] & /*sources, value, interactive*/
-      146 && ae(y, 1)) : (y = qr(B), y.c(), ae(y, 1), y.m(r, null)) : y && (pn(), fe(y, 1, 1, () => {
+      }), fn()), /*showClearButton*/
+      w[11] && /*value*/
+      w[1] !== null && /*interactive*/
+      w[7] ? y ? (y.p(w, L), L[0] & /*showClearButton, value, interactive*/
+      2178 && ee(y, 1)) : (y = Xr(w), y.c(), ee(y, 1), y.m(n, s)) : y && (dn(), ce(y, 1, 1, () => {
         y = null;
-      }), bn());
+      }), fn()), /*value*/
+      w[1] !== null && /*interactive*/
+      w[7] ? q ? (q.p(w, L), L[0] & /*value, interactive*/
+      130 && ee(q, 1)) : (q = Yr(w), q.c(), ee(q, 1), q.m(n, null)) : q && (dn(), ce(q, 1, 1, () => {
+        q = null;
+      }), fn());
+      const O = {};
+      L[0] & /*value, active_source*/
+      3 && (O.hidden = /*value*/
+      w[1] !== null || /*active_source*/
+      w[0] === "webcam"), L[0] & /*active_source*/
+      1 && (O.filetype = /*active_source*/
+      w[0] === "clipboard" ? "clipboard" : "image/*"), L[0] & /*root*/
+      64 && (O.root = /*root*/
+      w[6]), L[0] & /*max_file_size*/
+      33554432 && (O.max_file_size = /*max_file_size*/
+      w[25]), L[0] & /*sources*/
+      16 && (O.disable_click = !/*sources*/
+      w[4].includes("upload")), L[0] & /*cli_upload*/
+      67108864 && (O.upload = /*cli_upload*/
+      w[26]), L[0] & /*stream_handler*/
+      134217728 && (O.stream_handler = /*stream_handler*/
+      w[27]), L[0] & /*value*/
+      2 | L[1] & /*$$scope*/
+      536870912 && (O.$$scope = { dirty: L, ctx: w }), !f && L[1] & /*uploading*/
+      2 && (f = !0, O.uploading = /*uploading*/
+      w[32], Hi(() => f = !1)), !u && L[1] & /*dragging*/
+      4 && (u = !0, O.dragging = /*dragging*/
+      w[33], Hi(() => u = !1)), c.$set(O), /*value*/
+      w[1] === null && /*active_source*/
+      w[0] === "webcam" ? C ? (C.p(w, L), L[0] & /*value, active_source*/
+      3 && ee(C, 1)) : (C = Ir(w), C.c(), ee(C, 1), C.m(_, h)) : C && (dn(), ce(C, 1, 1, () => {
+        C = null;
+      }), fn()), /*value*/
+      w[1] !== null ? X ? (X.p(w, L), L[0] & /*value*/
+      2 && ee(X, 1)) : (X = jr(w), X.c(), ee(X, 1), X.m(_, null)) : X && (dn(), ce(X, 1, 1, () => {
+        X = null;
+      }), fn()), L[0] & /*sources, value, interactive*/
+      146 && (g = /*sources*/
+      (w[4].length > 1 || /*sources*/
+      w[4].includes("clipboard")) && /*value*/
+      w[1] === null && /*interactive*/
+      w[7]), g ? I ? (I.p(w, L), L[0] & /*sources, value, interactive*/
+      146 && ee(I, 1)) : (I = Tr(w), I.c(), ee(I, 1), I.m(a, null)) : I && (dn(), ce(I, 1, 1, () => {
+        I = null;
+      }), fn());
     },
-    i(B) {
-      g || (ae(e.$$.fragment, B), ae(b), ae(w), ae(p), ae(_.$$.fragment, B), ae(C), ae(k), ae(y), g = !0);
+    i(w) {
+      b || (ee(e.$$.fragment, w), ee(v), ee(p), ee(y), ee(q), ee(c.$$.fragment, w), ee(C), ee(X), ee(I), b = !0);
     },
-    o(B) {
-      fe(e.$$.fragment, B), fe(b), fe(w), fe(p), fe(_.$$.fragment, B), fe(C), fe(k), fe(y), g = !1;
+    o(w) {
+      ce(e.$$.fragment, w), ce(v), ce(p), ce(y), ce(q), ce(c.$$.fragment, w), ce(C), ce(X), ce(I), b = !1;
     },
-    d(B) {
-      B && (zn(t), zn(n), zn(s), zn(r)), $t(e, B), b && b.d(), w && w.d(), p && p.d(), i[44](null), $t(_), C && C.d(), k && k.d(), y && y.d();
+    d(w) {
+      w && (mn(t), mn(n), mn(r), mn(a)), At(e, w), v && v.d(), p && p.d(), y && y.d(), q && q.d(), l[47](null), At(c), C && C.d(), X && X.d(), I && I.d(), l[59](null);
     }
   };
 }
-function W2(i, e, t) {
-  let { $$slots: n = {}, $$scope: l } = e;
-  var o = this && this.__awaiter || function(L, kt, Et, Xn) {
-    function ri(Rt) {
-      return Rt instanceof Et ? Rt : new Et(function(Vt) {
-        Vt(Rt);
+function op(l, e, t) {
+  let { $$slots: n = {}, $$scope: i } = e;
+  var o = this && this.__awaiter || function(B, Ct, Yt, $n) {
+    function no(vn) {
+      return vn instanceof Yt ? vn : new Yt(function(Fn) {
+        Fn(vn);
       });
     }
-    return new (Et || (Et = Promise))(function(Rt, Vt) {
-      function Vl(Wt) {
+    return new (Yt || (Yt = Promise))(function(vn, Fn) {
+      function lo(Ht) {
         try {
-          _i(Xn.next(Wt));
-        } catch (ci) {
-          Vt(ci);
+          Zt($n.next(Ht));
+        } catch (bl) {
+          Fn(bl);
         }
       }
-      function Pl(Wt) {
+      function Kt(Ht) {
         try {
-          _i(Xn.throw(Wt));
-        } catch (ci) {
-          Vt(ci);
+          Zt($n.throw(Ht));
+        } catch (bl) {
+          Fn(bl);
         }
       }
-      function _i(Wt) {
-        Wt.done ? Rt(Wt.value) : ri(Wt.value).then(Vl, Pl);
+      function Zt(Ht) {
+        Ht.done ? vn(Ht.value) : no(Ht.value).then(lo, Kt);
       }
-      _i((Xn = Xn.apply(L, kt || [])).next());
+      Zt(($n = $n.apply(B, Ct || [])).next());
     });
   };
-  let { value: s } = e, { label: r = void 0 } = e, { show_label: a } = e, { sources: _ = ["upload", "webcam", "clipboard"] } = e, { selectable: c = !1 } = e, { root: u } = e, { interactive: f } = e, { i18n: d } = e, { showShareButton: h } = e, { showDownloadButton: m } = e, { showClearButton: g } = e, { boxesAlpha: b } = e, { labelList: w } = e, { labelColors: p } = e, { boxMinSize: q } = e, { handleSize: M } = e, { height: D } = e, { width: C } = e, { boxThickness: k } = e, { disableEditBoxes: y } = e, { singleBox: B } = e, { showRemoveButton: A } = e, { handlesCursor: S } = e, { boxSelectedThickness: Y } = e, { max_file_size: F = null } = e, { cli_upload: J } = e, { stream_handler: z } = e, { useDefaultLabel: me } = e, { enableKeyboardShortcuts: R } = e, { showBoxLabels: $ } = e, { readOnlyBoxes: I = !1 } = e, O, _e = !1, { active_source: Z = null } = e;
-  function re({ detail: L }) {
-    t(1, s = new br()), t(1, s.image = L, s), ke("upload");
+  let { value: s } = e, { label: r = void 0 } = e, { show_label: a } = e, { sources: _ = ["upload", "webcam", "clipboard"] } = e, { selectable: c = !1 } = e, { root: f } = e, { interactive: u } = e, { i18n: d } = e, { showShareButton: h } = e, { showDownloadButton: m } = e, { showClearButton: g } = e, { boxesAlpha: b } = e, { labelList: v } = e, { labelColors: p } = e, { boxMinSize: y } = e, { handleSize: q } = e, { height: D } = e, { width: M } = e, { boxThickness: S } = e, { disableEditBoxes: C } = e, { singleBox: X } = e, { showRemoveButton: I } = e, { handlesCursor: w } = e, { boxSelectedThickness: L } = e, { max_file_size: F = null } = e, { cli_upload: O } = e, { stream_handler: z } = e, { useDefaultLabel: me } = e, { enableKeyboardShortcuts: R } = e, { showBoxLabels: V } = e, { readOnlyBoxes: H = !1 } = e, x, _e = !1, se = !1, ae, { active_source: j = null } = e;
+  function Ke({ detail: B }) {
+    t(1, s = new Er()), t(1, s.image = B, s), $("upload");
   }
-  function j(L) {
+  function W(B) {
     return o(this, void 0, void 0, function* () {
-      const kt = yield O.load_files([new File([L], "webcam.png")]), Et = (kt == null ? void 0 : kt[0]) || null;
-      Et ? (t(1, s = new br()), t(1, s.image = Et, s)) : t(1, s = null), yield L2(), ke("change");
+      const Ct = yield x.load_files([new File([B], "webcam.png")]), Yt = (Ct == null ? void 0 : Ct[0]) || null;
+      Yt ? (t(1, s = new Er()), t(1, s.image = Yt, s)) : t(1, s = null), yield tp(), $("change");
     });
   }
-  const ke = D2();
-  let W = !1;
-  function x(L) {
+  const $ = ep();
+  let ne = !1;
+  function re(B) {
     return o(this, void 0, void 0, function* () {
-      switch (L) {
+      switch (B) {
         case "clipboard":
-          O.paste_clipboard();
+          x.paste_clipboard();
           break;
       }
     });
   }
-  function oe() {
-    t(1, s = null), ke("clear"), ke("change");
+  function le() {
+    t(1, s = null), $("clear"), $("change");
   }
-  const se = async (L) => L === null ? "" : `<img src="${await Vd(L.image)}" />`;
-  function le(L) {
-    ki.call(this, i, L);
-  }
-  function ge(L) {
-    ki.call(this, i, L);
-  }
-  function te(L) {
-    Xi[L ? "unshift" : "push"](() => {
-      O = L, t(34, O);
+  function ge() {
+    return o(this, void 0, void 0, function* () {
+      if (ae) {
+        if (!document.fullscreenEnabled) {
+          console.warn("Fullscreen API is not available");
+          return;
+        }
+        if (se)
+          try {
+            yield document.exitFullscreen();
+          } catch (B) {
+            console.error("Failed to exit fullscreen:", B);
+          }
+        else
+          try {
+            yield ae.requestFullscreen();
+          } catch (B) {
+            console.error("Failed to enter fullscreen:", B);
+          }
+      }
     });
   }
-  function E(L) {
-    _e = L, t(32, _e);
+  function te() {
+    t(35, se = !!document.fullscreenElement);
   }
-  function Ze(L) {
-    W = L, t(33, W);
+  Q2(() => (document.addEventListener("fullscreenchange", te), () => {
+    document.removeEventListener("fullscreenchange", te);
+  }));
+  const E = async (B) => B === null ? "" : `<img src="${await o1(B.image)}" />`;
+  function Ze(B) {
+    Ml.call(this, l, B);
   }
-  function it(L) {
-    ki.call(this, i, L);
+  function lt(B) {
+    Ml.call(this, l, B);
   }
-  const ut = (L) => j(L.detail), cn = (L) => j(L.detail);
-  function Ol(L) {
-    ki.call(this, i, L);
+  function ht(B) {
+    ol[B ? "unshift" : "push"](() => {
+      x = B, t(34, x);
+    });
   }
-  function $l(L) {
-    ki.call(this, i, L);
+  function wn(B) {
+    _e = B, t(32, _e);
   }
-  const xl = (L) => j(L.detail);
-  function ai(L) {
-    s = L, t(1, s);
+  function Pi(B) {
+    ne = B, t(33, ne);
   }
-  const Nl = () => ke("change");
-  function Ul(L) {
-    Z = L, t(0, Z), t(4, _);
+  function Ki(B) {
+    Ml.call(this, l, B);
   }
-  return i.$$set = (L) => {
-    "value" in L && t(1, s = L.value), "label" in L && t(2, r = L.label), "show_label" in L && t(3, a = L.show_label), "sources" in L && t(4, _ = L.sources), "selectable" in L && t(5, c = L.selectable), "root" in L && t(6, u = L.root), "interactive" in L && t(7, f = L.interactive), "i18n" in L && t(8, d = L.i18n), "showShareButton" in L && t(9, h = L.showShareButton), "showDownloadButton" in L && t(10, m = L.showDownloadButton), "showClearButton" in L && t(11, g = L.showClearButton), "boxesAlpha" in L && t(12, b = L.boxesAlpha), "labelList" in L && t(13, w = L.labelList), "labelColors" in L && t(14, p = L.labelColors), "boxMinSize" in L && t(15, q = L.boxMinSize), "handleSize" in L && t(16, M = L.handleSize), "height" in L && t(17, D = L.height), "width" in L && t(18, C = L.width), "boxThickness" in L && t(19, k = L.boxThickness), "disableEditBoxes" in L && t(20, y = L.disableEditBoxes), "singleBox" in L && t(21, B = L.singleBox), "showRemoveButton" in L && t(22, A = L.showRemoveButton), "handlesCursor" in L && t(23, S = L.handlesCursor), "boxSelectedThickness" in L && t(24, Y = L.boxSelectedThickness), "max_file_size" in L && t(25, F = L.max_file_size), "cli_upload" in L && t(26, J = L.cli_upload), "stream_handler" in L && t(27, z = L.stream_handler), "useDefaultLabel" in L && t(28, me = L.useDefaultLabel), "enableKeyboardShortcuts" in L && t(29, R = L.enableKeyboardShortcuts), "showBoxLabels" in L && t(30, $ = L.showBoxLabels), "readOnlyBoxes" in L && t(31, I = L.readOnlyBoxes), "active_source" in L && t(0, Z = L.active_source), "$$scope" in L && t(56, l = L.$$scope);
-  }, i.$$.update = () => {
-    i.$$.dirty[1] & /*uploading*/
-    2 && _e && oe(), i.$$.dirty[1] & /*dragging*/
-    4 && ke("drag", W), i.$$.dirty[0] & /*active_source, sources*/
-    17 && !Z && _ && t(0, Z = _[0]);
+  const Zi = (B) => W(B.detail), hl = (B) => W(B.detail);
+  function Gi(B) {
+    Ml.call(this, l, B);
+  }
+  function Ji(B) {
+    Ml.call(this, l, B);
+  }
+  const Qi = (B) => W(B.detail);
+  function ml(B) {
+    s = B, t(1, s);
+  }
+  const eo = () => $("change");
+  function to(B) {
+    j = B, t(0, j), t(4, _);
+  }
+  function gl(B) {
+    ol[B ? "unshift" : "push"](() => {
+      ae = B, t(36, ae);
+    });
+  }
+  return l.$$set = (B) => {
+    "value" in B && t(1, s = B.value), "label" in B && t(2, r = B.label), "show_label" in B && t(3, a = B.show_label), "sources" in B && t(4, _ = B.sources), "selectable" in B && t(5, c = B.selectable), "root" in B && t(6, f = B.root), "interactive" in B && t(7, u = B.interactive), "i18n" in B && t(8, d = B.i18n), "showShareButton" in B && t(9, h = B.showShareButton), "showDownloadButton" in B && t(10, m = B.showDownloadButton), "showClearButton" in B && t(11, g = B.showClearButton), "boxesAlpha" in B && t(12, b = B.boxesAlpha), "labelList" in B && t(13, v = B.labelList), "labelColors" in B && t(14, p = B.labelColors), "boxMinSize" in B && t(15, y = B.boxMinSize), "handleSize" in B && t(16, q = B.handleSize), "height" in B && t(17, D = B.height), "width" in B && t(18, M = B.width), "boxThickness" in B && t(19, S = B.boxThickness), "disableEditBoxes" in B && t(20, C = B.disableEditBoxes), "singleBox" in B && t(21, X = B.singleBox), "showRemoveButton" in B && t(22, I = B.showRemoveButton), "handlesCursor" in B && t(23, w = B.handlesCursor), "boxSelectedThickness" in B && t(24, L = B.boxSelectedThickness), "max_file_size" in B && t(25, F = B.max_file_size), "cli_upload" in B && t(26, O = B.cli_upload), "stream_handler" in B && t(27, z = B.stream_handler), "useDefaultLabel" in B && t(28, me = B.useDefaultLabel), "enableKeyboardShortcuts" in B && t(29, R = B.enableKeyboardShortcuts), "showBoxLabels" in B && t(30, V = B.showBoxLabels), "readOnlyBoxes" in B && t(31, H = B.readOnlyBoxes), "active_source" in B && t(0, j = B.active_source), "$$scope" in B && t(60, i = B.$$scope);
+  }, l.$$.update = () => {
+    l.$$.dirty[1] & /*uploading*/
+    2 && _e && le(), l.$$.dirty[1] & /*dragging*/
+    4 && $("drag", ne), l.$$.dirty[0] & /*active_source, sources*/
+    17 && !j && _ && t(0, j = _[0]);
   }, [
-    Z,
+    j,
     s,
     r,
     a,
     _,
     c,
-    u,
     f,
+    u,
     d,
     h,
     m,
     g,
     b,
-    w,
+    v,
     p,
-    q,
-    M,
-    D,
-    C,
-    k,
     y,
-    B,
-    A,
+    q,
+    D,
+    M,
     S,
-    Y,
+    C,
+    X,
+    I,
+    w,
+    L,
     F,
-    J,
+    O,
     z,
     me,
     R,
-    $,
-    I,
+    V,
+    H,
     _e,
-    W,
-    O,
-    re,
-    j,
-    ke,
+    ne,
     x,
-    oe,
-    n,
     se,
+    ae,
+    Ke,
+    W,
+    $,
+    re,
     le,
     ge,
-    te,
+    n,
     E,
     Ze,
-    it,
-    ut,
-    cn,
-    Ol,
-    $l,
-    xl,
-    ai,
-    Nl,
-    Ul,
-    l
+    lt,
+    ht,
+    wn,
+    Pi,
+    Ki,
+    Zi,
+    hl,
+    Gi,
+    Ji,
+    Qi,
+    ml,
+    eo,
+    to,
+    gl,
+    i
   ];
 }
-class A2 extends w2 {
+class sp extends x2 {
   constructor(e) {
-    super(), S2(
+    super(), K2(
       this,
       e,
-      W2,
-      R2,
-      z2,
+      op,
+      ip,
+      G2,
       {
         value: 1,
         label: 2,
@@ -11317,267 +11472,267 @@ class A2 extends w2 {
         active_source: 0
       },
       null,
-      [-1, -1]
+      [-1, -1, -1]
     );
   }
 }
 const {
-  SvelteComponent: X2,
-  attr: pl,
-  detach: T_,
-  element: F_,
-  init: Y2,
-  insert: O_,
-  noop: zr,
-  safe_not_equal: I2,
-  src_url_equal: Br,
-  toggle_class: ln
+  SvelteComponent: ap,
+  attr: qi,
+  detach: tc,
+  element: nc,
+  init: rp,
+  insert: lc,
+  noop: $r,
+  safe_not_equal: _p,
+  src_url_equal: Fr,
+  toggle_class: _n
 } = window.__gradio__svelte__internal;
-function Dr(i) {
+function Or(l) {
   let e, t;
   return {
     c() {
-      e = F_("img"), Br(e.src, t = /*value*/
-      i[0].url) || pl(e, "src", t), pl(e, "alt", "");
+      e = nc("img"), Fr(e.src, t = /*value*/
+      l[0].url) || qi(e, "src", t), qi(e, "alt", "");
     },
-    m(n, l) {
-      O_(n, e, l);
+    m(n, i) {
+      lc(n, e, i);
     },
-    p(n, l) {
-      l & /*value*/
-      1 && !Br(e.src, t = /*value*/
-      n[0].url) && pl(e, "src", t);
+    p(n, i) {
+      i & /*value*/
+      1 && !Fr(e.src, t = /*value*/
+      n[0].url) && qi(e, "src", t);
     },
     d(n) {
-      n && T_(e);
+      n && tc(e);
     }
   };
 }
-function H2(i) {
+function cp(l) {
   let e, t = (
     /*value*/
-    i[0] && Dr(i)
+    l[0] && Or(l)
   );
   return {
     c() {
-      e = F_("div"), t && t.c(), pl(e, "class", "container svelte-1sgcyba"), ln(
+      e = nc("div"), t && t.c(), qi(e, "class", "container svelte-1sgcyba"), _n(
         e,
         "table",
         /*type*/
-        i[1] === "table"
-      ), ln(
+        l[1] === "table"
+      ), _n(
         e,
         "gallery",
         /*type*/
-        i[1] === "gallery"
-      ), ln(
+        l[1] === "gallery"
+      ), _n(
         e,
         "selected",
         /*selected*/
-        i[2]
-      ), ln(
+        l[2]
+      ), _n(
         e,
         "border",
         /*value*/
-        i[0]
+        l[0]
       );
     },
-    m(n, l) {
-      O_(n, e, l), t && t.m(e, null);
+    m(n, i) {
+      lc(n, e, i), t && t.m(e, null);
     },
-    p(n, [l]) {
+    p(n, [i]) {
       /*value*/
-      n[0] ? t ? t.p(n, l) : (t = Dr(n), t.c(), t.m(e, null)) : t && (t.d(1), t = null), l & /*type*/
-      2 && ln(
+      n[0] ? t ? t.p(n, i) : (t = Or(n), t.c(), t.m(e, null)) : t && (t.d(1), t = null), i & /*type*/
+      2 && _n(
         e,
         "table",
         /*type*/
         n[1] === "table"
-      ), l & /*type*/
-      2 && ln(
+      ), i & /*type*/
+      2 && _n(
         e,
         "gallery",
         /*type*/
         n[1] === "gallery"
-      ), l & /*selected*/
-      4 && ln(
+      ), i & /*selected*/
+      4 && _n(
         e,
         "selected",
         /*selected*/
         n[2]
-      ), l & /*value*/
-      1 && ln(
+      ), i & /*value*/
+      1 && _n(
         e,
         "border",
         /*value*/
         n[0]
       );
     },
-    i: zr,
-    o: zr,
+    i: $r,
+    o: $r,
     d(n) {
-      n && T_(e), t && t.d();
+      n && tc(e), t && t.d();
     }
   };
 }
-function j2(i, e, t) {
-  let { value: n } = e, { type: l } = e, { selected: o = !1 } = e;
-  return i.$$set = (s) => {
-    "value" in s && t(0, n = s.value), "type" in s && t(1, l = s.type), "selected" in s && t(2, o = s.selected);
-  }, [n, l, o];
+function up(l, e, t) {
+  let { value: n } = e, { type: i } = e, { selected: o = !1 } = e;
+  return l.$$set = (s) => {
+    "value" in s && t(0, n = s.value), "type" in s && t(1, i = s.type), "selected" in s && t(2, o = s.selected);
+  }, [n, i, o];
 }
-class nz extends X2 {
+class Dz extends ap {
   constructor(e) {
-    super(), Y2(this, e, j2, H2, I2, { value: 0, type: 1, selected: 2 });
+    super(), rp(this, e, up, cp, _p, { value: 0, type: 1, selected: 2 });
   }
 }
 const {
-  SvelteComponent: T2,
-  add_flush_callback: Lr,
-  assign: F2,
-  bind: Mr,
-  binding_callbacks: Er,
-  check_outros: O2,
-  create_component: Rn,
-  destroy_component: Wn,
-  detach: $_,
-  empty: $2,
-  flush: ee,
-  get_spread_object: x2,
-  get_spread_update: N2,
-  group_outros: U2,
-  init: V2,
-  insert: x_,
-  mount_component: An,
-  safe_not_equal: P2,
-  space: K2,
-  transition_in: Nt,
-  transition_out: Ut
+  SvelteComponent: fp,
+  add_flush_callback: xr,
+  assign: dp,
+  bind: Vr,
+  binding_callbacks: Nr,
+  check_outros: hp,
+  create_component: In,
+  destroy_component: jn,
+  detach: ic,
+  empty: mp,
+  flush: Q,
+  get_spread_object: gp,
+  get_spread_update: bp,
+  group_outros: pp,
+  init: wp,
+  insert: oc,
+  mount_component: Tn,
+  safe_not_equal: vp,
+  space: kp,
+  transition_in: Ut,
+  transition_out: Pt
 } = window.__gradio__svelte__internal;
-function Z2(i) {
+function yp(l) {
   let e, t;
-  return e = new eu({
+  return e = new ff({
     props: {
       unpadded_box: !0,
       size: "large",
-      $$slots: { default: [Q2] },
-      $$scope: { ctx: i }
+      $$slots: { default: [qp] },
+      $$scope: { ctx: l }
     }
   }), {
     c() {
-      Rn(e.$$.fragment);
+      In(e.$$.fragment);
     },
-    m(n, l) {
-      An(e, n, l), t = !0;
+    m(n, i) {
+      Tn(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[1] & /*$$scope*/
-      65536 && (o.$$scope = { dirty: l, ctx: n }), e.$set(o);
+      i[1] & /*$$scope*/
+      65536 && (o.$$scope = { dirty: i, ctx: n }), e.$set(o);
     },
     i(n) {
-      t || (Nt(e.$$.fragment, n), t = !0);
+      t || (Ut(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Ut(e.$$.fragment, n), t = !1;
+      Pt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Wn(e, n);
+      jn(e, n);
     }
   };
 }
-function G2(i) {
+function Cp(l) {
   let e, t;
-  return e = new Nr({
+  return e = new s_({
     props: {
       i18n: (
         /*gradio*/
-        i[34].i18n
+        l[34].i18n
       ),
       type: "clipboard",
       mode: "short"
     }
   }), {
     c() {
-      Rn(e.$$.fragment);
+      In(e.$$.fragment);
     },
-    m(n, l) {
-      An(e, n, l), t = !0;
+    m(n, i) {
+      Tn(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[1] & /*gradio*/
+      i[1] & /*gradio*/
       8 && (o.i18n = /*gradio*/
       n[34].i18n), e.$set(o);
     },
     i(n) {
-      t || (Nt(e.$$.fragment, n), t = !0);
+      t || (Ut(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Ut(e.$$.fragment, n), t = !1;
+      Pt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Wn(e, n);
+      jn(e, n);
     }
   };
 }
-function J2(i) {
+function Sp(l) {
   let e, t;
-  return e = new Nr({
+  return e = new s_({
     props: {
       i18n: (
         /*gradio*/
-        i[34].i18n
+        l[34].i18n
       ),
       type: "image"
     }
   }), {
     c() {
-      Rn(e.$$.fragment);
+      In(e.$$.fragment);
     },
-    m(n, l) {
-      An(e, n, l), t = !0;
+    m(n, i) {
+      Tn(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[1] & /*gradio*/
+      i[1] & /*gradio*/
       8 && (o.i18n = /*gradio*/
       n[34].i18n), e.$set(o);
     },
     i(n) {
-      t || (Nt(e.$$.fragment, n), t = !0);
+      t || (Ut(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Ut(e.$$.fragment, n), t = !1;
+      Pt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Wn(e, n);
+      jn(e, n);
     }
   };
 }
-function Q2(i) {
+function qp(l) {
   let e, t;
-  return e = new Hr({}), {
+  return e = new Qr({}), {
     c() {
-      Rn(e.$$.fragment);
+      In(e.$$.fragment);
     },
-    m(n, l) {
-      An(e, n, l), t = !0;
+    m(n, i) {
+      Tn(e, n, i), t = !0;
     },
     i(n) {
-      t || (Nt(e.$$.fragment, n), t = !0);
+      t || (Ut(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Ut(e.$$.fragment, n), t = !1;
+      Pt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Wn(e, n);
+      jn(e, n);
     }
   };
 }
-function ep(i) {
-  let e, t, n, l;
-  const o = [J2, G2, Z2], s = [];
+function zp(l) {
+  let e, t, n, i;
+  const o = [Sp, Cp, yp], s = [];
   function r(a, _) {
     return (
       /*active_source*/
@@ -11587,482 +11742,482 @@ function ep(i) {
       )
     );
   }
-  return e = r(i), t = s[e] = o[e](i), {
+  return e = r(l), t = s[e] = o[e](l), {
     c() {
-      t.c(), n = $2();
+      t.c(), n = mp();
     },
     m(a, _) {
-      s[e].m(a, _), x_(a, n, _), l = !0;
+      s[e].m(a, _), oc(a, n, _), i = !0;
     },
     p(a, _) {
       let c = e;
-      e = r(a), e === c ? s[e].p(a, _) : (U2(), Ut(s[c], 1, 1, () => {
+      e = r(a), e === c ? s[e].p(a, _) : (pp(), Pt(s[c], 1, 1, () => {
         s[c] = null;
-      }), O2(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), Nt(t, 1), t.m(n.parentNode, n));
+      }), hp(), t = s[e], t ? t.p(a, _) : (t = s[e] = o[e](a), t.c()), Ut(t, 1), t.m(n.parentNode, n));
     },
     i(a) {
-      l || (Nt(t), l = !0);
+      i || (Ut(t), i = !0);
     },
     o(a) {
-      Ut(t), l = !1;
+      Pt(t), i = !1;
     },
     d(a) {
-      a && $_(n), s[e].d(a);
+      a && ic(n), s[e].d(a);
     }
   };
 }
-function tp(i) {
-  let e, t, n, l, o, s;
+function Bp(l) {
+  let e, t, n, i, o, s;
   const r = [
     {
       autoscroll: (
         /*gradio*/
-        i[34].autoscroll
+        l[34].autoscroll
       )
     },
     { i18n: (
       /*gradio*/
-      i[34].i18n
+      l[34].i18n
     ) },
     /*loading_status*/
-    i[1]
+    l[1]
   ];
   let a = {};
-  for (let f = 0; f < r.length; f += 1)
-    a = F2(a, r[f]);
-  e = new sh({ props: a });
-  function _(f) {
-    i[37](f);
+  for (let u = 0; u < r.length; u += 1)
+    a = dp(a, r[u]);
+  e = new ph({ props: a });
+  function _(u) {
+    l[37](u);
   }
-  function c(f) {
-    i[38](f);
+  function c(u) {
+    l[38](u);
   }
-  let u = {
+  let f = {
     selectable: (
       /*_selectable*/
-      i[10]
+      l[10]
     ),
     root: (
       /*root*/
-      i[7]
+      l[7]
     ),
     sources: (
       /*sources*/
-      i[14]
+      l[14]
     ),
     interactive: (
       /*interactive*/
-      i[18]
+      l[18]
     ),
     showDownloadButton: (
       /*show_download_button*/
-      i[15]
+      l[15]
     ),
     showShareButton: (
       /*show_share_button*/
-      i[16]
+      l[16]
     ),
     showClearButton: (
       /*show_clear_button*/
-      i[17]
+      l[17]
     ),
     i18n: (
       /*gradio*/
-      i[34].i18n
+      l[34].i18n
     ),
     boxesAlpha: (
       /*boxes_alpha*/
-      i[19]
+      l[19]
     ),
     height: (
       /*height*/
-      i[8]
+      l[8]
     ),
     width: (
       /*width*/
-      i[9]
+      l[9]
     ),
     labelList: (
       /*label_list*/
-      i[20]
+      l[20]
     ),
     labelColors: (
       /*label_colors*/
-      i[21]
+      l[21]
     ),
     boxMinSize: (
       /*box_min_size*/
-      i[22]
+      l[22]
     ),
     label: (
       /*label*/
-      i[5]
+      l[5]
     ),
     show_label: (
       /*show_label*/
-      i[6]
+      l[6]
     ),
     max_file_size: (
       /*gradio*/
-      i[34].max_file_size
+      l[34].max_file_size
     ),
     cli_upload: (
       /*gradio*/
-      i[34].client.upload
+      l[34].client.upload
     ),
     stream_handler: (
       /*gradio*/
-      i[34].client.stream
+      l[34].client.stream
     ),
     handleSize: (
       /*handle_size*/
-      i[23]
+      l[23]
     ),
     boxThickness: (
       /*box_thickness*/
-      i[24]
+      l[24]
     ),
     boxSelectedThickness: (
       /*box_selected_thickness*/
-      i[25]
+      l[25]
     ),
     disableEditBoxes: (
       /*disable_edit_boxes*/
-      i[26]
+      l[26]
     ),
     singleBox: (
       /*single_box*/
-      i[27]
+      l[27]
     ),
     showRemoveButton: (
       /*show_remove_button*/
-      i[28]
+      l[28]
     ),
     handlesCursor: (
       /*handles_cursor*/
-      i[29]
+      l[29]
     ),
     useDefaultLabel: (
       /*use_default_label*/
-      i[30]
+      l[30]
     ),
     enableKeyboardShortcuts: (
       /*enable_keyboard_shortcuts*/
-      i[31]
+      l[31]
     ),
     showBoxLabels: (
       /*show_box_labels*/
-      i[32]
+      l[32]
     ),
     readOnlyBoxes: (
       /*read_only_boxes*/
-      i[33]
+      l[33]
     ),
-    $$slots: { default: [ep] },
-    $$scope: { ctx: i }
+    $$slots: { default: [zp] },
+    $$scope: { ctx: l }
   };
   return (
     /*active_source*/
-    i[36] !== void 0 && (u.active_source = /*active_source*/
-    i[36]), /*value*/
-    i[0] !== void 0 && (u.value = /*value*/
-    i[0]), n = new A2({ props: u }), Er.push(() => Mr(n, "active_source", _)), Er.push(() => Mr(n, "value", c)), n.$on(
+    l[36] !== void 0 && (f.active_source = /*active_source*/
+    l[36]), /*value*/
+    l[0] !== void 0 && (f.value = /*value*/
+    l[0]), n = new sp({ props: f }), Nr.push(() => Vr(n, "active_source", _)), Nr.push(() => Vr(n, "value", c)), n.$on(
       "change",
       /*change_handler*/
-      i[39]
+      l[39]
     ), n.$on(
       "edit",
       /*edit_handler*/
-      i[40]
+      l[40]
     ), n.$on(
       "clear",
       /*clear_handler*/
-      i[41]
+      l[41]
     ), n.$on(
       "drag",
       /*drag_handler*/
-      i[42]
+      l[42]
     ), n.$on(
       "upload",
       /*upload_handler*/
-      i[43]
+      l[43]
     ), n.$on(
       "select",
       /*select_handler*/
-      i[44]
+      l[44]
     ), n.$on(
       "share",
       /*share_handler*/
-      i[45]
+      l[45]
     ), n.$on(
       "error",
       /*error_handler*/
-      i[46]
+      l[46]
     ), {
       c() {
-        Rn(e.$$.fragment), t = K2(), Rn(n.$$.fragment);
+        In(e.$$.fragment), t = kp(), In(n.$$.fragment);
       },
-      m(f, d) {
-        An(e, f, d), x_(f, t, d), An(n, f, d), s = !0;
+      m(u, d) {
+        Tn(e, u, d), oc(u, t, d), Tn(n, u, d), s = !0;
       },
-      p(f, d) {
+      p(u, d) {
         const h = d[0] & /*loading_status*/
         2 | d[1] & /*gradio*/
-        8 ? N2(r, [
+        8 ? bp(r, [
           d[1] & /*gradio*/
           8 && {
             autoscroll: (
               /*gradio*/
-              f[34].autoscroll
+              u[34].autoscroll
             )
           },
           d[1] & /*gradio*/
           8 && { i18n: (
             /*gradio*/
-            f[34].i18n
+            u[34].i18n
           ) },
           d[0] & /*loading_status*/
-          2 && x2(
+          2 && gp(
             /*loading_status*/
-            f[1]
+            u[1]
           )
         ]) : {};
         e.$set(h);
         const m = {};
         d[0] & /*_selectable*/
         1024 && (m.selectable = /*_selectable*/
-        f[10]), d[0] & /*root*/
+        u[10]), d[0] & /*root*/
         128 && (m.root = /*root*/
-        f[7]), d[0] & /*sources*/
+        u[7]), d[0] & /*sources*/
         16384 && (m.sources = /*sources*/
-        f[14]), d[0] & /*interactive*/
+        u[14]), d[0] & /*interactive*/
         262144 && (m.interactive = /*interactive*/
-        f[18]), d[0] & /*show_download_button*/
+        u[18]), d[0] & /*show_download_button*/
         32768 && (m.showDownloadButton = /*show_download_button*/
-        f[15]), d[0] & /*show_share_button*/
+        u[15]), d[0] & /*show_share_button*/
         65536 && (m.showShareButton = /*show_share_button*/
-        f[16]), d[0] & /*show_clear_button*/
+        u[16]), d[0] & /*show_clear_button*/
         131072 && (m.showClearButton = /*show_clear_button*/
-        f[17]), d[1] & /*gradio*/
+        u[17]), d[1] & /*gradio*/
         8 && (m.i18n = /*gradio*/
-        f[34].i18n), d[0] & /*boxes_alpha*/
+        u[34].i18n), d[0] & /*boxes_alpha*/
         524288 && (m.boxesAlpha = /*boxes_alpha*/
-        f[19]), d[0] & /*height*/
+        u[19]), d[0] & /*height*/
         256 && (m.height = /*height*/
-        f[8]), d[0] & /*width*/
+        u[8]), d[0] & /*width*/
         512 && (m.width = /*width*/
-        f[9]), d[0] & /*label_list*/
+        u[9]), d[0] & /*label_list*/
         1048576 && (m.labelList = /*label_list*/
-        f[20]), d[0] & /*label_colors*/
+        u[20]), d[0] & /*label_colors*/
         2097152 && (m.labelColors = /*label_colors*/
-        f[21]), d[0] & /*box_min_size*/
+        u[21]), d[0] & /*box_min_size*/
         4194304 && (m.boxMinSize = /*box_min_size*/
-        f[22]), d[0] & /*label*/
+        u[22]), d[0] & /*label*/
         32 && (m.label = /*label*/
-        f[5]), d[0] & /*show_label*/
+        u[5]), d[0] & /*show_label*/
         64 && (m.show_label = /*show_label*/
-        f[6]), d[1] & /*gradio*/
+        u[6]), d[1] & /*gradio*/
         8 && (m.max_file_size = /*gradio*/
-        f[34].max_file_size), d[1] & /*gradio*/
+        u[34].max_file_size), d[1] & /*gradio*/
         8 && (m.cli_upload = /*gradio*/
-        f[34].client.upload), d[1] & /*gradio*/
+        u[34].client.upload), d[1] & /*gradio*/
         8 && (m.stream_handler = /*gradio*/
-        f[34].client.stream), d[0] & /*handle_size*/
+        u[34].client.stream), d[0] & /*handle_size*/
         8388608 && (m.handleSize = /*handle_size*/
-        f[23]), d[0] & /*box_thickness*/
+        u[23]), d[0] & /*box_thickness*/
         16777216 && (m.boxThickness = /*box_thickness*/
-        f[24]), d[0] & /*box_selected_thickness*/
+        u[24]), d[0] & /*box_selected_thickness*/
         33554432 && (m.boxSelectedThickness = /*box_selected_thickness*/
-        f[25]), d[0] & /*disable_edit_boxes*/
+        u[25]), d[0] & /*disable_edit_boxes*/
         67108864 && (m.disableEditBoxes = /*disable_edit_boxes*/
-        f[26]), d[0] & /*single_box*/
+        u[26]), d[0] & /*single_box*/
         134217728 && (m.singleBox = /*single_box*/
-        f[27]), d[0] & /*show_remove_button*/
+        u[27]), d[0] & /*show_remove_button*/
         268435456 && (m.showRemoveButton = /*show_remove_button*/
-        f[28]), d[0] & /*handles_cursor*/
+        u[28]), d[0] & /*handles_cursor*/
         536870912 && (m.handlesCursor = /*handles_cursor*/
-        f[29]), d[0] & /*use_default_label*/
+        u[29]), d[0] & /*use_default_label*/
         1073741824 && (m.useDefaultLabel = /*use_default_label*/
-        f[30]), d[1] & /*enable_keyboard_shortcuts*/
+        u[30]), d[1] & /*enable_keyboard_shortcuts*/
         1 && (m.enableKeyboardShortcuts = /*enable_keyboard_shortcuts*/
-        f[31]), d[1] & /*show_box_labels*/
+        u[31]), d[1] & /*show_box_labels*/
         2 && (m.showBoxLabels = /*show_box_labels*/
-        f[32]), d[1] & /*read_only_boxes*/
+        u[32]), d[1] & /*read_only_boxes*/
         4 && (m.readOnlyBoxes = /*read_only_boxes*/
-        f[33]), d[1] & /*$$scope, gradio, active_source*/
-        65576 && (m.$$scope = { dirty: d, ctx: f }), !l && d[1] & /*active_source*/
-        32 && (l = !0, m.active_source = /*active_source*/
-        f[36], Lr(() => l = !1)), !o && d[0] & /*value*/
+        u[33]), d[1] & /*$$scope, gradio, active_source*/
+        65576 && (m.$$scope = { dirty: d, ctx: u }), !i && d[1] & /*active_source*/
+        32 && (i = !0, m.active_source = /*active_source*/
+        u[36], xr(() => i = !1)), !o && d[0] & /*value*/
         1 && (o = !0, m.value = /*value*/
-        f[0], Lr(() => o = !1)), n.$set(m);
+        u[0], xr(() => o = !1)), n.$set(m);
       },
-      i(f) {
-        s || (Nt(e.$$.fragment, f), Nt(n.$$.fragment, f), s = !0);
+      i(u) {
+        s || (Ut(e.$$.fragment, u), Ut(n.$$.fragment, u), s = !0);
       },
-      o(f) {
-        Ut(e.$$.fragment, f), Ut(n.$$.fragment, f), s = !1;
+      o(u) {
+        Pt(e.$$.fragment, u), Pt(n.$$.fragment, u), s = !1;
       },
-      d(f) {
-        f && $_(t), Wn(e, f), Wn(n, f);
+      d(u) {
+        u && ic(t), jn(e, u), jn(n, u);
       }
     }
   );
 }
-function np(i) {
+function Dp(l) {
   let e, t;
-  return e = new Sc({
+  return e = new Yc({
     props: {
       visible: (
         /*visible*/
-        i[4]
+        l[4]
       ),
       variant: "solid",
       border_mode: (
         /*dragging*/
-        i[35] ? "focus" : "base"
+        l[35] ? "focus" : "base"
       ),
       padding: !1,
       elem_id: (
         /*elem_id*/
-        i[2]
+        l[2]
       ),
       elem_classes: (
         /*elem_classes*/
-        i[3]
+        l[3]
       ),
       width: (
         /*width*/
-        i[9]
+        l[9]
       ),
       allow_overflow: !1,
       container: (
         /*container*/
-        i[11]
+        l[11]
       ),
       scale: (
         /*scale*/
-        i[12]
+        l[12]
       ),
       min_width: (
         /*min_width*/
-        i[13]
+        l[13]
       ),
-      $$slots: { default: [tp] },
-      $$scope: { ctx: i }
+      $$slots: { default: [Bp] },
+      $$scope: { ctx: l }
     }
   }), {
     c() {
-      Rn(e.$$.fragment);
+      In(e.$$.fragment);
     },
-    m(n, l) {
-      An(e, n, l), t = !0;
+    m(n, i) {
+      Tn(e, n, i), t = !0;
     },
-    p(n, l) {
+    p(n, i) {
       const o = {};
-      l[0] & /*visible*/
+      i[0] & /*visible*/
       16 && (o.visible = /*visible*/
-      n[4]), l[1] & /*dragging*/
+      n[4]), i[1] & /*dragging*/
       16 && (o.border_mode = /*dragging*/
-      n[35] ? "focus" : "base"), l[0] & /*elem_id*/
+      n[35] ? "focus" : "base"), i[0] & /*elem_id*/
       4 && (o.elem_id = /*elem_id*/
-      n[2]), l[0] & /*elem_classes*/
+      n[2]), i[0] & /*elem_classes*/
       8 && (o.elem_classes = /*elem_classes*/
-      n[3]), l[0] & /*width*/
+      n[3]), i[0] & /*width*/
       512 && (o.width = /*width*/
-      n[9]), l[0] & /*container*/
+      n[9]), i[0] & /*container*/
       2048 && (o.container = /*container*/
-      n[11]), l[0] & /*scale*/
+      n[11]), i[0] & /*scale*/
       4096 && (o.scale = /*scale*/
-      n[12]), l[0] & /*min_width*/
+      n[12]), i[0] & /*min_width*/
       8192 && (o.min_width = /*min_width*/
-      n[13]), l[0] & /*_selectable, root, sources, interactive, show_download_button, show_share_button, show_clear_button, boxes_alpha, height, width, label_list, label_colors, box_min_size, label, show_label, handle_size, box_thickness, box_selected_thickness, disable_edit_boxes, single_box, show_remove_button, handles_cursor, use_default_label, value, loading_status*/
-      2147469283 | l[1] & /*$$scope, gradio, enable_keyboard_shortcuts, show_box_labels, read_only_boxes, active_source, dragging*/
-      65599 && (o.$$scope = { dirty: l, ctx: n }), e.$set(o);
+      n[13]), i[0] & /*_selectable, root, sources, interactive, show_download_button, show_share_button, show_clear_button, boxes_alpha, height, width, label_list, label_colors, box_min_size, label, show_label, handle_size, box_thickness, box_selected_thickness, disable_edit_boxes, single_box, show_remove_button, handles_cursor, use_default_label, value, loading_status*/
+      2147469283 | i[1] & /*$$scope, gradio, enable_keyboard_shortcuts, show_box_labels, read_only_boxes, active_source, dragging*/
+      65599 && (o.$$scope = { dirty: i, ctx: n }), e.$set(o);
     },
     i(n) {
-      t || (Nt(e.$$.fragment, n), t = !0);
+      t || (Ut(e.$$.fragment, n), t = !0);
     },
     o(n) {
-      Ut(e.$$.fragment, n), t = !1;
+      Pt(e.$$.fragment, n), t = !1;
     },
     d(n) {
-      Wn(e, n);
+      jn(e, n);
     }
   };
 }
-function ip(i, e, t) {
-  let { elem_id: n = "" } = e, { elem_classes: l = [] } = e, { visible: o = !0 } = e, { value: s = null } = e, { label: r } = e, { show_label: a } = e, { root: _ } = e, { height: c } = e, { width: u } = e, { _selectable: f = !1 } = e, { container: d = !0 } = e, { scale: h = null } = e, { min_width: m = void 0 } = e, { loading_status: g } = e, { sources: b = ["upload", "webcam", "clipboard"] } = e, { show_download_button: w } = e, { show_share_button: p } = e, { show_clear_button: q } = e, { interactive: M } = e, { boxes_alpha: D } = e, { label_list: C } = e, { label_colors: k } = e, { box_min_size: y } = e, { handle_size: B } = e, { box_thickness: A } = e, { box_selected_thickness: S } = e, { disable_edit_boxes: Y } = e, { single_box: F } = e, { show_remove_button: J } = e, { handles_cursor: z } = e, { use_default_label: me } = e, { enable_keyboard_shortcuts: R } = e, { show_box_labels: $ } = e, { read_only_boxes: I = !1 } = e, { gradio: O } = e, _e, Z = null;
-  function re(E) {
-    Z = E, t(36, Z);
+function Mp(l, e, t) {
+  let { elem_id: n = "" } = e, { elem_classes: i = [] } = e, { visible: o = !0 } = e, { value: s = null } = e, { label: r } = e, { show_label: a } = e, { root: _ } = e, { height: c } = e, { width: f } = e, { _selectable: u = !1 } = e, { container: d = !0 } = e, { scale: h = null } = e, { min_width: m = void 0 } = e, { loading_status: g } = e, { sources: b = ["upload", "webcam", "clipboard"] } = e, { show_download_button: v } = e, { show_share_button: p } = e, { show_clear_button: y } = e, { interactive: q } = e, { boxes_alpha: D } = e, { label_list: M } = e, { label_colors: S } = e, { box_min_size: C } = e, { handle_size: X } = e, { box_thickness: I } = e, { box_selected_thickness: w } = e, { disable_edit_boxes: L } = e, { single_box: F } = e, { show_remove_button: O } = e, { handles_cursor: z } = e, { use_default_label: me } = e, { enable_keyboard_shortcuts: R } = e, { show_box_labels: V } = e, { read_only_boxes: H = !1 } = e, { gradio: x } = e, _e, se = null;
+  function ae(E) {
+    se = E, t(36, se);
   }
   function j(E) {
     s = E, t(0, s);
   }
-  const ke = () => O.dispatch("change"), W = () => O.dispatch("edit"), x = () => {
-    O.dispatch("clear");
-  }, oe = ({ detail: E }) => t(35, _e = E), se = () => O.dispatch("upload"), le = ({ detail: E }) => O.dispatch("select", E), ge = ({ detail: E }) => O.dispatch("share", E), te = ({ detail: E }) => {
-    t(1, g = g || {}), t(1, g.status = "error", g), O.dispatch("error", E);
+  const Ke = () => x.dispatch("change"), W = () => x.dispatch("edit"), $ = () => {
+    x.dispatch("clear");
+  }, ne = ({ detail: E }) => t(35, _e = E), re = () => x.dispatch("upload"), le = ({ detail: E }) => x.dispatch("select", E), ge = ({ detail: E }) => x.dispatch("share", E), te = ({ detail: E }) => {
+    t(1, g = g || {}), t(1, g.status = "error", g), x.dispatch("error", E);
   };
-  return i.$$set = (E) => {
-    "elem_id" in E && t(2, n = E.elem_id), "elem_classes" in E && t(3, l = E.elem_classes), "visible" in E && t(4, o = E.visible), "value" in E && t(0, s = E.value), "label" in E && t(5, r = E.label), "show_label" in E && t(6, a = E.show_label), "root" in E && t(7, _ = E.root), "height" in E && t(8, c = E.height), "width" in E && t(9, u = E.width), "_selectable" in E && t(10, f = E._selectable), "container" in E && t(11, d = E.container), "scale" in E && t(12, h = E.scale), "min_width" in E && t(13, m = E.min_width), "loading_status" in E && t(1, g = E.loading_status), "sources" in E && t(14, b = E.sources), "show_download_button" in E && t(15, w = E.show_download_button), "show_share_button" in E && t(16, p = E.show_share_button), "show_clear_button" in E && t(17, q = E.show_clear_button), "interactive" in E && t(18, M = E.interactive), "boxes_alpha" in E && t(19, D = E.boxes_alpha), "label_list" in E && t(20, C = E.label_list), "label_colors" in E && t(21, k = E.label_colors), "box_min_size" in E && t(22, y = E.box_min_size), "handle_size" in E && t(23, B = E.handle_size), "box_thickness" in E && t(24, A = E.box_thickness), "box_selected_thickness" in E && t(25, S = E.box_selected_thickness), "disable_edit_boxes" in E && t(26, Y = E.disable_edit_boxes), "single_box" in E && t(27, F = E.single_box), "show_remove_button" in E && t(28, J = E.show_remove_button), "handles_cursor" in E && t(29, z = E.handles_cursor), "use_default_label" in E && t(30, me = E.use_default_label), "enable_keyboard_shortcuts" in E && t(31, R = E.enable_keyboard_shortcuts), "show_box_labels" in E && t(32, $ = E.show_box_labels), "read_only_boxes" in E && t(33, I = E.read_only_boxes), "gradio" in E && t(34, O = E.gradio);
+  return l.$$set = (E) => {
+    "elem_id" in E && t(2, n = E.elem_id), "elem_classes" in E && t(3, i = E.elem_classes), "visible" in E && t(4, o = E.visible), "value" in E && t(0, s = E.value), "label" in E && t(5, r = E.label), "show_label" in E && t(6, a = E.show_label), "root" in E && t(7, _ = E.root), "height" in E && t(8, c = E.height), "width" in E && t(9, f = E.width), "_selectable" in E && t(10, u = E._selectable), "container" in E && t(11, d = E.container), "scale" in E && t(12, h = E.scale), "min_width" in E && t(13, m = E.min_width), "loading_status" in E && t(1, g = E.loading_status), "sources" in E && t(14, b = E.sources), "show_download_button" in E && t(15, v = E.show_download_button), "show_share_button" in E && t(16, p = E.show_share_button), "show_clear_button" in E && t(17, y = E.show_clear_button), "interactive" in E && t(18, q = E.interactive), "boxes_alpha" in E && t(19, D = E.boxes_alpha), "label_list" in E && t(20, M = E.label_list), "label_colors" in E && t(21, S = E.label_colors), "box_min_size" in E && t(22, C = E.box_min_size), "handle_size" in E && t(23, X = E.handle_size), "box_thickness" in E && t(24, I = E.box_thickness), "box_selected_thickness" in E && t(25, w = E.box_selected_thickness), "disable_edit_boxes" in E && t(26, L = E.disable_edit_boxes), "single_box" in E && t(27, F = E.single_box), "show_remove_button" in E && t(28, O = E.show_remove_button), "handles_cursor" in E && t(29, z = E.handles_cursor), "use_default_label" in E && t(30, me = E.use_default_label), "enable_keyboard_shortcuts" in E && t(31, R = E.enable_keyboard_shortcuts), "show_box_labels" in E && t(32, V = E.show_box_labels), "read_only_boxes" in E && t(33, H = E.read_only_boxes), "gradio" in E && t(34, x = E.gradio);
   }, [
     s,
     g,
     n,
-    l,
+    i,
     o,
     r,
     a,
     _,
     c,
-    u,
     f,
+    u,
     d,
     h,
     m,
     b,
-    w,
+    v,
     p,
-    q,
-    M,
-    D,
-    C,
-    k,
     y,
-    B,
-    A,
+    q,
+    D,
+    M,
     S,
-    Y,
+    C,
+    X,
+    I,
+    w,
+    L,
     F,
-    J,
+    O,
     z,
     me,
     R,
-    $,
-    I,
-    O,
-    _e,
-    Z,
-    re,
-    j,
-    ke,
-    W,
+    V,
+    H,
     x,
-    oe,
+    _e,
     se,
+    ae,
+    j,
+    Ke,
+    W,
+    $,
+    ne,
+    re,
     le,
     ge,
     te
   ];
 }
-class iz extends T2 {
+class Mz extends fp {
   constructor(e) {
-    super(), V2(
+    super(), wp(
       this,
       e,
-      ip,
-      np,
-      P2,
+      Mp,
+      Dp,
+      vp,
       {
         elem_id: 2,
         elem_classes: 3,
@@ -12108,214 +12263,214 @@ class iz extends T2 {
     return this.$$.ctx[2];
   }
   set elem_id(e) {
-    this.$$set({ elem_id: e }), ee();
+    this.$$set({ elem_id: e }), Q();
   }
   get elem_classes() {
     return this.$$.ctx[3];
   }
   set elem_classes(e) {
-    this.$$set({ elem_classes: e }), ee();
+    this.$$set({ elem_classes: e }), Q();
   }
   get visible() {
     return this.$$.ctx[4];
   }
   set visible(e) {
-    this.$$set({ visible: e }), ee();
+    this.$$set({ visible: e }), Q();
   }
   get value() {
     return this.$$.ctx[0];
   }
   set value(e) {
-    this.$$set({ value: e }), ee();
+    this.$$set({ value: e }), Q();
   }
   get label() {
     return this.$$.ctx[5];
   }
   set label(e) {
-    this.$$set({ label: e }), ee();
+    this.$$set({ label: e }), Q();
   }
   get show_label() {
     return this.$$.ctx[6];
   }
   set show_label(e) {
-    this.$$set({ show_label: e }), ee();
+    this.$$set({ show_label: e }), Q();
   }
   get root() {
     return this.$$.ctx[7];
   }
   set root(e) {
-    this.$$set({ root: e }), ee();
+    this.$$set({ root: e }), Q();
   }
   get height() {
     return this.$$.ctx[8];
   }
   set height(e) {
-    this.$$set({ height: e }), ee();
+    this.$$set({ height: e }), Q();
   }
   get width() {
     return this.$$.ctx[9];
   }
   set width(e) {
-    this.$$set({ width: e }), ee();
+    this.$$set({ width: e }), Q();
   }
   get _selectable() {
     return this.$$.ctx[10];
   }
   set _selectable(e) {
-    this.$$set({ _selectable: e }), ee();
+    this.$$set({ _selectable: e }), Q();
   }
   get container() {
     return this.$$.ctx[11];
   }
   set container(e) {
-    this.$$set({ container: e }), ee();
+    this.$$set({ container: e }), Q();
   }
   get scale() {
     return this.$$.ctx[12];
   }
   set scale(e) {
-    this.$$set({ scale: e }), ee();
+    this.$$set({ scale: e }), Q();
   }
   get min_width() {
     return this.$$.ctx[13];
   }
   set min_width(e) {
-    this.$$set({ min_width: e }), ee();
+    this.$$set({ min_width: e }), Q();
   }
   get loading_status() {
     return this.$$.ctx[1];
   }
   set loading_status(e) {
-    this.$$set({ loading_status: e }), ee();
+    this.$$set({ loading_status: e }), Q();
   }
   get sources() {
     return this.$$.ctx[14];
   }
   set sources(e) {
-    this.$$set({ sources: e }), ee();
+    this.$$set({ sources: e }), Q();
   }
   get show_download_button() {
     return this.$$.ctx[15];
   }
   set show_download_button(e) {
-    this.$$set({ show_download_button: e }), ee();
+    this.$$set({ show_download_button: e }), Q();
   }
   get show_share_button() {
     return this.$$.ctx[16];
   }
   set show_share_button(e) {
-    this.$$set({ show_share_button: e }), ee();
+    this.$$set({ show_share_button: e }), Q();
   }
   get show_clear_button() {
     return this.$$.ctx[17];
   }
   set show_clear_button(e) {
-    this.$$set({ show_clear_button: e }), ee();
+    this.$$set({ show_clear_button: e }), Q();
   }
   get interactive() {
     return this.$$.ctx[18];
   }
   set interactive(e) {
-    this.$$set({ interactive: e }), ee();
+    this.$$set({ interactive: e }), Q();
   }
   get boxes_alpha() {
     return this.$$.ctx[19];
   }
   set boxes_alpha(e) {
-    this.$$set({ boxes_alpha: e }), ee();
+    this.$$set({ boxes_alpha: e }), Q();
   }
   get label_list() {
     return this.$$.ctx[20];
   }
   set label_list(e) {
-    this.$$set({ label_list: e }), ee();
+    this.$$set({ label_list: e }), Q();
   }
   get label_colors() {
     return this.$$.ctx[21];
   }
   set label_colors(e) {
-    this.$$set({ label_colors: e }), ee();
+    this.$$set({ label_colors: e }), Q();
   }
   get box_min_size() {
     return this.$$.ctx[22];
   }
   set box_min_size(e) {
-    this.$$set({ box_min_size: e }), ee();
+    this.$$set({ box_min_size: e }), Q();
   }
   get handle_size() {
     return this.$$.ctx[23];
   }
   set handle_size(e) {
-    this.$$set({ handle_size: e }), ee();
+    this.$$set({ handle_size: e }), Q();
   }
   get box_thickness() {
     return this.$$.ctx[24];
   }
   set box_thickness(e) {
-    this.$$set({ box_thickness: e }), ee();
+    this.$$set({ box_thickness: e }), Q();
   }
   get box_selected_thickness() {
     return this.$$.ctx[25];
   }
   set box_selected_thickness(e) {
-    this.$$set({ box_selected_thickness: e }), ee();
+    this.$$set({ box_selected_thickness: e }), Q();
   }
   get disable_edit_boxes() {
     return this.$$.ctx[26];
   }
   set disable_edit_boxes(e) {
-    this.$$set({ disable_edit_boxes: e }), ee();
+    this.$$set({ disable_edit_boxes: e }), Q();
   }
   get single_box() {
     return this.$$.ctx[27];
   }
   set single_box(e) {
-    this.$$set({ single_box: e }), ee();
+    this.$$set({ single_box: e }), Q();
   }
   get show_remove_button() {
     return this.$$.ctx[28];
   }
   set show_remove_button(e) {
-    this.$$set({ show_remove_button: e }), ee();
+    this.$$set({ show_remove_button: e }), Q();
   }
   get handles_cursor() {
     return this.$$.ctx[29];
   }
   set handles_cursor(e) {
-    this.$$set({ handles_cursor: e }), ee();
+    this.$$set({ handles_cursor: e }), Q();
   }
   get use_default_label() {
     return this.$$.ctx[30];
   }
   set use_default_label(e) {
-    this.$$set({ use_default_label: e }), ee();
+    this.$$set({ use_default_label: e }), Q();
   }
   get enable_keyboard_shortcuts() {
     return this.$$.ctx[31];
   }
   set enable_keyboard_shortcuts(e) {
-    this.$$set({ enable_keyboard_shortcuts: e }), ee();
+    this.$$set({ enable_keyboard_shortcuts: e }), Q();
   }
   get show_box_labels() {
     return this.$$.ctx[32];
   }
   set show_box_labels(e) {
-    this.$$set({ show_box_labels: e }), ee();
+    this.$$set({ show_box_labels: e }), Q();
   }
   get read_only_boxes() {
     return this.$$.ctx[33];
   }
   set read_only_boxes(e) {
-    this.$$set({ read_only_boxes: e }), ee();
+    this.$$set({ read_only_boxes: e }), Q();
   }
   get gradio() {
     return this.$$.ctx[34];
   }
   set gradio(e) {
-    this.$$set({ gradio: e }), ee();
+    this.$$set({ gradio: e }), Q();
   }
 }
 export {
-  nz as BaseExample,
-  iz as default
+  Dz as BaseExample,
+  Mz as default
 };

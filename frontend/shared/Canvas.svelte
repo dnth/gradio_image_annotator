@@ -796,30 +796,30 @@
 	function resize() {
 		if (canvas) {
 			scaleFactor = 1;
-			canvas.width = canvas.clientWidth;
+			const availableWidth = canvas.clientWidth;
+			const availableHeight = canvas.clientHeight;
+			canvas.width = availableWidth;
+			canvas.height = availableHeight;
 
 			canvasWindow.setRotatedImage(image);
-			
+
 			if (image !== null) {
-				if (canvasWindow.imageRotatedWidth > canvas.width) {
-					scaleFactor = canvas.width / canvasWindow.imageRotatedWidth;
-					imageWidth = Math.round(canvasWindow.imageRotatedWidth * scaleFactor);
-					imageHeight = Math.round(canvasWindow.imageRotatedHeight * scaleFactor);
-					canvasXmin = 0;
-					canvasYmin = 0;
-					canvasXmax = imageWidth;
-					canvasYmax = imageHeight;
-					canvas.height = imageHeight;
-				} else {
-					imageWidth = canvasWindow.imageRotatedWidth;
-					imageHeight = canvasWindow.imageRotatedHeight;
-					var x = (canvas.width - imageWidth) / 2;
-					canvasXmin = x;
-					canvasYmin = 0;
-					canvasXmax = x + imageWidth;
-					canvasYmax = imageHeight;
-					canvas.height = imageHeight;
-				}
+				// Calculate scale to fit image within both width and height constraints
+				const scaleX = availableWidth / canvasWindow.imageRotatedWidth;
+				const scaleY = availableHeight / canvasWindow.imageRotatedHeight;
+				scaleFactor = Math.min(scaleX, scaleY, 1); // Don't scale up, only down
+
+				imageWidth = Math.round(canvasWindow.imageRotatedWidth * scaleFactor);
+				imageHeight = Math.round(canvasWindow.imageRotatedHeight * scaleFactor);
+
+				// Center the image in the canvas
+				const x = Math.round((availableWidth - imageWidth) / 2);
+				const y = Math.round((availableHeight - imageHeight) / 2);
+
+				canvasXmin = x;
+				canvasYmin = y;
+				canvasXmax = x + imageWidth;
+				canvasYmax = y + imageHeight;
 
 				canvasWindow.imageWidth = imageWidth;
 				canvasWindow.imageHeight = imageHeight;
@@ -829,9 +829,8 @@
 				canvasYmin = 0;
 				canvasXmax = canvas.width;
 				canvasYmax = canvas.height;
-				canvas.height = canvas.clientHeight;
 			}
-			
+
 			canvasWindow.resize(canvas.width, canvas.height, canvasXmin, canvasYmin);
 
 			if (canvasXmax > 0 && canvasYmax > 0){

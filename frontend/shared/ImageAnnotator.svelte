@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { createEventDispatcher, tick } from "svelte";
+	import { onMount, createEventDispatcher, tick } from "svelte";
 	import { Download, Image as ImageIcon } from "@gradio/icons";
 	import { DownloadLink } from "@gradio/wasm/svelte";
 	import { uploadToHuggingFace } from "@gradio/utils";
@@ -9,6 +9,7 @@
 	import type { FileData, Client } from "@gradio/client";
 	import type { I18nFormatter, SelectData } from "@gradio/utils";
 	import { Clear } from "@gradio/icons";
+	import { Fullscreen, ExitFullscreen } from "./icons/index";
 	import ImageCanvas from "./ImageCanvas.svelte";
 	import AnnotatedImageData from "./AnnotatedImageData";
 
@@ -48,6 +49,8 @@
 
 	let upload: Upload;
 	let uploading = false;
+	let isFullscreen = false;
+	let imageContainer: HTMLDivElement;
 	export let active_source: source_type = null;
 
 	function handle_upload({ detail }: CustomEvent<FileData>): void {
@@ -104,6 +107,40 @@
 		dispatch("clear");
 		dispatch("change");
 	}
+
+	async function toggleFullscreen(): Promise<void> {
+		if (!imageContainer) return;
+
+		if (!document.fullscreenEnabled) {
+			console.warn("Fullscreen API is not available");
+			return;
+		}
+
+		if (!isFullscreen) {
+			try {
+				await imageContainer.requestFullscreen();
+			} catch (error) {
+				console.error("Failed to enter fullscreen:", error);
+			}
+		} else {
+			try {
+				await document.exitFullscreen();
+			} catch (error) {
+				console.error("Failed to exit fullscreen:", error);
+			}
+		}
+	}
+
+	function handleFullscreenChange(): void {
+		isFullscreen = !!document.fullscreenElement;
+	}
+
+	onMount(() => {
+		document.addEventListener("fullscreenchange", handleFullscreenChange);
+		return () => {
+			document.removeEventListener("fullscreenchange", handleFullscreenChange);
+		};
+	});
 </script>
 
 <BlockLabel {show_label} Icon={ImageIcon} label={label || "Image Annotator"} />
@@ -136,9 +173,18 @@
 			/>
 		</div>
 	{/if}
+	{#if value !== null && interactive}
+		<div>
+			<IconButton
+				Icon={isFullscreen ? ExitFullscreen : Fullscreen}
+				label={isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+				on:click={toggleFullscreen}
+			/>
+		</div>
+	{/if}
 </div>
 
-<div data-testid="image" class="image-container">
+<div data-testid="image" class="image-container" bind:this={imageContainer}>
 	<div class="upload-container">
 		<Upload
 			hidden={value !== null || active_source === "webcam"}
@@ -248,5 +294,14 @@
 		top: 6px;
 		right: 6px;
 		gap: var(--size-1);
+	}
+
+	.image-container:fullscreen {
+		background-color: var(--color-background-primary);
+		padding: var(--size-2);
+	}
+
+	.image-container:fullscreen .icon-buttons {
+		z-index: 9999;
 	}
 </style>

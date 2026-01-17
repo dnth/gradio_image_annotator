@@ -10,3 +10,5 @@ export { default as Unlock } from "./Unlock.svelte";
 export { default as ZoomIn } from "./ZoomIn.svelte";
 export { default as ZoomOut } from "./ZoomOut.svelte";
 export { default as ResetZoom } from "./ResetZoom.svelte";
+export { default as Fullscreen } from "./Fullscreen.svelte";
+export { default as ExitFullscreen } from "./ExitFullscreen.svelte";
