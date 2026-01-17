@@ -44,6 +44,7 @@
 	export let useDefaultLabel: boolean;
 	export let enableKeyboardShortcuts: boolean;
 	export let showBoxLabels: boolean;
+	export let readOnlyBoxes: boolean = false;
 
 	let upload: Upload;
 	let uploading = false;
@@ -193,6 +194,7 @@
 					{useDefaultLabel}
 					{enableKeyboardShortcuts}
 					{showBoxLabels}
+					{readOnlyBoxes}
 					src={value.image.url}
 				/>
 			</div>

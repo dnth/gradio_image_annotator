@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, createEventDispatcher } from "svelte";
-	import { BoundingBox, Hand, Trash, Label, LabelVisible, LabelHidden, ZoomIn, ZoomOut, ResetZoom } from "./icons/index";
+	import { BoundingBox, Hand, Trash, Label, LabelVisible, LabelHidden, ZoomIn, ZoomOut, ResetZoom, Lock } from "./icons/index";
 	import ModalBox from "./ModalBox.svelte";
 	import Box from "./Box";
 	import { Colors } from './Colors.js';
@@ -29,6 +29,7 @@
 	export let useDefaultLabel: boolean = false;
 	export let enableKeyboardShortcuts: boolean = true;
 	export let showBoxLabels: boolean = true;
+	export let readOnlyBoxes: boolean = false;
 
 	if (showRemoveButton === null) {
 		showRemoveButton = (disableEditBoxes);
@@ -137,6 +138,10 @@
 	}
 
     function selectBox(index: number) {
+		// Prevent selection in read-only mode
+		if (readOnlyBoxes) {
+			return;
+		}
 		selectedBox = index;
 		value.boxes.forEach(box => {box.setSelected(false);});
 		if (index >= 0 && index < value.boxes.length){
@@ -171,6 +176,11 @@
 		pointersCache.set(event.pointerId, event);
 
 		if (pointersCache.size == 1) {
+			// In read-only mode, only allow canvas panning
+			if (readOnlyBoxes) {
+				canvasWindow.startDrag(event);
+				return;
+			}
 			if (mode === Mode.creation) {
 				createBox(event);
 			} else if (mode === Mode.drag) {
@@ -198,6 +208,12 @@
 	}
 
 	function clickBox(event: PointerEvent) {
+		// In read-only mode, only allow canvas panning
+		if (readOnlyBoxes) {
+			canvasWindow.startDrag(event);
+			return;
+		}
+
 		const rect = canvas.getBoundingClientRect();
 		const mouseX = event.clientX - rect.left;
 		const mouseY = event.clientY - rect.top;
@@ -418,6 +434,14 @@
 		if (blockedKeys.has(key) || (ctrlOrCmd && (key === 'c' || key === 'v'))) {
 			event.preventDefault();
 			event.stopPropagation();
+		}
+
+		// In read-only mode, only allow view-related shortcuts
+		if (readOnlyBoxes) {
+			if (key === ' ') {
+				resetView();
+			}
+			return;
 		}
 
 		// Handle Ctrl+C / Cmd+C (Copy)
@@ -937,40 +961,52 @@
 			on:dblclick={handleDoubleClick}
 			on:wheel={handleMouseWheel}
 			style="height: {height}; width: {width};"
+			class:read-only={readOnlyBoxes}
 			class="canvas-annotator"
 		></canvas>
 	</div>
 
 	{#if interactive}
 		<span class="canvas-control">
-			<button
-				class="icon"
-				class:selected={mode === Mode.creation}
-				aria-label="Create box"
-				title="Create box (C)"
-				on:click={() => setCreateMode()}><BoundingBox/></button
-			>
-			<button
-				class="icon"
-				class:selected={mode === Mode.drag}
-				aria-label="Drag boxes"
-				title="Drag boxes (D)"
-				on:click={() => setDragMode()}><Hand/></button
-			>
-			{#if showRemoveButton}
+			{#if !readOnlyBoxes}
 				<button
 					class="icon"
-					aria-label="Remove box"
-					title="Remove box (Del)"
-					on:click={() => onDeleteBox()}><Trash/></button
+					class:selected={mode === Mode.creation}
+					aria-label="Create box"
+					title="Create box (C)"
+					on:click={() => setCreateMode()}><BoundingBox/></button
 				>
-			{/if}
-			{#if !disableEditBoxes && labelDetailLock}
 				<button
 					class="icon"
-					aria-label="Edit label"
-					title="Edit label"
-					on:click={() => editDefaultLabelVisible = true}><Label/></button
+					class:selected={mode === Mode.drag}
+					aria-label="Drag boxes"
+					title="Drag boxes (D)"
+					on:click={() => setDragMode()}><Hand/></button
+				>
+				{#if showRemoveButton}
+					<button
+						class="icon"
+						aria-label="Remove box"
+						title="Remove box (Del)"
+						on:click={() => onDeleteBox()}><Trash/></button
+					>
+				{/if}
+				{#if !disableEditBoxes && labelDetailLock}
+					<button
+						class="icon"
+						aria-label="Edit label"
+						title="Edit label"
+						on:click={() => editDefaultLabelVisible = true}><Label/></button
+					>
+				{/if}
+			{/if}
+			{#if readOnlyBoxes}
+				<button
+					class="icon"
+					class:locked={true}
+					aria-label="Boxes are read-only"
+					title="Boxes are read-only"
+					disabled={true}><Lock/></button
 				>
 			{/if}
 			<button
@@ -1065,6 +1101,10 @@
 		height: 100%;
 		display: block;
 		touch-action: none;
+	}
+
+	.canvas-annotator.read-only {
+		cursor: not-allowed;
 	}
 
 	.canvas-control {

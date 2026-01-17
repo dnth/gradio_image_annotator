@@ -61,6 +61,7 @@ class image_annotator(Component):
         box_thickness: int = 2,
         box_selected_thickness: int = 4,
         disable_edit_boxes: bool | None = None,
+        read_only_boxes: bool = False,
         single_box: bool = False,
         height: int | str | None = None,
         width: int | str | None = None,
@@ -103,6 +104,7 @@ class image_annotator(Component):
             box_thickness: Thickness of the bounding box outline.
             box_selected_thickness: Thickness of the bounding box outline when it is selected.
             disable_edit_boxes: Disables the ability to set and edit the label and color of the boxes.
+            read_only_boxes: If True, boxes cannot be created, selected, moved, resized, deleted, or edited. Image manipulation (rotate, zoom, pan) still works.
             single_box: If True, at most one box can be drawn.
             height: The height of the displayed image, specified in pixels if a number is passed, or in CSS units if a string is passed.
             width: The width of the displayed image, specified in pixels if a number is passed, or in CSS units if a string is passed.
@@ -171,6 +173,7 @@ class image_annotator(Component):
         self.box_thickness = box_thickness
         self.box_selected_thickness = box_selected_thickness
         self.disable_edit_boxes = disable_edit_boxes
+        self.read_only_boxes = read_only_boxes
         self.single_box = single_box
         if label_list:
             self.label_list = [(l, i) for i, l in enumerate(label_list)]

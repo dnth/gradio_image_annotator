@@ -28,6 +28,7 @@
 	export let useDefaultLabel: boolean;
 	export let enableKeyboardShortcuts: boolean;
 	export let showBoxLabels: boolean;
+	export let readOnlyBoxes: boolean = false;
 
 	let resolved_src: typeof src;
 
@@ -78,5 +79,6 @@
 	{useDefaultLabel}
 	{enableKeyboardShortcuts}
 	{showBoxLabels}
+	{readOnlyBoxes}
 	imageUrl={resolved_src}
 />

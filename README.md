@@ -257,6 +257,19 @@ bool | None
 </tr>
 
 <tr>
+<td align="left"><code>read_only_boxes</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>False</code></td>
+<td align="left">If True, boxes cannot be created, selected, moved, resized, deleted, or edited. Image manipulation (rotate, zoom, pan) still works.</td>
+</tr>
+
+<tr>
 <td align="left"><code>single_box</code></td>
 <td align="left" style="width: 25%;">
 
