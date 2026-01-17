@@ -160,7 +160,7 @@ To add a new toggle button (like the labels visibility toggle):
    - Add button in the canvas control section with conditional icon rendering
    - Add CSS class for active state
 
-4. **Rebuild frontend**: `gradio cc build`
+4. **Rebuild frontend**: `uv run gradio cc build`
 
 5. **Reinstall package**: `uv pip install -e .`
 
@@ -230,7 +230,7 @@ create → dev → build → publish
 #### 1. Create - Bootstrap a Template
 
 ```bash
-gradio cc create MyComponent --template SimpleTextbox
+uv run gradio cc create MyComponent --template SimpleTextbox
 ```
 
 This creates a directory structure:
@@ -247,13 +247,13 @@ Available templates include:
 - `SimpleImage`
 - `File`
 
-To list all templates: `gradio cc show`
+To list all templates: `uv run gradio cc show`
 
 #### 2. Dev - Development Server with Hot Reloading
 
 ```bash
 # From your component directory
-gradio cc dev
+uv run gradio cc dev
 ```
 
 Launches a demo app at http://localhost:7861/ (port may vary) with hot reloading. Changes to backend and frontend are reflected live.
@@ -262,7 +262,7 @@ Launches a demo app at http://localhost:7861/ (port may vary) with hot reloading
 
 ```bash
 # From your component directory
-gradio cc build
+uv run gradio cc build
 ```
 
 Creates `tar.gz` and `.whl` files in `dist/`. These can be installed with:
@@ -275,7 +275,7 @@ The build command also generates documentation (interactive space + README.md). 
 #### 4. Publish - Share with the World
 
 ```bash
-gradio cc publish
+uv run gradio cc publish
 ```
 
 Guides you through:
@@ -499,10 +499,10 @@ uv pip install -e . --python 3.12
 ### Useful Commands
 
 ```bash
-gradio cc --help                    # Show all commands
-gradio cc create --help             # Help for specific command
-gradio cc show                      # List available templates
-gradio cc docs                      # Generate documentation
+uv run gradio cc --help                    # Show all commands
+uv run gradio cc create --help             # Help for specific command
+uv run gradio cc show                      # List available templates
+uv run gradio cc docs                      # Generate documentation
 ```
 
 ### Type Definitions

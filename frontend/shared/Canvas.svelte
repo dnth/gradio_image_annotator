@@ -433,10 +433,8 @@
 		}
 
 		switch (key) {
-			case 'delete': onDeleteBox(); break;
-			case 'c': setCreateMode(); break;
-			case 'd': setDragMode(); break;
-			case 'e': onEditBox(); break;
+			case 'delete':
+			case 'q': onDeleteBox(); break;
 			case ' ': resetView(); break;
 			case 'arrowup': moveSelectedBox(0, -3); break;
 			case 'arrowdown': moveSelectedBox(0, 3); break;
