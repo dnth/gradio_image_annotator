@@ -133,10 +133,39 @@ Boxes use **absolute image coordinates** (xmin, ymin, xmax, ymax). The frontend 
 ### Backend Changes (Python)
 1. Edit `backend/gradio_image_annotation/image_annotator.py`
 2. Add parameters to `__init__()`
-3. Pass to frontend via `super().__init__()`
-4. Handle in `preprocess()` or `postprocess()` if data conversion needed
+3. Store as instance variable (e.g., `self.my_param = my_param`)
+4. Pass to frontend via `super().__init__()` (for standard Gradio props)
+5. Handle in `preprocess()` or `postprocess()` if data conversion needed
 
 ### Frontend Changes (Svelte/TypeScript)
+
+#### Adding a Toggle Button
+
+To add a new toggle button (like the labels visibility toggle):
+
+1. **Create icons** in `frontend/shared/icons/`:
+   - `MyFeatureVisible.svelte` - Icon when feature is enabled
+   - `MyFeatureHidden.svelte` - Icon when feature is disabled
+
+2. **Export icons** in `frontend/shared/icons/index.ts`:
+   ```typescript
+   export { default as MyFeatureVisible } from "./MyFeatureVisible.svelte";
+   export { default as MyFeatureHidden } from "./MyFeatureHidden.svelte";
+   ```
+
+3. **Update Canvas.svelte**:
+   - Import the new icons
+   - Add local state variable: `let myFeatureVisible = true;`
+   - Add toggle function that updates state and calls `draw()`
+   - Add button in the canvas control section with conditional icon rendering
+   - Add CSS class for active state
+
+4. **Rebuild frontend**: `gradio cc build`
+
+5. **Reinstall package**: `uv pip install -e .`
+
+#### General Frontend Changes
+
 1. Edit files in `frontend/shared/`
 2. Rebuild frontend using Gradio SDK (placed in `backend/gradio_image_annotation/templates/`)
 3. Reinstall Python package: `uv pip install -e .` (or `pip install -e .`)
@@ -150,9 +179,20 @@ Key parameters (from `__init__`):
 - `disable_edit_boxes`: Hide label/color editing
 - `use_default_label`: Auto-apply first label from `label_list`
 - `enable_keyboard_shortcuts`: Toggle keyboard shortcuts
+- `show_box_labels`: Display labels on bounding boxes (default: True)
 - `image_type`: "numpy", "pil", or "filepath" for callback output
 - `boxes_alpha`, `box_thickness`, `handle_size`: Visual styling
 - `sources`: ["upload", "webcam", "clipboard"]
+
+### Canvas Control Buttons
+
+The component has a canvas control bar at the bottom with the following buttons:
+- **Create/Drag mode**: Toggle between drawing and moving boxes
+- **Remove box**: Delete the selected box (Trash icon)
+- **Edit label**: Edit the default label for new boxes (Label icon)
+- **Toggle labels**: Show/hide all bbox labels dynamically (Text icon)
+- **Rotate**: Rotate image clockwise/counterclockwise
+- **Zoom**: Reset zoom, zoom in/out
 
 ## Keyboard Shortcuts (Default)
 - `C`: Create mode

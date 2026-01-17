@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount, createEventDispatcher } from "svelte";
-	import { BoundingBox, Hand, Trash, Label, ZoomIn, ZoomOut, ResetZoom } from "./icons/index";
+	import { BoundingBox, Hand, Trash, Label, LabelVisible, LabelHidden, ZoomIn, ZoomOut, ResetZoom } from "./icons/index";
 	import ModalBox from "./ModalBox.svelte";
 	import Box from "./Box";
 	import { Colors } from './Colors.js';
@@ -60,6 +60,8 @@
 	let editModalVisible = false;
 	let newModalVisible = false;
 	let editDefaultLabelVisible = false;
+
+	let labelsVisible = showBoxLabels;
 
 	let labelDetailLock = useDefaultLabel;
 	let defaultLabelCache = {
@@ -139,6 +141,14 @@
 		value.boxes.forEach(box => {box.setSelected(false);});
 		if (index >= 0 && index < value.boxes.length){
 			value.boxes[index].setSelected(true);
+		}
+		draw();
+	}
+
+	function toggleLabels() {
+		labelsVisible = !labelsVisible;
+		for (const box of value.boxes) {
+			box.setShowLabel(labelsVisible);
 		}
 		draw();
 	}
@@ -967,6 +977,19 @@
 			{/if}
 			<button
 				class="icon"
+				class:active={labelsVisible}
+				aria-label="Toggle labels"
+				title="Toggle labels"
+				on:click={toggleLabels}
+			>
+				{#if labelsVisible}
+					<LabelVisible/>
+				{:else}
+					<LabelHidden/>
+				{/if}
+			</button>
+			<button
+				class="icon"
 				aria-label="Rotate counterclockwise"
 				title="Rotate counterclockwise"
 				on:click={() => onRotateImage(-1)}><Undo/></button
@@ -1073,7 +1096,8 @@
 	.icon:focus {
 		color: var(--color-accent);
 	}
-	
+
+	.icon.active,
 	.selected {
 		color: var(--color-accent);
 	}

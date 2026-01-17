@@ -134,6 +134,10 @@ export default class Box {
         this.isSelected = selected;
     }
 
+    setShowLabel(show: boolean): void {
+        this.showLabel = show;
+    }
+
     setScaleFactor(scaleFactor: number) {
         let scale = scaleFactor / this.scaleFactor;
         this._xmin = Math.round(this._xmin * scale);
