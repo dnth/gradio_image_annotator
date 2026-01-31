@@ -18,7 +18,7 @@ keywords = ["gradio-custom-component", "gradio-template-Image", "bounding box", 
 # Add dependencies here
 dependencies = [
     "build>=1.2.2.post1",
-    "gradio>=4.29,<6.0",
+    "gradio>=4.29,<7.0",
 ]
 classifiers = [
   'Development Status :: 3 - Alpha',

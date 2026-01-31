@@ -1269,7 +1269,7 @@ dev = [
 requires-dist = [
     { name = "build", specifier = ">=1.2.2.post1" },
     { name = "build", marker = "extra == 'dev'" },
-    { name = "gradio", specifier = ">=4.29,<6.0" },
+    { name = "gradio", specifier = ">=4.29,<7.0" },
     { name = "twine", marker = "extra == 'dev'" },
 ]
 
